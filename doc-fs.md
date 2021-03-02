@@ -301,7 +301,7 @@ Bouton blanc AgentConnect :
 ![ac-bouton-blanc@2x](https://user-images.githubusercontent.com/78731004/109621827-be3eb680-7b3b-11eb-8c72-bacf30b3f258.jpg)
 ![ac-bouton-blanc@2x](https://user-images.githubusercontent.com/78731004/109621829-be3eb680-7b3b-11eb-9d32-1547b7cda7d0.png)
 
-
+Pour le format SVG, merci de contacter l'équipe produit. 
 
 ## Détail du fonctionnement
 
