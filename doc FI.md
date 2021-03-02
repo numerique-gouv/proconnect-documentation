@@ -171,42 +171,10 @@ La valeur `{AC-internal-id}` est spécifique à chaque fournisseur d'identité e
 
 ## Détail du fonctionnement
 
-```mermaid
-sequenceDiagram
-    participant U as Agent
-    participant AC
-    participant FI 
-    
-    Note right of U : L'utilisateur a <br/>choisi son FI
-    AC->>FI: GET [issuer]/.well-known/openid-configuration
-    FI-->>AC: HTTP 200
-    Note left of FI : AC récupère les <br/>métadatas du FI
 
-    AC->>FI: GET [jwks_uri]
-    FI-->>AC: HTTP 200
-    Note left of FI : AC récupère les clés <br/>publiques du FI
-
-    AC-->>U : Redirect 302 [authorization_endpoint]
-    
-    U->>FI : GET [authorization_endpoint]
-    Note left of FI : Authentification <br/>utilisateur par le FI<br/><br/>(Implémentation <br/>spécifique au FI)
-   
-
-    FI-->>U: Redirect 302 [fc issuer]/oidc-callback/{ac-internal-id}
-    
-    U->>AC: GET [fc issuer]/oidc-callback/{ac-internal-id}
-   
-    AC->>FI: POST [token_endpoint]
-    FI-->>AC: HTTP 200
-    
-    FC->>FI: GET [userinfo_endpoint]
-    FI-->>AC: HTTP 200
-
-    Note left of FI : Le FI détruit <br/>la session de <br/>l'utilisateur
+![image](https://user-images.githubusercontent.com/78731004/109618890-6783ad80-7b38-11eb-9d8d-08034d3ce00f.png)
 
 
-
-```
 
 
 Les access token fournis par le FI doivent être de préférence à usage unique ou si cela n'est pas possible avec une durée de vie très courte [https://openid.net/specs/openid-connect-core-1_0.html#rfc.section.16.18](https://openid.net/specs/openid-connect-core-1_0.html#rfc.section.16.18)
