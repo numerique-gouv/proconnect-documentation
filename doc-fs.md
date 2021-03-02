@@ -306,12 +306,7 @@ Bouton blanc AgentConnect :
 ![ac-bouton-blanc](https://user-images.githubusercontent.com/78731004/109621826-bda62000-7b3b-11eb-8399-f7c8964d04e8.png)
 ![ac-bouton-blanc@2x](https://user-images.githubusercontent.com/78731004/109621827-be3eb680-7b3b-11eb-8c72-bacf30b3f258.jpg)
 ![ac-bouton-blanc@2x](https://user-images.githubusercontent.com/78731004/109621829-be3eb680-7b3b-11eb-9d32-1547b7cda7d0.png)
-![ac-bouton-blanc-hover](https://user-images.githubusercontent.com/78731004/109622026-ee865500-7b3b-11eb-91ce-6188a1082b34.jpg)
-![ac-bouton-blanc-hover](https://user-images.githubusercontent.com/78731004/109622027-ef1eeb80-7b3b-11eb-9757-fe0dcb7f622d.png)
-![ac-bouton-blanc-hover@2x](https://user-images.githubusercontent.com/78731004/109622028-ef1eeb80-7b3b-11eb-8635-ff9940ea2d95.jpg)
-![ac-bouton-blanc-hover@2x](https://user-images.githubusercontent.com/78731004/109622029-ef1eeb80-7b3b-11eb-96dd-5d6b14b3c2eb.png)
 
-   
 
 
 ## Détail du fonctionnement
