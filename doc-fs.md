@@ -285,12 +285,8 @@ Pour les boutons en svg, lors de l'utilisation d'une image veuillez préciser la
 
 Téléchargements :
 
-**A compléter**
-
 
 Bouton Bleu AgentConnect : à utiliser en priorité 
-
-![image](https://user-images.githubusercontent.com/78731004/109623499-7d47a180-7b3d-11eb-89e0-3ad40030d90d.png)
 
 
 ![ac-bouton-bleu](https://user-images.githubusercontent.com/78731004/109621703-9cddca80-7b3b-11eb-821c-c3e3618232e0.jpg)
@@ -299,8 +295,6 @@ Bouton Bleu AgentConnect : à utiliser en priorité
 ![ac-bouton-bleu@2x](https://user-images.githubusercontent.com/78731004/109621708-9d766100-7b3b-11eb-9f84-089532d5467c.png)
 
 Bouton blanc AgentConnect :
-
-![image](https://user-images.githubusercontent.com/78731004/109620824-97cc4b80-7b3a-11eb-9755-de9b1e6ffe87.png)
 
 ![ac-bouton-blanc](https://user-images.githubusercontent.com/78731004/109621823-bda62000-7b3b-11eb-98fe-95afe625e47d.jpg)
 ![ac-bouton-blanc](https://user-images.githubusercontent.com/78731004/109621826-bda62000-7b3b-11eb-8399-f7c8964d04e8.png)
