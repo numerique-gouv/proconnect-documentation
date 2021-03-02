@@ -215,7 +215,7 @@ Environnement RIE :
 
 | Environnement | adresses du endpoint |
 |---------------|----------------------|
-| intégration AC | **A compléter** |
+| intégration AC | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/jwks|
 | production AC |**A compléter** |
 
 
@@ -288,47 +288,39 @@ Téléchargements :
 **A compléter**
 
 
+Bouton Bleu AgentConnect : à utiliser en priorité 
+
+![image](https://user-images.githubusercontent.com/78731004/109620627-65bae980-7b3a-11eb-8131-a2d3fd0bfbc4.png)
+
+![ac-bouton-bleu](https://user-images.githubusercontent.com/78731004/109621703-9cddca80-7b3b-11eb-821c-c3e3618232e0.jpg)
+![ac-bouton-bleu](https://user-images.githubusercontent.com/78731004/109621705-9d766100-7b3b-11eb-97e4-ad096d49b8cd.png)
+![ac-bouton-bleu@2x](https://user-images.githubusercontent.com/78731004/109621707-9d766100-7b3b-11eb-8d9d-a7f6afe5c983.jpg)
+![ac-bouton-bleu@2x](https://user-images.githubusercontent.com/78731004/109621708-9d766100-7b3b-11eb-9f84-089532d5467c.png)
+
+Bouton blanc AgentConnect :
+
+![image](https://user-images.githubusercontent.com/78731004/109620824-97cc4b80-7b3a-11eb-9755-de9b1e6ffe87.png)
+
+![ac-bouton-blanc](https://user-images.githubusercontent.com/78731004/109621823-bda62000-7b3b-11eb-98fe-95afe625e47d.jpg)
+![ac-bouton-blanc](https://user-images.githubusercontent.com/78731004/109621826-bda62000-7b3b-11eb-8399-f7c8964d04e8.png)
+![ac-bouton-blanc@2x](https://user-images.githubusercontent.com/78731004/109621827-be3eb680-7b3b-11eb-8c72-bacf30b3f258.jpg)
+![ac-bouton-blanc@2x](https://user-images.githubusercontent.com/78731004/109621829-be3eb680-7b3b-11eb-9d32-1547b7cda7d0.png)
+![ac-bouton-blanc-hover](https://user-images.githubusercontent.com/78731004/109622026-ee865500-7b3b-11eb-91ce-6188a1082b34.jpg)
+![ac-bouton-blanc-hover](https://user-images.githubusercontent.com/78731004/109622027-ef1eeb80-7b3b-11eb-9757-fe0dcb7f622d.png)
+![ac-bouton-blanc-hover@2x](https://user-images.githubusercontent.com/78731004/109622028-ef1eeb80-7b3b-11eb-8635-ff9940ea2d95.jpg)
+![ac-bouton-blanc-hover@2x](https://user-images.githubusercontent.com/78731004/109622029-ef1eeb80-7b3b-11eb-96dd-5d6b14b3c2eb.png)
+
+   
 
 
 ## Détail du fonctionnement
 
-```mermaid 
-sequenceDiagram
-   participant U as Agent
-   participant AC as AgentConnect
-   participant FS as Fournisseur de Service
-                       
-   Note right of U : L'agent clique <br/>sur le bouton <br/>"AgentConnect"
-    
-    FS->>FAC: GET [issuer]/.well-known/openid-configuration
-    AC-->>FS: HTTP 200
-    Note left of FS : FS récupère les <br/>métadatas du FI
 
-   U->>AC: GET / POST <AC_URL>/api/v2/authorize
-   AC-->>U: Redirect 302 <FS_URL>/<URL_CALLBACK>
-
-   U->>FS: GET <FS_URL>/<URL_CALLBACK>
-
-   FS->>AC: POST <AC_URL>/api/v2/token
-  AC-->>FS: HTTP Response 200
-
-   FS->>AC: GET <AC_URL>/api/v2/userinfo
-   AC-->>FS: HTTP Response 200
-
-   FS-->>U: Redirect 302 <FS_URL>/page_authentifiée
+![image](https://user-images.githubusercontent.com/78731004/109619444-132cfd80-7b39-11eb-9e69-e372cdd8ff39.png)
 
 
-   note right of U: Plus tard, <br /> l'agent se <br/> déconnecte
-                   
-   U ->> FS: GET / POST ...
-   FS-->>U: Redirect 302 <AC_URL>/api/v2/logout
 
-   U->>AC: GET <AC_URL>/api/v2/logout
-   AC-->>U: Redirect 302 <AC_URL>/<POST_LOGOUT_REDIRECT_URI>
 
-   U-->FS: GET <AC_URL>/<POST_LOGOUT_REDIRECT_URI>
-
-```
                         
 La récupération de l'identité pivot doit être faite dans la suite immédiate des appels précédents (authentification et récupération du code). Le fait d'appeler ce Web service plus tard n'est aujourd'hui pas proposé.
 
