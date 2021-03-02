@@ -290,7 +290,8 @@ Téléchargements :
 
 Bouton Bleu AgentConnect : à utiliser en priorité 
 
-![image](https://user-images.githubusercontent.com/78731004/109620627-65bae980-7b3a-11eb-8131-a2d3fd0bfbc4.png)
+![image](https://user-images.githubusercontent.com/78731004/109623499-7d47a180-7b3d-11eb-89e0-3ad40030d90d.png)
+
 
 ![ac-bouton-bleu](https://user-images.githubusercontent.com/78731004/109621703-9cddca80-7b3b-11eb-821c-c3e3618232e0.jpg)
 ![ac-bouton-bleu](https://user-images.githubusercontent.com/78731004/109621705-9d766100-7b3b-11eb-97e4-ad096d49b8cd.png)
