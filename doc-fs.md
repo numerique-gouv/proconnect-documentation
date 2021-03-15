@@ -38,7 +38,7 @@ Le cadre d'implémentation et d'intégration est détaillé dans nos [spécifica
 
 Pour vous permettre de réaliser les développements liés à l'intégration d'AgentConnect, nous mettons à disposition un environnement d'intégration. Les accès à cet environnement se font à travers des clés qui vous sont communiquées par la DINUM dans l'attente de la mise en place de votre espace partenaire. 
 
-Sur notre environnement d'intégration, vous pouvez utiliser le fournisseur d'identité "Démonstration" dont les données sont modifiables ici : **A renseigner, une fois le FI de démo créé**
+Sur notre environnement d'intégration, vous pourrez utiliser les fournisseurs d'identités de démonstratation pour effectuer vos tests. 
 
 
 Les adresses de notre environnement d'intégration sont les suivantes : 
@@ -53,6 +53,22 @@ Environnement Internet :
 | UserInfo | https://fca.integ01.dev-agentconnect.fr/api/v2/userinfo  | 
 | Logout | https://fca.integ01.dev-agentconnect.fr/api/v2/logout | 
 
+**Démonstrateurs Internet** 
+
+FI Internet :
+
+https://fia1v2.integ01.dev-agentconnect.fr
+
+https://fia2v2.integ01.dev-agentconnect.fr
+
+FS Internet :
+
+https://fsa1v2.integ01.dev-agentconnect.fr
+
+https://fsa2v2.integ01.dev-agentconnect.fr
+
+https://fsa3v2.integ01.dev-agentconnect.fr
+
 
 Environnement RIE : 
 
@@ -64,6 +80,23 @@ Environnement RIE :
 | UserInfo | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/userinfo  | 
 | Logout | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/logout | 
 
+**Démonstrateurs RIE** 
+
+
+FI RIE :
+
+https://fia1v2.integ02.agentconnect.rie.gouv.fr
+
+https://fia2v2.integ02.agentconnect.rie.gouv.fr
+
+ 
+FS RIE :
+
+https://fsa1v2.integ02.agentconnect.rie.gouv.fr
+
+https://fsa2v2.integ02.agentconnect.rie.gouv.fr
+
+https://fsa3v2.integ02.agentconnect.rie.gouv.fr
 
 
 ## Mettre en production mon Fournisseur de Services
@@ -99,44 +132,7 @@ Environnement RIE :
 | UserInfo | https://**TBD**/api/v2/userinfo  | 
 | Logout | https://**TBD**/api/v2/logout | 
 
-## Réaliser des tests avant de soumettre sa demande d'habilitation **A COMPLETER**
 
-Il est possible d'accéder à l'environnement d'intégration AgentConnect afin d'y faire des tests préalables sans validation. Pour cela, une clé d'intégration à usage public vous permettra de découvrir l'application et de commencer vos tests sans avoir à déposer un dossier.
-
-Cette clé est à usage limité et ne bénéficie d'aucun support par notre équipe.
-
-La clé (client id, client secret) proposée en accès libre et configurée avec des URLs de callback en localhost ne peut être utilisée que sur la plateforme AgentConnect appelée plateforme d'intégration. 
-
-* **CLIENT ID : **A COMPLETER**
-* **CLIENT SECRET : **A COMPLETER**
-
-Les  urls de callback de connexion configurés avec cette clé sont les suivantes : **A METTRE A JOUR**
-
-* http://localhost:4242/callback
-* http://localhost:8080/callback
-* http://localhost:1337/callback
-* http://localhost:3000/callback
-* http://localhost:1337/login-callback
-* http://localhost:4242/login-callback
-* http://localhost:8080/login-callback
-* http://localhost:3000/login-callback
-* http://localhost:1337/data-callback
-* http://localhost:4242/data-callback
-* http://localhost:8080/data-callback
-* http://localhost:3000/data-callback
-
-Les urls de callback de déconnexion configurées sont les suivantes : **A METTRE A JOUR**
-* http://localhost:4242/logout
-* http://localhost:8080/logout
-* http://localhost:1337/logout
-* http://localhost:3000/logout
-* http://localhost:4242/logout-callback
-* http://localhost:8080/logout-callback
-* http://localhost:1337/logout-callback
-* http://localhost:3000/logout-callback
-
-Un fournisseur de Service de démonstration est disponible à l'adresse **A COMPLETER**. 
-Le code de ce Fournisseur de Service est disponible à l'adresse **A COMPLETER**. Il est donné à titre d'exemple d'implémentation et ne bénéficie d'aucun support par notre équipe.
 
 # Concepts de base
 ## Le protocole OpenID Connect
@@ -309,14 +305,29 @@ Pour le format SVG, merci de contacter l'équipe produit.
 ![image](https://user-images.githubusercontent.com/78731004/109619444-132cfd80-7b39-11eb-9e69-e372cdd8ff39.png)
 
 
-
-
                         
 La récupération de l'identité pivot doit être faite dans la suite immédiate des appels précédents (authentification et récupération du code). Le fait d'appeler ce Web service plus tard n'est aujourd'hui pas proposé.
 
 ### Détail des flux
 
 Les flux entre AgentConnect et le Fournisseur de Service respectent ce qui est défini dans la norme OpenId Connect. Pour plus de détails, il faut se référer à la [documentation OIDC - https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth)
+
+
+## Utiliser les niveaux eIDAS en tant que FS AgentConnect
+
+eIDAS est un standard européen visant à normaliser et à améliorer la sécurité de l'identification sur Internet. Il propose notamment 3 niveaux de garantie sur les moyens utilisés pour l'identification. Vous pouvez, en tant que Fournisseur de Service, utiliser les niveaux eIDAS afin de récupérer une identité avec le niveau de garantie correspondant à votre besoin.
+
+AgentConnect s'inspire du règlement eIDAS pour définir les différents niveaux de sécurité dans les échanges avec les FI et les FS.
+
+Actuellement les fournisseurs de services ne peuvent demander qu'un niveau eIDAS 1, soit un niveau dit faible à AgentConnect
+
+Comme la norme OpenID Connect ne prévoit pas aujourd'hui de mesures techniques particulières pour préciser le niveau souhaité, AgentConnect utilise le claim optionnel "acr" (http://openid.net/specs/openid-connect-basic-1_0.html#RequestParameters) de la norme OpenID Connect. 
+
+Pour le Fournisseur de Service, cela veut dire remplir le claim optionnel acr_values lors de la demande d'authentification (appel à l'endpoint /api/v2/authorize).
+
+
+le Fournisseur d'Identité renverra par le biais de AgentConnect le niveau eIDAS avec lequel l'authentification a eu lieu. 
+
 
 
 # Je veux déconnecter l'agent de AgentConnect
