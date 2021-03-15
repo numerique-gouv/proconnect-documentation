@@ -88,6 +88,25 @@ Environnement Internet :
 | production AC | https://**A compléter** |  
 
 
+**Démonstrateurs Internet**
+
+FI Internet :
+
+https://fia1v2.integ01.dev-agentconnect.fr
+
+https://fia2v2.integ01.dev-agentconnect.fr
+
+FS Internet :
+
+https://fsa1v2.integ01.dev-agentconnect.fr
+
+https://fsa2v2.integ01.dev-agentconnect.fr
+
+https://fsa3v2.integ01.dev-agentconnect.fr
+
+
+
+
 Environnement RIE : 
 
 | EndPoint | Adresse |
@@ -96,7 +115,25 @@ Environnement RIE :
 | production AC | https://**A compléter** |  
 
 
+**Démonstrateurs RIE**
+
+FI RIE :
+
+https://fia1v2.integ02.agentconnect.rie.gouv.fr
+
+https://fia2v2.integ02.agentconnect.rie.gouv.fr
+
+FS RIE :
+
+https://fsa1v2.integ02.agentconnect.rie.gouv.fr
+
+https://fsa2v2.integ02.agentconnect.rie.gouv.fr
+
+https://fsa3v2.integ02.agentconnect.rie.gouv.fr
+
+
 les clés de signatures utilisés par le Fournisseur d'Identité doivent être disponible via la *JWKS URL* présente dans les méta-data de la *Discovery URL*. 
+
 
 ## Les données utilisateur
 
@@ -122,7 +159,7 @@ Champs | Obligatoire | Description| Format |
 |Siren | non  | Identifiant d'entreprise  | String, 9 chiffres sans espace |
 |Siret | non |Identifiant d'établissement| string, 14 chiffres sans espace|
 |Organizational_unit  | non  | Ministère/Direction/Service d'affectation   | UTF8 |
-|Belonging_population  | non  | Population d'appartenance  | string, Exemple: agent, prestataire, partenaire, stagiaire |
+|Belonging_population  | non  | Population d'appartenance  | string, Exemple: agent, prestataire, partenaire, stagiaire, etc |
 | phone  | non  | Téléphones de contact  | Format non normé |
 | chorusdt:societe   | Non | Entité ministérielle  | string |
 | chorusdt:matricule | Non | Matricule Agent       | string |
@@ -176,12 +213,35 @@ La valeur `{AC-internal-id}` est spécifique à chaque fournisseur d'identité e
 
 
 
-
 Les access token fournis par le FI doivent être de préférence à usage unique ou si cela n'est pas possible avec une durée de vie très courte [https://openid.net/specs/openid-connect-core-1_0.html#rfc.section.16.18](https://openid.net/specs/openid-connect-core-1_0.html#rfc.section.16.18)
 
 ## Détail des flux
 
 Les flux entre AC et le FI respectent ce qui est défini dans la norme OpenId Connect. Pour plus de détails, il faut se référer à la [documentation OIDC - https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth)
+
+
+## Certificats d'authentification 
+
+Lors de la récupération les données de l'identité pivot et des attributs complémentaires auprès du FI, AgentConnect transmet un certificat SSL client RGS * Certigna pour la vérification de l'authentification.
+ 
+## Utiliser les niveaux eIDAS en tant que FI
+
+eIDAS est un standard européen visant à normaliser et à améliorer la sécurité de l'identification sur Internet. Il propose notamment 3 niveaux de garantie sur les moyens utilisés pour l'identification. En tant que FI, il est nécessaire de retourner à AgentConnect le niveau eIDAS avec lequel l'utilisateur vient de s'authentifier.
+
+AgentConnect s'inspire du règlement eIDAS pour définir les différents niveaux de sécurité dans les échanges avec les FI et les FS. 
+
+le FI doit signifier à AgentConnect avec quel niveau eIDAS l'authentification de l'agent s'est faite. 
+
+Dans le cadre du FI, cela se traduit par le fait de positionner le claim "acr" dans l'ID Token renvoyé au client (http://openid.net/specs/openid-connect-core-1_0.html#rfc.section.2). De la même manière que pour un FS demandant à AgentConnect de filtrer les FIs compatibles avec un niveau eIDAS particulier.
+
+Le claim acr retourné dans l'ID Token peut être :
+
+* eidas1 : niveau faible
+* eidas2 : niveau substantiel 
+* eidas3 : niveau élevé 
+
+Cette donnée est retournée à AgentConnect, qui lui même la retourne au FS sans la modifier.
+Elle contribue à autoriser ou non l'accès aux ressources. 
 
 
 # Parcours d'utilisation de l'agent et recommandations UX
