@@ -167,11 +167,11 @@ Les fournisseurs de service doivent être *service provider* OpenID Connect, et 
 ### Chiffrement et signature des échanges
 
 Dans le cadre du niveau **Standard** , tous les échanges de jetons JWT entre le FI et AC sont signés. 
-Le chiffrement des jetons est recommandé mais non obligatoire. 
+Le chiffrement des jetons n'est actuellement pas activé. 
 
 les algorithmes suivants sont gérés par AgentConnect Standard : 
 
-**Signature de jetons par le FI** :
+**Signature de jetons par AgentConnect** :
 
 - Asymétrique : 
 
@@ -182,12 +182,7 @@ les algorithmes suivants sont gérés par AgentConnect Standard :
 
        - HS256 (HMAC + SHA256) 
 
-**Chiffrement des jetons (jwe+jws)** :
-
-- Hybride :
-
-      - RSA-OEAP + AES256-GCM 
-      - ECDH-ES + AES256-GCM
+**:warning: Ces algorithmes sont valides pour les endpoints exposant des JWT (/token et /userinfo).**
 
 
 Les spécifications des algorithmes de signatures et de chiffrements utilisés sont les suivantes :
