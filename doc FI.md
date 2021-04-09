@@ -71,6 +71,7 @@ les algorithmes suivants sont gérés par AgentConnect Standard :
       - RSA-OEAP + AES256-GCM 
       - ECDH-ES + AES256-GCM
 
+**:warning: Ces algorithmes sont valides pour les endpoints exposant des JWT (/token et /userinfo).**
 
 Les spécifications des algorithmes de signatures et de chiffrements utilisés sont les suivants : 
 * [JWA - https://tools.ietf.org/html/rfc7518](https://tools.ietf.org/html/rfc7518)
