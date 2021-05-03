@@ -214,15 +214,21 @@ Lors de la récupération les données de l'identité pivot et des attributs com
 
 AgentConnect s'inspire du règlement eIDAS pour définir les différents niveaux de sécurité dans les échanges avec les FI et les FS. 
 
+Dans le code AgentConnect les niveaux suivants sont définis :
+
+* eidas1 : Niveau faible
+* eidas2 : Niveau renforcé
+* eidas3 : Niveau élevé
+
 le FI doit signifier à AgentConnect avec quel niveau eIDAS l'authentification de l'agent s'est faite. 
 
 Dans le cadre du FI, cela se traduit par le fait de positionner le claim "acr" dans l'ID Token renvoyé au client (http://openid.net/specs/openid-connect-core-1_0.html#rfc.section.2). De la même manière que pour un FS demandant à AgentConnect de filtrer les FIs compatibles avec un niveau eIDAS particulier.
 
 Le claim acr retourné dans l'ID Token peut être :
 
-* eidas1 : faible
-* eidas2 : renforcé 
-* eidas3 : fort 
+* eidas1 : Niveau faible
+* eidas2 : Niveau renforcé
+* eidas3 : Niveau élevé
 
 Cette donnée est retournée à AgentConnect, qui lui la retourne au FS sans la modifier.
 Elle contribue à autoriser ou non l'accès aux ressources. 
