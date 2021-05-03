@@ -138,38 +138,23 @@ les clés de signatures utilisés par le Fournisseur d'Identité doivent être d
 
 ## Les données utilisateur
 
-### L'identité pivot
-
-En plus de l'openid, qui est obligatoire, l'identité pivot fait partie des données usagers fournies par les Fournisseurs d'Identité aux Fournisseurs de Service, via AgentConnect . Elle permet d'identifier un utilisateur particulier.
-                                                    
-
-|Champs | Obligatoire | Description| Format |
-|---- | ------ | ------ | ------ |
-|given_name | Oui |Prénoms séparés par des espaces (standard OpenIDConnect)| UTF-8 (standard OpenIDConnect)|
-|usual_name| Oui |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
-|email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
-|uid|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
-
-L'uid est une donnée technique qui ne peut pas être demandé par le FS.
-
-
-### Les données complémentaires 
+### Les données complémentaires
 
 Champs | Obligatoire | Description| Format |
 |---- | ------ | ------ | ------ |
 |Siren | non  | Identifiant d'entreprise  | String, 9 chiffres sans espace |
 |Siret | non |Identifiant d'établissement| string, 14 chiffres sans espace|
 |Organizational_unit  | non  | Ministère/Direction/Service d'affectation   | UTF8 |
-|Belonging_population  | non  | Population d'appartenance  | string, Exemple: agent, prestataire, partenaire, stagiaire, etc |
+|Belonging_population  | non  | Population d'appartenance  | string, Exemple: agent, prestataire, partenaire, stagiaire |
 | phone  | non  | Téléphones de contact  | Format non normé |
-| chorusdt:societe   | Non | Entité ministérielle  | string |
-| chorusdt:matricule | Non | Matricule Agent       | string |
+| chorusdt   | Non | Entité ministérielle/Matricule Agent  | string |
 
 
-La liste des données complémentaires est non exhaustive et pourra être mise à jour si besoin. 
+La liste des données complémentaires est non exhaustive et pourra être amendée si besoin 
 
 
 # Je veux être fournisseur d'identité AgentConnect
+
 Pour devenir fournisseur d'identité FranceConnect, envoyer votre demande à l'adresse support.partenaires@agentconnect.gouv.fr avec les éléments suivants :
 
 * Nom du fournisseur d'identité
