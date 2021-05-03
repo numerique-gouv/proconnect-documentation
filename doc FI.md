@@ -212,8 +212,6 @@ Lors de la récupération les données de l'identité pivot et des attributs com
  
 ## Utiliser les niveaux eIDAS en tant que FI
 
-eIDAS est un standard européen visant à normaliser et à améliorer la sécurité de l'identification sur Internet. Il propose notamment 3 niveaux de garantie sur les moyens utilisés pour l'identification. En tant que FI, il est nécessaire de retourner à AgentConnect le niveau eIDAS avec lequel l'utilisateur vient de s'authentifier.
-
 AgentConnect s'inspire du règlement eIDAS pour définir les différents niveaux de sécurité dans les échanges avec les FI et les FS. 
 
 le FI doit signifier à AgentConnect avec quel niveau eIDAS l'authentification de l'agent s'est faite. 
@@ -222,11 +220,11 @@ Dans le cadre du FI, cela se traduit par le fait de positionner le claim "acr" d
 
 Le claim acr retourné dans l'ID Token peut être :
 
-* eidas1 : niveau faible
-* eidas2 : niveau substantiel 
-* eidas3 : niveau élevé 
+* eidas1 : faible
+* eidas2 : renforcé 
+* eidas3 : fort 
 
-Cette donnée est retournée à AgentConnect, qui lui même la retourne au FS sans la modifier.
+Cette donnée est retournée à AgentConnect, qui lui la retourne au FS sans la modifier.
 Elle contribue à autoriser ou non l'accès aux ressources. 
 
 
