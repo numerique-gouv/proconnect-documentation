@@ -306,19 +306,21 @@ Les flux entre AgentConnect et le Fournisseur de Service respectent ce qui est d
 
 ## Utiliser les niveaux eIDAS en tant que FS AgentConnect
 
-eIDAS est un standard européen visant à normaliser et à améliorer la sécurité de l'identification sur Internet. Il propose notamment 3 niveaux de garantie sur les moyens utilisés pour l'identification. Vous pouvez, en tant que Fournisseur de Service, utiliser les niveaux eIDAS afin de récupérer une identité avec le niveau de garantie correspondant à votre besoin.
-
 AgentConnect s'inspire du règlement eIDAS pour définir les différents niveaux de sécurité dans les échanges avec les FI et les FS.
 
-Actuellement les fournisseurs de services ne peuvent demander qu'un niveau eIDAS 1, soit un niveau dit faible à AgentConnect
+Dans le code AgentConnect les niveaux suivants sont définis :
+
+* eidas1 : Niveau faible
+* eidas2 : Niveau renforcé
+* eidas3 : Niveau élevé
+
+Actuellement les fournisseurs de services ne peuvent demander qu'un niveau 1, soit un niveau dit faible AgentConnect
 
 Comme la norme OpenID Connect ne prévoit pas aujourd'hui de mesures techniques particulières pour préciser le niveau souhaité, AgentConnect utilise le claim optionnel "acr" (http://openid.net/specs/openid-connect-basic-1_0.html#RequestParameters) de la norme OpenID Connect. 
 
 Pour le Fournisseur de Service, cela veut dire remplir le claim optionnel acr_values lors de la demande d'authentification (appel à l'endpoint /api/v2/authorize).
 
-
 le Fournisseur d'Identité renverra par le biais de AgentConnect le niveau eIDAS avec lequel l'authentification a eu lieu. 
-
 
 
 # Je veux déconnecter l'agent de AgentConnect
