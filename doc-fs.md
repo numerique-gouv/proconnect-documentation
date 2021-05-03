@@ -213,11 +213,10 @@ Environnement RIE :
 ## Les données Agent
 Les données Agent sont fournies par les Fournisseurs d'Identité aux Fournisseurs de Service, via AgentConnect, conformément à l'habilitation obtenue via [datapass.api.gouv.fr](https://datapass.api.gouv.fr), et le choix des données réalisé par le fournisseur de service dans cette demande.
 
-L'identité pivot permet d'identifier un agent.
 
-### L'identité pivot
+### Données obligatoires
 
-En plus de l'openid, qui est obligatoire, l'identité pivot fait partie des données usagers fournies par les Fournisseurs d'Identité aux Fournisseurs de Service, via AgentConnect . Elle permet d'identifier un utilisateur particulier.
+En plus de l'openid, qui est obligatoire, des données obligatoires sont fournies par les Fournisseurs d'Identité aux Fournisseurs de Service, via AgentConnect . Ces données permettent d'identifier un utilisateur .
                                                     
 
 |Champs | Obligatoire | Description| Format |
@@ -241,8 +240,7 @@ Champs | Obligatoire | Description| Format |
 |Organizational_unit  | non  | Ministère/Direction/Service d'affectation   | UTF8 |
 |Belonging_population  | non  | Population d'appartenance  | string, Exemple: agent, prestataire, partenaire, stagiaire |
 | phone  | non  | Téléphones de contact  | Format non normé |
-| chorusdt:societe   | Non | Entité ministérielle  | string |
-| chorusdt:matricule | Non | Matricule Agent       | string |
+| chorusdt   | Non | Entité ministérielle/Matricule Agent  | string |
 
 
 La liste des données complémentaires est non exhaustive et pourra être amendée si besoin.
@@ -251,8 +249,6 @@ La liste des données complémentaires est non exhaustive et pourra être amend�
 AgentConnect transmet systématiquement au Fournisseur de Service un identifiant unique pour chaque agent : 
 
 * Cet identifiant est spécifique à chaque Fournisseur de Service. Un même utilisateur aura donc un identifiant unique différent pour chacun des Fournisseurs de Service auxquels il accède. 
-
-* Cet identifiant est le même quelque soit le Fournisseur d'Identité qui est utilisé par l'agent. 
 
 
 ### Liste des scopes disponible lors de l'étape d'authentification AgentConnect
