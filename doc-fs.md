@@ -51,7 +51,7 @@ Environnement Internet :
 | Authorization | https://fca.integ01.dev-agentconnect.fr/api/v2/authorize |
 | Token | https://fca.integ01.dev-agentconnect.fr/api/v2/token | 
 | UserInfo | https://fca.integ01.dev-agentconnect.fr/api/v2/userinfo  | 
-| Logout | https://fca.integ01.dev-agentconnect.fr/api/v2/logout | 
+| Logout |  https://fca.integ01.dev-agentconnect.fr/api/v2/session/end  | 
 
 **Démonstrateurs Internet** 
 
