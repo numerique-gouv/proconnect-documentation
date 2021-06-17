@@ -119,7 +119,7 @@ Environnement Internet :
 | Authorization | https://**TBD**/api/v2/authorize |
 | Token | https://**TBD**/api/v2/token | 
 | UserInfo | https://**TBD**/api/v2/userinfo  | 
-| Logout | https://**TBD**/api/v2/logout | 
+| Logout | https://**TBD**/api/v2/session/end | 
 
 
 Environnement RIE : 
@@ -130,7 +130,7 @@ Environnement RIE :
 | Authorization | https://**TBD**/api/v2/authorize |
 | Token | https://**TBD**/api/v2/token | 
 | UserInfo | https://**TBD**/api/v2/userinfo  | 
-| Logout | https://**TBD**/api/v2/logout | 
+| Logout | https://**TBD**/api/v2/session/end | 
 
 
 
@@ -287,6 +287,10 @@ Bouton blanc AgentConnect :
 ![ac-bouton-blanc](https://user-images.githubusercontent.com/78731004/109621826-bda62000-7b3b-11eb-8399-f7c8964d04e8.png)
 ![ac-bouton-blanc@2x](https://user-images.githubusercontent.com/78731004/109621827-be3eb680-7b3b-11eb-8c72-bacf30b3f258.jpg)
 ![ac-bouton-blanc@2x](https://user-images.githubusercontent.com/78731004/109621829-be3eb680-7b3b-11eb-9d32-1547b7cda7d0.png)
+
+
+
+
 
 Pour le format SVG, merci de contacter l'équipe produit. 
 
