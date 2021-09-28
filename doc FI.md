@@ -1,7 +1,7 @@
 | Version | Résumé des modifications | Modifié par | Date |
 | ------ | ------ | ------ | ------ |
 | v1 | Rédaction de la documentation FI | Khadija BOURHALEB | 08/12/2020 |
-
+| v2 | Rédaction de la documentation FI | Khadija BOURHALEB | 28/09/2021 |
 
 
 Cette documentation est à destination des fournisseurs d'identités des plateformes AgentConnect 
@@ -86,7 +86,7 @@ Environnement Internet :
 | Environnement | adresses du endpoint |
 | ------ | ------ |
 | intégration AC | https://fca.integ01.dev-agentconnect.fr/api/v2/client/.well-known/keys |
-| production AC | https://**A compléter** |  
+| production AC | Envoi de l'URL de prod par mail|  
 
 
 **Démonstrateurs Internet**
@@ -113,7 +113,7 @@ Environnement RIE :
 | EndPoint | Adresse |
 | ------ | ------ |
 | intégration AC | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/client/.well-known/keys |
-| production AC | https://**A compléter** |  
+| production AC | Envoi de l'URL de prod par mail |  
 
 
 **Démonstrateurs RIE**
