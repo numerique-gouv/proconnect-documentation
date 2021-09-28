@@ -2,8 +2,8 @@
 
 | Version | Résumé des modifications | Modifié par | Date |
 | ------ | ------ | ------ | ------ |
-| v1 | Rédaction de la documentation FI | Khadija BOURHALEB | 08/12/2020 |
-
+| v1 | Rédaction de la documentation FS | Khadija BOURHALEB | 08/12/2020 |
+| v2 | Rédaction de la documentation F2 | Khadija BOURHALEB | 28/09/2021 |
 
 [[_TOC_]]
 
@@ -109,29 +109,7 @@ Pour mettre en production votre Fournisseur de Services, il faut au préalable a
 
 **Attention :** Il ne faut surtout pas utiliser les clés d'intégration que vous avez utilisées lors de vos développements avec votre Fournisseur de Services en production. Les clés d'intégration ne sont utilisables que sur l'environnement d'intégration AgentConnect.
 
-Les adresses de notre environnement de production sont les suivantes : 
-
-Environnement Internet : 
-
-| EndPoint | Adresse |
-| ------ | ------ |
-| Discovery URL | https://**TBD**/api/v2/.well-known/openid-configuration  | 
-| Authorization | https://**TBD**/api/v2/authorize |
-| Token | https://**TBD**/api/v2/token | 
-| UserInfo | https://**TBD**/api/v2/userinfo  | 
-| Logout | https://**TBD**/api/v2/session/end | 
-
-
-Environnement RIE : 
-
-| EndPoint | Adresse |
-| ------ | ------ |
-| Discovery URL | https://**TBD**/api/v2/.well-known/openid-configuration  | 
-| Authorization | https://**TBD**/api/v2/authorize |
-| Token | https://**TBD**/api/v2/token | 
-| UserInfo | https://**TBD**/api/v2/userinfo  | 
-| Logout | https://**TBD**/api/v2/session/end | 
-
+Les adresses de nos environnements de production vous seront transmises après la validation de tests en intégration
 
 
 # Concepts de base
