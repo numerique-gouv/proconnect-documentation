@@ -248,7 +248,7 @@ Les boutons d’action AgentConnect sont primordiaux dans l’usage du service. 
 
 Pour les boutons en svg, lors de l'utilisation d'une image veuillez préciser la taille du bouton.
 
-##Téléchargements :
+Téléchargements :
 
 
 Bouton Bleu AgentConnect : à utiliser en priorité 
