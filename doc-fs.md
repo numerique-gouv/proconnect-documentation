@@ -248,7 +248,7 @@ Les boutons d’action AgentConnect sont primordiaux dans l’usage du service. 
 
 Pour les boutons en svg, lors de l'utilisation d'une image veuillez préciser la taille du bouton.
 
-Téléchargements :
+##Téléchargements :
 
 
 Bouton Bleu AgentConnect : à utiliser en priorité 
@@ -266,11 +266,12 @@ Bouton blanc AgentConnect :
 ![ac-bouton-blanc@2x](https://user-images.githubusercontent.com/78731004/109621827-be3eb680-7b3b-11eb-8c72-bacf30b3f258.jpg)
 ![ac-bouton-blanc@2x](https://user-images.githubusercontent.com/78731004/109621829-be3eb680-7b3b-11eb-9d32-1547b7cda7d0.png)
 
-
-
-
-
 Pour le format SVG, merci de contacter l'équipe produit. 
+
+## Lien vers le site AgentConnect
+
+Sous le bouton AgentConnect, il vous sera demandé d'ajouter systématiquement un lien avec le texte " Qu'est-ce qu'AgentConnect" qui pointera vers le site https://agentconnect.gouv.fr/ 
+
 
 ## Détail du fonctionnement
 
