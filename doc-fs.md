@@ -273,6 +273,13 @@ Pour le format SVG, merci de contacter l'équipe produit.
 Sous le bouton AgentConnect, il vous sera demandé d'ajouter systématiquement un lien avec le texte " Qu'est-ce qu'AgentConnect" qui pointera vers le site https://agentconnect.gouv.fr/ 
 
 
+Exemple : 
+
+![image](https://user-images.githubusercontent.com/78731004/143889654-5c3cf876-6dcf-44cf-a3e7-f3553898c7bd.png)
+
+
+
+
 ## Détail du fonctionnement
 
 
