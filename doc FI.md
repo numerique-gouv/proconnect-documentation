@@ -157,17 +157,34 @@ La liste des données complémentaires est non exhaustive et pourra être amend�
 
 Pour devenir fournisseur d'identité FranceConnect, envoyer votre demande à l'adresse support.partenaires@agentconnect.gouv.fr avec les éléments suivants :
 
+**Avec Discovery URL** 
+
 * Nom du fournisseur d'identité
 * Titre (tel qu'il apparaîtra aux agents)
-* Email de contact 
-* URL du endpoint d'authentification et d'autorisation
-* URL du endpoint de demande de token
-* URL du endpoint de demande des informations agent (identité pivot)
-* URL du endpoint de logout ( norme OIDC )
-* URL de endpoint de métadonnée '.well-known/openid-configuration'
-* Status URL (URL pour tester l'état du FI)
+* Discovery URL
+* Issuer URL
+* Logout URL
+* Status URL
 * Client ID
 * Client secret
+* Email de contact 
+
+
+**Sans Discovery URL** 
+
+* Nom du fournisseur d'identité
+* Titre (tel qu'il apparaîtra aux agents)
+* Issuer URL
+* JWKS URL 
+* Token URL 
+* UserInfo URL 
+* Autorization URL
+* Logout URL
+* Status URL 
+* Client ID
+* Client secret
+* Email de contact 
+
 
 ## Nos Endpoints
 
@@ -178,7 +195,7 @@ Environnement Internet :
 | Environnement | Adresse de retour ( Redirect URI ) |
 | ------ | ------ |
 | intégration AC | https://fca.integ01.dev-franceconnect.fr/api/v2/oidc-callback/{fc-internal-id} |
-| production AC | **A compléter** |  
+| production AC | Envoi de l'URL de prod par mail |  
 
 
 Environnement RIE : 
@@ -186,7 +203,7 @@ Environnement RIE :
 | Environnement | Adresse de retour ( Redirect URI ) |
 | ------ | ------ |
 | intégration AC | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/oidc-callback/{fc-internal-id}  |
-| production AC | **A compléter** |  
+| production AC | Envoi de l'URL de prod par mail |  
 
 
 La valeur `{AC-internal-id}` est spécifique à chaque fournisseur d'identité et sera fournie par AgentConnect.
