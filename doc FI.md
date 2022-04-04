@@ -138,6 +138,22 @@ les clés de signatures utilisés par le Fournisseur d'Identité doivent être d
 
 ## Les données utilisateur
 
+### Données obligatoires
+
+En plus de l'openid, qui est obligatoire, des données obligatoires sont fournies par les Fournisseurs d'Identité aux Fournisseurs de Service, via AgentConnect . Ces données permettent d'identifier un utilisateur .
+                                                    
+
+|Champs | Obligatoire | Description| Format |
+|---- | ------ | ------ | ------ |
+|given_name | Oui |Prénoms séparés par des espaces (standard OpenIDConnect)| UTF-8 (standard OpenIDConnect)|
+|usual_name| Oui |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
+|email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
+|uid|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
+
+L'uid est une donnée technique qui ne peut pas être demandé par le FS.
+
+En complément, il est possible d'obtenir des données complémentaires. Cependant ces données ne sont pas obligatoirement connues par tous les Fournisseurs d'Identité.
+
 ### Les données complémentaires
 
 Champs | Obligatoire | Description| Format |
