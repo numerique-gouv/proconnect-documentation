@@ -283,8 +283,7 @@ Sous le bouton AgentConnect, il vous sera demandé d'ajouter systématiquement u
 ## Détail du fonctionnement
 
 
-![image](https://user-images.githubusercontent.com/78731004/109619444-132cfd80-7b39-11eb-9e69-e372cdd8ff39.png)
-
+![doc_fs_fca](https://user-images.githubusercontent.com/60473902/195838387-10aa22ef-f83f-4b12-abf7-dad3ec7828e4.png)
 
                         
 La récupération de l'identité pivot doit être faite dans la suite immédiate des appels précédents (authentification et récupération du code). Le fait d'appeler ce Web service plus tard n'est aujourd'hui pas proposé.
