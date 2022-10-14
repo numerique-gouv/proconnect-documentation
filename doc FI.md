@@ -228,7 +228,7 @@ La valeur `{AC-internal-id}` est spécifique à chaque fournisseur d'identité e
 ## Détail du fonctionnement
 
 
-![image](https://user-images.githubusercontent.com/78731004/109618890-6783ad80-7b38-11eb-9d8d-08034d3ce00f.png)
+![doc_fi_fca](https://user-images.githubusercontent.com/60473902/195837241-6c7f24f6-df00-4462-bb03-59c89223ab40.png)
 
 
 
