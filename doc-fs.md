@@ -8,14 +8,19 @@
 
 [[_TOC_]]
 
+Documentation Fournisseur de Service
+
+---
+
+Vous souhaitez implémenter AgentConnect? Vous êtes au bon endroit ! Cette documentation présente l'ensemble des informations à connaitre sur AgentConnect.
 
 # Préambule
 
 Cette documentation est à destination des Fournisseurs de Services souhaitant intégrer AgentConnect. 
 
-AgentConnect est implémenté sur deux plateformes, une dite "full RIE" et une autre "hybride Internet/RIE"
+AgentConnect est implémenté sur deux plateformes, une dite "full RIE" (l’agent se connecte depuis le RIE, à un FS RIE via un FI RIE) et une autre dite "full Internet" (l'agent se connecte depuis Internet, à un FS Internet via un FI Internet). 
 
-Le choix du positionnement est laissé aux Fournisseurs de Services. 
+Toutefois il est possible de communiquer entre les deux plateformes grâce à l'"hybridge Internet/RIE"" (l'agent se connecte depuis Internet, à un FS Internet via un FI RIE). 
 
 # Je veux devenir Fournisseurs de Services 
 
@@ -246,6 +251,7 @@ Cette liste de scopes est définie par la norme OpenIDConnect : http://openid.ne
 # Intégration d'un bouton AgentConnect 
 
 Les boutons d’action AgentConnect sont primordiaux dans l’usage du service. Il est obligatoire d’utiliser l’un des boutons proposé et aucun autre visuel pour la connexion des usagers. Le bouton bleu AgentConnect est à utiliser en priorité.
+Par ailleurs, le bouton AgentConnect doit être positionné en premier mode de connexion.
 
 Pour les boutons en svg, lors de l'utilisation d'une image veuillez préciser la taille du bouton.
 
