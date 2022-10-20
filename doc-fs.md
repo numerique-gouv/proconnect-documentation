@@ -4,6 +4,7 @@
 | ------ | ------ | ------ | ------ |
 | v1 | Rédaction de la documentation FS | Khadija BOURHALEB | 08/12/2020 |
 | v2 | Rédaction de la documentation F2 | Khadija BOURHALEB | 28/09/2021 |
+| v3 | Rédaction de la documentation F2 | Mélanie WYND | 20/10/2022 |
 
 [[_TOC_]]
 
