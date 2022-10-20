@@ -244,7 +244,7 @@ Cette liste de scopes est définie par la norme OpenIDConnect : http://openid.ne
 
 # Intégration d'un bouton AgentConnect 
 
-Les boutons d’action AgentConnect sont primordiaux dans l’usage du service. Il est obligatoire d’utiliser l’un des boutons proposé et aucun autre visuel pour la connexion des usagers. Le bouton Bleu AgentConnect est à utiliser en priorité.
+Les boutons d’action AgentConnect sont primordiaux dans l’usage du service. Il est obligatoire d’utiliser l’un des boutons proposé et aucun autre visuel pour la connexion des usagers. Le bouton bleu AgentConnect est à utiliser en priorité.
 
 Pour les boutons en svg, lors de l'utilisation d'une image veuillez préciser la taille du bouton.
 
@@ -254,7 +254,7 @@ Pour les boutons en svg, lors de l'utilisation d'une image veuillez préciser la
 
 *Règles d'intégration du bouton AgentConnect :*
 
-![Guidelines AgentConnect-doc](https://user-images.githubusercontent.com/60473902/196908275-3fe6872f-cb75-4c1d-92af-fea67cbf89ae.png)
+![Guidelines AgentConnect](https://user-images.githubusercontent.com/60473902/196908275-3fe6872f-cb75-4c1d-92af-fea67cbf89ae.png)
 
 ## Lien vers le site AgentConnect
 
