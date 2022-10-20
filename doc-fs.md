@@ -244,40 +244,21 @@ Cette liste de scopes est définie par la norme OpenIDConnect : http://openid.ne
 
 # Intégration d'un bouton AgentConnect 
 
-Les boutons d’action AgentConnect sont primordiaux dans l’usage du service. Il est obligatoire d’utiliser l’un des boutons proposé et aucun autre visuel pour la connexion des usagers.
+Les boutons d’action AgentConnect sont primordiaux dans l’usage du service. Il est obligatoire d’utiliser l’un des boutons proposé et aucun autre visuel pour la connexion des usagers. Le bouton bleu AgentConnect est à utiliser en priorité.
 
 Pour les boutons en svg, lors de l'utilisation d'une image veuillez préciser la taille du bouton.
 
-Téléchargements :
+*Téléchargements :*
 
+[AgentConnect-Bouton.zip](https://github.com/france-connect/Documentation-AgentConnect/files/9828293/AgentConnect-Bouton.zip)
 
-Bouton Bleu AgentConnect : à utiliser en priorité 
+*Règles d'intégration du bouton AgentConnect :*
 
-
-![ac-bouton-bleu](https://user-images.githubusercontent.com/78731004/109621703-9cddca80-7b3b-11eb-821c-c3e3618232e0.jpg)
-![ac-bouton-bleu](https://user-images.githubusercontent.com/78731004/109621705-9d766100-7b3b-11eb-97e4-ad096d49b8cd.png)
-![ac-bouton-bleu@2x](https://user-images.githubusercontent.com/78731004/109621707-9d766100-7b3b-11eb-8d9d-a7f6afe5c983.jpg)
-![ac-bouton-bleu@2x](https://user-images.githubusercontent.com/78731004/109621708-9d766100-7b3b-11eb-9f84-089532d5467c.png)
-
-Bouton blanc AgentConnect :
-
-![ac-bouton-blanc](https://user-images.githubusercontent.com/78731004/109621823-bda62000-7b3b-11eb-98fe-95afe625e47d.jpg)
-![ac-bouton-blanc](https://user-images.githubusercontent.com/78731004/109621826-bda62000-7b3b-11eb-8399-f7c8964d04e8.png)
-![ac-bouton-blanc@2x](https://user-images.githubusercontent.com/78731004/109621827-be3eb680-7b3b-11eb-8c72-bacf30b3f258.jpg)
-![ac-bouton-blanc@2x](https://user-images.githubusercontent.com/78731004/109621829-be3eb680-7b3b-11eb-9d32-1547b7cda7d0.png)
-
-Pour le format SVG, merci de contacter l'équipe produit. 
+![Guidelines AgentConnect](https://user-images.githubusercontent.com/60473902/196908275-3fe6872f-cb75-4c1d-92af-fea67cbf89ae.png)
 
 ## Lien vers le site AgentConnect
 
 Sous le bouton AgentConnect, il vous sera demandé d'ajouter systématiquement un lien avec le texte " Qu'est-ce qu'AgentConnect" qui pointera vers le site https://agentconnect.gouv.fr/ 
-
-
-**Exemple : **
-
-![image](https://user-images.githubusercontent.com/78731004/143889654-5c3cf876-6dcf-44cf-a3e7-f3553898c7bd.png)
-
-
 
 
 ## Détail du fonctionnement
