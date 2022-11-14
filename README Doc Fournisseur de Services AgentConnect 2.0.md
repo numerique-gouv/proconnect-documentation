@@ -15,64 +15,58 @@ Toutefois il est possible de communiquer entre les deux plateformes grâce à l'
 
 Vous souhaitez devenir Fournisseur de Services pour AgentConnect, voici les éléments à prendre en compte : 
 
-* [Quelles sont les étapes pour devenir Fournisseur de Services ?](pilotage_fca/pilotage_fca_etapes.md)
-* [Quels sont les différents acteurs que je dois faire intervenir dans mon organisation pour devenir Fournisseur de Services ?](pilotage_fca/pilotage_fca_demarches_acteurs.md)
-
-# Je gère un projet d'intégration d'AgentConnect
-
-Vous avez lancé un projet pour devenir Fournisseur de Services et vous souhaiter connaitre les différentes problématique d'intégration d'AgentConnect, voici les éléments à prendre en compte : 
-
-- [Quelles sont les données que je peux récupérer par AgentConnect sur mes usagers ?](projet_fca/projet_fca_donnees.md)
-- [Qu'est ce qu'eIDAS et quel est le niveaux de garantie d'AgentConnect ?](projet_fca/projet_fca_niveau_eidas.md)
+- [Quelles sont les étapes pour devenir Fournisseur de Services?](pilotage_fca/pilotage_fca_etapes.md)
+- [Quels sont les différents acteurs que je dois faire intervenir dans mon organisation pour devenir Fournisseur de Services?](pilotage_fca/pilotage_fca_demarches_acteurs.md)
+- [Comment accéder au formulaire datapass?](pilotage_fca/datapass.md)
 
 # J'intègre AgentConnect dans mon service en ligne
 
+## Je souhaite connaître les différentes problématiques d'intégration d'AgentConnect
+
+- [Quelles sont les données que je peux récupérer par AgentConnect sur mes usagers?](projet_fca/projet_fca_donnees.md)
+- [Qu'est ce qu'eIDAS et quel est le niveaux de garantie d'AgentConnect?](projet_fca/projet_fca_niveau_eidas.md)
+
 ## Je veux savoir comment fonctionne AgentConnect
 
-- [Qu'est ce que OpenID Connect ?](technique_fca/technique_fca_oidc.md)
+- [Qu'est ce que le protocole OpenID Connect?](technique_fca/technique_oidc.md)
 - [Comment AgentConnect utilise OpenID Connect?](technique_fca/technique_fca_oidc.md)
+- [Quelles sont les données d'AgentConnect qui expirent?](technique_fca/donnees_expirent.md)
 
 ## Je veux savoir comment utiliser AgentConnect
 
 - [Comment accéder aux différents environnements d'AgentConnect?](technique_fca/technique_fca_env.md)
-- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ? ](technique_fca/technique_fca_scope.md)
+- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs? ](technique_fca/technique_fca_scope.md)
 
 ## Je veux savoir comment intégrer le bouton AgentConnect
 
-- [Quel bouton AgentConnect intégrer et comment l'intégrer?](bouton_fca/bouton.md)
+- [Quel bouton AgentConnect intégrer et comment l'intégrer?](implementation_fca/bouton_fca.md)
 
 ## Je veux savoir comment authentifier des agents via AgentConnect
 
-- [Détail du fonctionnement](fonctionnement_fca/fonctionnement.md)
+- [Détail du fonctionnement](fonctionnement_fca/details_fonctionnement.md)
 
 ## Je veux savoir comment déconnecter l'agent d'AgentConnect
 
 - [Comment déconnecter l'agent d'AgentConnect?](deconnexion_fca/deconnexion.md)
-- [Quelle est la cinématique de déconnexion par un Fournisseur de Services à respecter?](deconnexion_fca/deconnexion_cinematique.md)
-- [Comment révoquer un access token?](deconnexion_fca/deconnexion_access_token.md)
+- [Comment révoquer l'access token?](deconnexion_fca/access_token.md)
 
-## Je souhaite savoir comment réaliser des tests avant de soumettre sa demande d'habilitation
+## Je souhaite savoir comment réaliser des tests en intégration
 
-- [Quels démonstrateurs sont disponibles sur AgentConnect?](test_fca/test_fca_demonstrateur.md)
+- [Quels démonstrateurs sont disponibles sur la plateforme intégration d'AgentConnect?](test_fca/test_fca_demonstrateur.md)
 
+## Gestion d'erreurs entre AgentConnect et le Fournisseur de Services
+
+- [Comment les erreurs entre AgentConnect et le Fournisseur de Services sont-elles gérées?](erreur_fca/gestion_erreur.md)
+
+# Je souhaite faire qualifier mon implémentation d'AgentConnect
+
+- [Quel bouton AgentConnect intégrer et comment l'intégrer?](implementation_fca/bouton_fca.md)
+- [Quelles sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation?](implementation_fca/spec_recette_fca.md)
 
 # Je souhaite mettre mon Fournisseur de Services en production
 
 - [Comment faire qualifier mon implémentation?](recette_fca/recette.md)
 - [Comment recevoir mes jetons de production?](recette_fca/recette_cles_prod.md)
-
-# Gestion d'erreurs entre AgentConnect et le Fournisseur de Services
-
-En tant qu'OpenID Connect provider, AgentConnect peut renvoyer toutes sortes d'erreurs à une application cliente. Pour ce faire, AgentConnect passe par le mécanisme de retour d'erreurs d'un fournisseur d'identité openid connect tel que décrit dans la norme (http://openid.net/specs/openid-connect-core-1_0.html#AuthError, en particulier les sections 3.1.2.6 (authentification), 3.1.3.4 (jeton d'accès), 5.3.3 (service d'informations utilisateur))
-
-# Les données d’AgentConnect qui expirent
-
-AgentConnect gère plusieurs types de données ayant une durée de vie limitée lors du déroulé d'une authentification par OpenID Connect ou de la fourniture d'un jeton d'accès à une ressource protégée (cinématique OAuth2 classique). Chacune de ces données possède une durée de vie qui lui est propre au-delà de laquelle elle doit être régénérée. En voici le détail :
-
-| Type | Utilisé lors de ... | Durée de vie |
-| ------ | ------ | ------ |
-| Access Token | Récupération d'informations (phase 3 cinématique d'authentification / cinématique OAuth2) | 60 secondes |
-| Authorization code | Code fourni lors du début de la démarche d'authentification, il sert ensuite à récupérer l'access token | 30 secondes |
 
 # Glossaire
 
