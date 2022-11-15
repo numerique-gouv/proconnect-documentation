@@ -9,7 +9,7 @@ Vous souhaitez implémenter AgentConnect sur votre site? Vous êtes au bon endro
 
 Cette documentation est à destination des Fournisseurs de Services souhaitant intégrer AgentConnect. 
 AgentConnect est implémenté sur deux plateformes, une dite "full RIE" (l’agent se connecte depuis le RIE, à un FS RIE via un FI RIE) et une autre dite "full Internet" (l'agent se connecte depuis Internet, à un FS Internet via un FI Internet).
-Toutefois il est possible de communiquer entre les deux plateformes grâce à l'"hybridge Internet/RIE"" (l'agent se connecte depuis Internet, à un FS Internet via un FI RIE).
+Toutefois il est possible de communiquer entre les deux plateformes grâce à l'"hybridge Internet/RIE" (l'agent se connecte depuis Internet, à un FS Internet via un FI RIE).
 
 # Je veux devenir Fournisseur de Services 
 
@@ -17,6 +17,7 @@ Vous souhaitez devenir Fournisseur de Services pour AgentConnect, voici les él�
 
 - [Quelles sont les étapes pour devenir Fournisseur de Services?](pilotage_fca/pilotage_fca_etapes.md)
 - [Quels sont les différents acteurs que je dois faire intervenir dans mon organisation pour devenir Fournisseur de Services?](pilotage_fca/pilotage_fca_demarches_acteurs.md)
+- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge"?](pilotage_fca/plateformes.md)
 - [Comment accéder au formulaire datapass?](pilotage_fca/datapass.md)
 
 # J'intègre AgentConnect dans mon service en ligne
@@ -24,7 +25,7 @@ Vous souhaitez devenir Fournisseur de Services pour AgentConnect, voici les él�
 ## Je souhaite connaître les différentes problématiques d'intégration d'AgentConnect
 
 - [Quelles sont les données que je peux récupérer par AgentConnect sur mes usagers?](projet_fca/projet_fca_donnees.md)
-- [Qu'est ce qu'eIDAS et quel est le niveaux de garantie d'AgentConnect?](projet_fca/projet_fca_niveau_eidas.md)
+- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect?](projet_fca/projet_fca_niveau_eidas.md)
 
 ## Je veux savoir comment fonctionne AgentConnect
 
@@ -37,10 +38,6 @@ Vous souhaitez devenir Fournisseur de Services pour AgentConnect, voici les él�
 - [Comment accéder aux différents environnements d'AgentConnect?](technique_fca/technique_fca_env.md)
 - [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs? ](technique_fca/technique_fca_scope.md)
 
-## Je veux savoir comment intégrer le bouton AgentConnect
-
-- [Quel bouton AgentConnect intégrer et comment l'intégrer?](implementation_fca/bouton_fca.md)
-
 ## Je veux savoir comment authentifier des agents via AgentConnect
 
 - [Détail du fonctionnement](fonctionnement_fca/details_fonctionnement.md)
@@ -49,6 +46,10 @@ Vous souhaitez devenir Fournisseur de Services pour AgentConnect, voici les él�
 
 - [Comment déconnecter l'agent d'AgentConnect?](deconnexion_fca/deconnexion.md)
 - [Comment révoquer l'access token?](deconnexion_fca/access_token.md)
+
+## Je veux savoir comment intégrer le bouton AgentConnect
+
+- [Quel bouton AgentConnect intégrer et comment l'intégrer?](implementation_fca/bouton_fca.md)
 
 ## Je souhaite savoir comment réaliser des tests en intégration
 
@@ -61,7 +62,7 @@ Vous souhaitez devenir Fournisseur de Services pour AgentConnect, voici les él�
 # Je souhaite faire qualifier mon implémentation d'AgentConnect
 
 - [Quel bouton AgentConnect intégrer et comment l'intégrer?](implementation_fca/bouton_fca.md)
-- [Quelles sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation?](implementation_fca/spec_recette_fca.md)
+- [Quels sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation?](implementation_fca/spec_recette_fca.md)
 
 # Je souhaite mettre mon Fournisseur de Services en production
 
@@ -85,7 +86,6 @@ Vous souhaitez devenir Fournisseur de Services pour AgentConnect, voici les él�
 Voici la liste supportée par AgentConnect :
 
     * openid : obligatoire, permet de demander l'identifiant technique de l'utilisateur au format OpenIDConnect
-    * profile : obligatoire, permet de récupérer l'essentiel de l'identité pivot 
     * email : obligatoire, permet de récupérer l'adresse électronique de l’agent
 
 Cette liste de scopes est définie par la norme OpenIDConnect

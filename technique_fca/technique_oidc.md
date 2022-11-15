@@ -1,7 +1,7 @@
 
 # Qu'est ce que le protocole OpenID Connect?
 
-Le protocole OpenID Connect est au cœur du fonctionnement de FranceConnect. C'est une couche d'identification basée sur protocole OAuth 2.0. Il permet à des *Clients* d'accéder à l'identité des *Utilisateurs*  par l'intermédiaire d'un *Serveur d'Autorisation* .
+Le protocole OpenID Connect est au cœur du fonctionnement d'AgentConnect. C'est une couche d'identification basée sur protocole OAuth 2.0. Il permet à des *Clients* d'accéder à l'identité des *Utilisateurs*  par l'intermédiaire d'un *Serveur d'Autorisation* .
 
 La spécification du protocole se trouve sur http://openid.net/connect/.
 
@@ -65,11 +65,11 @@ Il faut noter que le protocole OAuth 2.O ne gère pas l'authentification de l'ut
 
 Le protocole OpenId Connect s'appuie sur OAuth 2.0 en ajoutant des fonctionnalités supplémentaires : 
 
-- La gestion d'information sur l'authentification
-- l'ajout d'un ID Token 
-- la gestion d'un SSO et d'un déconnection
-- une API pour récupérer les informations sur l'utilisateur (/userinfo)
-- un standard sur les informations sur l'utilisateur
+- La gestion d'information sur l'authentification,
+- l'ajout d'un ID Token,
+- la gestion d'un SSO et d'un déconnection,
+- une API pour récupérer les informations sur l'utilisateur (/userinfo),
+- un standard sur les informations sur l'utilisateur,
 - un service de découverte des informations du serveur OpenID. 
 
 ### Quels sont les acteurs qui interviennent dans  OpenId Connect ?

@@ -2,7 +2,7 @@ FIL d'ariane à faire
 
 ---
 
-# Qu'est ce qu'eIDAS et quel est le niveaux de garantie d'AgentConnect?
+# Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect?
 
 ## Qu'est ce que le règlement eIDAS ? 
 
@@ -18,11 +18,11 @@ un effet juridique aux documents électroniques.
 
 Source : [FAQ eIDAS de l'ANSSI](https://www.ssi.gouv.fr/uploads/2017/01/eidas_faq_anssi.pdf)
 
-FranceConnect+ est concerné uniquement par le volet identification électronique du règlement. 
+AgentConnect est concerné uniquement par le volet identification électronique du règlement. 
 
 ## Qu'est ce que les niveaux de garantie eIDAS ?
 
-Le niveau de garantie eIDAS permettre d'apporter une garantie sur l'identité qui est fournie au Fournisseur de Service. Ils sont définis par le règlement eIDAS avec chacun des exigences différentes. 
+Le niveau de garantie eIDAS permettre d'apporter une garantie sur l'identité qui est fournie au Fournisseur de Services. Ils sont définis par le règlement eIDAS avec chacun des exigences différentes. 
 
 > * **Faible :** à ce niveau, l’objectif est simplement de réduire le risque d’utilisation abusive ou d’altération de l’identité ;
 > * **Substantiel :** à ce niveau, l’objectif est de réduire substantiellement le risque d’utilisation abusive ou d’altération de l’identité ;
@@ -45,10 +45,10 @@ Dans le code AgentConnect les niveaux suivants sont définis :
 
 Actuellement les Fournisseurs de Services ne peuvent demander qu'un niveau 1, soit un niveau dit faible AgentConnect.
 
-Comme la norme OpenID Connect ne prévoit pas aujourd'hui de mesures techniques particulières pour préciser le niveau souhaité, AgentConnect utilise le claim optionnel "acr" (http://openid.net/specs/openid-connect-basic-1_0.html#RequestParameters) de la norme OpenID Connect. 
+Comme la norme OpenID Connect ne prévoit pas aujourd'hui de mesures techniques particulières pour préciser le niveau souhaité, AgentConnect utilise le claim "acr" (http://openid.net/specs/openid-connect-basic-1_0.html#RequestParameters) de la norme OpenID Connect. 
 
-Pour le Fournisseur de Services, cela veut dire remplir le claim optionnel acr_values lors de la demande d'authentification (appel à l'endpoint /api/v2/authorize).
+Pour le Fournisseur de Services, cela veut dire remplir le claim acr_values lors de la demande d'authentification (appel à l'endpoint /api/v2/authorize). Ce claim est **obligatoire** sur AgentConnect. 
 
-ex: acr_values=eidas1
+acr_values=eidas1
 
-le Fournisseur d'Identité renverra par le biais d'AgentConnect le niveau eIDAS avec lequel l'authentification a eu lieu. 
+Le Fournisseur d'Identité renverra par le biais d'AgentConnect le niveau eIDAS avec lequel l'authentification a eu lieu. 

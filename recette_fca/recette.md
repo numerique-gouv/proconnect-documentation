@@ -20,13 +20,13 @@ Nous vous prions de bien vouloir y déposer votre demande afin qu'elle puisse ê
 
 Une fois la démarche soumise, notre équipe procèdera :
 
-- à la qualification (test) de l'implémentation du bouton FranceConnect,
+- à la qualification de l'implémentation du bouton et de la cinématique AgentConnect,
 - à la vérification de la bonne mise en place des points énoncés dans la section [Quelles sont les prérequis ainsi que les spécifications ergonomiques à respecter?](implementation_fca/spec_fca.md),
 - à la notification des modifications à effectuer ou la validation pour la mise en production.
 
 ## Les délais
 
-Le temps de remplissage estimé est de 10 mn si touts les prérequis ont bien été respectés en amont. 
+Le temps de remplissage estimé est de 10 min si tous les prérequis ont bien été respectés en amont. 
 
 Le délai de traitement de votre demande de qualification est d'environ 3 jours ouvrés.
 

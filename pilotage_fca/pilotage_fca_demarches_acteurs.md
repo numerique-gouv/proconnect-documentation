@@ -1,16 +1,16 @@
 
 # Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect?
 
-Pour devenir Fournisseur de Services d'AgentConnect, il est nécessaire de designé des personnes remplissants les rôles suivants : Responsable de traitement, Délégué à la protection des données, Responsable technique, Responsable de la Sécurité du Système d'Information. 
+Pour devenir Fournisseur de Services d'AgentConnect, il est nécessaire de designer des personnes remplissants les rôles suivants : Responsable de traitement, Délégué à la protection des données, Responsable technique, Responsable de la Sécurité du Système d'Information. 
 
 Il vous sera demandé lors de la demande d'habilitation à AgentConnect d'identifier les personnes ayant ces responsabilités. 
 
 Les acteurs à impliquer sont les suivants : 
 
-- Le responsable de traitement
-- le délégué à la protection des données
-- le responsable technique
-- le responsable de la sécurité dur système d'information 
+- Le responsable de traitement,
+- le délégué à la protection des données,
+- le responsable technique,
+- le responsable de la sécurité dur système d'information.
 
 
 ## Responsable de traitement

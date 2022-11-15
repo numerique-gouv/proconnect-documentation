@@ -6,7 +6,7 @@ Les données Agent sont fournies par les Fournisseurs d'Identité aux Fournisseu
 
 ## Les données obligatoires
 
-En plus de l'openid, qui est obligatoire, des données obligatoires sont fournies par les Fournisseurs d'Identité aux Fournisseurs de Services, via AgentConnect. Ces données permettent d'identifier un utilisateur.
+En plus de l'openid, qui est obligatoire, des données obligatoires sont fournies par les Fournisseurs d'Identité aux Fournisseurs de Services via AgentConnect. Ces données permettent d'identifier un utilisateur.
                                                     
 
 |Champs | Obligatoire | Description| Format |
@@ -16,7 +16,7 @@ En plus de l'openid, qui est obligatoire, des données obligatoires sont fournie
 |email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
 |uid|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
 
-L'uid est une donnée technique qui ne peut pas être demandé par le Fournisseur de Services.
+L'uid est une donnée technique qui ne peut pas être demandée par le Fournisseur de Services.
 
 En complément, il est possible d'obtenir des données complémentaires. Cependant ces données ne sont pas obligatoirement connues par tous les Fournisseurs d'Identité.
 
@@ -35,9 +35,9 @@ Champs | Obligatoire | Description| Format |
 
 La liste des données complémentaires est non exhaustive et pourra être amendée si besoin.
 
-AgentConnect transmet systématiquement au Fournisseur de Services un identifiant unique pour chaque agent : 
+AgentConnect transmet systématiquement au Fournisseur de Services un identifiant unique pour chaque agent (le sub) : 
 
-* Cet identifiant est spécifique à chaque Fournisseur de Services. Un même utilisateur aura donc un identifiant unique différent pour chacun des Fournisseurs de Services auxquels il accède. 
+* Cet identifiant (appelé sub) est spécifique à chaque Fournisseur de Services. Un même utilisateur aura donc un identifiant unique différent pour chacun des Fournisseurs de Services auxquels il accède. 
 
 
 ## La liste des scopes disponibles lors de l'étape d'authentification AgentConnect
@@ -45,7 +45,6 @@ AgentConnect transmet systématiquement au Fournisseur de Services un identifian
 AgentConnect a étendu le mécanisme de scopes pour qu'il soit plus modulaire.
 
 * Un seul scope est obligatoire : openid. Il permet de récupérer le sub (identifiant unique technique) de l'utilisateur.
-* Il est possible de récupérer individuellement chaque propriété de l'identité pivot en utilisant leurs scopes dédiés.
 * Il est possible de combiner plusieurs scopes de son choix pour récupérer seulement les informations dont a besoin le FS.
 
 

@@ -16,7 +16,7 @@ Le protocole OpenID Connect défini un certain nombre de [scopes standards](http
 
 ### Qu'est ce qu'un claim dans OpenID Connect ? 
 
-Dans OpenId Connect, un claim est une information relative à l'utilisateur ou à la phase l'authentification. Ces informations peuvent être disponible soit dans l'ID Token, soit dans la réponse du UserInfo. Les claims retournés dans ces jetons dépendent des scopes associés à l'*access token*. 
+Dans OpenId Connect, un claim est une information relative à l'utilisateur ou à la phase l'authentification. Ces informations peuvent être disponibles soit dans l'ID Token, soit dans la réponse du UserInfo. Les claims retournés dans ces jetons dépendent des scopes associés à l'*access token*. 
 
 Le protocole OpenId Connect defini un certain nombre de [claims standards](https://openid.net/specs/openid-connect-core-1_0.html#Claims).
 
@@ -26,7 +26,7 @@ Le protocole OpenId Connect defini un certain nombre de [claims standards](https
 
 ### Liste des claims 
 
-#### Les données d'identité
+### Les données d'identité obligatoires
 
 |Champs | Obligatoire | Description| Format |
 |---- | ------ | ------ | ------ |

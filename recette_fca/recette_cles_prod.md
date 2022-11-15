@@ -31,18 +31,33 @@ Environnement Internet:
 ## Recevoir mes jetons de production
 
 
-La clé de production de votre FS vous sera transmise par email une fois la mise en production validée par notre équipe.
-Votre secret vous sera envoyé par SMS une fois la mise en production validée par notre équipe.
-Vous aurez alors accès à vos statistiques de connexion dans l'étape Exploiter.
-Ce formulaire permet de modifier les paramètres de votre FS dans l'environnement de production.
+La clé de production de votre Fournisseur de Services sera transmise au responsable technique par email une fois la mise en production validée par notre équipe.
+Le secret lui sera envoyé par SMS (au numéro renseigné dans le formulaire datapass) une fois la mise en production validée par notre équipe.
 
-À la première validation (mise en production), votre FS ne sera pas utilisable immédiatement car il doit être activé par l'équipe FranceConnect après vérification des informations fournies (délai < 7 jours).
+Les adresses de notre environnement de production sont les suivantes : 
 
-Une fois la clé reçue, vous pourrez la saisir plus bas afin d'obtenir un accès aux statistiques.
+*Environnement Internet* :
 
-Après la première validation, si vous modifiez certains paramètres, ceux-ci seront aussi soumis à vérification par notre équipe avant d'être mis à jour (délai < 7 jours).
+| EndPoint | Adresse |
+| ------ | ------ |
+| Discovery URL | https://auth.agentconnect.gouv.fr/api/v2/.well-known/openid-configuration | 
+| Authorization | https://auth.agentconnect.gouv.fr/api/v2/authorize |
+| Token | https://auth.agentconnect.gouv.fr/api/v2/token | 
+| UserInfo | https://auth.agentconnect.gouv.fr/api/v2/userinfo | 
+| Logout | https://auth.agentconnect.gouv.fr/api/v2/session/end | 
 
-Par ailleurs, vous trouverez ci-après nos endpoints de production :
+*Environnement RIE* :
+
+| EndPoint | Adresse |
+| ------ | ------ |
+| Discovery URL | https://auth.agentconnect.rie.gouv.fr/api/v2/.well-known/openid-configuration | 
+| Authorization | https://auth.agentconnect.rie.gouv.fr/api/v2/authorize |
+| Token | https://auth.agentconnect.rie.gouv.fr/api/v2/token | 
+| UserInfo | https://auth.agentconnect.rie.gouv.fr/api/v2/userinfo | 
+| Logout | https://auth.agentconnect.rie.gouv.fr/api/v2/session/end | 
+
+
+
 
 ---
 

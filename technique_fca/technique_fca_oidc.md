@@ -1,7 +1,7 @@
 
 # Comment AgentConnect utilise le protocole OpenId Connect? 
 
-AgentConnect met en oeuvre le protocole OpenID Connect pour permettre à un Fournisseur de Services de déléguer à AgentConnect l'identificiation et l'authentification des usagers, ainsi que la gestion des consentements qui sont nécessaire à la transmission des données personnelles des utilisateurs auprès du Fournisseur de services.  
+AgentConnect met en oeuvre le protocole OpenID Connect pour permettre à un Fournisseur de Services de déléguer à AgentConnect l'identificiation et l'authentification des usagers, ainsi que la gestion des consentements qui sont nécessaire à la transmission des données personnelles des utilisateurs auprès du Fournisseur de Services.  
 
 ## Les acteurs
 
@@ -12,7 +12,7 @@ OpenId Connect fait intervenir 3 acteurs :
 | Acteur OpenId Connect | Acteur dans le contexte AgentConnect |
 | ------ | ------ |
 | User |  Usager du Fournisseur de Services |
-| Relying Party | Fournisseur de services | 
+| Relying Party | Fournisseur de Services | 
 | OpenID Provider | AgentConnect |
 
 ## Flow OpenID Connect
@@ -65,14 +65,14 @@ Les spécifications des algorithmes de signatures et de chiffrements utilisés s
 
 Les clés publiques de signatures de AgentConnect sont disponibles via la *JWKS URL* présente dans les méta-data de la *Discovery URL* aux adresses suivantes et sont changées régulièrement :
 
-Environnement Internet : 
+*Environnement Internet* : 
 
 | Environnement | adresses du endpoint |
 |---------------|----------------------|
 | intégration AgentConnect | https://fca.integ01.dev-agentconnect.fr/api/v2/jwks |
 | production AgentConnect |https://auth.agentconnect.gouv.fr/api/v2/jwks|
 
-Environnement RIE :
+*Environnement RIE* :
 
 | Environnement | adresses du endpoint |
 |---------------|----------------------|
