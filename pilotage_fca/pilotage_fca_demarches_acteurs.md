@@ -40,9 +40,9 @@ auprès des directeurs métiers et/ou de la direction de son périmètre.
 ---
 
 Voir aussi : 
-- [Comment accéder au formulaire datapass?](pilotage_fca/datapass.md)
-- [Quel bouton AgentConnect intégrer et comment l'intégrer?](implementation_fca/bouton_fca.md)
-- [Quelles sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation?](implementation_fca/spec_recette_fca.md)
-- [Quels démonstrateurs sont disponibles sur la plateforme intégration d'AgentConnect?](test_fca/test_fca_demonstrateur.md)
-- [Comment faire qualifier mon implémentation?](recette_fca/recette.md)
-- [Comment recevoir mes jetons de production?](recette_fca/recette_cles_prod.md)
+- [Comment accéder au formulaire datapass?](../pilotage_fca/datapass.md)
+- [Quel bouton AgentConnect intégrer et comment l'intégrer?](../implementation_fca/bouton_fca.md)
+- [Quels sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation?](../implementation_fca/spec_recette_fca.md)
+- [Quels démonstrateurs sont disponibles sur la plateforme intégration d'AgentConnect?](../test_fca/test_fca_demonstrateur.md)
+- [Comment faire qualifier mon implémentation?](../recette_fca/recette.md)
+- [Comment recevoir mes jetons de production?](../recette_fca/recette_cles_prod.md)

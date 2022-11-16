@@ -38,7 +38,7 @@ Les règles suivantes doivent être respectées:
 ---
 
 Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur de Services?](pilotage_fca/pilotage_fca_etapes.md)
-- [Quelles sont les prérequis ainsi que les spécifications ergonomiques à respecter?](implementation_fca/spec_fca.md)
+- [Quelles sont les étapes pour devenir Fournisseur de Services?](../pilotage_fca/pilotage_fca_etapes.md)
+- [Quelles sont les prérequis ainsi que les spécifications ergonomiques à respecter?](../implementation_fca/spec_fca.md)
 - [Comment faire qualifier mon implémentation?](recette_fca/recette.md)
-- [Comment recevoir mes jetons de production?](recette_fca/recette_cles_prod.md)
+- [Comment recevoir mes jetons de production?](../recette_fca/recette_cles_prod.md)

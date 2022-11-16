@@ -1,5 +1,5 @@
 
-# Quelles sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation?
+# Quels sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation?
 
 Vous souhaitez être Fournisseur de Services pour AgentConnect et votre demande datapass a déjà été validée.
 Avant de passer à l'étape suivante de qualification de la mise en place d'AgentConnect, il est necéssaire d'implémenter les points listés ci-dessous. 
@@ -17,7 +17,7 @@ L'ensemble des prérequis doivent être respectés afin d'obtenir la validation 
 - votre intégration doit respecter le référentiel général d’amélioration de l’accessibilité (RGAA),
 - l’état survol du bouton pour montrer l’interaction doit être intégré. 
 
-Voir [Quel bouton AgentConnect intégrer et comment l'intégrer?](implementation_fca/bouton_fca.md)
+Voir [Quel bouton AgentConnect intégrer et comment l'intégrer?](../implementation_fca/bouton_fca.md)
 
 2. **AgentConnect dans la section connexion**
 
@@ -87,8 +87,7 @@ Le service ne doit pas utiliser de version de TLS inférieur à 1.2 et doit obli
 ---
 
 Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur de Services?](pilotage_fca/pilotage_fca_etapes.md)
-- [Quel bouton AgentConnect intégrer et comment l'intégrer?](implementation_fca/bouton_fca.md)
-- [Quelles sont les prérequis ainsi que les spécifications ergonomiques à respecter?](implementation_fca/spec_fca.md)
-- [Comment faire qualifier mon implémentation?](recette_fca/recette.md)
-- [Comment recevoir mes jetons de production?](recette_fca/recette_cles_prod.md)
+- [Quelles sont les étapes pour devenir Fournisseur de Services?](../pilotage_fca/pilotage_fca_etapes.md)
+- [Quel bouton AgentConnect intégrer et comment l'intégrer?](../implementation_fca/bouton_fca.md)
+- [Comment faire qualifier mon implémentation?](../recette_fca/recette.md)
+- [Comment recevoir mes jetons de production?](../recette_fca/recette_cles_prod.md)

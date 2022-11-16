@@ -89,6 +89,6 @@ Les clés publiques de chiffrement du Fournisseur de Services doivent être expo
 ---
 
 Voir aussi : 
-- [Qu'est ce que le protocole OpenID Connect?](technique_fca/technique_oidc.md)
-- [Comment accéder aux différents environnements d'AgentConnect?](technique_fca/technique_fca_env.md)
+- [Qu'est ce que le protocole OpenID Connect?](../technique_fca/technique_oidc.md)
+- [Comment accéder aux différents environnements d'AgentConnect?](../technique_fca/technique_fca_env.md)
 

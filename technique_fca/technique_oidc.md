@@ -134,5 +134,5 @@ OpenId proposte 3 types de flow qui permettent de récupérer des tokens :
 ---
 
 Voir aussi : 
-- [Comment AgentConnect utilise OpenID Connect?](technique_fca/technique_fca_oidc.md)
-- [Quelles sont les données d'AgentConnect qui expirent?](technique_fca/donnees_expirent.md)
+- [Comment AgentConnect utilise OpenID Connect?](../technique_fca/technique_fca_oidc.md)
+- [Quelles sont les données d'AgentConnect qui expirent?](../technique_fca/donnees_expirent.md)

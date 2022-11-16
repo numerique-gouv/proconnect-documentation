@@ -12,5 +12,5 @@ AgentConnect gère plusieurs types de données ayant une durée de vie limitée 
 ---
 
 Voir aussi : 
-- [Qu'est ce que le protocole OpenID Connect?](technique_fca/technique_oidc.md)
-- [Comment AgentConnect utilise OpenID Connect?](technique_fca/technique_fca_oidc.md)
+- [Qu'est ce que le protocole OpenID Connect?](../technique_fca/technique_oidc.md)
+- [Comment AgentConnect utilise OpenID Connect?](../technique_fca/technique_fca_oidc.md)

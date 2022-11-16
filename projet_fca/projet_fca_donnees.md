@@ -54,5 +54,5 @@ Cette liste de scopes est définie par la norme OpenIDConnect : http://openid.ne
 ---
 
 Voir aussi : 
-- [Qu'est ce qu'eIDAS et quel est le niveaux de garantie d'AgentConnect?](projet_fca/projet_fca_niveau_eidas.md)
-- [Détail du fonctionnement](fonctionnement_fca/details_fonctionnement.md)
+- [Qu'est ce qu'eIDAS et quel est le niveaux de garantie d'AgentConnect?](../projet_fca/projet_fca_niveau_eidas.md)
+- [Détail du fonctionnement](../fonctionnement_fca/details_fonctionnement.md)

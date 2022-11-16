@@ -26,4 +26,4 @@ Il est obligatoire de renseigner les différentes urls de redirections de décon
 ---
 
 Voir aussi : 
-- [Comment révoquer l'access token?](deconnexion_fca/access_token.md)
+- [Comment révoquer l'access token?](../deconnexion_fca/access_token.md)
