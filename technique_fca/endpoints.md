@@ -10,6 +10,7 @@ AgentConnect met en oeuvre le protocole OpenID Connect pour permettre à un Four
 ##### Description
 
 Implémente la requête de `Provider Configuration`
+
 https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest
 
 ##### Paramètres
@@ -62,7 +63,9 @@ Liste les clés de signatures utilisés par AgentConnect
 
 ##### Description
 
-Implémente le `Authorization Endpoint` de Openid Connect: https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
+Implémente le `Authorization Endpoint` de Openid Connect:
+
+https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
 
 ##### Paramètres
 
@@ -100,7 +103,9 @@ Implémente le `Authorization Endpoint` de Openid Connect: https://openid.net/sp
 
 ##### Description
 
-Implémente le `Authorization Endpoint` de Openid Connect: https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
+Implémente le `Authorization Endpoint` de Openid Connect:
+
+https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
 
 ##### Entête
 
@@ -149,7 +154,9 @@ Implémente le `Authorization Endpoint` de Openid Connect: https://openid.net/sp
 
 ##### Description
 
-Implémente le `Token Endpoint` de Openid Connect: https://openid.net/specs/openid-connect-core-1_0.html#TokenEndpoint
+Implémente le `Token Endpoint` de Openid Connect:
+
+https://openid.net/specs/openid-connect-core-1_0.html#TokenEndpoint
 
 ##### Entête
 
@@ -193,7 +200,9 @@ Implémente le `Token Endpoint` de Openid Connect: https://openid.net/specs/open
 
 ##### Description
 
-Implémente le `Token Endpoint` de Openid Connect: https://openid.net/specs/openid-connect-core-1_0.html#TokenEndpoint
+Implémente le `Token Endpoint` de Openid Connect:
+
+https://openid.net/specs/openid-connect-core-1_0.html#TokenEndpoint
 
 ##### Entête
 
@@ -221,7 +230,9 @@ Implémente le `Token Endpoint` de Openid Connect: https://openid.net/specs/open
 
 ##### Description
 
-Implémente le `Logout Endpoint` de Openid Connect: http://openid.net/specs/openid-connect-session-1_0.html#RPLogout
+Implémente le `Logout Endpoint` de Openid Connect:
+
+http://openid.net/specs/openid-connect-session-1_0.html#RPLogout
 
 ##### Paramètres
 
