@@ -127,7 +127,7 @@ https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
 > |--------|-----------|----------------|------------------------------------------------------|
 > | `response_type` | requis | string | `code` |
 > | `client_id` | requis | string | `<CLIENT_ID>` Identifiant du FS, communiqué lors de son inscription auprès de AC |
-> | `redirect_uri` | requis | string |` <FS_URL>%2F<URL_CALLBACK>` Url de retour vers le FS (encodée), communiqué lors de son inscription auprès de AC |
+> | `redirect_uri` | requis | string |`<FS_URL>%2F<URL_CALLBACK>` Url de retour vers le FS (encodée), communiqué lors de son inscription auprès de AC |
 > | `acr_values` | requis | string | `eidas1` AgentConnect ne garantie qu'un niveau faible |
 > | `scope` | requis | string | `<SCOPES>` Liste des scopes demandés séparés par des espaces (%20 au format unicode dans l'URL) ou des '+' |
 > | `claims` | optionnel | string | `<CLAIMS>` Objet JSON encodé décrivant les claims demandés |
@@ -151,6 +151,66 @@ https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
 > Content-Type: application/x-www-form-urlencoded
 >
 > scope=openid+uid+given_name+usual_name+email+siren+siret+organizational_unit+belonging_population+phone+chorusdt+idp_id+idp_acr&acr_values=eidas1&claims=%7B%22id_token%22%3A%7B%22amr%22%3A%7B%22essential%22%3Atrue%7D%7D%7D&client_id=6925fb8143c76eded44d32b40c0cb1006065f7f003de52712b78985704f39950&redirect_uri=https%3A%2F%2Ffsa1v2.integ01.dev-agentconnect.fr%2Foidc-callback&prompt=login&response_type=code&state=9ed67ae42fdc5d0a6867a5425a284745f4f73ce8b6edf76e453487aa1b73cc89&nonce=7db9b35458f2288bade947791f1c8fa2d02954f8eb7d9909dc68784f7c4aea29
+> ```
+
+</details>
+
+#### Redirection vers le FS après erreur de connexion
+
+<details>
+ <summary><code>GET</code> <code><b>&lt;FS_URL&gt;/&lt;URL_CALLBACK&gt;</b></code> </summary>
+
+##### Description
+
+Redirection vers le FS après une erreur de connexion.
+
+AgentConnect renvoie le code d'erreur, la description de l'erreur et le state.
+
+##### Paramètres
+
+> | nom | requis/optionnel | type de données | descriptif |
+> |--------|-----------|----------------|------------------------------------------------------|
+> | `error` | requis | string | code d'erreur |
+> | `error_description` | requis | string | description de l'erreur |
+> | `state` | requis | string (minimum 32 caractères) | `<STATE>` communiqué par par le FS dans l'appel au `Authorization Endpoint`. Cette information est à vérifier par le FS, afin d’empêcher l’exploitation de failles CSRF |
+
+##### Example d'appel
+
+Exemple de retour vers le FS de mock
+
+> ```
+> GET /oidc-callback?state=aa13905b1742a303945f7e4d57096bbaae283a13bbc6e9414ed99cad8b95a32d&error_description=User+auth+aborted&error=access_denied HTTP/1.1
+> Host: fsa1v2.integ01.dev-agentconnect.fr
+> ```
+
+</details>
+
+
+#### Redirection vers le FS après connexion
+
+<details>
+ <summary><code>GET</code> <code><b>&lt;FS_URL&gt;/&lt;URL_CALLBACK&gt;</b></code> </summary>
+
+##### Description
+
+Redirection vers le FS après connexion chez le FI.
+
+AgentConnect renvoie le code d'autorisation et le state.
+
+##### Paramètres
+
+> | nom | requis/optionnel | type de données | descriptif |
+> |--------|-----------|----------------|------------------------------------------------------|
+> | `code` | requis | string | `<AUTHZ_CODE>` Authorization code à transmettre au `Token Endpoint` |
+> | `state` | requis | string (minimum 32 caractères) | `<STATE>` communiqué par par le FS dans l'appel au `Authorization Endpoint`. Cette information est à vérifier par le FS, afin d’empêcher l’exploitation de failles CSRF |
+
+##### Example d'appel
+
+Exemple de retour vers le FS de mock
+
+> ```
+> GET /oidc-callback?code=_DOF10msXreojwyScrXmfqvwp8q3p1G7ZIzatMj60it&state=fa019fca4d852f93d6aae7edee49217a2ca13b9e8056a4a8847d44a3e0612c68 HTTP/1.1
+> Host: fsa1v2.integ01.dev-agentconnect.fr
 > ```
 
 </details>
@@ -208,9 +268,9 @@ https://openid.net/specs/openid-connect-core-1_0.html#TokenEndpoint
 
 ##### Description
 
-Implémente le `Token Endpoint` de Openid Connect:
+Implémente le `UserInfo Endpoint` de Openid Connect:
 
-https://openid.net/specs/openid-connect-core-1_0.html#TokenEndpoint
+https://openid.net/specs/openid-connect-core-1_0.html#UserInfo
 
 ##### Entête
 
@@ -263,6 +323,34 @@ http://openid.net/specs/openid-connect-session-1_0.html#RPLogout
 > ```
 > GET /api/v2/session/end?id_token_hint=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3MDRlMDI0MjI5MDE1ZDJiZDQ3ZjdhNWU1YWIwNWIzNWM4MzM2YWI0MDNjMzgwMjI5ODVmOGNmYWRjODZmZTkxIiwiYW1yIjpbInB3ZCJdLCJhdXRoX3RpbWUiOjE2Njg1MzAzMjYsImFjciI6ImVpZGFzMSIsIm5vbmNlIjoiYWZjODFmZGExZmJiNmQzYzg3NmFmNzVjNzM3YTEzMDdhMWIyOWJhMDg3M2VmYTA1OWU0NTM1ZDEyMmM5ZGI1YSIsImF0X2hhc2giOiJJVEJTV1J2NW1HRmxxTGQ0Sm5nbnRnIiwiYXVkIjoiNjkyNWZiODE0M2M3NmVkZWQ0NGQzMmI0MGMwY2IxMDA2MDY1ZjdmMDAzZGU1MjcxMmI3ODk4NTcwNGYzOTk1MCIsImV4cCI6MTY2ODUzMDM4NiwiaWF0IjoxNjY4NTMwMzI2LCJpc3MiOiJodHRwczovL2ZjYS5pbnRlZzAxLmRldi1hZ2VudGNvbm5lY3QuZnIvYXBpL3YyIn0.hg1n4WJbzZECwz4VldAybXYreEXJ4fxpSWqDs9V4tTk&post_logout_redirect_uri=https%3A%2F%2Ffsa1v2.integ01.dev-agentconnect.fr%2Flogout-callback&state=188d025fb53ca637c2b8002fa6085caac0dea6a9c3c91ede7a0bb69cc330d3c7 HTTP/1.1
 > Host: fca.integ01.dev-agentconnect.fr
+> ```
+
+</details>
+
+#### Redirection vers le FS après déconnexion
+
+<details>
+ <summary><code>GET</code> <code><b>&lt;FS_URL&gt;/&lt;POST_LOGOUT_REDIRECT_URI&gt;</b></code> </summary>
+
+##### Description
+
+Redirection vers le FS après déconnexion.
+
+AgentConnect renvoie le code d'autorisation et le state.
+
+##### Paramètres
+
+> | nom | requis/optionnel | type de données | descriptif |
+> |--------|-----------|----------------|------------------------------------------------------|
+> | `state` | requis | string (minimum 32 caractères) | `<STATE>` communiqué par par le FS dans l'appel au `Logout Endpoint`. Cette information est à vérifier par le FS, afin d’empêcher l’exploitation de failles CSRF | |
+
+##### Example d'appel
+
+Exemple de retour vers le FS de mock à déconnexion
+
+> ```
+> GET /logout-callback?state=3b7bd7fb38ccab89864563f17a89c4cb3bd400164ce828b4cfc2cb01ce8ed9da HTTP/1.1
+> Host: fsa1v2.integ01.dev-agentconnect.fr
 > ```
 
 </details>
