@@ -30,6 +30,10 @@ https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfiguration
 > Host: fca.integ01.dev-agentconnect.fr
 > ```
 
+Configuration AgentConnect sur l'environnement d'intégration: 
+
+https://fca.integ01.dev-agentconnect.fr/api/v2/.well-known/openid-configuration
+
 </details>
 
 <details>
@@ -53,6 +57,10 @@ Liste les clés de signatures utilisés par AgentConnect
 > GET /api/v2/jwks HTTP/1.1
 > Host: fca.integ01.dev-agentconnect.fr
 > ```
+
+Clés AgentConnect sur l'environnement d'intégration: 
+
+https://fca.integ01.dev-agentconnect.fr/api/v2/jwks
 
 </details>
 
