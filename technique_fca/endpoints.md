@@ -1,6 +1,6 @@
 # AgentConnect Endpoints
 
-AgentConnect met en oeuvre le protocole OpenID Connect pour permettre à un Fournisseur de Services de déléguer à AgentConnect l'identificiation et l'authentification des usagers.
+AgentConnect met en oeuvre le protocole OpenID Connect pour permettre à un Fournisseur de Services de déléguer à AgentConnect l'identification et l'authentification des agents.
 
 #### Openid Configuration Endpoints
 
@@ -41,7 +41,7 @@ https://fca.integ01.dev-agentconnect.fr/api/v2/.well-known/openid-configuration
 
 ##### Description
 
-Liste les clés de signatures utilisés par AgentConnect
+Liste les clés de signature utilisées par AgentConnect
 
 ##### Paramètres
 
@@ -82,19 +82,19 @@ https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
 > | `response_type` | requis | string | `code` |
 > | `client_id` | requis | string | `<CLIENT_ID>` Identifiant du FS, communiqué lors de son inscription auprès de AC |
 > | `redirect_uri` | requis | string |` <FS_URL>%2F<URL_CALLBACK>` Url de retour vers le FS (encodée), communiqué lors de son inscription auprès de AC |
-> | `acr_values` | requis | string | `eidas1` AgentConnect ne garantie qu'un niveau faible |
+> | `acr_values` | requis | string | `eidas1` AgentConnect ne garantie que le niveau faible d'eIDAS |
 > | `scope` | requis | string | `<SCOPES>` Liste des scopes demandés séparés par des espaces (%20 au format unicode dans l'URL) ou des '+' |
 > | `claims` | optionnel | string | `<CLAIMS>` Objet JSON encodé décrivant les claims demandés |
 > | `state` | requis | string (minimum 32 caractères) | `<STATE>` Champ obligatoire, généré aléatoirement par le FS, que AC renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par le FS. Il est utilisé afin d’empêcher l’exploitation de failles CSRF |
-> | `nonce` | requis | string (minimum 32 caractères) | `<NONCE>` Champ obligatoire, généré aléatoirement par le FS que FC renvoie tel quel dans la réponse à l'appel à /token, pour être ensuite vérifié par le FS. Il est utilisé pour empêcher les attaques par rejeu |
+> | `nonce` | requis | string (minimum 32 caractères) | `<NONCE>` Champ obligatoire, généré aléatoirement par le FS que FC renvoie tel quel dans la réponse à l'appel au `Token Endpoint`, pour être ensuite vérifié par le FS. Il est utilisé pour empêcher les attaques par rejeu |
 > | `prompt` | optionnel | string | `login` si le FS veut forcer la reauthentification au FI. Par défaut, le FI réutilisera une session existante sans demander une reconnexion. |
 
 ##### Responses
 
 > | http code     | content-type                      |response                                                            |
 > |---------------|-----------------------------------|---------------------------------------------------------------------|
-> | `303` (succès)        | `text/html;charset=UTF-8`        | Redirection vers `/api/v2/interaction/{interactionHash}` où {interactionHash} est un hash lié à la session de l'usager |
-> | `303` (erreur) | `text/html;charset=UTF-8`        | Redirection vers `{redirect_uri}?error=<ERROR_CODE>&error_description=<ERROR_DESCRIPTION>&state=<STATE>`<br>où `<ERROR_CODE>` est le code d'erreur,<br>`<ERROR_DESCRIPTION>` est la description de l'erreur,<br>`<STATE>` est le state fourni à l'appel `/api/v2/authorize` |
+> | `303` (succès)        | `text/html;charset=UTF-8`        | Redirection vers la page de recherche des FI `/api/v2/interaction/{interactionHash}` où {interactionHash} est un hash lié à la session de l'usager |
+> | `303` (erreur) | `text/html;charset=UTF-8`        | [Redirection vers le FS après erreur de connexion](#redirection-vers-le-fs-après-erreur-de-connexion) |
 > | `400` (mauvais format)| `text/html;charset=UTF-8`        | La page d'erreur avec code `Y000400` est affichée en cas de mauvais format |
 
 ##### Example d'appel
@@ -128,19 +128,19 @@ https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
 > | `response_type` | requis | string | `code` |
 > | `client_id` | requis | string | `<CLIENT_ID>` Identifiant du FS, communiqué lors de son inscription auprès de AC |
 > | `redirect_uri` | requis | string |`<FS_URL>%2F<URL_CALLBACK>` Url de retour vers le FS (encodée), communiqué lors de son inscription auprès de AC |
-> | `acr_values` | requis | string | `eidas1` AgentConnect ne garantie qu'un niveau faible |
+> | `acr_values` | requis | string | `eidas1` AgentConnect ne garantie que le niveau faible d'eIDAS |
 > | `scope` | requis | string | `<SCOPES>` Liste des scopes demandés séparés par des espaces (%20 au format unicode dans l'URL) ou des '+' |
 > | `claims` | optionnel | string | `<CLAIMS>` Objet JSON encodé décrivant les claims demandés |
 > | `state` | requis | string (minimum 32 caractères) | `<STATE>` Champ obligatoire, généré aléatoirement par le FS, que AC renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par le FS. Il est utilisé afin d’empêcher l’exploitation de failles CSRF |
-> | `nonce` | requis | string (minimum 32 caractères) | `<NONCE>` Champ obligatoire, généré aléatoirement par le FS que FC renvoie tel quel dans la réponse à l'appel à /token, pour être ensuite vérifié par le FS. Il est utilisé pour empêcher les attaques par rejeu |
+> | `nonce` | requis | string (minimum 32 caractères) | `<NONCE>` Champ obligatoire, généré aléatoirement par le FS que FC renvoie tel quel dans la réponse à l'appel au `Token Endpoint`, pour être ensuite vérifié par le FS. Il est utilisé pour empêcher les attaques par rejeu |
 > | `prompt` | optionnel | string | `login` si le FS veut forcer la reauthentification au FI. Par défaut, le FI réutilisera une session existante sans demander une reconnexion. |
 
 ##### Responses
 
 > | http code     | content-type                      |response                                                            |
 > |---------------|-----------------------------------|---------------------------------------------------------------------|
-> | `303` (succès)        | `text/html;charset=UTF-8`        | Redirection vers `/api/v2/interaction/{interactionHash}` où {interactionHash} est un hash lié à la session de l'usager |
-> | `303` (autre erreur) | `text/html;charset=UTF-8`        | Redirection vers `{redirect_uri}?error=<ERROR_CODE>&error_description=<ERROR_DESCRIPTION>&state=<STATE>`<br>où `<ERROR_CODE>` est le code d'erreur,<br>`<ERROR_DESCRIPTION>` est la description de l'erreur,<br>`<STATE>` est le state fourni à l'appel `/api/v2/authorize` |
+> | `303` (succès)        | `text/html;charset=UTF-8`        | Redirection vers la page de recherche des FI `/api/v2/interaction/{interactionHash}` où {interactionHash} est un hash lié à la session de l'usager |
+> | `303` (erreur) | `text/html;charset=UTF-8`        | [Redirection vers le FS après erreur de connexion](#redirection-vers-le-fs-après-erreur-de-connexion) |
 > | `400` (mauvais format)| `text/html;charset=UTF-8`        | La page d'erreur avec code `Y000400` est affichée en cas de mauvais format |
 
 ##### Example d'appel
@@ -179,7 +179,7 @@ AgentConnect renvoie le code d'erreur, la description de l'erreur et le state.
 Exemple de retour vers le FS de mock
 
 > ```
-> GET /oidc-callback?state=aa13905b1742a303945f7e4d57096bbaae283a13bbc6e9414ed99cad8b95a32d&error_description=User+auth+aborted&error=access_denied HTTP/1.1
+> GET /oidc-callback?state=9ed67ae42fdc5d0a6867a5425a284745f4f73ce8b6edf76e453487aa1b73cc89&error_description=User+auth+aborted&error=access_denied HTTP/1.1
 > Host: fsa1v2.integ01.dev-agentconnect.fr
 > ```
 
@@ -201,7 +201,7 @@ AgentConnect renvoie le code d'autorisation et le state.
 
 > | nom | requis/optionnel | type de données | descriptif |
 > |--------|-----------|----------------|------------------------------------------------------|
-> | `code` | requis | string | `<AUTHZ_CODE>` Authorization code à transmettre au `Token Endpoint` |
+> | `code` | requis | string | `<AUTHZ_CODE>` code d'autorisation à transmettre au `Token Endpoint` |
 > | `state` | requis | string (minimum 32 caractères) | `<STATE>` communiqué par par le FS dans l'appel au `Authorization Endpoint`. Cette information est à vérifier par le FS, afin d’empêcher l’exploitation de failles CSRF |
 
 ##### Example d'appel
@@ -209,7 +209,7 @@ AgentConnect renvoie le code d'autorisation et le state.
 Exemple de retour vers le FS de mock
 
 > ```
-> GET /oidc-callback?code=_DOF10msXreojwyScrXmfqvwp8q3p1G7ZIzatMj60it&state=fa019fca4d852f93d6aae7edee49217a2ca13b9e8056a4a8847d44a3e0612c68 HTTP/1.1
+> GET /oidc-callback?code=_DOF10msXreojwyScrXmfqvwp8q3p1G7ZIzatMj60it&state=9ed67ae42fdc5d0a6867a5425a284745f4f73ce8b6edf76e453487aa1b73cc89 HTTP/1.1
 > Host: fsa1v2.integ01.dev-agentconnect.fr
 > ```
 
@@ -239,8 +239,8 @@ https://openid.net/specs/openid-connect-core-1_0.html#TokenEndpoint
 > | `grant_type` | requis | string | `authorization_code` |
 > | `client_id` | requis | string | `<CLIENT_ID>` Identifiant du FS, communiqué lors de son inscription auprès de AC |
 > | `client_secret` | requis | string | `<CLIENT_SECRET>` Le secret du FS, communiqué lors de son inscription auprès de AC |
-> | `redirect_uri` | requis | string |` <FS_URL>%2F<URL_CALLBACK>` Url de retour vers le FS (encodée), communiqué lors de l'appel à `/api/v2/authorize` |
-> | `code` | requis | string | `<AUTHZ_CODE>` Authorization code provided by AC when returning to the FS |
+> | `redirect_uri` | requis | string |` <FS_URL>%2F<URL_CALLBACK>` Url de retour vers le FS (encodée), communiqué lors de l'appel au `Authorization Endpoint` |
+> | `code` | requis | string | `<AUTHZ_CODE>` code d'autorisation fourni par AgentConnect après connexion |
 
 ##### Responses
 
@@ -276,7 +276,7 @@ https://openid.net/specs/openid-connect-core-1_0.html#UserInfo
 
 > | nom | requis/optionnel | valeur |
 > |----------------|--------|-------------------------------------|
-> | `Authorization` | requis | `Bearer <ACCESS_TOKEN>` où `ACCESS_TOKEN` a été communiqué par `/api/v2/token` |
+> | `Authorization` | requis | `Bearer <ACCESS_TOKEN>` où `<ACCESS_TOKEN>` a été communiqué par le `Token Endpoint` |
 
 ##### Paramètres
 
@@ -306,9 +306,9 @@ http://openid.net/specs/openid-connect-session-1_0.html#RPLogout
 
 > | nom | requis/optionnel | type de données | descriptif |
 > |--------|-----------|----------------|------------------------------------------------------|
-> | `id_token_hint` | requis | string | `<ID_TOKEN>` fourni lors de l'appel à `/api/v2/token` |
-> | `state` | requis | string | `<STATE>` state à communiquer au FS lors du retour post déconnexion. Le FS doit vérifier qu'il correspond au state généré pour la déconnexion. |
-> | `post_logout_redirect_uri` | requis | string | `<POST_LOGOUT_REDIRECT_URI>` L'URL de redirection après la demande de déconnexion AC |
+> | `id_token_hint` | requis | string | `<ID_TOKEN>` fourni lors de l'appel au `Token Endpoint` |
+> | `state` | requis | string | `<STATE>` state à communiquer au FS lors du retour post déconnexion. |
+> | `post_logout_redirect_uri` | requis | string | `<POST_LOGOUT_REDIRECT_URI>` L'URL de redirection vers le FS après la déconnexion à AgentConnect |
 
 ##### Responses
 
@@ -321,7 +321,7 @@ http://openid.net/specs/openid-connect-session-1_0.html#RPLogout
 ##### Example d'appel
 
 > ```
-> GET /api/v2/session/end?id_token_hint=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3MDRlMDI0MjI5MDE1ZDJiZDQ3ZjdhNWU1YWIwNWIzNWM4MzM2YWI0MDNjMzgwMjI5ODVmOGNmYWRjODZmZTkxIiwiYW1yIjpbInB3ZCJdLCJhdXRoX3RpbWUiOjE2Njg1MzAzMjYsImFjciI6ImVpZGFzMSIsIm5vbmNlIjoiYWZjODFmZGExZmJiNmQzYzg3NmFmNzVjNzM3YTEzMDdhMWIyOWJhMDg3M2VmYTA1OWU0NTM1ZDEyMmM5ZGI1YSIsImF0X2hhc2giOiJJVEJTV1J2NW1HRmxxTGQ0Sm5nbnRnIiwiYXVkIjoiNjkyNWZiODE0M2M3NmVkZWQ0NGQzMmI0MGMwY2IxMDA2MDY1ZjdmMDAzZGU1MjcxMmI3ODk4NTcwNGYzOTk1MCIsImV4cCI6MTY2ODUzMDM4NiwiaWF0IjoxNjY4NTMwMzI2LCJpc3MiOiJodHRwczovL2ZjYS5pbnRlZzAxLmRldi1hZ2VudGNvbm5lY3QuZnIvYXBpL3YyIn0.hg1n4WJbzZECwz4VldAybXYreEXJ4fxpSWqDs9V4tTk&post_logout_redirect_uri=https%3A%2F%2Ffsa1v2.integ01.dev-agentconnect.fr%2Flogout-callback&state=188d025fb53ca637c2b8002fa6085caac0dea6a9c3c91ede7a0bb69cc330d3c7 HTTP/1.1
+> GET /api/v2/session/end?id_token_hint=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3MDRlMDI0MjI5MDE1ZDJiZDQ3ZjdhNWU1YWIwNWIzNWM4MzM2YWI0MDNjMzgwMjI5ODVmOGNmYWRjODZmZTkxIiwiYW1yIjpbInB3ZCJdLCJhdXRoX3RpbWUiOjE2Njg1MzAzMjYsImFjciI6ImVpZGFzMSIsIm5vbmNlIjoiYWZjODFmZGExZmJiNmQzYzg3NmFmNzVjNzM3YTEzMDdhMWIyOWJhMDg3M2VmYTA1OWU0NTM1ZDEyMmM5ZGI1YSIsImF0X2hhc2giOiJJVEJTV1J2NW1HRmxxTGQ0Sm5nbnRnIiwiYXVkIjoiNjkyNWZiODE0M2M3NmVkZWQ0NGQzMmI0MGMwY2IxMDA2MDY1ZjdmMDAzZGU1MjcxMmI3ODk4NTcwNGYzOTk1MCIsImV4cCI6MTY2ODUzMDM4NiwiaWF0IjoxNjY4NTMwMzI2LCJpc3MiOiJodHRwczovL2ZjYS5pbnRlZzAxLmRldi1hZ2VudGNvbm5lY3QuZnIvYXBpL3YyIn0.hg1n4WJbzZECwz4VldAybXYreEXJ4fxpSWqDs9V4tTk&post_logout_redirect_uri=https%3A%2F%2Ffsa1v2.integ01.dev-agentconnect.fr%2Flogout-callback&state=3b7bd7fb38ccab89864563f17a89c4cb3bd400164ce828b4cfc2cb01ce8ed9da HTTP/1.1
 > Host: fca.integ01.dev-agentconnect.fr
 > ```
 
@@ -336,7 +336,7 @@ http://openid.net/specs/openid-connect-session-1_0.html#RPLogout
 
 Redirection vers le FS après déconnexion.
 
-AgentConnect renvoie le code d'autorisation et le state.
+AgentConnect renvoie le state communiqué par le FS lors de la demande de déconnexion.
 
 ##### Paramètres
 
