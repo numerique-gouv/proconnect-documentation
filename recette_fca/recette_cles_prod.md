@@ -1,4 +1,3 @@
-
 # Comment recevoir mes jetons de production?
 
 Vous souhaitez être Fournisseur de Services pour AgentConnect: 
@@ -63,7 +62,7 @@ Les adresses de notre environnement de production sont les suivantes :
 
 Voir aussi : 
 - [Quelles sont les étapes pour devenir Fournisseur de Services?](../pilotage_fca/pilotage_fca_etapes.md)
-- [Quelles sont les étapes pour devenir Fournisseur de Services?](../pilotage_fca/pilotage_fca_etapes.md)
 - [Quel bouton AgentConnect intégrer et comment l'intégrer?](../implementation_fca/bouton_fca.md)
 - [Quels sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation?](../implementation_fca/spec_recette_fca.md)
 - [Comment faire qualifier mon implémentation?](../recette_fca/recette.md)
+- [Comment recevoir mes jetons de production?](../recette_fca/recette_cles_prod.md)

@@ -1,5 +1,4 @@
-
-# Je veux déconnecter l'agent d'AgentConnect
+# Comment déconnecter l'agent d'AgentConnect?
 
 ## Gestion de la déconnexion
 

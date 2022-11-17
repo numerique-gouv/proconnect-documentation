@@ -19,13 +19,13 @@ Les adresses de notre environnement d'intégration sont les suivantes :
 
 ### Démonstrateurs Internet
 
-FI Internet :
+*FI Internet* :
 
 https://fia1v2.integ01.dev-agentconnect.fr
 
 https://fia2v2.integ01.dev-agentconnect.fr
 
-FS Internet :
+*FS Internet* :
 
 https://fsa1v2.integ01.dev-agentconnect.fr
 
@@ -44,16 +44,16 @@ https://fsa3v2.integ01.dev-agentconnect.fr
 | UserInfo | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/userinfo  | 
 | Logout | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/session/end | 
 
-### Démonstrateurs RIE** 
+### Démonstrateurs RIE
 
-FI RIE :
+*FI RIE* :
 
 https://fia1v2.integ02.agentconnect.rie.gouv.fr
 
 https://fia2v2.integ02.agentconnect.rie.gouv.fr
 
  
-FS RIE :
+*FS RIE* :
 
 https://fsa1v2.integ02.agentconnect.rie.gouv.fr
 

@@ -1,4 +1,3 @@
-
 # Quels sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation?
 
 Vous souhaitez être Fournisseur de Services pour AgentConnect et votre demande datapass a déjà été validée.
@@ -87,7 +86,7 @@ Le service ne doit pas utiliser de version de TLS inférieur à 1.2 et doit obli
 ---
 
 Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur de Services?](../pilotage_fca/pilotage_fca_etapes.md)
 - [Quel bouton AgentConnect intégrer et comment l'intégrer?](../implementation_fca/bouton_fca.md)
+- [Quelles sont les étapes pour devenir Fournisseur de Services?](../pilotage_fca/pilotage_fca_etapes.md)
 - [Comment faire qualifier mon implémentation?](../recette_fca/recette.md)
 - [Comment recevoir mes jetons de production?](../recette_fca/recette_cles_prod.md)

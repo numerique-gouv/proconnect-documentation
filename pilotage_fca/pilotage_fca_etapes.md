@@ -1,4 +1,3 @@
-
 # Quelles sont les étapes pour devenir Fournisseur de Services? 
 
 **1.** Vous consultez les conditions d'éligibilité à AgentConnect. Les conditions juridiques, de sécurité et de qualité de service sont détaillées dans nos [conditions générales d'utilisation](https://partenaires.agentconnect.gouv.fr/cgu).
@@ -52,8 +51,9 @@ Une fois votre Fournisseur de Services enrôlé sur la plateforme de production,
 ---
 
 Voir aussi : 
+- [Quels sont les différents acteurs que je dois faire intervenir dans mon organisation pour devenir Fournisseur de Services?](../pilotage_fca/pilotage_fca_demarches_acteurs.md)
+- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge"?](../pilotage_fca/plateformes.md)
 - [Comment accéder au formulaire datapass?](../pilotage_fca/datapass.md)
-- [Acteurs à impliquer](../pilotage_fca/pilotage_fca_demarches_acteurs.md)
 - [Quel bouton AgentConnect intégrer et comment l'intégrer?](../implementation_fca/bouton_fca.md)
 - [Quels sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation?](../implementation_fca/spec_recette_fca.md)
 - [Quels démonstrateurs sont disponibles sur la plateforme intégration d'AgentConnect?](../test_fca/test_fca_demonstrateur.md)

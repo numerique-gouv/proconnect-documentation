@@ -1,7 +1,3 @@
-FIL d'ariane à faire 
-
----
-
 # Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect?
 
 ## Qu'est ce que le règlement eIDAS ? 
@@ -52,3 +48,12 @@ Pour le Fournisseur de Services, cela veut dire remplir le claim acr_values lors
 acr_values=eidas1
 
 Le Fournisseur d'Identité renverra par le biais d'AgentConnect le niveau eIDAS avec lequel l'authentification a eu lieu. 
+
+---
+
+Voir aussi : 
+- [Quel est le détail du fonctionnement?](../fonctionnement_fca/details_fonctionnement.md)
+- [Quels sont les endpoints sur AgentConnect (le contrat d'interface)?](../technique_fca/endpoints.md)
+- [Quelles sont les données que je peux récupérer par AgentConnect sur mes usagers?](../projet_fca/projet_fca_donnees.md)
+- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs? ](../technique_fca/technique_fca_scope.md)
+- [Quelles sont les données d'AgentConnect qui expirent?](../technique_fca/donnees_expirent.md)
