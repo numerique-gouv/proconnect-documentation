@@ -84,7 +84,9 @@ Voici la liste supportée par AgentConnect :
 
 Cette liste de scopes est définie par la norme OpenIDConnect
 
-* **ID_TOKEN :** Objet JWT retourné par l'appel au endpoint AC_URL/api/21/token. L'objet JWT est un objet JSON formaté et signé. Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub et nonce.
+#### **ID_TOKEN:**
+
+Objet JWT retourné par l'appel au endpoint AC_URL/api/21/token. L'objet JWT est un objet JSON formaté et signé. Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub et nonce.
 
 Exemple :
 
@@ -103,8 +105,14 @@ Les champs *aud, exp, iat, iss, sub* sont des champs obligatoires de la norme Op
 
 Si vous utilisez une librairie pour transformer le json en JWT, il génèrera une chaîne de caractères constitué de 3 chaînes base64 séparées par un point.
 
-* **ID_TOKEN_HINT :** Objet JWT identique au format ID_TOKEN qui a été reçu lors de l'échange avec l'appel à AC_URL/api/v1/token et doit être passé en paramètre lors de l'appel à AC_URL/api/v2/logout.
-* **USER_INFO :**  Voir la section données obligatoires.
+#### **ID_TOKEN_HINT:**
+
+Objet JWT identique au format ID_TOKEN qui a été reçu lors de l'échange avec l'appel à AC_URL/api/v1/token et doit être passé en paramètre lors de l'appel à AC_URL/api/v2/logout.
+
+#### **USER_INFO:**
+
+Voir la section données obligatoires.
+
 * **STATE :** Champ obligatoire, généré aléatoirement par le Fournisseur de Services, que AgentConnect renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par le Fournisseur de Services. Il est utilisé afin d’empêcher l’exploitation de failles CSRF.
 * **NONCE :**	Champ obligatoire, généré aléatoirement par le Fournisseur de Services que AgentConnect renvoie tel quel dans la réponse à l'appel à /token, pour être ensuite vérifié par le Fournisseur de Services. Il est utilisé pour empêcher les attaques par rejeu.
 * **SUB :** Identifiant technique (unique et stable dans le temps pour un individu donné) fourni par AgentConnect au Fournisseur de Services. Le SUB est présent dans l'IdToken retourné au Fournisseur de Services ainsi que dans les informations d'identité. Le SUB retourné par AgentConnect est spécifique à chaque Fournisseur de Services (i.e: Un usager aura toujours le même SUB pour un Fournisseur de Services donné, en revanche il aura un SUB différent par Fournisseur de Services qu'il utilise).
