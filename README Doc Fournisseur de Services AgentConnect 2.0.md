@@ -133,11 +133,11 @@ Si vous utilisez une librairie pour transformer le json en JWT, il génèrera un
 
 #### **ID_TOKEN_HINT :** 
 
-Objet JWT identique au format ID_TOKEN qui a été reçu lors de l'échange avec l'appel à AC_URL/api/v1/token et doit être passé en paramètre lors de l'appel à AC_URL/api/v2/logout.
+Objet JWT identique au format ID_TOKEN qui a été reçu lors de l'échange avec l'appel à AC_URL/api/v2/token et doit être passé en paramètre lors de l'appel à AC_URL/api/v2/logout.
 
 #### **USER_INFO :**  
 
-Objet JWT retourné par l'appel au endpoint AC_URL/api/v2/user_info. L'objet JWT est un objet JSON formaté et signé. Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub et nonce.
+Objet JWT retourné par l'appel au endpoint AC_URL/api/v2/user_info. L'objet JWT est un objet JSON formaté et signé. Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub.
 
 Exemple :
 
@@ -163,9 +163,9 @@ Exemple :
   "iss": "https://fca.integ01.dev-agentconnect.fr/api/v2"
 }
 ```
-Les champs *aud, exp, iat, iss, sub* sont des champs obligatoires de la norme OpenId Connect. Le *nonce* est un  paramètre obligatoirement envoyé lors de l'appel à ``api/v2/authorize`. Le Fournisseur de Services doit impérativement vérifier que la valeur correspond bien à celle qu'il a envoyée, et qui doit être liée à la session de l'utilisateur.
+Les champs *aud, exp, iat, iss, sub* sont des champs obligatoires de la norme OpenId Connect.
 
-Si vous utilisez une librairie pour transformer le json en JWT, il génèrera une chaîne de caractères constituée de 3 chaînes de caractères encodées en base64 séparées par des points (ex: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c).
+Si vous utilisez une librairie pour transformer le json en JWT, il génèrera une chaîne de caractères constituée de 3 chaînes de caractères encodées en base64 séparées par des points.
 
 #### **STATE :** 
 
