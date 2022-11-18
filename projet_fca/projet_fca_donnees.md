@@ -1,4 +1,4 @@
-# Quelles sont les données que je peux récupérer par AgentConnect sur les agents?
+# Quelles sont les données que je peux récupérer par AgentConnect sur les agents ?
 
 Les données Agent sont fournies par les Fournisseurs d'Identité aux Fournisseurs de Services, via AgentConnect, conformément à l'habilitation obtenue via [datapass.api.gouv.fr](https://datapass.api.gouv.fr), et le choix des données réalisé par le Fournisseur de Services dans cette demande.
 
@@ -53,8 +53,8 @@ Cette liste de scopes est définie par la norme OpenIDConnect : http://openid.ne
 ---
 
 Voir aussi : 
-- [Quel est le détail du fonctionnement?](../fonctionnement_fca/details_fonctionnement.md)
-- [Quels sont les endpoints sur AgentConnect (le contrat d'interface)?](../technique_fca/endpoints.md)
-- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs? ](../technique_fca/technique_fca_scope.md)
-- [Quelles sont les données d'AgentConnect qui expirent?](../technique_fca/donnees_expirent.md)
-- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect?](../projet_fca/projet_fca_niveau_eidas.md)
+- [Quel est le détail du fonctionnement ?](../fonctionnement_fca/details_fonctionnement.md)
+- [Quels sont les endpoints sur AgentConnect (le contrat d'API) ?](../technique_fca/endpoints.md)
+- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ? ](../technique_fca/technique_fca_scope.md)
+- [Quelles sont les données d'AgentConnect qui expirent ?](../technique_fca/donnees_expirent.md)
+- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect ?](../projet_fca/projet_fca_niveau_eidas.md)

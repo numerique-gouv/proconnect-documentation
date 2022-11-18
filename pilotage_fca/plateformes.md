@@ -1,6 +1,6 @@
-# Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge"?
+# Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge" ?
 
-AgentConnect est implémenté sur deux plateformes, une dite "full RIE" et une autre dite "full Internet". Toutefois il est possible de communiquer entre les deux plateformes grâce à l'"hybridge Internet/RIE".
+AgentConnect est implémenté sur deux plateformes, une dite "full RIE" et une autre dite "full Internet". Toutefois il est possible de communiquer entre les deux plateformes grâce à "l'hybridge Internet/RIE".
 
 Le choix du positionnement sur le RIE ou sur Internet est « à la main » des Fournisseurs d'Identité et des Fournisseurs de Services.
 

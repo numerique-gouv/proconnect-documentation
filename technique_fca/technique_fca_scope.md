@@ -92,9 +92,8 @@ Le tableau suivant décris la liste des *claims* accessible en fonction des *sco
 ---
 
 Voir aussi : 
-- [Quel est le détail du fonctionnement?](../fonctionnement_fca/details_fonctionnement.md)
-- [Quels sont les endpoints sur AgentConnect (le contrat d'interface)?](../technique_fca/endpoints.md)
-- [Quels sont les endpoints sur AgentConnect (le contrat d'interface)?](../technique_fca/endpoints.md)
-- [Quelles sont les données que je peux récupérer par AgentConnect sur mes usagers?](../projet_fca/projet_fca_donnees.md)
-- [Quelles sont les données d'AgentConnect qui expirent?](../technique_fca/donnees_expirent.md)
-- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect?](../projet_fca/projet_fca_niveau_eidas.md)
+- [Quel est le détail du fonctionnement ?](../fonctionnement_fca/details_fonctionnement.md)
+- [Quels sont les endpoints sur AgentConnect (le contrat d'API) ?](../technique_fca/endpoints.md)
+- [Quelles sont les données que je peux récupérer par AgentConnect sur les agents ?](../projet_fca/projet_fca_donnees.md)
+- [Quelles sont les données d'AgentConnect qui expirent ?](../technique_fca/donnees_expirent.md)
+- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect ?](../projet_fca/projet_fca_niveau_eidas.md)

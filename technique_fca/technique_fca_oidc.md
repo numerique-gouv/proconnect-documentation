@@ -1,4 +1,4 @@
-# Comment AgentConnect utilise le protocole OpenId Connect? 
+# Comment AgentConnect utilise le protocole OpenId Connect ? 
 
 AgentConnect met en oeuvre le protocole OpenID Connect pour permettre à un Fournisseur de Services de déléguer à AgentConnect l'identificiation et l'authentification des usagers, ainsi que la gestion des consentements qui sont nécessaire à la transmission des données personnelles des utilisateurs auprès du Fournisseur de Services.  
 
@@ -88,11 +88,12 @@ Les clés publiques de chiffrement du Fournisseur de Services doivent être expo
 ---
 
 Voir aussi : 
-- [Qu'est ce que le protocole OpenID Connect?](../technique_fca/technique_oidc.md)
-- [Quelles sont les données que je peux récupérer par AgentConnect sur mes usagers?](../projet_fca/projet_fca_donnees.md)
-- [Quel est le détail du fonctionnement?](../fonctionnement_fca/details_fonctionnement.md)
-- [Quelles sont les données que je peux récupérer par AgentConnect sur mes usagers?](../projet_fca/projet_fca_donnees.md)
-- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs? ](../technique_fca/technique_fca_scope.md)
-- [Quelles sont les données d'AgentConnect qui expirent?](../technique_fca/donnees_expirent.md)
-- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect?](../projet_fca/projet_fca_niveau_eidas.md)
+- [Qu'est ce que le protocole OpenID Connect ?](../technique_fca/technique_oidc.md)
+- [Quelles sont les données que je peux récupérer par AgentConnect sur les agents ?](../projet_fca/projet_fca_donnees.md)
+- [Quel est le détail du fonctionnement ?](../fonctionnement_fca/details_fonctionnement.md)
+- [Quelles sont les données que je peux récupérer par AgentConnect sur mes usagers ?](../projet_fca/projet_fca_donnees.md)
+- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ? ](../technique_fca/technique_fca_scope.md)
+- [Quelles sont les données d'AgentConnect qui expirent ?](../technique_fca/donnees_expirent.md)
+- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect ?](../projet_fca/projet_fca_niveau_eidas.md)
+- [Quels sont les endpoints sur AgentConnect (le contrat d'API) ?](../technique_fca/endpoints.md)
 

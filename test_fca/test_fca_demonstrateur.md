@@ -1,5 +1,5 @@
 
-# Quels démonstrateurs sont disponibles sur la plateforme intégration d'AgentConnect?
+# Quels démonstrateurs sont disponibles sur la plateforme intégration d'AgentConnect ?
 
 Pour vous permettre de réaliser les développements liés à l'intégration d'AgentConnect, nous mettons à disposition un environnement d'intégration. Les accès à cet environnement se font à travers des clés qui vous sont communiquées par l'équipe AgentConnect dans l'attente de la mise en place de votre espace partenaire. 
 
@@ -64,4 +64,4 @@ https://fsa3v2.integ02.agentconnect.rie.gouv.fr
 ---
 
 Voir aussi : 
-- [Comment accéder aux différents environnements d'AgentConnect?](../technique_fca/technique_fca_env.md)
+- [Comment accéder aux différents environnements d'AgentConnect ?](../technique_fca/technique_fca_env.md)

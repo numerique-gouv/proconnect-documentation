@@ -1,4 +1,4 @@
-# Quel bouton AgentConnect intégrer et comment l'intégrer?
+# Quel bouton AgentConnect intégrer et comment l'intégrer ?
 
 ## Intégration d'un bouton AgentConnect 
 
@@ -37,7 +37,7 @@ Les règles suivantes doivent être respectées:
 ---
 
 Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur de Services?](../pilotage_fca/pilotage_fca_etapes.md)
-- [Quels sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation?](../implementation_fca/spec_recette_fca.md)
-- [Comment faire qualifier mon implémentation?](../recette_fca/recette.md)
-- [Comment recevoir mes jetons de production?](../recette_fca/recette_cles_prod.md)
+- [Quelles sont les étapes pour devenir Fournisseur de Services ?](../pilotage_fca/pilotage_fca_etapes.md)
+- [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](../implementation_fca/spec_recette_fca.md)
+- [Comment faire qualifier mon implémentation ?](../recette_fca/recette.md)
+- [Comment recevoir mes jetons de production ?](../recette_fca/recette_cles_prod.md)

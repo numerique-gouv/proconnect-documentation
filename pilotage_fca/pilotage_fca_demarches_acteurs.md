@@ -1,4 +1,4 @@
-# Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect?
+# Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?
 
 Pour devenir Fournisseur de Services d'AgentConnect, il est nécessaire de designer des personnes remplissants les rôles suivants : Responsable de traitement, Délégué à la protection des données, Responsable technique, Responsable de la Sécurité du Système d'Information. 
 
@@ -39,6 +39,6 @@ auprès des directeurs métiers et/ou de la direction de son périmètre.
 ---
 
 Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur de Services?](../pilotage_fca/pilotage_fca_etapes.md)
-- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge"?](../pilotage_fca/plateformes.md)
-- [Comment accéder au formulaire datapass?](../pilotage_fca/datapass.md)
+- [Quelles sont les étapes pour devenir Fournisseur de Services ?](../pilotage_fca/pilotage_fca_etapes.md)
+- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et "l'Hybridge" ?](../pilotage_fca/plateformes.md)
+- [Comment accéder au formulaire datapass ?](../pilotage_fca/datapass.md)

@@ -1,5 +1,5 @@
 
-# Les données d’AgentConnect qui expirent
+# Quelles sont les données d'AgentConnect qui expirent ?
 
 AgentConnect gère plusieurs types de données ayant une durée de vie limitée lors du déroulé d'une authentification par OpenID Connect ou de la fourniture d'un jeton d'accès à une ressource protégée (cinématique OAuth2 classique). Chacune de ces données possède une durée de vie qui lui est propre au-delà de laquelle elle doit être régénérée. En voici le détail :
 
@@ -12,8 +12,8 @@ AgentConnect gère plusieurs types de données ayant une durée de vie limitée 
 ---
 
 Voir aussi : 
-- [Quel est le détail du fonctionnement?](../fonctionnement_fca/details_fonctionnement.md)
-- [Quels sont les endpoints sur AgentConnect (le contrat d'interface)?](../technique_fca/endpoints.md)
-- [Quelles sont les données que je peux récupérer par AgentConnect sur mes usagers?](../projet_fca/projet_fca_donnees.md)
-- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs? ](../technique_fca/technique_fca_scope.md)
-- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect?](../projet_fca/projet_fca_niveau_eidas.md)
+- [Quel est le détail du fonctionnement ?](../fonctionnement_fca/details_fonctionnement.md)
+- [Quels sont les endpoints sur AgentConnect (le contrat d'API) ?](../technique_fca/endpoints.md)
+- [Quelles sont les données que je peux récupérer par AgentConnect sur les agents ?](../projet_fca/projet_fca_donnees.md)
+- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ? ](../technique_fca/technique_fca_scope.md)
+- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect ?](../projet_fca/projet_fca_niveau_eidas.md)
