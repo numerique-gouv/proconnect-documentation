@@ -135,9 +135,9 @@ Si vous utilisez une librairie pour transformer le json en JWT, il génèrera un
 
 Objet JWT identique au format ID_TOKEN qui a été reçu lors de l'échange avec l'appel à AC_URL/api/v2/token et doit être passé en paramètre lors de l'appel à AC_URL/api/v2/logout.
 
-#### **USER_INFO :**  
+#### **USERINFO :**  
 
-Objet JWT retourné par l'appel au endpoint AC_URL/api/v2/user_info. L'objet JWT est un objet JSON formaté et signé. Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub.
+Objet JWT retourné par l'appel au endpoint AC_URL/api/v2/userinfo. L'objet JWT est un objet JSON formaté et signé. Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub.
 
 Exemple :
 
