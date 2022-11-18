@@ -1,354 +1,118 @@
 
-
-| Version | Résumé des modifications | Modifié par | Date |
-| ------ | ------ | ------ | ------ |
-| v1 | Rédaction de la documentation FS | Khadija BOURHALEB | 08/12/2020 |
-| v2 | Rédaction de la documentation F2 | Khadija BOURHALEB | 28/09/2021 |
-| v3 | Rédaction de la documentation F2 | Mélanie WYND | 20/10/2022 |
-
-[[_TOC_]]
-
-Documentation Fournisseur de Service
+Documentation Fournisseur de Services
 
 ---
 
-Vous souhaitez implémenter AgentConnect? Vous êtes au bon endroit ! Cette documentation présente l'ensemble des informations à connaitre sur AgentConnect.
+Vous souhaitez implémenter AgentConnect sur votre site? Vous êtes au bon endroit ! Cette documentation présente l'ensemble des informations à connaitre.
 
 # Préambule
 
 Cette documentation est à destination des Fournisseurs de Services souhaitant intégrer AgentConnect. 
+AgentConnect est implémenté sur deux plateformes, une dite "full RIE" (l’agent se connecte depuis le RIE, à un FS RIE via un FI RIE) et une autre dite "full Internet" (l'agent se connecte depuis Internet, à un FS Internet via un FI Internet).
+Toutefois il est possible de communiquer entre les deux plateformes grâce à "l'hybridge Internet/RIE" (l'agent se connecte depuis Internet, à un Fournisseur de Services Internet via un FI RIE).
 
-AgentConnect est implémenté sur deux plateformes, une dite "full RIE" (l’agent se connecte depuis le RIE, à un FS RIE via un FI RIE) et une autre dite "full Internet" (l'agent se connecte depuis Internet, à un FS Internet via un FI Internet). 
+# Je veux devenir Fournisseur de Services 
 
-Toutefois il est possible de communiquer entre les deux plateformes grâce à l'"hybridge Internet/RIE"" (l'agent se connecte depuis Internet, à un FS Internet via un FI RIE). 
+Vous souhaitez devenir Fournisseur de Services pour AgentConnect, voici les éléments à prendre en compte : 
 
-# Je veux devenir Fournisseurs de Services 
+- [Quelles sont les étapes pour devenir Fournisseur de Services ?](pilotage_fca/pilotage_fca_etapes.md)
+- [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](pilotage_fca/pilotage_fca_demarches_acteurs.md)
+- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge" ?](pilotage_fca/plateformes.md)
+- [Comment accéder au formulaire datapass ?](pilotage_fca/datapass.md)
 
-## Quelles sont les étapes pour devenir Fournisseur de Services ? 
+# J'intègre AgentConnect dans mon service en ligne
 
-1. Vous consultez les conditions d'éligibilité à AgentConnect. Les conditions juridiques, de sécurité et de qualité de service sont détaillées dans nos [conditions générales d'utilisation](https://partenaires.agentconnect.gouv.fr/cgu) **A COMPLETER**  
-Le cadre d'implémentation et d'intégration est détaillé dans nos [spécifications ergonomiques](https://partenaires.agentconnect.gouv.fr/) **A COMPLETER** 
+## Je souhaite connaître le concept de base d'AgentConnect
 
-2. Vous pouvez soumettre une demande de financement par le SNAP 2 AgentConnect, les renseignements sont disponibles sur le site https://france-relance.transformation.gouv.fr/953d-simplifier-lauthentification-des-agents-grace et en déposant une demande depuis le site https://www.demarches-simplifiees.fr
+- [Qu'est ce que le protocole OpenID Connect ?](technique_fca/technique_oidc.md)
+- [Comment AgentConnect utilise OpenID Connect ?](technique_fca/technique_fca_oidc.md)
+- [Quelles sont les données que je peux récupérer par AgentConnect sur les agents ?](projet_fca/projet_fca_donnees.md)
 
-3. Vous soumettez une demande d'habilitation via [datapass.api.gouv.fr](https://datapass.api.gouv.fr/) et vous transmettez toutes les informations nécessaires à la validation de votre demande (**respect du RGPD**, contact du responsable technique, données d'identité recueillies, etc). Votre demande est validée par la DINUM dans un délai moyen de 5 jours ouvrés.
+## Je veux savoir comment fonctionne AgentConnect et comment identifier/authentifier les agents
 
-3. Si votre demande est acceptée, votre responsable technique reçoit un mail lui donnant accès à l'[espace partenaire](https://partenaires.agentconnect.gouv.fr/login) **A COMPLETER** . Cet espace vous permettra d'accéder aux ressources de développement et de test.
+- [Quel est le détail du fonctionnement ?](fonctionnement_fca/details_fonctionnement.md)
+- [Quels sont les endpoints sur AgentConnect (le contrat d'API) ?](technique_fca/endpoints.md)
+- [Quelles sont les données que je peux récupérer par AgentConnect sur mes usagers ?](projet_fca/projet_fca_donnees.md)
+- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ? ](technique_fca/technique_fca_scope.md)
+- [Quelles sont les données d'AgentConnect qui expirent ?](technique_fca/donnees_expirent.md)
+- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect ?](projet_fca/projet_fca_niveau_eidas.md)
 
-4. Vous présentez vos développements pour une qualification par l'équipe AgentConnect. La durée de cette phase de qualification dépend du [respect des prérequis](https://partenaires.Agentconnect.gouv.fr/monprojet/recetter/)(techniques, sécurité, fonctionnels, UX...) **A mettre à jour avec le lien**.
- N'hésitez pas à soumettre vos maquettes du parcours en amont pour une pré-qualification fonctionnelle et UX anticipée.
+## Je veux savoir comment intégrer le bouton AgentConnect
 
-5. Si votre implémentation est validée par notre équipe technique, vous recevez vos secrets pour passer en production.
+- [Quel bouton AgentConnect intégrer et comment l'intégrer ?](implementation_fca/bouton_fca.md)
 
-## Accès à l'environnement d'intégration AgentConnect 
+## Je veux savoir comment déconnecter l'agent d'AgentConnect
 
-Pour vous permettre de réaliser les développements liés à l'intégration d'AgentConnect, nous mettons à disposition un environnement d'intégration. Les accès à cet environnement se font à travers des clés qui vous sont communiquées par la DINUM dans l'attente de la mise en place de votre espace partenaire. 
+- [Comment déconnecter l'agent d'AgentConnect ?](deconnexion_fca/deconnexion.md)
+- [Comment révoquer l'access token ?](deconnexion_fca/access_token.md)
 
-Sur notre environnement d'intégration, vous pourrez utiliser les fournisseurs d'identités de démonstratation pour effectuer vos tests. 
+## Je veux connaître les différents environnements disponibles
 
+- [Comment accéder aux différents environnements d'AgentConnect ?](technique_fca/technique_fca_env.md)
+- [Quels démonstrateurs sont disponibles sur la plateforme intégration (test) d'AgentConnect ?](test_fca/test_fca_demonstrateur.md)
 
-Les adresses de notre environnement d'intégration sont les suivantes : 
+## Je souhaite obtenir des informations sur la gestion d'erreurs entre AgentConnect et le Fournisseur de Services
 
-Environnement Internet : 
+- [Comment les erreurs entre AgentConnect et le Fournisseur de Services sont-elles gérées ?](erreur_fca/gestion_erreur.md)
 
-| EndPoint | Adresse |
-| ------ | ------ |
-| Discovery URL | https://fca.integ01.dev-agentconnect.fr/api/v2/.well-known/openid-configuration  | 
-| Authorization | https://fca.integ01.dev-agentconnect.fr/api/v2/authorize |
-| Token | https://fca.integ01.dev-agentconnect.fr/api/v2/token | 
-| UserInfo | https://fca.integ01.dev-agentconnect.fr/api/v2/userinfo  | 
-| Logout |  https://fca.integ01.dev-agentconnect.fr/api/v2/session/end  | 
+# Je souhaite faire qualifier mon implémentation d'AgentConnect
 
-**Démonstrateurs Internet** 
+- [Quel bouton AgentConnect intégrer et comment l'intégrer ?](implementation_fca/bouton_fca.md)
+- [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](implementation_fca/spec_recette_fca.md)
 
-FI Internet :
+# Je souhaite mettre mon Fournisseur de Services en production
 
-https://fia1v2.integ01.dev-agentconnect.fr
-
-https://fia2v2.integ01.dev-agentconnect.fr
-
-FS Internet :
-
-https://fsa1v2.integ01.dev-agentconnect.fr
-
-https://fsa2v2.integ01.dev-agentconnect.fr
-
-https://fsa3v2.integ01.dev-agentconnect.fr
-
-
-Environnement RIE : 
-
- EndPoint | Adresse |
-| ------ | ------ |
-| Discovery URL | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/.well-known/openid-configuration  | 
-| Authorization | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/authorize |
-| Token | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/token | 
-| UserInfo | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/userinfo  | 
-| Logout | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/session/end | 
-
-**Démonstrateurs RIE** 
-
-
-FI RIE :
-
-https://fia1v2.integ02.agentconnect.rie.gouv.fr
-
-https://fia2v2.integ02.agentconnect.rie.gouv.fr
-
- 
-FS RIE :
-
-https://fsa1v2.integ02.agentconnect.rie.gouv.fr
-
-https://fsa2v2.integ02.agentconnect.rie.gouv.fr
-
-https://fsa3v2.integ02.agentconnect.rie.gouv.fr
-
-
-## Mettre en production mon Fournisseur de Services
-
-Pour mettre en production votre Fournisseur de Services, il faut au préalable avoir : 
-
-1. Reçu la qualification de vos développements par AgentConnect sur un environnement autre que votre production. 
-2. Demandé une mise en production à l'équipe AgentConnect, **En attente de la mise en place de l'espace partenaires**
-3. Utilisé les clés de production qui vous ont été fournies par AgentConnect. 
-
-**Attention :** Il ne faut surtout pas utiliser les clés d'intégration que vous avez utilisées lors de vos développements avec votre Fournisseur de Services en production. Les clés d'intégration ne sont utilisables que sur l'environnement d'intégration AgentConnect.
-
-Les adresses de nos environnements de production vous seront transmises après la validation de tests en intégration
-
-
-# Concepts de base
-## Le protocole OpenID Connect
-### Introduction
-
-Le protocole OpenID Connect est au cœur du fonctionnement d'AgentConnect. C'est une couche d'identification basée sur protocole OAuth 2.0. Il permet à des Clients (ici, les Fournisseur de Service) d'accéder à l'identité des Utilisateurs finaux (les internautes) par l'intermédiaire d'un serveur d'autorisation (ici, les Fournisseurs d'Identité).
-
-La spécification du protocole se trouve sur http://openid.net/connect/.
-
-Pour une référence d'implémentation OpenID Connect voici le lien : https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth
-
-### Les flux standards
-
-Le protocole OpenID Connect définit 3 appels REST faits par le client, et 4 endpoints (un du côté client, et trois du côté provider).
-
-En amont, le client s'inscrit (en général manuellement) auprès du provider. Il lui fournit une URL de callback (l'URL du client vers lequel l'internaute est redirigé une fois authentifié), aussi appelée "callback endpoint". En retour le provider donne au client un client ID et un client secret.
-
-Lorsque l'internaute clique sur le bouton d'authentification du client, le flux est le suivant :
-
-1. Le client fait une redirection vers le "authorization endpoint" du provider avec son client id et son url de callback. Le provider redirige alors l'internaute vers sa mire d'authentification. Si l'internaute se loggue correctement, le provider renvoie un code d'autorisation au client.
-2. Le client fait un appel Web service vers le "token endpoint" du provider avec le code d'autorisation reçu, et authentifie cette requête avec son client id et son client secret. Le provider retourne un access token (une chaîne de caractères encodée en base64), un id token (sous la forme d'un Json Web Token), et parfois un refresh token (une chaîne de caractères en base64).
-3. Le client fait un appel Web service vers le "userInfo endpoint" du provider avec l'access token reçu, et le provider renvoie les informations de l'internaute au client.
-
-### Dans le cadre d'AgentConnect
-
-L'enregistrement des Fournisseurs de Service auprès d'AgentConnect s'effectue en déposant une demande sur le site [datapass.api.gouv.fr](https://datapass.api.gouv.fr/)
-
-AgentConnect implémente le flux [Authorization Code Flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth) d'OpenID Connect. 
-
-Les fournisseurs de service doivent être *service provider* OpenID Connect, et les fournisseurs d'identité doivent être *identity provider* OpenID Connect. AgentConnect est une brique intermédiaire qui est à la fois *identity provider* (du point de vue des FS) et *service provider* (du point de vue des FI).
-
-### Chiffrement et signature des échanges
-
-Dans le cadre du niveau **Standard** , tous les échanges de jetons JWT entre le FI et AC sont signés. 
-Le chiffrement des jetons n'est actuellement pas activé. 
-
-les algorithmes suivants sont gérés par AgentConnect Standard : 
-
-**Signature de jetons par AgentConnect** :
-
-- Asymétrique : 
-
-       - ES256 (EC + SHA256)
-       - RS256 (RSA + SHA256)
-
-- Symétrique : géré mais non recommandé
-
-       - HS256 (HMAC + SHA256) 
-
-**:warning: Ces algorithmes sont valides pour les endpoints exposant des JWT (/token et /userinfo).**
-
-
-Les spécifications des algorithmes de signatures et de chiffrements utilisés sont les suivantes :
-
-* [JWA - https://tools.ietf.org/html/rfc7518](https://tools.ietf.org/html/rfc7518)
-* [JWS - https://tools.ietf.org/html/rfc7515#appendix-A.3](https://tools.ietf.org/html/rfc7515#appendix-A.3)
-* [JWE - https://tools.ietf.org/html/rfc7516#appendix-A.1](https://tools.ietf.org/html/rfc7516#appendix-A.1)
-
-
-Les clés publiques de signatures de AgentConnect sont disponibles via la *JWKS URL* présente dans les méta-data de la *Discovery URL* aux adresses suivantes et sont changées régulièrement :
-
-
-Environnement Internet : 
-
-| Environnement | adresses du endpoint |
-|---------------|----------------------|
-| intégration AC | https://fca.integ01.dev-agentconnect.fr/api/v2/jwks |
-| production AC |**A compléter** |
-
-Environnement RIE :
-
-| Environnement | adresses du endpoint |
-|---------------|----------------------|
-| intégration AC | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/jwks|
-| production AC |**A compléter** |
-
-
-## Les données Agent
-Les données Agent sont fournies par les Fournisseurs d'Identité aux Fournisseurs de Service, via AgentConnect, conformément à l'habilitation obtenue via [datapass.api.gouv.fr](https://datapass.api.gouv.fr), et le choix des données réalisé par le fournisseur de service dans cette demande.
-
-
-### Données obligatoires
-
-En plus de l'openid, qui est obligatoire, des données obligatoires sont fournies par les Fournisseurs d'Identité aux Fournisseurs de Service, via AgentConnect . Ces données permettent d'identifier un utilisateur .
-                                                    
-
-|Champs | Obligatoire | Description| Format |
-|---- | ------ | ------ | ------ |
-|given_name | Oui |Prénoms séparés par des espaces (standard OpenIDConnect)| UTF-8 (standard OpenIDConnect)|
-|usual_name| Oui |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
-|email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
-|uid|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
-
-L'uid est une donnée technique qui ne peut pas être demandé par le FS.
-
-En complément, il est possible d'obtenir des données complémentaires. Cependant ces données ne sont pas obligatoirement connues par tous les Fournisseurs d'Identité.
-
-
-### Les données complémentaires
-
-Champs | Obligatoire | Description| Format |
-|---- | ------ | ------ | ------ |
-| siren | non  | Identifiant d'entreprise  | String, 9 chiffres sans espace |
-| siret | non |Identifiant d'établissement| string, 14 chiffres sans espace|
-| organizational_unit  | non  | Ministère/Direction/Service d'affectation   | UTF8 |
-| belonging_population  | non  | Population d'appartenance  | string, Exemple: agent, prestataire, partenaire, stagiaire |
-| phone  | non  | Téléphones de contact  | Format non normé |
-| chorusdt   | Non | Entité ministérielle/Matricule Agent  | string |
-
-
-La liste des données complémentaires est non exhaustive et pourra être amendée si besoin.
-
-
-AgentConnect transmet systématiquement au Fournisseur de Service un identifiant unique pour chaque agent : 
-
-* Cet identifiant est spécifique à chaque Fournisseur de Service. Un même utilisateur aura donc un identifiant unique différent pour chacun des Fournisseurs de Service auxquels il accède. 
-
-
-### Liste des scopes disponible lors de l'étape d'authentification AgentConnect
-
-AgentConnect a étendu le mécanisme de scopes pour qu'il soit plus modulaire.
-
-* Un seul scope est obligatoire : openid. Il permet de récupérer le sub (identifiant unique technique) de l'utilisateur.
-* Il est possible de récupérer individuellement chaque propriété de l'identité pivot en utilisant leurs scopes dédiés.
-* Il est possible de combiner plusieurs scopes de son choix pour récupérer seulement les informations dont a besoin le FS.
-
-
-Cette liste de scopes est définie par la norme OpenIDConnect : http://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims
-
-# Je veux authentifier des utilisateurs via AgentConnect
-
-# Intégration d'un bouton AgentConnect 
-
-Les boutons d’action AgentConnect sont primordiaux dans l’usage du service. Il est obligatoire d’utiliser l’un des boutons proposé et aucun autre visuel pour la connexion des usagers. Le bouton bleu AgentConnect est à utiliser en priorité.
-Par ailleurs, le bouton AgentConnect doit être positionné en premier mode de connexion.
-
-Pour les boutons en svg, lors de l'utilisation d'une image veuillez préciser la taille du bouton.
-
-*Téléchargements :*
-
-[AgentConnect-Bouton.zip](https://github.com/france-connect/Documentation-AgentConnect/files/9828293/AgentConnect-Bouton.zip)
-
-*Règles d'intégration du bouton AgentConnect :*
-
-![Guidelines AgentConnect](https://user-images.githubusercontent.com/60473902/196908275-3fe6872f-cb75-4c1d-92af-fea67cbf89ae.png)
-
-## Lien vers le site AgentConnect
-
-Sous le bouton AgentConnect, il vous sera demandé d'ajouter systématiquement un lien avec le texte " Qu'est-ce qu'AgentConnect" qui pointera vers le site https://agentconnect.gouv.fr/ 
-
-
-## Détail du fonctionnement
-
-
-![doc_fs_fca](https://user-images.githubusercontent.com/60473902/195838387-10aa22ef-f83f-4b12-abf7-dad3ec7828e4.png)
-
-                        
-La récupération de l'identité pivot doit être faite dans la suite immédiate des appels précédents (authentification et récupération du code). Le fait d'appeler ce Web service plus tard n'est aujourd'hui pas proposé.
-
-### Détail des flux
-
-Les flux entre AgentConnect et le Fournisseur de Service respectent ce qui est défini dans la norme OpenId Connect. Pour plus de détails, il faut se référer à la [documentation OIDC - https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth)
-
-
-## Utiliser les niveaux eIDAS en tant que FS AgentConnect
-
-AgentConnect s'inspire du règlement eIDAS pour définir les différents niveaux de sécurité dans les échanges avec les FI et les FS.
-
-Dans le code AgentConnect les niveaux suivants sont définis :
-
-* eidas1 : Niveau faible
-* eidas2 : Niveau renforcé
-* eidas3 : Niveau élevé
-
-Actuellement les fournisseurs de services ne peuvent demander qu'un niveau 1, soit un niveau dit faible AgentConnect
-
-Comme la norme OpenID Connect ne prévoit pas aujourd'hui de mesures techniques particulières pour préciser le niveau souhaité, AgentConnect utilise le claim optionnel "acr" (http://openid.net/specs/openid-connect-basic-1_0.html#RequestParameters) de la norme OpenID Connect. 
-
-Pour le Fournisseur de Service, cela veut dire remplir le claim optionnel acr_values lors de la demande d'authentification (appel à l'endpoint /api/v2/authorize).
-
-le Fournisseur d'Identité renverra par le biais de AgentConnect le niveau eIDAS avec lequel l'authentification a eu lieu. 
-
-
-# Je veux déconnecter l'agent de AgentConnect
-
-La gestion de la déconnexion n'est pas prise en charge dans la version 1.0 d'AgentConnect.
-Il incombe aux fournisseurs de Services de la gérer :
-
-* la déconnexion auprès d'AgentConnect
-* la révocation de l’accès token
-
-
-# Gestion d'erreurs entre AgentConnect et le Fournisseur de Service
-
-En tant qu'OpenID Connect provider, AgentConnect peut renvoyer toutes sortes d'erreurs à une application cliente. Pour ce faire, AgentConnect passe par le mécanisme de retour d'erreurs d'un fournisseur d'identité openid connect tel que décrit dans la norme ( http://openid.net/specs/openid-connect-core-1_0.html#AuthError, en particulier les sections 3.1.2.6 (authentification), 3.1.3.4 (jeton d'accès), 5.3.3 (service d'informations utilisateur) )
-
-
-# Les données d’AgentConnect qui expirent
-
-AgentConnect gère plusieurs types de données ayant une durée de vie limitée lors du déroulé d'une authentification par OpenID Connect ou de la fourniture d'un jeton d'accès à une ressource protégée (cinématique OAuth2 classique). Chacune de ces données possède une durée de vie qui lui est propre au-delà de laquelle elle doit être régénérée. En voici le détail :
-
-
-| Type | Utilisé lors de ... | Durée de vie |
-| ------ | ------ | ------ |
-| Access Token | Récupération d'informations (phase 3 cinématique d'authentification / cinématique OAuth2) | 60 secondes |
-| Authorization code | Code fourni lors du début de la démarche d'authentification, il sert ensuite à récupérer l'access token | 30 secondes |
-
-
+- [Comment faire qualifier mon implémentation ?](recette_fca/recette.md)
+- [Comment recevoir mes jetons de production ?](recette_fca/recette_cles_prod.md)
 
 # Glossaire
 
+#### **AC_URL :**  
 
-* **AC_URL :**  URL d’AgentConnect 
-* **FS_URL :** Votre URL, en tant que fournisseur de service  
-* **FD_URL :** URL du fournisseur de données
-* **CALLBACK_URL_DATA :** le callback du FS, communiqué lors de son inscription auprès d’AC 
-* **POST_LOGOUT_REDIRECT_URI :** L'URL de redirection après la demande de déconnexion AC 
-* **CLIENT_ID :** Identifiant du FS, communiqué lors de son inscription auprès de AC 
-* **CLIENT_SECRET :** Le secret du FS, communiqué lors de son inscription auprès de AC 
-* **AUTHZ_CODE :** Code retourné (dans l'URL) par AC au FS lorsque ce dernier fait un appel sur le endpoint AC_URL/api/v1/authorize. Il est ensuite passé (dans le corps de la requête HTTP POST) lors de l'appel sur le endpoint AC_URL/api/v1/token
-* **ACCESS_TOKEN :** oken retourné (dans le corps HTTP) par l'appel au endpoint AC_URL/api/v2/token. Il est ensuite passé lors de l'appel au endpoint AC_URL/api/v2/userinfo 
-* **SCOPES :** Liste des scopes demandés séparés par des espaces (donc par %20 au format unicode dans l'URL)  
+URL d’AgentConnect. 
+
+#### **FS_URL :** 
+
+Votre URL, en tant que Fournisseur de Services.  
+
+#### **REDIRECT_URI :** 
+
+Le callback du Fournisseur de Services, communiqué lors de son inscription auprès d’AgentConnect.
+
+#### **POST_LOGOUT_REDIRECT_URI :** 
+
+L'URL de redirection après la demande de déconnexion AgentConnect.
+
+#### **CLIENT_ID :** 
+
+Identifiant du Fournisseur de Services, communiqué lors de son inscription auprès de AgentConnect.
+
+#### **CLIENT_SECRET :** 
+
+Le secret du Fournisseur de Services, communiqué lors de son inscription auprès de AgentConnect.
+
+#### **AUTHZ_CODE :** 
+
+Code retourné (dans l'URL) par AgentConnect au Fournisseur de Services lorsque ce dernier fait un appel sur le endpoint AC_URL/api/v2/authorize. Il est ensuite passé (dans le corps de la requête HTTP POST) lors de l'appel sur le endpoint AC_URL/api/v2/token.
+
+#### **ACCESS_TOKEN :** 
+
+Token retourné (dans le corps HTTP) par l'appel au endpoint AC_URL/api/v2/token. Il est ensuite passé lors de l'appel au endpoint AC_URL/api/v2/userinfo.
+
+#### **SCOPES :** 
+
+Liste des scopes demandés séparés par des espaces (donc par "%20"  ou "+" au format unicode dans l'URL).
 	
 Voici la liste supportée par AgentConnect :
 
     * openid : obligatoire, permet de demander l'identifiant technique de l'utilisateur au format OpenIDConnect
-    * profile : obligatoire, permet de récupérer l'essentiel de l'identité pivot 
     * email : obligatoire, permet de récupérer l'adresse électronique de l’agent
 
-Cette liste de scopes est définie par la norme OpenIDConnect
+Cette liste de scopes est définie par la norme OpenIDConnect.
 
-* **ID_TOKEN :** Objet JWT retourné par l'appel au endpoint AC_URL/api/21/token. L'objet JWT est un objet JSON formaté et signé. Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub et nonce.
+#### **ID_TOKEN :** 
+
+Objet JWT retourné par l'appel au endpoint AC_URL/api/v2/token. L'objet JWT est un objet JSON formaté et signé. Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub et nonce.
 
 Exemple :
 
@@ -363,12 +127,54 @@ Exemple :
     'nonce':'12344354597459'
 }
 ```
-Les champs *aud, exp, iat, iss, sub* sont des champs obligatoires de la norme OpenId Connect. Le *nonce* est un  paramètre obligatoirement envoyé lors de l'appel à `/authorization`. Le FS doit impérativement vérifier que la valeur correspond bien à celle qu'il a envoyée, et qui doit être liée à la session de l'utilisateur.
+Les champs *aud, exp, iat, iss, sub* sont des champs obligatoires de la norme OpenId Connect. Le *nonce* est un  paramètre obligatoirement envoyé lors de l'appel à `api/v2/authorize`. Le Fournisseur de Services doit impérativement vérifier que la valeur correspond bien à celle qu'il a envoyée, et qui doit être liée à la session de l'utilisateur.
 
-Si vous utilisez une librairie pour transformer le json en JWT, il génèrera une chaîne de caractères constitué de 3 chaînes base64 séparées par un point.
+Si vous utilisez une librairie pour transformer le json en JWT, il génèrera une chaîne de caractères constituée de 3 chaînes de caractères encodées en base64 séparées par des points (ex: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c).
 
-* **ID_TOKEN_HINT :** Objet JWT identique au format ID_TOKEN qui a été reçu lors de l'échange avec l'appel à AC_URL/api/v1/token et doit être passé en paramètre lors de l'appel à AC_URL/api/v2/logout
-* **USER_INFO :**  Voir la section identité pivot
-* **STATE :** Champ obligatoire, généré aléatoirement par le FS, que AC renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par le FS. Il est utilisé afin d’empêcher l’exploitation de failles CSRF
-* **NONCE :**	Champ obligatoire, généré aléatoirement par le FS que AC renvoie tel quel dans la réponse à l'appel à /token, pour être ensuite vérifié par le FS. Il est utilisé pour empêcher les attaques par rejeu
-* **SUB :** Identifiant technique (unique et stable dans le temps pour un individu donné) fourni par AgentConnect au FS. Le SUB est présent dans l'IdToken retourné au FS ainsi que dans les informations d'identité. Le SUB retourné par AgentConnect est spécifique à chaque fournisseur de service (i.e: Un usager aura toujours le même SUB pour un Fournisseur de Service donné, en revanche il aura un SUB différent par Fournisseur de Service qu'il utilise).
+#### **ID_TOKEN_HINT :** 
+
+Objet JWT identique au format ID_TOKEN qui a été reçu lors de l'échange avec l'appel à AC_URL/api/v2/token et doit être passé en paramètre lors de l'appel à AC_URL/api/v2/logout.
+
+#### **USERINFO :**  
+
+Objet JWT retourné par l'appel au endpoint AC_URL/api/v2/userinfo. L'objet JWT est un objet JSON formaté et signé. Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub.
+
+Exemple :
+
+```
+{
+  "sub": "704e024229015d2bd47f7a5e5ab05b35c8336ab403c38022985f8cfadc86fe91",
+  "uid": "1",
+  "given_name": "Angela Claire Louise",
+  "usual_name": "DUBOIS",
+  "email": "test@abcd.com",
+  "siren": "343293775",
+  "siret": "34329377500037",
+  "organizational_unit": "comptabilite",
+  "belonging_population": "agent",
+  "phone_number": "+331-12-44-45-23",
+  "chorusdt:matricule": "USER_AGC",
+  "chorusdt:societe": "CHT",
+  "idp_id": "fia1v2",
+  "idp_acr": "eidas1",
+  "aud": "6925fb8143c76eded44d32b40c0cb1006065f7f003de52712b78985704f39950",
+  "exp": 1668779720,
+  "iat": 1668779660,
+  "iss": "https://fca.integ01.dev-agentconnect.fr/api/v2"
+}
+```
+Les champs *aud, exp, iat, iss, sub* sont des champs obligatoires de la norme OpenId Connect.
+
+Si vous utilisez une librairie pour transformer le json en JWT, il génèrera une chaîne de caractères constituée de 3 chaînes de caractères encodées en base64 séparées par des points.
+
+#### **STATE :** 
+
+Champ obligatoire, généré aléatoirement par le Fournisseur de Services, que AgentConnect renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par le Fournisseur de Services. Il est utilisé afin d’empêcher l’exploitation de failles CSRF.
+
+#### **NONCE :**	
+
+Champ obligatoire, généré aléatoirement par le Fournisseur de Services que AgentConnect renvoie tel quel dans la réponse à l'appel à /token, pour être ensuite vérifié par le Fournisseur de Services. Il est utilisé pour empêcher les attaques par rejeu.
+
+#### **SUB :** 
+
+Identifiant technique (unique et stable dans le temps pour un individu donné) fourni par AgentConnect au Fournisseur de Services. Le SUB est présent dans l'IdToken retourné au Fournisseur de Services ainsi que dans les informations d'identité (/userinfo). Le SUB retourné par AgentConnect est spécifique à chaque Fournisseur de Services (i.e: Un agent aura toujours le même SUB pour un Fournisseur de Services donné, en revanche il aura un SUB différent pour chaque Fournisseur de Services qu'il utilisera).
