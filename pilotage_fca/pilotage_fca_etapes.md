@@ -1,6 +1,9 @@
 # Quelles sont les étapes pour devenir Fournisseur de Services ? 
 
-**1.** Vous consultez les conditions d'éligibilité à AgentConnect. Les conditions juridiques, de sécurité et de qualité de service sont détaillées dans nos [conditions générales d'utilisation](https://partenaires.agentconnect.gouv.fr/cgu).
+**1.** Vous consultez les conditions d'éligibilité à AgentConnect. Les conditions juridiques, de sécurité et de qualité de service sont détaillées dans nos conditions générales d'utilisations:
+
+- [Conditions Générales d'Utilisation AgentConnect FS v1.2](../cgu_fca/20210528-DINUM-AC-CGU_FS-v1.2.pdf)
+- [Annexe des CGU FS v1.3](../cgu_fca/20210528-DINUM-AC-Annexe%20CGU%20FS-v1.3.pdf)
 
 **2.** Vous soumettez une demande d'habilitation via [datapass.api.gouv.fr](https://datapass.api.gouv.fr/) et vous transmettez toutes les informations nécessaires à la validation de votre demande (**respect du RGPD**, contact du responsable technique, plateforme souhaitée, données recueillies, etc). Votre demande est validée par la DINUM dans un délai moyen de 5 jours ouvrés.
 
