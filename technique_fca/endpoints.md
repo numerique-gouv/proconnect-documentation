@@ -335,7 +335,7 @@ http://openid.net/specs/openid-connect-session-1_0.html#RPLogout
 
 > | code http     | content-type                      |réponse                                                            |
 > |---------------|-----------------------------------|-------------------------------------------------------------------|
-> | `303`         | `text/html;charset=UTF-8`         | La réponse contenant les claims transmis par le FI |
+> | `303`         | `text/html;charset=UTF-8`         | Redirection vers le FI pour déconnexion, puis [redirection vers le FS après déconnexion](#redirection-vers-le-fs-après-déconnexion) |
 
 ##### Exemple d'appel
 
