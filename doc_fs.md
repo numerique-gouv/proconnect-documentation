@@ -65,6 +65,8 @@ Vous souhaitez devenir Fournisseur de Services pour AgentConnect, voici les él�
 - [Comment faire qualifier mon implémentation ?](recette_fca/recette.md)
 - [Comment recevoir mes jetons de production ?](recette_fca/recette_cles_prod.md)
 
+# [Contrat d'API AgentConnect](./technique_fca/endpoints.md)
+
 # Glossaire
 
 #### **AC_URL :**  
