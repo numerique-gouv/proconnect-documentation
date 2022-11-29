@@ -31,6 +31,8 @@ Une fois votre Fournisseur de Services enrôlé sur la plateforme d'intégration
 
 - [Demande de recette d'un fournisseur de services AgentConnect RIE / Internet / ou les deux](https://www.demarches-simplifiees.fr/commencer/demande-de-recette-fs-fca-rie-internet). 
 
+:warning: **ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE EN VISIO DEVRA SE FAIRE CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICE POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.**
+
 La délai de traitement de votre demande de qualification dépend du respect des prérequis listés dans le paragraphe [Quels sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation ?](../implementation_fca/spec_recette_fca.md) mais est estimé environ à 3 jours ouvrés.
 
 **6.** Avant de faire votre demande de mise en production, il est obligatoire de contacter l'équipe AgentConnect par email (support.partenaires@agentconnect.gouv.fr) afin de les informer du mariage Fournisseur de Services / Fournisseur d'Identité souhaité. L'équipe AgentConnect vous communiquera également les éléments relatifs à la politique de sécurité et de gestion des mots de passe des Fournisseurs d’identité pour que vous indiquiez à l'équipe AgentConnect le(s) Fournisseur(s) d’identité que vous autorisez à accéder à votre service. 
