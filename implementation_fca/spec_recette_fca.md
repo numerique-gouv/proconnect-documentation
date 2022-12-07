@@ -18,25 +18,35 @@ L'ensemble des prérequis doivent être respectés afin d'obtenir la validation 
 
 Voir [Quel bouton AgentConnect intégrer et comment l'intégrer?](../implementation_fca/bouton_fca.md)
 
-2. **AgentConnect dans la section connexion**
+
+2. **La phrase d'introduction à AgentConnect est placée au dessus du bouton**
+
+"AgentConnect vous permet d’accéder à de nombreux services en ligne en utilisant l’un de vos comptes professionnels existants."
+
+Cette phrase doit obligatoirement être placée dans les cas suivants: 
+
+- différents moyens de connexion cohabitent, 
+- sur des outils qui ne sont pas uniquement réservés aux agents.
+
+3. **AgentConnect dans la section connexion**
 
 Le bouton est présent dans la section "connexion/se connecter" du service.
 
-3. **AgentConnect dans la section inscription (si applicable)**
+4. **AgentConnect dans la section inscription (si applicable)**
 
 Le bouton est présent dans la section "inscription/s'inscrire" du service (si applicable).
 
-4. **AgentConnect est le premier mode de connexion/d'inscription**
+5. **AgentConnect est le premier mode de connexion/d'inscription**
 
 Le bouton AgentConnect est situé en premier mode de connexion/d'inscription au dessus des autres moyens
 d'identification.
 
-5. **AgentConnect est séparé des autres modes de connexion/d'inscription**
+6. **AgentConnect est séparé des autres modes de connexion/d'inscription**
 
 - il est important de dissocier visuellement les différents moyens d’authentification : une séparation visible doit être mise en place entre eux,
 - la mention "OU" doit également y figurer afin de faire comprendre à l'utilisateur qu'il peut choisir entre AgentConnect ou un autre mode de connexion/d'inscription.
 
-6. **Lien "Qu'est-ce qu'AgentConnect ?"**
+7. **Lien "Qu'est-ce qu'AgentConnect ?"**
 
 Le bouton doit être accompagné du lien « Qu’est-ce qu’AgentConnect ? » positionné à 8 pixels en dessous, en corps 13 pixels minimum et qui redirige vers l’URL https://agentconnect.gouv.fr/.
 
