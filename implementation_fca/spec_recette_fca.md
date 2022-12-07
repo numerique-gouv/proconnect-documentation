@@ -21,7 +21,7 @@ Voir [Quel bouton AgentConnect intégrer et comment l'intégrer?](../implementat
 
 2. **La phrase d'introduction à AgentConnect est placée au dessus du bouton**
 
-"AgentConnect vous permet d’accéder à de nombreux services en ligne en utilisant l’un de vos comptes professionnels existants."
+*"AgentConnect vous permet d’accéder à de nombreux services en ligne en utilisant l’un de vos comptes professionnels existants."*
 
 Cette phrase doit obligatoirement être placée dans les cas suivants: 
 
