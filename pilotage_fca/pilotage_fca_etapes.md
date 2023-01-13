@@ -24,7 +24,7 @@ Une fois votre Fournisseur de Services enrôlé sur la plateforme d'intégration
 
 **5.** Vous présentez vos développements pour une qualification par l'équipe AgentConnect en vous rendant sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in) afin de remplir le formulaire de demande de recette : 
 
-- [Demande de recette d'un Fournisseur de Services](hhttps://www.demarches-simplifiees.fr/commencer/demande-recette-fs-fca). 
+- [Demande de recette d'un Fournisseur de Services](https://www.demarches-simplifiees.fr/commencer/demande-recette-fs-fca). 
 
 > ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE EN VISIO DEVRA SE FAIRE CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.
 
@@ -36,7 +36,7 @@ La délai de traitement de votre demande de qualification dépend du respect des
 
 Le formulaire mis à disposition est le suivant: 
 
-- [Demande de création d'un Fournisseur de Services AgentConnect](hhttps://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca)
+- [Demande de création d'un Fournisseur de Services AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca)
 
 Une fois votre Fournisseur de Services enrôlé sur la plateforme de production, l'équipe AgentConnect transmet au responsable technique les clés de production (client ID par email et client secret par sms). 
 
