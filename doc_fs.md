@@ -179,4 +179,4 @@ Champ obligatoire, généré aléatoirement par le Fournisseur de Services que A
 
 #### **SUB:** 
 
-Identifiant technique (unique et stable dans le temps pour un individu donné) fourni par AgentConnect au Fournisseur de Services. Le SUB est présent dans l'IdToken retourné au Fournisseur de Services ainsi que dans les informations d'identité (/userinfo). Le SUB retourné par AgentConnect est spécifique à chaque Fournisseur de Services (i.e: Un agent aura toujours le même SUB pour un Fournisseur de Services donné, en revanche il aura un SUB différent pour chaque Fournisseur de Services qu'il utilisera).
+Identifiant technique (unique et stable dans le temps pour un individu donné) fourni par AgentConnect au Fournisseur de Services. Le SUB est présent dans l'IdToken retourné au Fournisseur de Services ainsi que dans les informations d'identité (/userinfo). Le SUB retourné par AgentConnect est spécifique à chaque Fournisseur de Services et à chaque Fournisseur d'Identité: un même utilisateur aura toujours le même SUB pour un Fournisseur d'Identité donné, en revanche il aura un SUB différent pour chaque Fournisseur de Services qu'il utilisera.

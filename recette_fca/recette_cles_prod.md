@@ -14,15 +14,9 @@ Merci ne pas demander la mise en production de votre Fournisseur de Services tan
 
 L'équipe AgentConnect a mis en place des démarches sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in) pour demander la mise en production de votre service. 
 
-Nous vous prions de bien vouloir y déposer votre demande afin qu'elle puisse être étudiée et traitée. Les démarches sont disponibles à l'adresse suivante : 
+Nous vous prions de bien vouloir y déposer votre demande afin qu'elle puisse être étudiée et traitée. La démarche est disponible à l'adresse suivante : 
 
-Environnement RIE: 
-
-- [Demande de création d'un fournisseur de services sur l'environnement de production AgentConnect RIE](https://www.demarches-simplifiees.fr/commencer/demande-de-creation-fs-production-fca-rie)
-
-Environnement Internet: 
-
-- [Demande de création d'un fournisseur de services sur l'environnement de production AgentConnect Internet](https://www.demarches-simplifiees.fr/commencer/demande-de-creation-fs-production-fca-internet)
+- [Demande de création d'un Fournisseur de Services sur AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca)
 
 
 **:warning: ATTENTION: Les demandes envoyées directement par emails ne sont plus traitées.**

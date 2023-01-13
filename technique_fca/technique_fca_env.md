@@ -15,13 +15,7 @@ Pour utiliser l'environnement d'intégration, il faut au préalable avoir :
 1. Avoir fait une demande datapass et que celle-ci soit validée,
 2. Avoir fait une demande de création d'un Fournisseur de Services en environnement d'intégration AgentConnect 
 
-*Plateforme RIE*:
-
-[Demande de création d'un Fournisseur de Services sur l'environnement d'intégration AgentConnect RIE](https://www.demarches-simplifiees.fr/commencer/demande-de-creation-fs-integration-fca-rie])
-
-*Plateforme Internet*:
-
-[Demande de création d'un Fournisseur de Services sur l'environnement d'intégration AgentConnect Internet](https://www.demarches-simplifiees.fr/commencer/demande-de-creation-fs-integration-fca-internet)),
+[Demande de création d'un Fournisseur de Services sur AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca)
 
 3. Avoir reçu vos clés d'intégration.
 
@@ -62,15 +56,9 @@ Pour avoir accès à l'environnement de production d'AgentConnect, il faut au pr
 
 1. Reçu la qualification de vos développements par AgentConnect sur un environnement autre que votre production.
 
-2. Demandé une mise en production via les formulaires à votre disposition sur sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in):
+2. Demandé une mise en production via le formulaire à votre disposition sur sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in):
 
-*Environnement RIE*:
-
-[Demande de création d'un fournisseur de services sur l'environnement de production AgentConnect RIE](https://www.demarches-simplifiees.fr/commencer/demande-de-creation-fs-production-fca-rie)
-
-*Environnement Internet*:
-
-[Demande de création d'un fournisseur de services sur l'environnement de production AgentConnect Internet](https://www.demarches-simplifiees.fr/commencer/demande-de-creation-fs-production-fca-internet)
+[Demande de création d'un Fournisseur de Services sur AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca)
 
 3. Configuré votre Fournisseur de Services de production AgentConnect avec les clés de production qui vous ont été remises au responsable technique par l'équipe AgentConnect . 
 

@@ -11,17 +11,12 @@ Le lien pour faire une demande datapass est le suivant:
 
 [Demande datapass pour un Fournisseur de Services](https://datapass.api.gouv.fr/agent-connect-fs)
 
-**3.** Si votre demande est acceptée, le responsable technique peut alors se rendre sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in) afin de remplir le formulaire adéquat de demande d'enrôlement de votre Fournisseur de Services sur notre plateforme de test (plateforme d'intégration).
+**3.** Si votre demande est acceptée, le responsable technique peut alors se rendre sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in) afin de remplir le formulaire de demande d'enrôlement de votre Fournisseur de Services sur notre plateforme de test (plateforme d'intégration).
 
-Les formulaires mis à disposition sont les suivants: 
+Le formulaire mis à disposition est le suivant: 
 
-*Environnement RIE*: 
+- [Demande de création d'un Fournisseur de Services sur AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca)
 
-- [Demande de création d'un fournisseur de services sur l'environnement d'intégration AgentConnect RIE](https://www.demarches-simplifiees.fr/commencer/demande-de-creation-fs-integration-fca-rie)
-
-*Environnement Internet*: 
-
-- [Demande de création d'un fournisseur de services sur l'environnement d'intégration AgentConnect Internet](https://www.demarches-simplifiees.fr/commencer/demande-de-creation-fs-integration-fca-internet)
 
 Une fois votre Fournisseur de Services enrôlé sur la plateforme d'intégration, l'équipe AgentConnect transmet au responsable technique les clés d'intégration (client ID par email et client secret par sms) ainsi que la documentation technique vous permettant de commencer votre phase de développement et de tests. 
 
@@ -29,7 +24,7 @@ Une fois votre Fournisseur de Services enrôlé sur la plateforme d'intégration
 
 **5.** Vous présentez vos développements pour une qualification par l'équipe AgentConnect en vous rendant sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in) afin de remplir le formulaire de demande de recette : 
 
-- [Demande de recette d'un fournisseur de services AgentConnect RIE / Internet / ou les deux](https://www.demarches-simplifiees.fr/commencer/demande-de-recette-fs-fca-rie-internet). 
+- [Demande de recette d'un Fournisseur de Services](hhttps://www.demarches-simplifiees.fr/commencer/demande-recette-fs-fca). 
 
 > ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE EN VISIO DEVRA SE FAIRE CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.
 
@@ -37,17 +32,11 @@ La délai de traitement de votre demande de qualification dépend du respect des
 
 **6.** Avant de faire votre demande de mise en production, il est obligatoire de contacter l'équipe AgentConnect par email (support.partenaires@agentconnect.gouv.fr) afin de les informer du mariage Fournisseur de Services / Fournisseur d'Identité souhaité. L'équipe AgentConnect vous communiquera également les éléments relatifs à la politique de sécurité et de gestion des mots de passe des Fournisseurs d’identité pour que vous indiquiez à l'équipe AgentConnect le(s) Fournisseur(s) d’identité que vous autorisez à accéder à votre service. 
 
-**7**. Si votre implémentation est validée par l'équipe AgentConnect et si les informations nécessaires listées ci-dessus ont bien été transmises, le responsable technique peut alors se rendre sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in) afin de remplir le formulaire adéquat de demande d'enrôlement de votre Fournisseur de Services sur la plateforme de production.
+**7**. Si votre implémentation est validée par l'équipe AgentConnect et si les informations nécessaires listées ci-dessus ont bien été transmises, le responsable technique peut alors se rendre sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in) afin de remplir le formulaire de demande d'enrôlement de votre Fournisseur de Services sur la plateforme de production.
 
-Les formulaires mis à disposition sont les suivants: 
+Le formulaire mis à disposition est le suivant: 
 
-*Environnement RIE*: 
-
-- [Demande de création d'un fournisseur de services sur l'environnement de production AgentConnect RIE](https://www.demarches-simplifiees.fr/commencer/demande-de-creation-fs-production-fca-rie)
-
-*Environnement Internet*: 
-
-- [Demande de création d'un fournisseur de services sur l'environnement de production AgentConnect Internet](https://www.demarches-simplifiees.fr/commencer/demande-de-creation-fs-production-fca-internet)
+- [Demande de création d'un Fournisseur de Services AgentConnect](hhttps://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca)
 
 Une fois votre Fournisseur de Services enrôlé sur la plateforme de production, l'équipe AgentConnect transmet au responsable technique les clés de production (client ID par email et client secret par sms). 
 

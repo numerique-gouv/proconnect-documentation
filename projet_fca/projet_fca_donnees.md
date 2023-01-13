@@ -36,8 +36,8 @@ La liste des données complémentaires est non exhaustive et pourra être amend�
 
 AgentConnect transmet systématiquement au Fournisseur de Services un identifiant unique pour chaque agent (le sub) : 
 
-* Cet identifiant (appelé sub) est spécifique à chaque Fournisseur de Services. Un même utilisateur aura donc un identifiant unique différent pour chacun des Fournisseurs de Services auxquels il accède. 
-
+* Cet identifiant (appelé sub) est spécifique à chaque Fournisseur de Services et à chaque Fournisseur d'Identité. 
+- Un même utilisateur aura toujours le même SUB pour un Fournisseur d'Identité donné, en revanche il aura un SUB différent pour chaque Fournisseur de Services qu'il utilisera.
 
 ## La liste des scopes disponibles lors de l'étape d'authentification AgentConnect
 

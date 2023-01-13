@@ -13,7 +13,7 @@ L'équipe AgentConnect a mis en place une démarche sur le site [www.demarches-s
 
 Nous vous prions de bien vouloir y déposer votre demande afin qu'elle puisse être étudiée et traitée. Cette démarche est disponible à l'adresse suivante : 
 
-**[Demande de recette d'un fournisseur de services AgentConnect RIE / Internet / ou les deux](https://www.demarches-simplifiees.fr/commencer/demande-de-recette-fs-fca-rie-internet)**
+**[Demande de recette d'un Fournisseur de Services AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-recette-fs-fca)**
 
 > ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE EN VISIO DEVRA SE FAIRE CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.
 
