@@ -60,19 +60,27 @@ Il est obligatoire de mettre à disposition des utilisateurs un moyen alternatif
 
 La cinématique de connexion fonctionne : je peux me connecter via AgentConnect sur le service.
 
-3. **Cinématique - Inscription**
+3. **Cinématique - Le lien "Revenir sur  ..." en haut à droite de la mire fonctionne**
+
+Le lien situé en haut à droite de la mire indiquant "Revenir sur ..." puis le nom de votre Fournisseur de Services renvoie bien sur la page d'accueil de votre Fournisseur de Services.
+
+4. **Cinématique - Inscription**
 
 Le cas échéant, la cinématique d'inscription fonctionne : je peux m'inscrire via AgentConnect sur le service.
 
-4. **Cinématique - Réconciliation de compte**
+5. **Cinématique - Réconciliation de compte à la première connexion (1er accès de l’utilisateur au Fournisseur de Service)**
 
 Existe-t-il une réconciliation des données dans le cas où le fournisseur de services dispose de comptes locaux et souhaite gérer la réconciliation entre ses données locales et celles transmises par AgentConnect.
 
 :warning: **Attention**, il ne faut pas demander à l’usager de saisir son identifiant/mot de passe local. En effet, trop complexe, cette demande provoque l'abandon de l'usager.
 
-5. **Cinématique - Déconnexion**
+6. **Cinématique - Réconciliation de compte "générale" (Pour les accès suivants de l’utilisateur à ce même Fournisseur de Service)**
 
-La déconnexion fonctionne : je peux me déconnecter d'AgentConnect sur le service.
+A partir de quelle(s) donnée(s) le traitement du Fournisseur de Service identifie l'utilisateur ? 
+
+7. **Cinématique - Déconnexion**
+
+La déconnexion fonctionne : je peux me déconnecter d'AgentConnect et du Fournisseur d'Identité utilisé sur le service.
 
 ## Les aspects sécurité
 
