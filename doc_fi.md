@@ -1,12 +1,23 @@
-| Version | Résumé des modifications | Modifié par | Date |
-| ------ | ------ | ------ | ------ |
-| v1 | Rédaction de la documentation FI | Khadija BOURHALEB | 08/12/2020 |
-| v2 | Rédaction de la documentation FI | Khadija BOURHALEB | 28/09/2021 |
+Documentation Fournisseur d'Identité
 
+---
 
-Cette documentation est à destination des fournisseurs d'identités des plateformes AgentConnect 
+Vous souhaitez devenir Fournisseur d'Identité sur AgentConnect ? Vous êtes au bon endroit ! Cette documentation présente l'ensemble des informations à connaitre.
 
-[[_TOC_]]
+# Préambule
+
+Cette documentation est à destination des Fournisseurs d'Identité souhaitant intégrer AgentConnect. 
+AgentConnect est implémenté sur deux plateformes, une dite "full RIE" (l’agent se connecte depuis le RIE, à un FS RIE via un FI RIE) et une autre dite "full Internet" (l'agent se connecte depuis Internet, à un FS Internet via un FI Internet).
+Toutefois il est possible de communiquer entre les deux plateformes grâce à "l'hybridge Internet/RIE" (l'agent se connecte depuis Internet, à un Fournisseur de Services Internet via un FI RIE).
+
+# Je veux devenir Fournisseur d'Identité 
+
+Vous souhaitez devenir Fournisseur d'Identité pour AgentConnect, voici les éléments à prendre en compte : 
+
+- [Quelles sont les étapes pour devenir Fournisseur d'Identité ?](doc_fi/pilotage_fca/pilotage_fca_etapes_fi.md)
+- [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](doc_fs/pilotage_fca/pilotage_fca_demarches_acteurs.md)
+- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge" ?](doc_fs/pilotage_fca/plateformes.md)
+- [Comment accéder au formulaire datapass ?](doc_fs/pilotage_fca/datapass.md)
 
 # Concepts de base
 
