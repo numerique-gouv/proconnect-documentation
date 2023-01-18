@@ -15,57 +15,57 @@ Toutefois il est possible de communiquer entre les deux plateformes grâce à "l
 
 Vous souhaitez devenir Fournisseur de Services pour AgentConnect, voici les éléments à prendre en compte : 
 
-- [Quelles sont les étapes pour devenir Fournisseur de Services ?](pilotage_fca/pilotage_fca_etapes.md)
-- [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](pilotage_fca/pilotage_fca_demarches_acteurs.md)
-- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge" ?](pilotage_fca/plateformes.md)
-- [Comment accéder au formulaire datapass ?](pilotage_fca/datapass.md)
+- [Quelles sont les étapes pour devenir Fournisseur de Services ?](doc_fs/pilotage_fca/pilotage_fca_etapes.md)
+- [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](doc_fs/pilotage_fca/pilotage_fca_demarches_acteurs.md)
+- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge" ?](doc_fs/pilotage_fca/plateformes.md)
+- [Comment accéder au formulaire datapass ?](doc_fs/pilotage_fca/datapass.md)
 
 # J'intègre AgentConnect dans mon service en ligne
 
 ## Je souhaite connaître le concept de base d'AgentConnect
 
-- [Qu'est ce que le protocole OpenID Connect ?](technique_fca/technique_oidc.md)
-- [Comment AgentConnect utilise OpenID Connect ?](technique_fca/technique_fca_oidc.md)
-- [Quelles sont les données que je peux récupérer par AgentConnect sur les agents ?](projet_fca/projet_fca_donnees.md)
+- [Qu'est ce que le protocole OpenID Connect ?](doc_fs/technique_fca/technique_oidc.md)
+- [Comment AgentConnect utilise OpenID Connect ?](doc_fs/technique_fca/technique_fca_oidc.md)
+- [Quelles sont les données que je peux récupérer par AgentConnect sur les agents ?](doc_fs/projet_fca/projet_fca_donnees.md)
 
 ## Je veux savoir comment fonctionne AgentConnect et comment identifier/authentifier les agents
 
-- [Quel est le détail du fonctionnement ?](fonctionnement_fca/details_fonctionnement.md)
-- [Quels sont les endpoints sur AgentConnect (le contrat d'API) ?](technique_fca/endpoints.md)
-- [Quelles sont les données que je peux récupérer par AgentConnect sur mes usagers ?](projet_fca/projet_fca_donnees.md)
-- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ? ](technique_fca/technique_fca_scope.md)
-- [Quelles sont les données d'AgentConnect qui expirent ?](technique_fca/donnees_expirent.md)
-- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect ?](projet_fca/projet_fca_niveau_eidas.md)
+- [Quel est le détail du fonctionnement ?](doc_fs/fonctionnement_fca/details_fonctionnement.md)
+- [Quels sont les endpoints sur AgentConnect (le contrat d'API) ?](doc_fs/technique_fca/endpoints.md)
+- [Quelles sont les données que je peux récupérer par AgentConnect sur mes usagers ?](doc_fs/projet_fca/projet_fca_donnees.md)
+- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ? ](doc_fs/technique_fca/technique_fca_scope.md)
+- [Quelles sont les données d'AgentConnect qui expirent ?](doc_fs/technique_fca/donnees_expirent.md)
+- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect ?](doc_fs/projet_fca/projet_fca_niveau_eidas.md)
 
 ## Je veux savoir comment intégrer le bouton AgentConnect
 
-- [Quel bouton AgentConnect intégrer et comment l'intégrer ?](implementation_fca/bouton_fca.md)
+- [Quel bouton AgentConnect intégrer et comment l'intégrer ?](doc_fs/implementation_fca/bouton_fca.md)
 
 ## Je veux savoir comment déconnecter l'agent d'AgentConnect
 
-- [Comment déconnecter l'agent d'AgentConnect ?](deconnexion_fca/deconnexion.md)
-- [Comment révoquer l'access token ?](deconnexion_fca/access_token.md)
+- [Comment déconnecter l'agent d'AgentConnect ?](doc_fs/deconnexion_fca/deconnexion.md)
+- [Comment révoquer l'access token ?](doc_fs/deconnexion_fca/access_token.md)
 
 ## Je veux connaître les différents environnements disponibles
 
-- [Comment accéder aux différents environnements d'AgentConnect ?](technique_fca/technique_fca_env.md)
-- [Quels démonstrateurs sont disponibles sur la plateforme intégration (test) d'AgentConnect ?](test_fca/test_fca_demonstrateur.md)
+- [Comment accéder aux différents environnements d'AgentConnect ?](doc_fs/technique_fca/technique_fca_env.md)
+- [Quels démonstrateurs sont disponibles sur la plateforme intégration (test) d'AgentConnect ?](doc_fs/test_fca/test_fca_demonstrateur.md)
 
 ## Je souhaite obtenir des informations sur la gestion d'erreurs entre AgentConnect et le Fournisseur de Services
 
-- [Comment les erreurs entre AgentConnect et le Fournisseur de Services sont-elles gérées ?](erreur_fca/gestion_erreur.md)
+- [Comment les erreurs entre AgentConnect et le Fournisseur de Services sont-elles gérées ?](doc_fs/erreur_fca/gestion_erreur.md)
 
 # Je souhaite faire qualifier mon implémentation d'AgentConnect
 
-- [Quel bouton AgentConnect intégrer et comment l'intégrer ?](implementation_fca/bouton_fca.md)
-- [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](implementation_fca/spec_recette_fca.md)
+- [Quel bouton AgentConnect intégrer et comment l'intégrer ?](doc_fs/implementation_fca/bouton_fca.md)
+- [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](doc_fs/implementation_fca/spec_recette_fca.md)
 
 # Je souhaite mettre mon Fournisseur de Services en production
 
-- [Comment faire qualifier mon implémentation ?](recette_fca/recette.md)
-- [Comment recevoir mes jetons de production ?](recette_fca/recette_cles_prod.md)
+- [Comment faire qualifier mon implémentation ?](doc_fs/recette_fca/recette.md)
+- [Comment recevoir mes jetons de production ?](doc_fs/recette_fca/recette_cles_prod.md)
 
-# [Contrat d'API AgentConnect](./technique_fca/endpoints.md)
+# [Contrat d'API AgentConnect](doc_fs/./technique_fca/endpoints.md)
 
 # Glossaire
 
