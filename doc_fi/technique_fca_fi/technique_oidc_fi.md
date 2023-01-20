@@ -95,10 +95,10 @@ Les Fournisseurs de Services doivent donc être des clients OpenID Connect (auss
 ---
 
 Voir aussi : 
-- [Comment AgentConnect utilise OpenID Connect ?](doc_fi/technique_fca_fi/technique_fca_oidc_fi.md)
-- [Quelles sont les données utilisateur que je dois fournir ?](doc_fi/technique_fca_fi/donnees_utilisateurs_fi.md)
-- [Quels sont les endpoints sur AgentConnect ?](doc_fi/fonctionnement_fca_fi/endpoints_fi.md)
-- [Quel est le détail du fonctionnement ?](doc_fi/fonctionnement_fca_fi/details_fonctionnement_fi.md)
-- [Quel est le détail des flux ?](doc_fi/fonctionnement_fca_fi/details_flux_fi.md)
-- [Quels sont les certificats d'authentification ?](doc_fi/fonctionnement_fca_fi/certificats_fi.md)
-- [Qu'est ce qu'eIDAS et comment utiliser les niveaux eIDAS en tant que Fournisseurs d'Identité ?](doc_fi/fonctionnement_fca_fi/fca_niveau_eidas_fi.md)
+- [Comment AgentConnect utilise OpenID Connect ?](../technique_fca_fi/technique_fca_oidc_fi.md)
+- [Quelles sont les données utilisateur que je dois fournir ?](../technique_fca_fi/donnees_utilisateurs_fi.md)
+- [Quels sont les endpoints sur AgentConnect ?](../fonctionnement_fca_fi/endpoints_fi.md)
+- [Quel est le détail du fonctionnement ?](../fonctionnement_fca_fi/details_fonctionnement_fi.md)
+- [Quel est le détail des flux ?](../fonctionnement_fca_fi/details_flux_fi.md)
+- [Quels sont les certificats d'authentification ?](../fonctionnement_fca_fi/certificats_fi.md)
+- [Qu'est ce qu'eIDAS et comment utiliser les niveaux eIDAS en tant que Fournisseurs d'Identité ?](../fonctionnement_fca_fi/fca_niveau_eidas_fi.md)

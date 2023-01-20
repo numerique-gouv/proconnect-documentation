@@ -50,5 +50,5 @@ Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gou
 ---
 
 Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur d'Identité ?](doc_fi/pilotage_fca/pilotage_fca_etapes_fi.md)
-- [Quels démonstrateurs sont disponibles sur la plateforme intégration (test) d'AgentConnect ?](doc_fi/test_fca_fi/test_fca_demonstrateur_fi.md)
+- [Quelles sont les étapes pour devenir Fournisseur d'Identité ?](../pilotage_fca/pilotage_fca_etapes_fi.md)
+- [Quels démonstrateurs sont disponibles sur la plateforme intégration (test) d'AgentConnect ?](../test_fca_fi/test_fca_demonstrateur_fi.md)

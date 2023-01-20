@@ -34,8 +34,8 @@ L'Hybridge permet de relier un Fournisseur d’Identité RIE à un Fournisseur d
 ---
 
 Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur d'Identité ?](doc_fi/pilotage_fca/pilotage_fca_etapes_fi.md)
-- [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](doc_fi/pilotage_fca/pilotage_fca_demarches_acteurs_fi.md)
-- [Comment accéder au formulaire datapass ?](doc_fi/pilotage_fca/datapass_fi.md)
-- [Comment accéder aux différents environnements d'AgentConnect ?](doc_fi/test_fca_fi/fca_env_fi.md)
-- [Quels démonstrateurs sont disponibles sur la plateforme intégration (test) d'AgentConnect ?](doc_fi/test_fca_fi/test_fca_demonstrateur_fi.md)
+- [Quelles sont les étapes pour devenir Fournisseur d'Identité ?](../pilotage_fca/pilotage_fca_etapes_fi.md)
+- [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](../pilotage_fca/pilotage_fca_demarches_acteurs_fi.md)
+- [Comment accéder au formulaire datapass ?](../pilotage_fca/datapass_fi.md)
+- [Comment accéder aux différents environnements d'AgentConnect ?](../test_fca_fi/fca_env_fi.md)
+- [Quels démonstrateurs sont disponibles sur la plateforme intégration (test) d'AgentConnect ?](../test_fca_fi/test_fca_demonstrateur_fi.md)
