@@ -2,7 +2,6 @@
 
 Le protocole OpenID Connect est au coeur du fonctionnement d'AgentConnect. C'est une surcouche d'identification au protocole OAuth 2.0. Il permet à des Clients (ici, les Fournisseurs de Services) d'accéder à l'identité des utilisateurs finaux (les internautes) par l'intermédiaire d'un serveur d'autorisation (ici, les Fournisseurs d'Identité).
 
-
 ## Dans le cadre d'AgentConnect 
 
 AgentConnect implémente le flux [Authorization Code Flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth) d'OpenID Connect. 
@@ -54,13 +53,13 @@ Les clés publiques de chiffrement d'AgentConnect sont disponibles à ces adress
 
 **Démonstrateurs Internet**
 
-*FI Internet* :
+*Fournisseurs d'Identité Internet* :
 
 https://fia1v2.integ01.dev-agentconnect.fr
 
 https://fia2v2.integ01.dev-agentconnect.fr
 
-*FS Internet* :
+*Fournisseurs de Services Internet* :
 
 https://fsa1v2.integ01.dev-agentconnect.fr
 
@@ -80,13 +79,13 @@ https://fsa3v2.integ01.dev-agentconnect.fr
 
 **Démonstrateurs RIE**
 
-*FI RIE* :
+*Fournisseurs d'Identité RIE* :
 
 https://fia1v2.integ02.agentconnect.rie.gouv.fr
 
 https://fia2v2.integ02.agentconnect.rie.gouv.fr
 
-*FS RIE* :
+*Fournisseurs de Services RIE* :
 
 https://fsa1v2.integ02.agentconnect.rie.gouv.fr
 
