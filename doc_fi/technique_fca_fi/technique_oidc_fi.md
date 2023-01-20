@@ -91,63 +91,7 @@ OpenId Connect fait intervenir 3 acteurs :
 
 Les Fournisseurs de Services doivent donc être des clients OpenID Connect (aussi appelés relying parties), et les Fournisseurs d'Identité doivent être des fournisseurs OpenID Connect (aussi appelés providers).
 
-### Qu'est ce que l'ID Token ?
-
-L'ID token est un jeton au format JWT qui est fourni en même temps que l'*access token*, il contient
-- des information sur l'authtentification 
-   - dates d'expiration, d'authentification, de création
-   - des moyens de contrôle permettant de valider l'ID Token et l'Access Token
-- des attributs ( claims ) sur l'utilisateurs, qui peuvent être : 
-   - standard : profile, email, address, phone, ...
-   - personnalisés par le serveur OpenId Connect. 
-
-
-**Exemple d'ID Token :**
-
-```json
-{
-  "sub": "4d327dd1e427daf4d50296ab71d6f3fc82ccc40742943521d42cb2bae4df41afv1",
-  "amr": [ "fc" ],
-  "auth_time": 1619605379,
-  "acr": "eidas3",
-  "nonce": "8c1696f884cac760436c9551ce34be81a3ab61171bf486dd31a58d2bc23a7bbd",
-  "at_hash": "zc4hJ6cxMmrkb8KQn9UXbg",
-  "aud": "6925fb8143c76eded44d32b40c0cb1006065f7f003de52712b78985704f39950",
-  "exp": 1619605440,
-  "iat": 1619605380,
-  "iss": "https://corev2.docker.dev-franceconnect.fr/api/v2"
-}
-```
-
-[Plus d'information sur l'ID Token](https://openid.net/developers/specs/)
-
-### Quels sont les endpoints d'OpenId Connect ? 
-
-Le protocole OpenID Connect propose les endpoints suivants : 
-
-- **authorization** : permet de demander une authentification de l'utilisateur
-- **token** : permet de demander un tocket ( *access token*, *refresh token*, *id token* )
-- **userinfo** : permet de récupérer les informations sur l'utilisateur
-- **revocation** : permet de révoquer un token  (*access token*, *refresh token*)
-- **introspection** : permet de valider un jeton (*access token*, *refresh token*)
-- **discovery** : permet de récupérer des informations sur le serveur OpenId Connect
-
-### Comment récupérer les tokens ? 
-
-OpenId proposte 3 types de flow qui permettent de récupérer des tokens : 
-
-- **Authorization code flow** : l'appel au endpoint *authorization* permet de récupérer un code d'autorisation qui est utilisé pour récupérer les tokens. 
-- **Implicit flow** : l'appel au endpoint *authorization* permet de récupérer directement les tokens, le refresh token ne peut pas être récupéré.
-- **Hybrid flow** : Il s'agit d'un mix entre les deux. 
 
 ---
 
 Voir aussi : 
-- [Comment AgentConnect utilise OpenID Connect ?](../technique_fca/technique_fca_oidc.md)
-- [Quelles sont les données que je peux récupérer par AgentConnect sur mes usagers ?](../projet_fca/projet_fca_donnees.md)
-- [Quel est le détail du fonctionnement ?](../fonctionnement_fca/details_fonctionnement.md)
-- [Quelles sont les données que je peux récupérer par AgentConnect sur les agents ?](../projet_fca/projet_fca_donnees.md)
-- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ? ](../technique_fca/technique_fca_scope.md)
-- [Quelles sont les données d'AgentConnect qui expirent ?](../technique_fca/donnees_expirent.md)
-- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect ?](../projet_fca/projet_fca_niveau_eidas.md)
-- [Quels sont les endpoints sur AgentConnect (le contrat d'API) ?](technique_fca/endpoints.md)

@@ -13,7 +13,7 @@ Pour vous permettre de réaliser les développements liés à l'intégration d'A
 Pour utiliser l'environnement d'intégration, il faut au préalable avoir : 
 
 1. Avoir fait une demande datapass et que celle-ci soit validée,
-2. Avoir fait une demande de création d'un Fournisseur de Services en environnement d'intégration AgentConnect 
+2. Avoir fait une demande de création d'un Fournisseur de Services en environnement d'intégration AgentConnect sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in):
 
 [Demande de création d'un Fournisseur de Services sur AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca)
 
@@ -56,11 +56,11 @@ Pour avoir accès à l'environnement de production d'AgentConnect, il faut au pr
 
 1. Reçu la qualification de vos développements par AgentConnect sur un environnement autre que votre production.
 
-2. Demandé une mise en production via le formulaire à votre disposition sur sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in):
+2. Demandé une mise en production via le formulaire à votre disposition sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in):
 
 [Demande de création d'un Fournisseur de Services sur AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca)
 
-3. Configuré votre Fournisseur de Services de production AgentConnect avec les clés de production qui vous ont été remises au responsable technique par l'équipe AgentConnect . 
+3. Configuré votre Fournisseur de Services de production AgentConnect avec les clés de production qui vous ont été remises au responsable technique par l'équipe AgentConnect. 
 
 **:warning: Attention :** Il ne faut surtout pas utiliser les clés d'intégration que vous avez utilisées lors de vos développements avec votre Fournisseur de Services en production. Les clés d'intégration ne sont utilisables que sur l'environnement d'intégration AgentConnect. De même, il n'est pas possible d'utiliser des clés de production d'AgentConnect sur la plateforme d'intégration. 
 

@@ -7,6 +7,12 @@ Ceux-ci seront vérifiés un par un par l'équipe AgentConnect au moment de la r
 
 L'ensemble des prérequis doivent être respectés afin d'obtenir la validation qui vous permettra d'utiliser AgentConnect en production.
 
+Pour rappel, la démarche pour demander la qualification de votre implémentation est disponible à l'adresse suivante : 
+
+**[Demande de recette d'un Fournisseur de Services AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-recette-fs-fca)**
+
+> ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE EN VISIO DEVRA SE FAIRE CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.
+
 ## Le visuel
 
 1. **L'esthétique du bouton AgentConnect est respectée**

@@ -19,7 +19,7 @@ Vous souhaitez devenir Fournisseur d'Identité pour AgentConnect, voici les él�
 - [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge" ?](doc_fi/pilotage_fca/plateformes_fi.md)
 - [Comment accéder au formulaire datapass ?](doc_fi/pilotage_fca/datapass_fi.md)
 
-# J'intègre AgentConnect
+# J'intègre mon Fournisseur d'Identité sur AgentConnect
 
 ## Je souhaite connaître le concept de base d'AgentConnect
 
@@ -35,52 +35,19 @@ Vous souhaitez devenir Fournisseur d'Identité pour AgentConnect, voici les él�
 - [Quels sont les certificats d'authentification ?](doc_fi/fonctionnement_fca_fi/certificats_fi.md)
 - [Qu'est ce qu'eIDAS et comment utiliser les niveaux eIDAS en tant que Fournisseurs d'Identité ?](doc_fi/fonctionnement_fca_fi/fca_niveau_eidas_fi.md)
 
+## Je veux connaître les différents environnements disponibles
 
+- [Comment accéder aux différents environnements d'AgentConnect ?](doc_fi/test_fca_fi/fca_env_fi.md)
+- [Quels démonstrateurs sont disponibles sur la plateforme intégration (test) d'AgentConnect ?](doc_fi/test_fca_fi/test_fca_demonstrateur_fi.md)
 
+# Je souhaite faire qualifier mon Fournisseur d'Identité AgentConnect
 
+- [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](doc_fi/implementation_fca_fi/spec_recette_fca_fi.md)
+- [Comment faire qualifier mon implémentation ?](doc_fi/implementation_fca_fi/recette_fi.md)
 
+# Je souhaite mettre mon Fournisseur de Services en production
 
-
-
-
-# Parcours d'utilisation de l'agent et recommandations UX
-
-La mire de connexion du fournisseur d'identité doit tout d'abord être responsive. 
-
-Les éléments suivants sont recommandés, afin d'éviter l'abandon de l'agent lors d'une cinématique AgentConnect :
-
-* Lien de contact du support du fournisseur d'identité
-* Lien de mot de passe oublié.
-
-Nous recommandons également les éléments suivants sur la mire de connexion du fournisseur d'identité :
-
-Fond grisé avec Marianne en blanc en bas à droite.
-Logos d'AgentConnect et du fournisseur d'identité.
-Lien "retourner sur AgentConnect" pour permettre le changement de fournisseur d'identité à l'agent.
-
-
-Ci-dessous les éléments visuels nécessaires : **A compléter**
-
-<img src="uploads/19e0c2e1d02d2a6b1a3f97a74a35c559/logo_marianne.png" alt="drawing" width="150"/>
-<img src="uploads/e08be0034c2ae3b1faca59e70bbec1a1/fc_avatar.png" alt="drawing" width="150"/>
-
-Téléchargements :
-
-**A compléter**
-
-* [Pack png](uploads/af84d2a6599ec7a07671d43d2f400ff3/fc_images_png.zip)
-* [Pack jpg](uploads/1429d69fe3baee1cc8560ad365aaec96/fc_images_jpg.zip)
-
-
-Le parcours d’identification doit être validé par l’équipe AgentConnect le plus en amont possible de la réalisation sous la forme suivante : 
-* communication des maquettes ou spécifications fonctionnelles
-* qualification du parcours d’identification en environnement d'intégration
-
-Ces deux étapes sont des pré-requis à une ouverture en production. 
-
-L’équipe AgentConnect est là pour vous aider à proposer l’expérience usager la plus adaptée. 
-N'hésitez pas à la solliciter pour éviter d'impacter vos délais de mise en production.
-
+- [Quelles sont les adresses de l'environnement de production AgentConnect ?](doc_fi/production_fca_fi/adresses_prod_fca_fi.md)
 
 # Glossaire
 
