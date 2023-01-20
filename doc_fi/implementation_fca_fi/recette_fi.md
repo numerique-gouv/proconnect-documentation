@@ -46,9 +46,9 @@ Le délai de traitement de votre demande de qualification est d'environ 3 jours 
 ---
 
 Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur d'Identité ?](doc_fi/pilotage_fca/pilotage_fca_etapes_fi.md)
-- [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](doc_fi/pilotage_fca/pilotage_fca_demarches_acteurs_fi.md)
-- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge" ?](doc_fi/pilotage_fca/plateformes_fi.md)
-- [Comment accéder au formulaire datapass ?](doc_fi/pilotage_fca/datapass_fi.md)
-- [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](doc_fi/implementation_fca_fi/spec_recette_fca_fi.md)
-- [Quelles sont les adresses de l'environnement de production AgentConnect ?](doc_fi/production_fca_fi/adresses_prod_fca_fi.md)
+- [Quelles sont les étapes pour devenir Fournisseur d'Identité ?](../pilotage_fca/pilotage_fca_etapes_fi.md)
+- [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](../pilotage_fca/pilotage_fca_demarches_acteurs_fi.md)
+- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge" ?](../pilotage_fca/plateformes_fi.md)
+- [Comment accéder au formulaire datapass ?](../pilotage_fca/datapass_fi.md)
+- [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](../implementation_fca_fi/spec_recette_fca_fi.md)
+- [Quelles sont les adresses de l'environnement de production AgentConnect ?](../production_fca_fi/adresses_prod_fca_fi.md)
