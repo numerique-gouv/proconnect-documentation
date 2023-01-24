@@ -28,15 +28,14 @@ Nous recommandons également les éléments suivants sur la mire de connexion du
 
 Ci-dessous les éléments visuels nécessaires : 
 
-<img src="uploads/19e0c2e1d02d2a6b1a3f97a74a35c559/logo_marianne.png" alt="drawing" width="150"/>
-<img src="uploads/e08be0034c2ae3b1faca59e70bbec1a1/fc_avatar.png" alt="drawing" width="150"/>
+
 
 Téléchargements :
 
 **A compléter**
 
-* [Pack png](uploads/af84d2a6599ec7a07671d43d2f400ff3/fc_images_png.zip)
-* [Pack jpg](uploads/1429d69fe3baee1cc8560ad365aaec96/fc_images_jpg.zip)
+* [Pack png](xxxxxxxxxxxxxxxxxx)
+* [Pack jpg](xxxxxxxxxxxxxxxxxx)
 
 
 Le parcours d’identification doit être validé par l’équipe AgentConnect le plus en amont possible de la réalisation sous la forme suivante : 
@@ -82,7 +81,7 @@ En tant qu'utilisateur, une fois que je me suis authentifié auprès du Fourniss
 
 **4. Cinématique - Déconnexion**
 
-La déconnexion fonctionne : il est nécessaire de vérifier que lorsque l'utilisateur se déconnecte sur le service, il est déconnecté du service, d'AgentConnect et du Fournisseur de Service.
+La déconnexion fonctionne : il est nécessaire de vérifier que lorsque l'utilisateur se déconnecte sur le service, il est déconnecté du service, d'AgentConnect et du Fournisseur de Services.
 
 ---
 
