@@ -13,34 +13,20 @@ Pour rappel, vous pouvez demander la recette de votre Fournisseur d'Identité en
 
 ## Parcours d'utilisation de l'agent et recommandations UX
 
-La mire de connexion du fournisseur d'identité doit tout d'abord être responsive. 
+La mire de connexion du Fournisseur d'Identité doit tout d'abord être responsive. 
 
 Les éléments suivants sont recommandés, afin d'éviter l'abandon de l'agent lors d'une cinématique AgentConnect :
 
-* Lien de contact du support du fournisseur d'identité
+* Lien de contact du support du Fournisseur d'Identité,
 * Lien de mot de passe oublié.
 
-Nous recommandons également les éléments suivants sur la mire de connexion du Fournisseur d'Identité :
+L'éléments suivant doit apparaître sur la mire de connexion du Fournisseur d'Identité :
 
-- Fond grisé avec Marianne en blanc en bas à droite.
-- Logos d'AgentConnect et du fournisseur d'identité.
 - Lien "retourner sur AgentConnect" pour permettre le changement de Fournisseur d'Identité à l'agent.
 
-Ci-dessous les éléments visuels nécessaires : 
-
-
-
-Téléchargements :
-
-**A compléter**
-
-* [Pack png](xxxxxxxxxxxxxxxxxx)
-* [Pack jpg](xxxxxxxxxxxxxxxxxx)
-
-
 Le parcours d’identification doit être validé par l’équipe AgentConnect le plus en amont possible de la réalisation sous la forme suivante : 
-* communication des maquettes ou spécifications fonctionnelles
-* qualification du parcours d’identification en environnement d'intégration
+* communication des maquettes ou spécifications fonctionnelles,
+* qualification du parcours d’identification en environnement d'intégration.
 
 Ces deux étapes sont des pré-requis à une ouverture en production. 
 
