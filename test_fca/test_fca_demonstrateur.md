@@ -12,6 +12,7 @@ Les adresses de notre environnement d'intégration sont les suivantes :
 Pour les tests, le compte générique est le suivant:
  
 Login : test
+
 Mdp : 123
 
 ## Environnement Internet : 
