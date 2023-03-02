@@ -7,6 +7,13 @@ Sur notre environnement d'intégration, vous pourrez utiliser les fournisseurs d
 
 Les adresses de notre environnement d'intégration sont les suivantes : 
 
+## Compte test: 
+
+Pour les tests, le compte générique est le suivant:
+ 
+Login : test
+Mdp : 123
+
 ## Environnement Internet : 
 
 | EndPoint | Adresse |
