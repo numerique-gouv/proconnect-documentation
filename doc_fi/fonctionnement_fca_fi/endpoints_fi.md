@@ -6,7 +6,7 @@ En environnements d'intégration et de production AgentConnect, les endpoints so
 
 | Environnement | Adresse de retour ( Redirect URI ) |
 | ------ | ------ |
-| intégration AC | https://fca.integ01.dev-franceconnect.fr/api/v2/oidc-callback/{fc-internal-id} |
+| intégration AC | https://fca.integ01.dev-franceconnect.fr/api/v2/oidc-callback/ |
 | production AC | Envoi de l'URL de prod par mail |  
 
 
@@ -14,7 +14,7 @@ En environnements d'intégration et de production AgentConnect, les endpoints so
 
 | Environnement | Adresse de retour ( Redirect URI ) |
 | ------ | ------ |
-| intégration AC | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/oidc-callback/{fc-internal-id}  |
+| intégration AC | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/oidc-callback/ |
 | production AC | Envoi de l'URL de prod par mail |  
 
 
