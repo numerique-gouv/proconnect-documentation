@@ -11,8 +11,6 @@ En plus de l'openid, qui est obligatoire, des données obligatoires sont fournie
 |email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
 |uid|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
 
-L'uid est une donnée technique qui ne peut pas être demandé par le FS.
-
 En complément, il est possible d'obtenir des données complémentaires. Cependant ces données ne sont pas obligatoirement connues par tous les Fournisseurs d'Identité.
 
 ## Les données complémentaires
