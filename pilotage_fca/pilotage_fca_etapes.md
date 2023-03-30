@@ -46,7 +46,7 @@ Une fois votre Fournisseur de Services enrôlé sur la plateforme de production,
 
 Voir aussi : 
 - [Quels sont les différents acteurs que je dois faire intervenir dans mon organisation pour devenir Fournisseur de Services ?](../pilotage_fca/pilotage_fca_demarches_acteurs.md)
-- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et "l'Hybridge" ?](../pilotage_fca/plateformes.md)
+- [Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et "l'Hybridge" ?](../pilotage_fca/plateformes.md)
 - [Comment accéder au formulaire datapass ?](../pilotage_fca/datapass.md)
 - [Quel bouton AgentConnect intégrer et comment l'intégrer ?](../implementation_fca/bouton_fca.md)
 - [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](../implementation_fca/spec_recette_fca.md)
