@@ -17,7 +17,7 @@ Vous souhaitez devenir Fournisseur de Services pour AgentConnect, voici les él�
 
 - [Quelles sont les étapes pour devenir Fournisseur de Services ?](pilotage_fca/pilotage_fca_etapes.md)
 - [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](pilotage_fca/pilotage_fca_demarches_acteurs.md)
-- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge" ?](pilotage_fca/plateformes.md)
+- [Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et l'"Hybridge" ?](pilotage_fca/plateformes.md)
 - [Comment accéder au formulaire datapass ?](pilotage_fca/datapass.md)
 
 # J'intègre AgentConnect dans mon service en ligne
