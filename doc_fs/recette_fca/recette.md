@@ -15,7 +15,7 @@ Nous vous prions de bien vouloir y déposer votre demande afin qu'elle puisse ê
 
 **[Demande de recette d'un Fournisseur de Services AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-recette-fs-fca)**
 
-> ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE DEVRA SE FAIRE AUTREMENT (CAPTURES D'ECRANS OU AUTRES) CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.
+> ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE DEVRA SE FAIRE (CAPTURES D'ECRANS OU AUTRES) CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.
 
 Une fois la démarche soumise, notre équipe procèdera :
 
