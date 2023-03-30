@@ -34,8 +34,6 @@ Le protocole OpenId Connect defini un certain nombre de [claims standards](https
 |email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
 |uid|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
 
-L'uid est une donnée technique qui ne peut pas être demandé par le Fournisseur de Services.
-
 En complément, il est possible d'obtenir des données complémentaires. Cependant ces données ne sont pas obligatoirement connues par tous les Fournisseurs d'Identité.
 
 
@@ -59,7 +57,7 @@ AgentConnect transmet systématiquement au Fournisseur de Services un identifian
 
 ### Les données sur l'authentification
 
-Les claims relatifs à l'authentification disponible par AgentConnect sont des claims standards et sont disponible uniquement dans l'ID Token. Ces claims sont les suivants : 
+Les claims relatifs à l'authentification disponibles par AgentConnect sont des claims standards et sont disponibles uniquement dans l'ID Token. Ces claims sont les suivants : 
 
 - amr
 - acr
