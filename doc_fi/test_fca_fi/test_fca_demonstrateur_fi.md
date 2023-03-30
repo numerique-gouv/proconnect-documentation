@@ -6,13 +6,13 @@ Sur notre environnement d'intégration, vous pourrez utiliser nos Fournisseurs d
 
 Les adresses de notre environnement d'intégration sont les suivantes : 
 
-## Environnement Internet : 
+### Environnement Internet : 
 
-| Environnement | adresses du endpoint |
-| ------ | ------ |
-| intégration AC | https://fca.integ01.dev-agentconnect.fr/api/v2/client/.well-known/keys |
-| production AC | Envoi de l'URL de prod par mail|  
+Les adresses de notre environnement d'intégration Internet sont les suivantes : 
 
+| Adresse d'intégration | redirect_uri | post_logout_redirect_uri | URL de découverte des JWK |
+| ------ | ------ | ------ | ------ |
+| https://fca.integ01.dev-agentconnect.fr | https://fca.integ01.dev-agentconnect.fr/api/v2/oidc-callback/ | https://fca.integ01.dev-agentconnect.fr/api/v2/client/logout-callback | https://fca.integ01.dev-agentconnect.fr/api/v2/client/.well-known/keys |
 
 **Démonstrateurs Internet**
 
@@ -31,13 +31,13 @@ https://fsa2v2.integ01.dev-agentconnect.fr
 https://fsa3v2.integ01.dev-agentconnect.fr
 
 
-## Environnement RIE : 
+### Environnement RIE : 
 
-| EndPoint | Adresse |
-| ------ | ------ |
-| intégration AC | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/client/.well-known/keys |
-| production AC | Envoi de l'URL de prod par mail |  
+Les adresses de notre environnement d'intégration RIE sont les suivantes : 
 
+| Adresse d'intégration | redirect_uri | post_logout_redirect_uri | URL de découverte des JWK |
+| ------ | ------ | ------ | ------ |
+| https://fca.integ02.agentconnect.rie.gouv.fr | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/oidc-callback/ | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/client/logout-callback | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/client/.well-known/keys |
 
 **Démonstrateurs RIE**
 
@@ -54,6 +54,7 @@ https://fsa1v2.integ02.agentconnect.rie.gouv.fr
 https://fsa2v2.integ02.agentconnect.rie.gouv.fr
 
 https://fsa3v2.integ02.agentconnect.rie.gouv.fr
+
 
 ---
 

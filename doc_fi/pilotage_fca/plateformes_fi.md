@@ -1,4 +1,4 @@
-# Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge" ?
+# Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et l'"Hybridge" ?
 
 AgentConnect est implémenté sur deux plateformes, une dite "full RIE" et une autre dite "full Internet". Toutefois il est possible de communiquer entre les deux plateformes grâce à "l'hybridge Internet/RIE".
 
@@ -8,13 +8,13 @@ Le choix du positionnement sur le RIE ou sur Internet est « à la main » des
 
 AgentConnect met à disposition 3 plateformes pour répondre aux exigences de l’ANSSI.
 
-### La plateforme « Full Internet »
+### La plateforme « Internet »
 
 L'agent se connecte depuis Internet, à un Fournisseur de Services Internet via un Fournisseur d'Identité Internet.
 
 Ex : Accès à l’outil collaboratif Osmose depuis le FI Cerbère (MTE)
 
-### La plateforme « Full RIE »
+### La plateforme « RIE »
 
 L’agent se connecte depuis le RIE, à un Fournisseur de Services RIE via un Fournisseur d'Identité RIE.
 

@@ -10,7 +10,7 @@ Les Fournisseurs de Services doivent être clients OpenID Connect, et les fourni
 
 ## Chiffrement et signature des échanges
 
-Dans le cadre du niveau **Standard** , tous les échanges de jetons JWT entre le FI et AC sont signés. 
+Dans le cadre du niveau **Standard** , tous les échanges de jetons JWT entre le Fournisseurs d'Identité et AgentConnect sont signés. 
 Le chiffrement des jetons est recommandé mais non obligatoire. 
 
 les algorithmes suivants sont gérés par AgentConnect Standard : 
@@ -40,61 +40,9 @@ Les spécifications des algorithmes de signatures et de chiffrements utilisés s
 * [JWS - https://tools.ietf.org/html/rfc7515#appendix-A.3](https://tools.ietf.org/html/rfc7515#appendix-A.3)
 * [JWE - https://tools.ietf.org/html/rfc7516#appendix-A.1](https://tools.ietf.org/html/rfc7516#appendix-A.1)
 
-Les clés publiques de chiffrement d'AgentConnect sont disponibles à ces adresses et seront changées régulièrement 
-
-### Environnement Internet : 
-
-
-| Environnement | adresses du endpoint |
-| ------ | ------ |
-| intégration AC | https://fca.integ01.dev-agentconnect.fr/api/v2/client/.well-known/keys |
-| production AC | Envoi de l'URL de prod par mail|  
-
-
-**Démonstrateurs Internet**
-
-*Fournisseurs d'Identité Internet* :
-
-https://fia1v2.integ01.dev-agentconnect.fr
-
-https://fia2v2.integ01.dev-agentconnect.fr
-
-*Fournisseurs de Services Internet* :
-
-https://fsa1v2.integ01.dev-agentconnect.fr
-
-https://fsa2v2.integ01.dev-agentconnect.fr
-
-https://fsa3v2.integ01.dev-agentconnect.fr
-
-
-
-### Environnement RIE : 
-
-| EndPoint | Adresse |
-| ------ | ------ |
-| intégration AC | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/client/.well-known/keys |
-| production AC | Envoi de l'URL de prod par mail |  
-
-
-**Démonstrateurs RIE**
-
-*Fournisseurs d'Identité RIE* :
-
-https://fia1v2.integ02.agentconnect.rie.gouv.fr
-
-https://fia2v2.integ02.agentconnect.rie.gouv.fr
-
-*Fournisseurs de Services RIE* :
-
-https://fsa1v2.integ02.agentconnect.rie.gouv.fr
-
-https://fsa2v2.integ02.agentconnect.rie.gouv.fr
-
-https://fsa3v2.integ02.agentconnect.rie.gouv.fr
-
-
-les clés de signatures utilisés par le Fournisseur d'Identité doivent être disponible via la *JWKS URL* présente dans les méta-data de la *Discovery URL*. 
+Les clés publiques de chiffrement d'AgentConnect sont disponibles à ces adresses et seront changées régulièrement.
+ 
+Les clés de signatures utilisés par le Fournisseur d'Identité doivent être disponible via la *JWKS URL* présente dans les méta-data de la *Discovery URL*. 
 
 ---
 
