@@ -11,5 +11,5 @@ Votre demande est validée par la DINUM dans un délai moyen de 5 jours ouvrés.
 Voir aussi : 
 - [Quelles sont les étapes pour devenir Fournisseur de Services ?](../pilotage_fca/pilotage_fca_etapes.md)
 - [Quels sont les différents acteurs que je dois faire intervenir dans mon organisation pour devenir Fournisseur de Services ?](../pilotage_fca/pilotage_fca_demarches_acteurs.md)
-- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et "l'Hybridge" ?](../pilotage_fca/plateformes.md)
+- [Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et "l'Hybridge" ?](../pilotage_fca/plateformes.md)
 - [Comment accéder au formulaire datapass ?](../pilotage_fca/datapass.md)
