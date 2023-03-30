@@ -2,9 +2,20 @@
 
 ## Qu'est ce que le règlement eIDAS ? 
 
-Pour plus d'informations à ce sujet nous vous invitons à consulter les liens suivants :
+> Le règlement n° 910/2014 sur l'identification électronique et les services de confiance pour les
+transactions électroniques au sein du marché intérieur, dit règlement « eIDAS », est un règlement
+européen qui a été adopté le 23 juillet 2014 par le Parlement européen et le Conseil de l'Union
+Européenne. L'objectif de ce règlement est de mettre en place un cadre juridique propre à
+susciter une confiance accrue dans les transactions électroniques au sein du marché intérieur. 
+>
+> Le règlement eIDAS s'applique à l’identification électronique et aux services de confiance
+(faisant respectivement l’objet des chapitres II et III du présent document). Il accorde également
+un effet juridique aux documents électroniques.
 
-- [Présentation du règlement eIDAS par l'ANSSI](https://www.ssi.gouv.fr/administration/reglementation/confiance-numerique/le-reglement-eidas/#:~:text=Substantiel%20%3A%20%C3%A0%20ce%20niveau%2C%20l,'alt%C3%A9ration%20de%20l'identit%C3%A9.)
+Source : [FAQ eIDAS de l'ANSSI](https://www.ssi.gouv.fr/uploads/2017/01/eidas_faq_anssi.pdf)
+
+Pour plus d'informations à ce sujet nous vous invitons à consulter également le lien suivant :
+
 - [FAQ eIDAS de l'ANSSI](https://www.ssi.gouv.fr/uploads/2017/01/eidas_faq_anssi.pdf)
 
 ## Utiliser les niveaux eIDAS en tant que Fournisseur d'Identité
