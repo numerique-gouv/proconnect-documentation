@@ -7,7 +7,7 @@ Vous souhaitez devenir Fournisseur d'Identité sur AgentConnect ? Vous êtes au 
 # Préambule
 
 Cette documentation est à destination des Fournisseurs d'Identité souhaitant intégrer AgentConnect. 
-AgentConnect est implémenté sur deux plateformes, une dite "full RIE" (l’agent se connecte depuis le RIE, à un FS RIE via un FI RIE) et une autre dite "full Internet" (l'agent se connecte depuis Internet, à un FS Internet via un FI Internet).
+AgentConnect est implémenté sur deux plateformes, une dite "RIE" (l’agent se connecte depuis le RIE, à un FS RIE via un FI RIE) et une autre dite "Internet" (l'agent se connecte depuis Internet, à un FS Internet via un FI Internet).
 Toutefois il est possible de communiquer entre les deux plateformes grâce à "l'hybridge Internet/RIE" (l'agent se connecte depuis Internet, à un Fournisseur de Services Internet via un FI RIE).
 
 # Je veux devenir Fournisseur d'Identité 
