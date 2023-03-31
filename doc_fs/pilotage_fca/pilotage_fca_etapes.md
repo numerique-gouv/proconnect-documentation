@@ -26,7 +26,7 @@ Une fois votre Fournisseur de Services enrôlé sur la plateforme d'intégration
 
 - [Demande de recette d'un Fournisseur de Services](https://www.demarches-simplifiees.fr/commencer/demande-recette-fs-fca). 
 
-> ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE DEVRA SE FAIRE AUTREMENT (CAPTURES D'ECRANS OU AUTRES) CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.
+> ATTENTION, si vous implémentez AgentConnect sur le RIE, UUNE RECETTE DEVRA SE FAIRE EN VISIO, SI POSSIBLE, OU VIA UN AUTRE MOYEN (VIDEO, CAPTURES D'ECRANS OU AUTRES) CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.
 
 La délai de traitement de votre demande de qualification dépend du respect des prérequis listés dans le paragraphe [Quels sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation ?](../implementation_fca/spec_recette_fca.md) mais est estimé environ à 3 jours ouvrés.
 
@@ -39,17 +39,3 @@ Le formulaire mis à disposition est le suivant:
 - [Demande de création d'un Fournisseur de Services AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca)
 
 Une fois votre Fournisseur de Services enrôlé sur la plateforme de production, l'équipe AgentConnect transmet au responsable technique les clés de production (client ID par email et client secret par sms). 
-
-
-
----
-
-Voir aussi : 
-- [Quels sont les différents acteurs que je dois faire intervenir dans mon organisation pour devenir Fournisseur de Services ?](../pilotage_fca/pilotage_fca_demarches_acteurs.md)
-- [Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et "l'Hybridge" ?](../pilotage_fca/plateformes.md)
-- [Comment accéder au formulaire datapass ?](../pilotage_fca/datapass.md)
-- [Quel bouton AgentConnect intégrer et comment l'intégrer ?](../implementation_fca/bouton_fca.md)
-- [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](../implementation_fca/spec_recette_fca.md)
-- [Quels démonstrateurs sont disponibles sur la plateforme intégration d'AgentConnect ?](../test_fca/test_fca_demonstrateur.md)
-- [Comment faire qualifier mon implémentation ?](../recette_fca/recette.md)
-- [Comment recevoir mes jetons de production ?](../recette_fca/recette_cles_prod.md)

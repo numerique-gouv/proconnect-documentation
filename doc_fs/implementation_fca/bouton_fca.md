@@ -29,15 +29,3 @@ Les règles suivantes doivent être respectées:
 - votre intégration doit respecter le référentiel général d’amélioration de l’accessibilité (RGAA).
 
 ![Guidelines AgentConnect](https://user-images.githubusercontent.com/60473902/196908275-3fe6872f-cb75-4c1d-92af-fea67cbf89ae.png)
-
-
-
-
-
----
-
-Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur de Services ?](../pilotage_fca/pilotage_fca_etapes.md)
-- [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](../implementation_fca/spec_recette_fca.md)
-- [Comment faire qualifier mon implémentation ?](../recette_fca/recette.md)
-- [Comment recevoir mes jetons de production ?](../recette_fca/recette_cles_prod.md)

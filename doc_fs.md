@@ -15,10 +15,10 @@ Toutefois il est possible de communiquer entre les deux plateformes grâce à "l
 
 Vous souhaitez devenir Fournisseur de Services pour AgentConnect, voici les éléments à prendre en compte : 
 
-- [Quelles sont les étapes pour devenir Fournisseur de Services ?](pilotage_fca/pilotage_fca_etapes.md)
-- [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](pilotage_fca/pilotage_fca_demarches_acteurs.md)
-- [Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et l'"Hybridge" ?](pilotage_fca/plateformes.md)
-- [Comment accéder au formulaire datapass ?](pilotage_fca/datapass.md)
+- [Quelles sont les étapes pour devenir Fournisseur de Services ?](doc_fs/pilotage_fca/pilotage_fca_etapes.md)
+- [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](doc_fs/pilotage_fca/pilotage_fca_demarches_acteurs.md)
+- [Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et l'"Hybridge" ?](doc_fs/pilotage_fca/plateformes.md)
+- [Comment accéder au formulaire datapass ?](doc_fs/pilotage_fca/datapass.md)
 
 # J'intègre AgentConnect dans mon service en ligne
 

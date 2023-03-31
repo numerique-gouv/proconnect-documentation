@@ -15,7 +15,7 @@ Nous vous prions de bien vouloir y déposer votre demande afin qu'elle puisse ê
 
 **[Demande de recette d'un Fournisseur de Services AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-recette-fs-fca)**
 
-> ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE DEVRA SE FAIRE AUTREMENT (CAPTURES D'ECRANS OU AUTRES) CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.
+> ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE DEVRA SE FAIRE EN VISIO, SI POSSIBLE, OU VIA UN AUTRE MOYEN (VIDEO, CAPTURES D'ECRANS OU AUTRES) CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.
 
 Une fois la démarche soumise, notre équipe procèdera :
 
@@ -28,15 +28,3 @@ Une fois la démarche soumise, notre équipe procèdera :
 Le temps de remplissage estimé est de 10 min si tous les prérequis ont bien été respectés en amont. 
 
 Le délai de traitement de votre demande de qualification est d'environ 3 jours ouvrés.
-
-
-
----
-
-Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur de Services ?](../pilotage_fca/pilotage_fca_etapes.md)
-- [Quel bouton AgentConnect intégrer et comment l'intégrer ?](../implementation_fca/bouton_fca.md)
-- [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](../implementation_fca/spec_recette_fca.md)
-- [Comment accéder aux différents environnements d'AgentConnect ?](../technique_fca/technique_fca_env.md)
-- [Quels démonstrateurs sont disponibles sur la plateforme intégration (test) d'AgentConnect ?](../test_fca/test_fca_demonstrateur.md)
-- [Comment recevoir mes jetons de production ?](../recette_fca/recette_cles_prod.md)

@@ -11,7 +11,7 @@ Pour rappel, la démarche pour demander la qualification de votre implémentatio
 
 **[Demande de recette d'un Fournisseur de Services AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-recette-fs-fca)**
 
-> ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE EN VISIO DEVRA SE FAIRE CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.
+> ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE DEVRA SE FAIRE EN VISIO, SI POSSIBLE, OU VIA UN AUTRE MOYEN (VIDEO, CAPTURES D'ECRANS OU AUTRES) CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.
 
 ## Le visuel
 
@@ -105,12 +105,3 @@ Les scopes appelés sont les mêmes que ceux déclarés et autorisés dans la de
 4. **TLS**
 
 Le service ne doit pas utiliser de version de TLS inférieur à 1.2 et doit obligatoirement utilisé des versions 1.2 ou 1.3.
-
-
----
-
-Voir aussi : 
-- [Quel bouton AgentConnect intégrer et comment l'intégrer ?](../implementation_fca/bouton_fca.md)
-- [Quelles sont les étapes pour devenir Fournisseur de Services ?](../pilotage_fca/pilotage_fca_etapes.md)
-- [Comment faire qualifier mon implémentation ?](../recette_fca/recette.md)
-- [Comment recevoir mes jetons de production ?](../recette_fca/recette_cles_prod.md)
