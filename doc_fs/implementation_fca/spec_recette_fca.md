@@ -105,12 +105,3 @@ Les scopes appelés sont les mêmes que ceux déclarés et autorisés dans la de
 4. **TLS**
 
 Le service ne doit pas utiliser de version de TLS inférieur à 1.2 et doit obligatoirement utilisé des versions 1.2 ou 1.3.
-
-
----
-
-Voir aussi : 
-- [Quel bouton AgentConnect intégrer et comment l'intégrer ?](../implementation_fca/bouton_fca.md)
-- [Quelles sont les étapes pour devenir Fournisseur de Services ?](../pilotage_fca/pilotage_fca_etapes.md)
-- [Comment faire qualifier mon implémentation ?](../recette_fca/recette.md)
-- [Comment recevoir mes jetons de production ?](../recette_fca/recette_cles_prod.md)

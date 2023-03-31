@@ -87,9 +87,3 @@ Les adresses de notre environnement de production sont les suivantes :
 | Token | https://auth.agentconnect.rie.gouv.fr/api/v2/token | 
 | UserInfo | https://auth.agentconnect.rie.gouv.fr/api/v2/userinfo | 
 | Logout | https://auth.agentconnect.rie.gouv.fr/api/v2/session/end | 
-
-
----
-
-Voir aussi : 
-- [Quels démonstrateurs sont disponibles sur la plateforme intégration d'AgentConnect ?](../test_fca/test_fca_demonstrateur.md)

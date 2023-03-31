@@ -28,15 +28,3 @@ Une fois la démarche soumise, notre équipe procèdera :
 Le temps de remplissage estimé est de 10 min si tous les prérequis ont bien été respectés en amont. 
 
 Le délai de traitement de votre demande de qualification est d'environ 3 jours ouvrés.
-
-
-
----
-
-Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur de Services ?](../pilotage_fca/pilotage_fca_etapes.md)
-- [Quel bouton AgentConnect intégrer et comment l'intégrer ?](../implementation_fca/bouton_fca.md)
-- [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](../implementation_fca/spec_recette_fca.md)
-- [Comment accéder aux différents environnements d'AgentConnect ?](../technique_fca/technique_fca_env.md)
-- [Quels démonstrateurs sont disponibles sur la plateforme intégration (test) d'AgentConnect ?](../test_fca/test_fca_demonstrateur.md)
-- [Comment recevoir mes jetons de production ?](../recette_fca/recette_cles_prod.md)

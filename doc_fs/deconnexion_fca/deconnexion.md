@@ -22,7 +22,3 @@ Le Fournisseur de Services doit pouvoir déconnecter l'utilisateur de sa session
 
 Il est obligatoire de renseigner les différentes urls de redirections de déconnexion dans les paramètres client.
 
----
-
-Voir aussi : 
-- [Comment révoquer l'access token ?](../deconnexion_fca/access_token.md)

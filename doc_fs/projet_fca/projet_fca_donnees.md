@@ -45,13 +45,3 @@ AgentConnect a étendu le mécanisme de scopes pour qu'il soit plus modulaire.
 
 
 Cette liste de scopes est définie par la norme OpenIDConnect : http://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims
-
-
----
-
-Voir aussi : 
-- [Quel est le détail du fonctionnement ?](../fonctionnement_fca/details_fonctionnement.md)
-- [Quels sont les endpoints sur AgentConnect (le contrat d'API) ?](../technique_fca/endpoints.md)
-- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ? ](../technique_fca/technique_fca_scope.md)
-- [Quelles sont les données d'AgentConnect qui expirent ?](../technique_fca/donnees_expirent.md)
-- [Qu'est ce qu'eIDAS et quel est le niveau de garantie d'AgentConnect ?](../projet_fca/projet_fca_niveau_eidas.md)

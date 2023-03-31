@@ -34,11 +34,3 @@ systèmes d’information (prévention, protection, détection, résilience,
 remédiation) et veille à son application. Il assure un rôle de conseil,
 d’assistance, d’information, de formation et d’alerte, en particulier
 auprès des directeurs métiers et/ou de la direction de son périmètre.
-
-
----
-
-Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur de Services ?](../pilotage_fca/pilotage_fca_etapes.md)
-- [Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et "l'Hybridge" ?](../pilotage_fca/plateformes.md)
-- [Comment accéder au formulaire datapass ?](../pilotage_fca/datapass.md)
