@@ -31,7 +31,10 @@ Les données obligatoires sont des informations qui doivent être renvoyées sys
 |given_name | Oui |Prénoms séparés par des espaces (standard OpenIDConnect)| UTF-8 (standard OpenIDConnect)|
 |usual_name| Oui |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
 |email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
-|uid|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
+|uid*|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
+
+*:warning: ATTENTION - *UID**
+> Pour une question de sécurité, merco de nous envoyer une donnée non réversible pour l'uid. Bien qu'il n'y ait pas de contre-indication formelle, nous ne pouvons pas accepter des données personnelles / sensibles (ex:noms, prénom, login...) pour des raisons de sécurité. 
 
 En complément, il est possible d'obtenir des données complémentaires. Cependant ces données ne sont pas obligatoirement connues par tous les Fournisseurs d'Identité.
 
