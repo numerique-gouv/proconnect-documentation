@@ -27,7 +27,7 @@ Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gou
 
 *Fournisseur d'Identité RIE*
 
-Si vous implémentez votre Fournisseur d'Identité AgentConnect sur le RIE, une recette devra se faire autrement (captures d'écrans ou autres) car nous ne pouvons pas tester la cinématique et accéder à votre  Fournisseur d'Identité. 
+Si vous implémentez votre Fournisseur d'Identité AgentConnect sur le RIE, une recette devra se faire soit en visio, si possible, soit via un autre moyen (vidéo, captures d'écrans ou autres) car nous ne pouvons pas tester la cinématique et accéder à votre  Fournisseur d'Identité. 
 Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou melanie.wynd@prestataire.modernisation.gouv.fr afin de fixer ce point.
 
 Une fois la démarche soumise, notre équipe procèdera :
