@@ -84,13 +84,5 @@ Le tableau suivant décris la liste des *claims* accessible en fonction des *sco
 | idp_acr | idp_acr|
 ---
 
-Voir aussi : 
-- [Qu'est ce que le protocole OpenID Connect ?](../technique_fca_fi/technique_oidc_fi.md)
-- [Comment AgentConnect utilise OpenID Connect ?](../technique_fca_fi/technique_fca_oidc_fi.md)
-- [Quels sont les endpoints sur AgentConnect ?](../fonctionnement_fca_fi/endpoints_fi.md)
-- [Quel est le détail du fonctionnement ?](../fonctionnement_fca_fi/details_fonctionnement_fi.md)
-- [Quel est le détail des flux ?](../fonctionnement_fca_fi/details_flux_fi.md)
-- [Quels sont les certificats d'authentification ?](../fonctionnement_fca_fi/certificats_fi.md)
-- [Qu'est ce qu'eIDAS et comment utiliser les niveaux eIDAS en tant que Fournisseurs d'Identité ?](../fonctionnement_fca_fi/fca_niveau_eidas_fi.md)
 
 

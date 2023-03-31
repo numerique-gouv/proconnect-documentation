@@ -41,14 +41,3 @@ Une fois la démarche soumise, notre équipe procèdera :
 Le temps de remplissage estimé est de 08 min si tous les prérequis ont bien été respectés en amont. 
 
 Le délai de traitement de votre demande de qualification est d'environ 3 jours ouvrés.
-
-
----
-
-Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur d'Identité ?](../pilotage_fca/pilotage_fca_etapes_fi.md)
-- [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](../pilotage_fca/pilotage_fca_demarches_acteurs_fi.md)
-- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge" ?](../pilotage_fca/plateformes_fi.md)
-- [Comment accéder au formulaire datapass ?](../pilotage_fca/datapass_fi.md)
-- [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](../implementation_fca_fi/spec_recette_fca_fi.md)
-- [Quelles sont les adresses de l'environnement de production AgentConnect ?](../production_fca_fi/adresses_prod_fca_fi.md)

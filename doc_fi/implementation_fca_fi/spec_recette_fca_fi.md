@@ -69,12 +69,3 @@ En tant qu'utilisateur, une fois que je me suis authentifié auprès du Fourniss
 
 La déconnexion fonctionne : il est nécessaire de vérifier que lorsque l'utilisateur se déconnecte sur le service, il est déconnecté du service, d'AgentConnect et du Fournisseur de Services.
 
----
-
-Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur d'Identité ?](../pilotage_fca/pilotage_fca_etapes_fi.md)
-- [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](../pilotage_fca/pilotage_fca_demarches_acteurs_fi.md)
-- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge" ?](../pilotage_fca/plateformes_fi.md)
-- [Comment accéder au formulaire datapass ?](../pilotage_fca/datapass_fi.md)
-- [Comment faire qualifier mon implémentation ?](../implementation_fca_fi/recette_fi.md)
-- [Quelles sont les adresses de l'environnement de production AgentConnect ?](../production_fca_fi/adresses_prod_fca_fi.md)

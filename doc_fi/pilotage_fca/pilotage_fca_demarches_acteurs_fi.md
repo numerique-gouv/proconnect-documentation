@@ -34,13 +34,3 @@ systèmes d’information (prévention, protection, détection, résilience,
 remédiation) et veille à son application. Il assure un rôle de conseil,
 d’assistance, d’information, de formation et d’alerte, en particulier
 auprès des directeurs métiers et/ou de la direction de son périmètre.
-
-
----
-
-Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur d'Identité ?](../pilotage_fca/pilotage_fca_etapes_fi.md)
-- [Qu'est-ce que la plateforme "Full Internet", la plateforme "Full RIE" et l'"Hybridge" ?](../pilotage_fca/plateformes_fi.md)
-- [Comment accéder au formulaire datapass ?](../pilotage_fca/datapass_fi.md)
-- [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](../implementation_fca_fi/spec_recette_fca_fi.md)
-- [Comment faire qualifier mon implémentation ?](../implementation_fca_fi/recette_fi.md)

@@ -46,9 +46,3 @@ Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gou
 2. Demandé une mise en production via le formulaire à votre disposition sur sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in):
 
 - **[Demande de création d'un Fournisseur d'Identité AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-creation-fi-fca)**
-
----
-
-Voir aussi : 
-- [Quelles sont les étapes pour devenir Fournisseur d'Identité ?](../pilotage_fca/pilotage_fca_etapes_fi.md)
-- [Quels démonstrateurs sont disponibles sur la plateforme intégration (test) d'AgentConnect ?](../test_fca_fi/test_fca_demonstrateur_fi.md)
