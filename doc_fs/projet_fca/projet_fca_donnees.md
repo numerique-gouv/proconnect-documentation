@@ -29,7 +29,6 @@ Champs | Obligatoire | Description| Format |
 | phone  | non  | Téléphones de contact  | Format non normé |
 | chorusdt   | Non | Entité ministérielle/Matricule Agent  | string |
 
-
 La liste des données complémentaires est non exhaustive et pourra être amendée si besoin.
 
 AgentConnect transmet systématiquement au Fournisseur de Services un identifiant unique pour chaque agent (le sub) : 
