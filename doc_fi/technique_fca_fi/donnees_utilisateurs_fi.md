@@ -34,7 +34,7 @@ Les données obligatoires sont des informations qui doivent être renvoyées sys
 |uid*|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
 
 *:warning: ATTENTION - *UID**
-> Pour une question de sécurité, merco de nous envoyer une donnée non réversible pour l'uid. Bien qu'il n'y ait pas de contre-indication formelle, nous ne pouvons pas accepter des données personnelles / sensibles (ex:noms, prénom, login...) pour des raisons de sécurité. 
+> Pour une question de sécurité, merci de nous envoyer une donnée non réversible pour l'uid. Bien qu'il n'y ait pas de contre-indication formelle, nous ne pouvons pas accepter des données personnelles / sensibles (ex:noms, prénom, login...) pour des raisons de sécurité. 
 
 En complément, il est possible d'obtenir des données complémentaires. Cependant ces données ne sont pas obligatoirement connues par tous les Fournisseurs d'Identité.
 
