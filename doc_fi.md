@@ -44,10 +44,6 @@ Vous souhaitez devenir Fournisseur d'Identité pour AgentConnect, voici les él�
 - [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](doc_fi/implementation_fca_fi/spec_recette_fca_fi.md)
 - [Comment faire qualifier mon implémentation ?](doc_fi/implementation_fca_fi/recette_fi.md)
 
-# Je souhaite mettre mon Fournisseur de Services en production
-
-- [Quelles sont les adresses de l'environnement d'intégration et de production AgentConnect (endpoints) ?](doc_fi/production_fca_fi/adresses_fca_fi.md)
-
 # Glossaire
 
 Le glossaire relatif à OpenId Connect est spécifié à l'adresse [https://openid.net/specs/openid-connect-core-1_0.html#rfc.section.1.2](https://openid.net/specs/openid-connect-core-1_0.html#rfc.section.1.2)

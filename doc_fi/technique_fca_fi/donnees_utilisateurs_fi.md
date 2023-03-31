@@ -31,7 +31,10 @@ Les données obligatoires sont des informations qui doivent être renvoyées sys
 |given_name | Oui |Prénoms séparés par des espaces (standard OpenIDConnect)| UTF-8 (standard OpenIDConnect)|
 |usual_name| Oui |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
 |email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
-|uid|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
+|uid*|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
+
+*:warning: ATTENTION - *UID**
+> Pour une question de sécurité, merci de nous envoyer une donnée non réversible pour l'uid. Bien qu'il n'y ait pas de contre-indication formelle, nous ne pouvons pas accepter des données personnelles / sensibles (ex:noms, prénom, login...) pour des raisons de sécurité. 
 
 En complément, il est possible d'obtenir des données complémentaires. Cependant ces données ne sont pas obligatoirement connues par tous les Fournisseurs d'Identité.
 
@@ -84,13 +87,5 @@ Le tableau suivant décris la liste des *claims* accessible en fonction des *sco
 | idp_acr | idp_acr|
 ---
 
-Voir aussi : 
-- [Qu'est ce que le protocole OpenID Connect ?](../technique_fca_fi/technique_oidc_fi.md)
-- [Comment AgentConnect utilise OpenID Connect ?](../technique_fca_fi/technique_fca_oidc_fi.md)
-- [Quels sont les endpoints sur AgentConnect ?](../fonctionnement_fca_fi/endpoints_fi.md)
-- [Quel est le détail du fonctionnement ?](../fonctionnement_fca_fi/details_fonctionnement_fi.md)
-- [Quel est le détail des flux ?](../fonctionnement_fca_fi/details_flux_fi.md)
-- [Quels sont les certificats d'authentification ?](../fonctionnement_fca_fi/certificats_fi.md)
-- [Qu'est ce qu'eIDAS et comment utiliser les niveaux eIDAS en tant que Fournisseurs d'Identité ?](../fonctionnement_fca_fi/fca_niveau_eidas_fi.md)
 
 

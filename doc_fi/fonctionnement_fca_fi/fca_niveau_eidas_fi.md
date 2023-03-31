@@ -41,17 +41,3 @@ Le claim acr retourné dans l'ID Token peut être :
 Toutefois, attention, actuellement les Fournisseurs de Services ne peuvent demander qu'un niveau 1, soit un niveau dit faible AgentConnect soit acr_values=eidas1. 
 
 Uniquement le niveau 1 est supporté par AgentConnect pour le moment.
-
-
----
-
-Voir aussi : 
-- [Qu'est ce que le protocole OpenID Connect ?](../technique_fca_fi/technique_oidc_fi.md)
-- [Comment AgentConnect utilise OpenID Connect ?](../technique_fca_fi/technique_fca_oidc_fi.md)
-- [Quelles sont les données utilisateur que je dois fournir ?](../technique_fca_fi/donnees_utilisateurs_fi.md)
-- [Quels sont les endpoints sur AgentConnect ?](../fonctionnement_fca_fi/endpoints_fi.md)
-- [Quel est le détail du fonctionnement ?](../fonctionnement_fca_fi/details_fonctionnement_fi.md)
-- [Quel est le détail des flux ?](../fonctionnement_fca_fi/details_flux_fi.md)
-- [Quels sont les certificats d'authentification ?](../fonctionnement_fca_fi/certificats_fi.md)
-- [Comment accéder aux différents environnements d'AgentConnect ?](../test_fca_fi/fca_env_fi.md)
-- [Quels démonstrateurs sont disponibles sur la plateforme intégration (test) d'AgentConnect ?](../test_fca_fi/test_fca_demonstrateur_fi.md)

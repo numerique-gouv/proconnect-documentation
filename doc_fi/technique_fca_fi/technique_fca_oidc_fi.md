@@ -44,15 +44,4 @@ Les clés publiques de chiffrement d'AgentConnect sont disponibles à ces adress
  
 Les clés de signatures utilisés par le Fournisseur d'Identité doivent être disponible via la *JWKS URL* présente dans les méta-data de la *Discovery URL*. 
 
----
-
-Voir aussi : 
-- [Qu'est ce que le protocole OpenID Connect ?](../technique_fca_fi/technique_oidc_fi.md)
-- [Quelles sont les données utilisateur que je dois fournir ?](../technique_fca_fi/donnees_utilisateurs_fi.md)
-- [Quels sont les endpoints sur AgentConnect ?](../fonctionnement_fca_fi/endpoints_fi.md)
-- [Quel est le détail du fonctionnement ?](../fonctionnement_fca_fi/details_fonctionnement_fi.md)
-- [Quel est le détail des flux ?](../fonctionnement_fca_fi/details_flux_fi.md)
-- [Quels sont les certificats d'authentification ?](../fonctionnement_fca_fi/certificats_fi.md)
-- [Qu'est ce qu'eIDAS et comment utiliser les niveaux eIDAS en tant que Fournisseurs d'Identité ?](../fonctionnement_fca_fi/fca_niveau_eidas_fi.md)
-
 
