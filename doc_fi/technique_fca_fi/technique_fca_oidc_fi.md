@@ -8,10 +8,9 @@ AgentConnect implémente le flux [Authorization Code Flow](https://openid.net/sp
 
 Les Fournisseurs de Services doivent être clients OpenID Connect, et les fournisseurs d'identité doivent être fournisseurs OpenID Connect. AgentConnect est une brique intermédiaire qui est à la fois fournisseur (du point de vue des Fournisseurs de Services) et client (du point de vue des Fournisseurs d'Identité).
 
-## Chiffrement et signature des échanges
+## Signature des échanges
 
 Dans le cadre du niveau **Standard** , tous les échanges de jetons JWT entre le Fournisseurs d'Identité et AgentConnect sont signés. 
-Le chiffrement des jetons est recommandé mais non obligatoire. 
 
 les algorithmes suivants sont gérés par AgentConnect Standard : 
 
@@ -26,21 +25,12 @@ les algorithmes suivants sont gérés par AgentConnect Standard :
 
        - HS256 (HMAC + SHA256) 
 
-**Chiffrement des jetons (jwe+jws)** :
-
-- Hybride :
-
-      - RSA-OEAP + AES256-GCM 
-      - ECDH-ES + AES256-GCM
-
 **:warning: Ces algorithmes sont valides pour les endpoints exposant des JWT (/token et /userinfo).**
 
-Les spécifications des algorithmes de signatures et de chiffrements utilisés sont les suivants : 
+Les spécifications des algorithmes de signatures utilisés sont les suivants : 
 * [JWA - https://tools.ietf.org/html/rfc7518](https://tools.ietf.org/html/rfc7518)
 * [JWS - https://tools.ietf.org/html/rfc7515#appendix-A.3](https://tools.ietf.org/html/rfc7515#appendix-A.3)
 * [JWE - https://tools.ietf.org/html/rfc7516#appendix-A.1](https://tools.ietf.org/html/rfc7516#appendix-A.1)
-
-Les clés publiques de chiffrement d'AgentConnect sont disponibles à ces adresses et seront changées régulièrement.
  
 Les clés de signatures utilisés par le Fournisseur d'Identité doivent être disponible via la *JWKS URL* présente dans les méta-data de la *Discovery URL*. 
 
