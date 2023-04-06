@@ -66,6 +66,12 @@ Les claims relatifs à l'authentification disponibles par AgentConnect sont des 
 
 [Plus d'informations sur ces claims](https://openid.net/specs/openid-connect-basic-1_0.html#IDToken)
 
+En ce qui concerne l'acr : il est est obligatoire sur AgentConnect.
+
+Merci de consulter la page suivante : 
+
+[Qu'est ce qu'eIDAS et comment utiliser les niveaux eIDAS en tant que Fournisseurs d'Identité ?](../fonctionnement_fca_fi/fca_niveau_eidas_fi.md)
+
 ### Correspondance entre scope et claims sur AgentConnect
 
 Le tableau suivant décris la liste des *claims* accessible en fonction des *scopes* associés à l'access token.
@@ -86,10 +92,3 @@ Le tableau suivant décris la liste des *claims* accessible en fonction des *sco
 | idp_id | idp_id|
 | idp_acr | idp_acr|
 
-### ACR sur sur AgentConnect
-
-L'acr est obligatoire sur AgentConnect.
-
-Merci de consulter la page suivante : 
-
-[Qu'est ce qu'eIDAS et comment utiliser les niveaux eIDAS en tant que Fournisseurs d'Identité ?](../fonctionnement_fca_fi/fca_niveau_eidas_fi.md)
