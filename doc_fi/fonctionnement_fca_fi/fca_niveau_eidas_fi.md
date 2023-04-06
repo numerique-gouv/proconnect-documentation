@@ -34,10 +34,11 @@ Dans le cadre du Fournisseur d'Identité, cela se traduit par le fait de positio
 
 Le claim acr retourné dans l'ID Token peut être :
 
-* eidas1 : Niveau faible
+* **eidas1 : Niveau faible** 
+Uniquement le niveau 1 est supporté par AgentConnect pour le moment.
 * eidas2 : Niveau renforcé
 * eidas3 : Niveau élevé
 
-**Toutefois, attention, actuellement les Fournisseurs de Services ne peuvent demander qu'un niveau 1, soit un niveau dit faible AgentConnect soit acr_values=eidas1.**
+:warning: **Attention, actuellement les Fournisseurs de Services ne peuvent demander qu'un niveau 1, soit un niveau dit faible AgentConnect soit acr_values=eidas1.**
 
-Uniquement le niveau 1 est supporté par AgentConnect pour le moment.
+
