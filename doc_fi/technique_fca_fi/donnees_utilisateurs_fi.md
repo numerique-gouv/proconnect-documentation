@@ -66,7 +66,7 @@ Les claims relatifs à l'authentification disponibles par AgentConnect sont des 
 
 [Plus d'informations sur ces claims](https://openid.net/specs/openid-connect-basic-1_0.html#IDToken)
 
-En ce qui concerne l'acr : il est est obligatoire sur AgentConnect.
+En ce qui concerne l'**acr** : il est est obligatoire sur AgentConnect.
 
 Merci de consulter la page suivante : 
 
