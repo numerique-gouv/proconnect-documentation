@@ -28,7 +28,7 @@ Dans le code AgentConnect les niveaux suivants sont définis :
 * eidas2 : Niveau renforcé
 * eidas3 : Niveau élevé
 
-Le Fournisseur d'Identité doit signifier à AgentConnect avec quel niveau eIDAS l'authentification de l'agent s'est faite. 
+Le Fournisseur d'Identité doit signifier à AgentConnect avec quel niveau eIDAS l'authentification de l'agent s'est faite. **L'acr est obligatoire.** 
 
 Dans le cadre du Fournisseur d'Identité, cela se traduit par le fait de positionner le claim "acr" dans l'ID Token renvoyé au client (http://openid.net/specs/openid-connect-core-1_0.html#rfc.section.2).
 
