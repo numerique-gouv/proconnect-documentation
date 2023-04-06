@@ -85,12 +85,11 @@ Le tableau suivant décris la liste des *claims* accessible en fonction des *sco
 | chorusdt | chorusdt:matricule, chorusdt:societe |
 | idp_id | idp_id|
 | idp_acr | idp_acr|
----
 
 ### ACR sur sur AgentConnect
 
 L'acr est obligatoire sur AgentConnect.
- 
+
 Merci de consulter la page suivante : 
 
 [Qu'est ce qu'eIDAS et comment utiliser les niveaux eIDAS en tant que Fournisseurs d'Identité ?](../fonctionnement_fca_fi/fca_niveau_eidas_fi.md)
