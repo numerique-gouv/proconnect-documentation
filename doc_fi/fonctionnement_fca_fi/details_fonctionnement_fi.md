@@ -1,6 +1,6 @@
 # Quel est le détail du fonctionnement ?
 
-## Fontionnenement 
+## Fonctionnement
 
 ![doc_fi_fca](https://user-images.githubusercontent.com/60473902/195837241-6c7f24f6-df00-4462-bb03-59c89223ab40.png)
 
