@@ -78,7 +78,10 @@ Le cas échéant, la cinématique d'inscription fonctionne : je peux m'inscrire 
 
 Existe-t-il une réconciliation des données dans le cas où le fournisseur de services dispose de comptes locaux et souhaite gérer la réconciliation entre ses données locales et celles transmises par AgentConnect.
 
-:warning: **Attention**, il ne faut pas demander à l’usager de saisir son identifiant/mot de passe local. En effet, trop complexe, cette demande provoque l'abandon de l'usager.
+:warning: **Attention**, il ne faut pas :
+
+- Demander à l’usager de saisir son identifiant/mot de passe local. En effet, trop complexe, cette demande provoque l'abandon de l'usager.
+- **Effectuer une réconciliation sur le SUB, car le SUB est calculé en fonction du FI utilisé.**
 
 6. **Cinématique - Réconciliation de compte "générale" (Pour les accès suivants de l’utilisateur à ce même Fournisseur de Service)**
 
