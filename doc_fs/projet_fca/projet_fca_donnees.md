@@ -35,6 +35,11 @@ AgentConnect transmet systématiquement au Fournisseur de Services un identifian
 
 * Cet identifiant (appelé sub) est spécifique à chaque Fournisseur de Services et à chaque Fournisseur d'Identité: un même utilisateur aura toujours le même SUB pour un Fournisseur d'Identité donné, en revanche il aura un SUB différent pour chaque Fournisseur de Services qu'il utilisera.
 
+:warning: **Attention**
+
+**Réconciliation**
+> Il ne faut pas effectuer une réconciliation sur le SUB, car le SUB est calculé en fonction du FI utilisé.
+
 ## La liste des scopes disponibles lors de l'étape d'authentification AgentConnect
 
 AgentConnect a étendu le mécanisme de scopes pour qu'il soit plus modulaire.
