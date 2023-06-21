@@ -3,7 +3,7 @@
 **1.** Vous consultez les conditions d'éligibilité à AgentConnect. Les conditions juridiques, de sécurité et de qualité de service sont détaillées dans nos conditions d’adhésion des Fournisseurs d’Identité au service AgentConnect:
 
 - [Conditions d’adhésion des Fournisseurs d’identité au service AgentConnect v1.2](../cfa_fca/20210528-DINUM-AC-CDA_FI-v1.2.pdf)
-- [Annexe des CAF FS v1.2](../cfa_fca/220210528-DINUM-AC-Annexe_CDA_FI_v1.2.pdf)
+- [Annexe des CAF FS v1.2](../cfa_fca/20210528-DINUM-AC-CDA_FI-v1.2.pdf)
 
 **2.** Vous soumettez une demande d'habilitation via [datapass.api.gouv.fr](https://datapass.api.gouv.fr/) et vous transmettez toutes les informations nécessaires à la validation de votre demande (**respect du RGPD**, contact du responsable technique, plateforme souhaitée, etc). Votre demande est validée par la DINUM dans un délai moyen de 5 jours ouvrés.
 
@@ -27,9 +27,9 @@ Une fois votre Fournisseur d'Identité enrôlé sur la plateforme d'intégration
 
 La délai de traitement de votre demande de qualification est estimé environ à 3 jours ouvrés.
 
-**6.** Avant de faire votre demande de mise en production, il est obligatoire de contacter l'équipe AgentConnect par email (support.partenaires@agentconnect.gouv.fr ou elodie.boudouin@modernisation.gouv.fr) afin de les informer du mariage Fournisseur de Services / Fournisseur d'Identité souhaité. Il est également nécessaire de nous communiquer les éléments relatifs à la politique de sécurité et de gestion des mots de passe de votre Fournisseurs d’identité. 
+**5.** Avant de faire votre demande de mise en production, il est obligatoire de contacter l'équipe AgentConnect par email (support.partenaires@agentconnect.gouv.fr ou elodie.boudouin@modernisation.gouv.fr) afin de les informer du mariage Fournisseur de Services / Fournisseur d'Identité souhaité. Il est également nécessaire de nous communiquer les éléments relatifs à la politique de sécurité et de gestion des mots de passe de votre Fournisseurs d’identité. 
 
-**7**. Si votre implémentation est validée par l'équipe AgentConnect et si les informations nécessaires listées ci-dessus ont bien été transmises, le responsable technique peut alors se rendre sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in) afin de remplir le formulaire de demande d'enrôlement de votre Fournisseur d'Identité sur la plateforme de production.
+**6.** Si votre implémentation est validée par l'équipe AgentConnect et si les informations nécessaires listées ci-dessus ont bien été transmises, le responsable technique peut alors se rendre sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in) afin de remplir le formulaire de demande d'enrôlement de votre Fournisseur d'Identité sur la plateforme de production.
 
 Le formulaire mis à disposition est le suivant: 
 
