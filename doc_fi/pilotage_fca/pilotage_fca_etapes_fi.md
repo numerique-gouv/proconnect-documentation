@@ -27,7 +27,7 @@ Une fois votre Fournisseur d'Identité enrôlé sur la plateforme d'intégration
 
 La délai de traitement de votre demande de qualification est estimé environ à 3 jours ouvrés.
 
-**5.** Avant de faire votre demande de mise en production, il est obligatoire de contacter l'équipe AgentConnect par email (support.partenaires@agentconnect.gouv.fr ou elodie.boudouin@modernisation.gouv.fr) afin de les informer du mariage Fournisseur de Services / Fournisseur d'Identité souhaité. Il est également nécessaire de nous communiquer les éléments relatifs à la politique de sécurité et de gestion des mots de passe de votre Fournisseurs d’identité. 
+**5.** Avant de faire votre demande de mise en production, il est obligatoire de contacter l'équipe AgentConnect par email (support.partenaires@agentconnect.gouv.fr) afin de les informer du mariage Fournisseur de Services / Fournisseur d'Identité souhaité. Il est également nécessaire de nous communiquer les éléments relatifs à la politique de sécurité et de gestion des mots de passe de votre Fournisseurs d’identité. 
 
 **6.** Si votre implémentation est validée par l'équipe AgentConnect et si les informations nécessaires listées ci-dessus ont bien été transmises, le responsable technique peut alors se rendre sur le site [www.demarches-simplifiees.fr](https://www.demarches-simplifiees.fr/users/sign_in) afin de remplir le formulaire de demande d'enrôlement de votre Fournisseur d'Identité sur la plateforme de production.
 

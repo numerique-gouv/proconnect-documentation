@@ -11,7 +11,7 @@ Pour rappel, la démarche pour demander la qualification de votre implémentatio
 
 **[Demande de recette d'un Fournisseur de Services AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-recette-fs-fca)**
 
-> ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE DEVRA SE FAIRE EN VISIO, SI POSSIBLE, OU VIA UN AUTRE MOYEN (VIDEO, CAPTURES D'ECRANS OU AUTRES) CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou support.partenaires@agentconnect.gouv.fr afin de fixer ce point.
+> ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE DEVRA SE FAIRE EN VISIO, SI POSSIBLE, OU VIA UN AUTRE MOYEN (VIDEO, CAPTURES D'ECRANS OU AUTRES) CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter à l'adresse suivante support.partenaires@agentconnect.gouv.fr afin de fixer ce point.
 
 ## Le visuel
 

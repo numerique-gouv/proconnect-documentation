@@ -26,7 +26,7 @@ Une fois votre Fournisseur de Services enrôlé sur la plateforme d'intégration
 
 - [Demande de recette d'un Fournisseur de Services](https://www.demarches-simplifiees.fr/commencer/demande-recette-fs-fca). 
 
-> ATTENTION, si vous implémentez AgentConnect sur le RIE, UUNE RECETTE DEVRA SE FAIRE EN VISIO, SI POSSIBLE, OU VIA UN AUTRE MOYEN (VIDEO, CAPTURES D'ECRANS OU AUTRES) CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter aux adresses suivantes elodie.boudouin@modernisation.gouv.fr et/ou support.partenaires@agentconnect.gouv.fr afin de fixer ce point.
+> ATTENTION, si vous implémentez AgentConnect sur le RIE, UUNE RECETTE DEVRA SE FAIRE EN VISIO, SI POSSIBLE, OU VIA UN AUTRE MOYEN (VIDEO, CAPTURES D'ECRANS OU AUTRES) CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter à l'adresse suivante support.partenaires@agentconnect.gouv.fr afin de fixer ce point.
 
 La délai de traitement de votre demande de qualification dépend du respect des prérequis listés dans le paragraphe [Quels sont les prérequis ainsi que les spécifications à respecter au moment de l'implémentation ?](../implementation_fca/spec_recette_fca.md) mais est estimé environ à 3 jours ouvrés.
 
