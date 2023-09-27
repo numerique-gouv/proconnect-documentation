@@ -1,8 +1,10 @@
 # Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et l'"Hybridge" ?
 
-AgentConnect est implémenté sur deux plateformes, une dite "full RIE" et une autre dite "full Internet". Toutefois il est possible de communiquer entre les deux plateformes grâce à "l'hybridge Internet/RIE".
+AgentConnect est implémenté sur deux plateformes, une dite "full RIE" et une autre dite "full Internet". Toutefois il
+est possible de communiquer entre les deux plateformes grâce à "l'Hybridge Internet/RIE".
 
-Le choix du positionnement sur le RIE ou sur Internet est « à la main » des Fournisseurs d'Identité et des Fournisseurs de Services.
+Le choix du positionnement sur le RIE ou sur Internet est « à la main » des Fournisseurs d'Identité et des Fournisseurs
+de Services.
 
 ## Les plateformes d’AgentConnect
 
@@ -24,7 +26,7 @@ Ex : Accès au portail du CISIRH depuis l’annuaire Passage 2 (MI)
 
 L'Hybridge permet de relier un Fournisseur d’Identité RIE à un Fournisseur de Services Internet (et non l'inverse)
 
-|*FI/FS* | Fournisseur de Services RIE | Fournisseur de Services Internet |
-|---- | ------ | ------ | 
-|**Fournisseur d'Identité RIE** | Oui | Oui (via l'Hybridge)|
-|**Fournisseur d'Identité Internet**| Non | Oui |
+| *FI/FS*                             | Fournisseur de Services RIE | Fournisseur de Services Internet |
+|-------------------------------------|-----------------------------|----------------------------------| 
+| **Fournisseur d'Identité RIE**      | Oui                         | Oui (via l'Hybridge)             |
+| **Fournisseur d'Identité Internet** | Non                         | Oui                              |
