@@ -64,7 +64,7 @@ Token retourné (dans le corps HTTP) par l'appel au endpoint FI_URL/user/token. 
 #### **SCOPES:** 
 
 Cela correspond au périmètre des données demandées.
-Liste des scopes demandés séparés par des espaces (donc par "%20"  ou "+" au format unicode dans l'URL).
+Liste des scopes demandés séparés par des espaces (donc par "%20" ou "+" au format unicode dans l'URL).
 	
 Voici la liste supportée par AgentConnect :
 
@@ -79,6 +79,7 @@ Objet JWT retourné par l'appel au endpoint AC_URL/api/v2/token. L'objet JWT est
 
 Exemple :
 
+```
 {
     'aud':'895fae591ccae777094931e269e46447',
     'exp':1412953984,
@@ -88,6 +89,8 @@ Exemple :
     'idp':'AC',
     'nonce':'12344354597459'
 }
+```
+
 Les champs aud, exp, iat, iss, sub sont des champs obligatoires de la norme OpenId Connect. Le nonce est un paramètre obligatoirement envoyé lors de l'appel à api/v2/authorize. Le Fournisseur de Services doit impérativement vérifier que la valeur correspond bien à celle qu'il a envoyée, et qui doit être liée à la session de l'utilisateur.
 
 Si vous utilisez une librairie pour transformer le json en JWT, il génèrera une chaîne de caractères constituée de 3 chaînes de caractères encodées en base64 séparées par des points (ex: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c).
