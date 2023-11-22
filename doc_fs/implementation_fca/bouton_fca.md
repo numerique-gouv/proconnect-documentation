@@ -7,7 +7,7 @@ Les boutons d’action AgentConnect sont primordiaux dans l’usage du service. 
 Pour les boutons en svg, lors de l'utilisation d'une image veuillez préciser la taille du bouton.
 
 
-#### Vous utilisez le [Système de Design de l’État (DSFR)](https://www.systeme-de-design.gouv.fr/)
+### Vous utilisez le [Système de Design de l’État (DSFR)](https://www.systeme-de-design.gouv.fr/)
 
 Vous pouvez suivre les instructions du Système de Design de l’État sur le bouton FranceConnect : [https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton-franceconnect](https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton-franceconnect).
 
@@ -17,7 +17,7 @@ Veuillez apporter les modifications suivantes :
 2. Remplacer le label du lien par « Qu’est-ce que AgentConnect ? »
 3. Faire pointer le lien vers [https://agentconnect.gouv.fr/](https://agentconnect.gouv.fr/)
 
-#### Vous n’utilisez pas le Système de Design de l'État
+### Vous n’utilisez pas le Système de Design de l'État
 
 Vous pouvez utiliser l’intégration suivante :
 
@@ -55,11 +55,9 @@ Vous pouvez utiliser l’intégration suivante :
 </div>
 ```
 
-#### Assets 
+### Assets 
 
-*Téléchargements :*
-
-[AgentConnect-Bouton.zip](https://github.com/france-connect/Documentation-AgentConnect/files/9828293/AgentConnect-Bouton.zip)
+*Téléchargements :* [AgentConnect-Bouton.zip](https://github.com/france-connect/Documentation-AgentConnect/files/9828293/AgentConnect-Bouton.zip)
 
 ## Règles d'intégration du bouton AgentConnect
 
