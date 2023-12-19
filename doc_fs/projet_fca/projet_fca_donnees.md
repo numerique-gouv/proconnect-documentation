@@ -38,7 +38,7 @@ AgentConnect transmet systématiquement au Fournisseur de Services un identifian
 :warning: **Attention**
 
 **Réconciliation**
-> Il ne faut pas effectuer une réconciliation sur le SUB, car le SUB est calculé en fonction du FI utilisé.
+> Il ne faut pas effectuer une réconciliation sur le SUB, car le SUB est calculé en fonction du FI utilisé. Nous vous recommandons l'utilisation de l'email professionnel pour cet usage.
 
 ## La liste des scopes disponibles lors de l'étape d'authentification AgentConnect
 
