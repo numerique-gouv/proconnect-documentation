@@ -1,9 +1,10 @@
-Ce projet GitHub regroupe la documentation FS et FI d'AgentConnect
+# Documentation AgentConnect
 
-La documentation comprend notamment les éléments suivants : 
+> Vous implémentez le bouton AgentConnect pour permettre à vos utilisateurs de s’identifier sur un de vos services en ligne ?
 
-- Les étapes pour devenir Partenaires FS et FI
-- Le fonctionnement d'AgentConnect
-- Les pré-requis techniques 
-- Les données de l'identité pivot et attributs complémentaires 
-- Les adresses des environnements disponibles à date 
+Consultez la [documentation Fournisseur de Service (FS)](doc_fs.md).
+
+> Vous intégrez AgentConnect en tant que Fournisseur d’Identité et permettez à vos agents de se connecter via AgentConnect sur plusieurs services en ligne ?
+
+Consultez la [documentation Fournisseur d'Identité (FI)](doc_fi.md)
+
