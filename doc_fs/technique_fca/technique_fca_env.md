@@ -48,7 +48,7 @@ Les adresses de notre environnement d'intégration sont les suivantes :
 | Authorization | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/authorize |
 | Token | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/token | 
 | UserInfo | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/userinfo | 
-| Logout | https://fca.integ02.integ02.agentconnect.rie.gouv.fr/api/v2/session/end | 
+| Logout | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/session/end | 
 
 ## Accès à l'environnement de production d'AgentConnect
 
