@@ -1,6 +1,4 @@
-# Quel bouton AgentConnect intégrer et comment l'intégrer ?
-
-## Intégration d'un bouton AgentConnect 
+# Intégration du bouton AgentConnect 
 
 Pour integer ce bouton sur votre service, 3 options s’offrent à vous.
 
