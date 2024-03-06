@@ -147,13 +147,13 @@ Exemple :
 
 ```json
 {
-    'aud':'895fae591ccae777094931e269e46447',
-    'exp':1412953984,
-    'iat':1412950384,
-    'iss':http://Agentconnect.gouv.fr,
-    'sub':YWxhY3JpdMOp,
-    'idp':'AC',
-    'nonce':'12344354597459'
+    "aud":"895fae591ccae777094931e269e46447",
+    "exp":1412953984,
+    "iat":1412950384,
+    "iss":"http://Agentconnect.gouv.fr",
+    "sub":"YWxhY3JpdMOp",
+    "idp":"AC",
+    "nonce":"12344354597459"
 }
 ```
 Les champs *aud, exp, iat, iss, sub* sont des champs obligatoires de la norme OpenId Connect. Le *nonce* est un  paramètre obligatoirement envoyé lors de l'appel à `api/v2/authorize`. Le Fournisseur de Services doit impérativement vérifier que la valeur correspond bien à celle qu'il a envoyée, et qui doit être liée à la session de l'utilisateur.
