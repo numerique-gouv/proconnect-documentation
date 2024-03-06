@@ -1,10 +1,15 @@
+[Accueil](https://github.com/france-connect/Documentation-AgentConnect/blob/main/README.md) > AgentConnect - Fournisseur d'identité
+
+___
+
+
 # Documentation Fournisseur d'Identité
 
 Cette documentation est à destination des Fournisseurs d'Identité souhaitant intégrer AgentConnect.
 
-## Je veux devenir Fournisseur d'Identité 
+## Je veux devenir Fournisseur d'Identité
 
-Vous souhaitez devenir Fournisseur d'Identité pour AgentConnect, voici les éléments à prendre en compte : 
+Vous souhaitez devenir Fournisseur d'Identité pour AgentConnect, voici les éléments à prendre en compte :
 
 - [Quelles sont les étapes pour devenir Fournisseur d'Identité ?](https://agentconnect.gouv.fr/fi#documentation-fi)
 - [Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et l'"Hybridge" ?](doc_fi/pilotage_fca/plateformes_fi.md)
@@ -33,39 +38,39 @@ Vous souhaitez devenir Fournisseur d'Identité pour AgentConnect, voici les él�
 
 Le glossaire relatif à OpenId Connect est spécifié à l'adresse [https://openid.net/specs/openid-connect-core-1_0.html#rfc.section.1.2](https://openid.net/specs/openid-connect-core-1_0.html#rfc.section.1.2)
 
-#### **AC_URL:**  
+#### **AC_URL:**
 
-URL d’AgentConnect. 
+URL d’AgentConnect.
 
-#### **FI_URL:** 
+#### **FI_URL:**
 
-Votre URL, en tant que Fournisseur d'Identité.  
+Votre URL, en tant que Fournisseur d'Identité.
 
-#### **CLIENT_ID:** 
+#### **CLIENT_ID:**
 
 Identifiant d'AgentConnect, communiqué par le Fournisseur d'Identité à AgentConnect lors de son inscription.
 
-#### **CLIENT_SECRET:** 
+#### **CLIENT_SECRET:**
 
 Secret d'AgentConnect, communiqué par le Fournisseur d'Identité à AgentConnect lors de son inscription.
 
-#### **AUTHZ_CODE:** 
+#### **AUTHZ_CODE:**
 
 Code retourné (dans l'URL) par le Fournisseur d'Identité à AgentConnect lorsque ce dernier fait un appel sur le endpoint FI_URL/user/authorize. Il est ensuite passé (dans le corps de la requête HTTP POST) lors de l'appel sur le endpoint FI_URL/user/token.
 
-#### **ACCESS_TOKEN:** 
+#### **ACCESS_TOKEN:**
 
 Token retourné (dans le corps HTTP) par l'appel au endpoint FI_URL/user/token. Il est ensuite passé lors de l'appel au endpoint FI_URL/api/user.
 
-#### **REFRESH_TOKEN:** 
+#### **REFRESH_TOKEN:**
 
 Token retourné (dans le corps HTTP) par l'appel au endpoint FI_URL/user/token. Il n'est pas utilisé par la suite.
 
-#### **SCOPES:** 
+#### **SCOPES:**
 
 Cela correspond au périmètre des données demandées.
 Liste des scopes demandés séparés par des espaces (donc par "%20" ou "+" au format unicode dans l'URL).
-	
+
 Voici la liste supportée par AgentConnect :
 
     * openid : obligatoire, permet de demander l'identifiant technique de l'utilisateur au format OpenIDConnect
@@ -73,7 +78,7 @@ Voici la liste supportée par AgentConnect :
 
 Cette liste de scopes est définie par la norme OpenIDConnect.
 
-#### **ID_TOKEN:** 
+#### **ID_TOKEN:**
 
 Objet JWT retourné par l'appel au endpoint AC_URL/api/v2/token. L'objet JWT est un objet JSON formaté et signé. Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub et nonce.
 
@@ -95,7 +100,7 @@ Les champs aud, exp, iat, iss, sub sont des champs obligatoires de la norme Open
 
 Si vous utilisez une librairie pour transformer le json en JWT, il génèrera une chaîne de caractères constituée de 3 chaînes de caractères encodées en base64 séparées par des points (ex: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c).
 
-#### **USERINFO:**  
+#### **USERINFO:**
 
 Objet JWT retourné par l'appel au endpoint AC_URL/api/v2/userinfo. L'objet JWT est un objet JSON formaté et signé. Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub.
 
@@ -127,14 +132,14 @@ Les champs *aud, exp, iat, iss, sub* sont des champs obligatoires de la norme Op
 
 Si vous utilisez une librairie pour transformer le json en JWT, il génèrera une chaîne de caractères constituée de 3 chaînes de caractères encodées en base64 séparées par des points.
 
-#### **STATE:** 
+#### **STATE:**
 
 Champ obligatoire, généré aléatoirement par AgentConnect, que Fournisseur d'Identité renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par AgentConnect. Il est utilisé afin d’empêcher l’exploitation de failles CSRF.
 
-#### **NONCE:**	
+#### **NONCE:**
 
 Champ obligatoire, généré aléatoirement par AgentConnect que le Fournisseur d'Identité renvoie tel quel dans la réponse à l'appel à /token, pour être ensuite vérifié par AgentConnect. Il est utilisé pour empêcher les attaques par rejeu.
 
-#### **UID (SUB FI):** 
+#### **UID (SUB FI):**
 
 Identifiant technique (unique et stable dans le temps pour un individu donné) fourni par le Fournisseur d'Identité à AgentConnect. Le sub doit être présent dans l'IdToken retourné à AgentConnect ainsi que dans les informations d'identité. Pour plus d'informations sur le rôle et la description du "sub", se référer à la documentation OpenID Connect http://openid.net/specs/openid-connect-basic-1_0.html (section 2.2)
