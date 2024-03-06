@@ -20,12 +20,12 @@ ___
 
 Voici un résumé des étapes pour être fournisseur de service AgentConnect :
 
-- [ ] Je me familiarise avec la cinématique OpenIDConnect
-- [ ] [Optionnel] Je contacte l'équipe AgentConnect pour qu'elle puisse répondre à mes questions si j'en ai : support.partenaires@agentconnect.gouv.fr ou [sur notre chaîne Tchap](https://www.tchap.gouv.fr/#/room/!kBghcRpyMNThkFQjdW:agent.dinum.tchap.gouv.fr)
+- [ ] Je me familiarise avec la cinématique OpenIDConnect : voir [concepts de base](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fs.md#31-je-souhaite-conna%C3%AEtre-le-concept-de-base-dagentconnect)
+- [ ] [_Optionnel_] Je contacte l'équipe AgentConnect pour qu'elle puisse répondre à mes questions si j'en ai : support.partenaires@agentconnect.gouv.fr ou [sur notre chaîne Tchap](https://www.tchap.gouv.fr/#/room/!kBghcRpyMNThkFQjdW:agent.dinum.tchap.gouv.fr)
 - [ ] Je souhaite lancer les développements en test, pour ceci je renseigne à l'équipe AgentConnect les informations techniques comme les `redirect_uris` ou `post_logout_redirect_uris` en remplissant [un formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca)
 - [ ] J’ai récupéré mon `client_id` et mon `client_secret` de test auprès de l’équipe AgentConnect
 - [ ] J’affiche un bouton AgentConnect conforme sur mon application en environment de développement : voir [Spécifications visuelles](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fs/implementation_fca/spec_recette_fca.md)
-- [ ] J’ai installé et paramétré mon client OpenID sur mon application en développement : voir [Spécifications techniques](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fs.md#jint%C3%A8gre-agentconnect-dans-mon-service-en-ligne)
+- [ ] J’ai installé et paramétré mon client OpenID sur mon application en développement : voir [Spécifications techniques](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fs.md#3--jint%C3%A8gre-agentconnect-dans-mon-service-en-ligne)
 - [ ]  Mon implémentation fonctionne
 - [ ]  Je contractualise officiellement ma collaboration avec la Dinum en remplissant le [DataPass dédié](https://datapass.api.gouv.fr/agent-connect-fs)
 - [ ]  Le DataPass étant validé, j’ai récupéré mon `client_id` et mon `client_secret` de production en remplissant [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca) avec les informations de production
@@ -70,7 +70,7 @@ ___
 
 - [Comment les erreurs entre AgentConnect et le Fournisseur de Services sont-elles gérées ?](doc_fs/erreur_fca/gestion_erreur.md)
 
-### 3.7. Je souhaite faire qualifier mon implémentation d'AgentConnect
+### 3.7. Je souhaite connaitre les spécifications visuelles d'AgentConnect
 
 - [Quel bouton AgentConnect intégrer et comment l'intégrer ?](doc_fs/implementation_fca/bouton_fca.md)
 - [Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?](doc_fs/implementation_fca/spec_recette_fca.md)
@@ -139,7 +139,7 @@ Objet JWT retourné par l'appel au endpoint AC_URL/api/v2/token. L'objet JWT est
 
 Exemple :
 
-```
+```json
 {
     'aud':'895fae591ccae777094931e269e46447',
     'exp':1412953984,
@@ -164,7 +164,7 @@ Objet JWT retourné par l'appel au endpoint AC_URL/api/v2/userinfo. L'objet JWT 
 
 Exemple :
 
-```
+```json
 {
   "sub": "704e024229015d2bd47f7a5e5ab05b35c8336ab403c38022985f8cfadc86fe91",
   "uid": "1",
