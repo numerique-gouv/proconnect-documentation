@@ -1,6 +1,12 @@
+[Accueil](https://github.com/france-connect/Documentation-AgentConnect/blob/main/README.md) > AgentConnect - Fournisseur de Service
+
+___
+
 # AgentConnect - Fournisseur de Service
 
-Vous souhaitez implémenter AgentConnect sur votre site? Vous êtes au bon endroit ! Cette documentation présente l'ensemble des informations à connaitre.
+
+
+Vous souhaitez implémenter AgentConnect sur votre site? Vous êtes au bon endroit ! Cette documentation présente l'ensemble des informations à connaître.
 
 ## 1. 👩‍🏫 Préambule
 
@@ -24,7 +30,7 @@ Voici un résumé des étapes pour être fournisseur de service AgentConnect :
 - [ ] [_Optionnel_] Je contacte l'équipe AgentConnect pour qu'elle puisse répondre à mes questions si j'en ai : support.partenaires@agentconnect.gouv.fr ou [sur notre chaîne Tchap](https://www.tchap.gouv.fr/#/room/!kBghcRpyMNThkFQjdW:agent.dinum.tchap.gouv.fr)
 - [ ] Je souhaite lancer les développements en test, pour ceci je renseigne à l'équipe AgentConnect les informations techniques comme les `redirect_uris` ou `post_logout_redirect_uris` en remplissant [un formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca)
 - [ ] J’ai récupéré mon `client_id` et mon `client_secret` de test auprès de l’équipe AgentConnect
-- [ ] J’affiche un bouton AgentConnect conforme sur mon application en environment de développement : voir [Spécifications visuelles](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fs/implementation_fca/spec_recette_fca.md)
+- [ ] J’affiche un bouton AgentConnect conforme sur mon application en environment de développement : voir [Spécifications visuelles](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fs.md#37-je-souhaite-connaitre-les-sp%C3%A9cifications-visuelles-dagentconnect)
 - [ ] J’ai installé et paramétré mon client OpenID sur mon application en développement : voir [Spécifications techniques](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fs.md#3--jint%C3%A8gre-agentconnect-dans-mon-service-en-ligne)
 - [ ]  Mon implémentation fonctionne
 - [ ]  Je contractualise officiellement ma collaboration avec la Dinum en remplissant le [DataPass dédié](https://datapass.api.gouv.fr/agent-connect-fs)
