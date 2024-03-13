@@ -1,17 +1,6 @@
 # Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?
 
-Vous souhaitez être Fournisseur de Services pour AgentConnect et votre demande datapass a déjà été validée.
-Avant de passer à l'étape suivante de qualification de la mise en place d'AgentConnect, il est necéssaire d'implémenter les points listés ci-dessous. 
-
-Ceux-ci seront vérifiés un par un par l'équipe AgentConnect au moment de la recette. 
-
-L'ensemble des prérequis doivent être respectés afin d'obtenir la validation qui vous permettra d'utiliser AgentConnect en production.
-
-Pour rappel, la démarche pour demander la qualification de votre implémentation est disponible à l'adresse suivante : 
-
-**[Demande de recette d'un Fournisseur de Services AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-recette-fs-fca)**
-
-> ATTENTION, si vous implémentez AgentConnect sur le RIE, UNE RECETTE DEVRA SE FAIRE EN VISIO, SI POSSIBLE, OU VIA UN AUTRE MOYEN (VIDEO, CAPTURES D'ECRANS OU AUTRES) CAR NOUS NE POUVONS ACCÉDER A VOTRE FOURNISSEUR DE SERVICES POUR TESTER LA CINEMATIQUE ET LE PARCOURS UTILISATEUR. Merci de nous contacter à l'adresse suivante support.partenaires@agentconnect.gouv.fr afin de fixer ce point.
+Voici les spécifications visuelles pour réussir au mieux l'intégration d'AgentConnect.
 
 ## Le visuel
 
@@ -20,7 +9,7 @@ Pour rappel, la démarche pour demander la qualification de votre implémentatio
 - le design, les couleurs et le label du bouton AgentConnect ne peuvent pas être modifiés,
 - la taille recommandée pour une utilisation optimale est de 60 pixels de haut par 230 px de large,
 - votre intégration doit respecter le référentiel général d’amélioration de l’accessibilité (RGAA),
-- l’état survol du bouton pour montrer l’interaction doit être intégré. 
+- l’état survol du bouton pour montrer l’interaction doit être intégré.
 
 Voir [Quel bouton AgentConnect intégrer et comment l'intégrer?](../implementation_fca/bouton_fca.md)
 
@@ -29,9 +18,9 @@ Voir [Quel bouton AgentConnect intégrer et comment l'intégrer?](../implementat
 
 *"AgentConnect vous permet d’accéder à de nombreux services en ligne en utilisant l’un de vos comptes professionnels existants."*
 
-Cette phrase doit obligatoirement être placée dans les cas suivants: 
+Cette phrase doit obligatoirement être placée dans les cas suivants:
 
-- différents moyens de connexion cohabitent, 
+- différents moyens de connexion cohabitent,
 - sur des outils qui ne sont pas uniquement réservés aux agents.
 
 3. **AgentConnect dans la section connexion**
@@ -60,7 +49,7 @@ Le bouton doit être accompagné du lien « Qu’est-ce qu’AgentConnect ? » p
 
 1. **Un autre moyen d'identification qu'AgentConnect est mis à disposition des agents**
 
-Il est obligatoire de mettre à disposition des utilisateurs un moyen alternatif de connexion/d'inscription afin que ceux-ci ne dépendent pas uniquement d'AgentConnect.
+Nous obligions par le passé de forcer un autre moyen de connexion à l'application. Ceci n'est plus le cas : vous pouvez mettre AgentConnect en unique moyen de connexion si cela est pertinent.
 
 2. **Cinématique - Connexion**
 
@@ -85,7 +74,7 @@ Existe-t-il une réconciliation des données dans le cas où le fournisseur de s
 
 6. **Cinématique - Réconciliation de compte "générale" (Pour les accès suivants de l’utilisateur à ce même Fournisseur de Service)**
 
-A partir de quelle(s) donnée(s) le traitement du Fournisseur de Service identifie l'utilisateur ? 
+A partir de quelle(s) donnée(s) le traitement du Fournisseur de Service identifie l'utilisateur ?
 
 7. **Cinématique - Déconnexion**
 
@@ -93,7 +82,7 @@ La déconnexion fonctionne : je peux me déconnecter d'AgentConnect et du Fourni
 
 ## Les aspects sécurité
 
-1. **Interdiction des pop-ups et iframes** 
+1. **Interdiction des pop-ups et iframes**
 
 Les fenêtres pop-ups et iframes sont interdites.
 
@@ -103,7 +92,7 @@ L'usager doit pouvoir identifier clairement qu'il est connecté et son profil ac
 
 3. **Scopes**
 
-Les scopes appelés sont les mêmes que ceux déclarés et autorisés dans la demande datapass.
+Les scopes appelés sont les mêmes que ceux déclarés et autorisés dans le formulaire Démarches-Simplifiées.
 
 4. **TLS**
 
