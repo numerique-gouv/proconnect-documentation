@@ -83,7 +83,6 @@ ___
 
 ## 4. 🚀 Je souhaite mettre mon Fournisseur de Services en production
 
-- [Comment faire qualifier mon implémentation ?](doc_fs/recette_fca/recette.md)
 - [Comment recevoir mes jetons de production ?](doc_fs/recette_fca/recette_cles_prod.md)
 
 

@@ -1,10 +1,11 @@
+[Accueil](https://github.com/france-connect/Documentation-AgentConnect/blob/main/README.md) > [AgentConnect - Fournisseur de Service](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fs.md) > Comment recevoir mes jetons de production ?
+
+___
+
+
 # Comment recevoir mes jetons de production ?
 
-Vous souhaitez être Fournisseur de Services pour AgentConnect:
-
-- votre demande datapass a déjà été validée,
-- vous avez implémenté AgentConnect sur vore plateforme de test,
-- la qualification de votre implémentation a été validée par l'équipe AgentConnect.
+Vous souhaitez être Fournisseur de Services pour AgentConnect. Votre implémentation en intégration est fonctionnelle.
 
 Il est maintenant temps de passer à l'ultime étape suivante de demande de mise en production de votre Fournisseurs de Services.
 
@@ -16,8 +17,6 @@ Nous vous prions de bien vouloir y déposer votre demande afin qu'elle puisse ê
 
 - [Demande de création d'un Fournisseur de Services sur AgentConnect](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca)
 
-
-**:warning: ATTENTION: Les demandes envoyées directement par emails ne sont plus traitées.**
 
 ## Recevoir mes jetons de production
 
