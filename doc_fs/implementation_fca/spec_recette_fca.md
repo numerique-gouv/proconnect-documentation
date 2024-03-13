@@ -1,3 +1,8 @@
+[Accueil](https://github.com/france-connect/Documentation-AgentConnect/blob/main/README.md) > [AgentConnect - Fournisseur de Service](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fs.md) > Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?
+
+___
+
+
 # Quels sont les prérequis et les spécifications à respecter pour réussir  l'implémentation ?
 
 Voici les spécifications visuelles pour réussir au mieux l'intégration d'AgentConnect.
