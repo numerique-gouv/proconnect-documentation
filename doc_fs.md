@@ -60,6 +60,7 @@ ___
 
 ### 3.3. Je veux savoir comment intégrer le bouton AgentConnect
 
+- [Comment intégrer AgentConnect techniquement](doc_fs/./technique_fca/mode_emploi.md)
 - [Quel bouton AgentConnect intégrer et comment l'intégrer visuellement ?](doc_fs/implementation_fca/bouton_fca.md)
 - [Troubleshooting](doc_fs/./technique_fca/troubleshooting.md)
 
