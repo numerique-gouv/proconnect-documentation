@@ -4,7 +4,7 @@ ___
 
 # 🆘 Troubleshooting
 
-VOus suivez l'installation d'AgentConnect, tout se passe bien, jusqu'à ce que vous tombez sur une erreur. Cette note vous donnera des clés de résolution pour vous débloquer.
+Vous suivez l'installation d'AgentConnect, tout se passe bien, jusqu'à ce que vous tombez sur une erreur. Cette note vous donnera des clés de résolution pour vous débloquer.
 
 
 Code erreur | Marche à suivre
