@@ -1,5 +1,6 @@
 [Accueil](https://github.com/france-connect/Documentation-AgentConnect/blob/main/README.md) > [AgentConnect - Fournisseur de Service](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fs.md) > Glossaire
 
+___
 
 # 📑 Glossaire
 
