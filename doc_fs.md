@@ -6,7 +6,7 @@ ___
 
 
 
-Vous souhaitez implémenter AgentConnect sur votre site? Vous êtes au bon endroit ! Cette documentation présente l'ensemble des informations à connaître.
+Vous souhaitez implémenter AgentConnect sur votre site ? Vous êtes au bon endroit ! Cette documentation présente l'ensemble des informations à connaître.
 
 ## 1. 👩‍🏫 Préambule
 
