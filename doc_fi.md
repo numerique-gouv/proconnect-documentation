@@ -19,7 +19,7 @@ ___
 
 **🤓 TL;DR**
 
-Voici un résumé des étapes pour être fournisseur de service AgentConnect :
+Voici un résumé des étapes pour être fournisseur d'identité AgentConnect :
 
 - [ ] Je me familiarise avec la cinématique OpenIDConnect : voir [concepts de base](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fi.md#21-je-souhaite-conna%C3%AEtre-le-concept-de-base-dagentconnect)
 - [ ] [_Optionnel_] Je contacte l'équipe AgentConnect pour qu'elle puisse répondre à mes questions si j'en ai : support.partenaires@agentconnect.gouv.fr ou [sur notre chaîne Tchap](https://www.tchap.gouv.fr/#/room/!kBghcRpyMNThkFQjdW:agent.dinum.tchap.gouv.fr)
