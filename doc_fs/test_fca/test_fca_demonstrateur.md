@@ -9,10 +9,12 @@ Les adresses de notre environnement d'intégration sont les suivantes :
 
 ## Compte test: 
 
-Pour les tests, le compte générique est le suivant:
+
+À l'arrivée sur la mire Agent Connect, entrer `test@fia1.fr`.
+Vous serez redirigés vers le FI de test d'Agent Connect.
+Le compte générique est le suivant:
  
 Login : test
-
 Mdp : 123
 
 ## Environnement Internet : 
