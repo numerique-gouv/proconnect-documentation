@@ -32,6 +32,7 @@ Les données obligatoires sont des informations qui doivent être renvoyées sys
 |usual_name| Oui |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
 |email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
 |uid*|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
+| siret | non |Identifiant d'établissement| string, 14 chiffres sans espace|
 
 **:warning: ATTENTION** :
 
@@ -48,7 +49,6 @@ Les données complémentaires sont des informations qui sont renvoyées uniqueme
 | Champs | Obligatoire | Description| Format |
 |---- | ------ | ------ | ------ |
 | siren | non  | Identifiant d'entreprise  | String, 9 chiffres sans espace |
-| siret | non |Identifiant d'établissement| string, 14 chiffres sans espace|
 | organizational_unit  | non  | Ministère/Direction/Service d'affectation   | UTF8 |
 | belonging_population  | non  | Population d'appartenance  | string, Exemple: agent, prestataire, partenaire, stagiaire |
 | phone  | non  | Téléphones de contact  | Format non normé |
