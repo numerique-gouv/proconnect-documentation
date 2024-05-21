@@ -12,7 +12,7 @@ Afin de contractualiser le partenariat entre la Dinum et votre organisation, nou
 
 ## 2. 📅 Quand le remplir ?
 
-Le formulaire n'est pas à remplir impérativement avant de commencer les travaux. Il est obligatoire pour contractualiser le partenariat et devra être fait un moment avant la fin du processus. S'il est plus pratique de procéder ainsi, vous pouvez tout à fait demander les accès en intégration en remplissant [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fi-fca) avant de remplir de formulaire DataPass.
+Le formulaire n'est pas à remplir impérativement avant de commencer les travaux. Il est obligatoire pour contractualiser le partenariat et devra être fait un moment avant la fin du processus. S'il est plus pratique de procéder ainsi, vous pouvez tout à fait demander les accès en intégration en remplissant [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fi-fca) avant de remplir de formulaire DataPass (dans le champ `Numéro de la demande datapass`, il faudra remplir un truc comme `000000`, ce champ étant traité à la main).
 
 ## 3. ☑ Champs à renseigner
 
