@@ -10,7 +10,7 @@ Les adresses de notre environnement d'intégration Internet sont les suivantes :
 
 | Adresse d'intégration | redirect_uri | post_logout_redirect_uri | URL de découverte des JWK |
 | ------ | ------ | ------ | ------ |
-| https://fca.integ01.dev-agentconnect.fr | https://fca.integ01.dev-agentconnect.fr/api/v2/oidc-callback/ | https://fca.integ01.dev-agentconnect.fr/api/v2/client/logout-callback | https://fca.integ01.dev-agentconnect.fr/api/v2/client/.well-known/keys |
+| https://fca.integ01.dev-agentconnect.fr | https://fca.integ01.dev-agentconnect.fr/api/v2/oidc-callback | https://fca.integ01.dev-agentconnect.fr/api/v2/client/logout-callback | https://fca.integ01.dev-agentconnect.fr/api/v2/client/.well-known/keys |
 
 **Démonstrateurs Internet**
 
@@ -35,7 +35,7 @@ Les adresses de notre environnement d'intégration RIE sont les suivantes :
 
 | Adresse d'intégration | redirect_uri | post_logout_redirect_uri | URL de découverte des JWK |
 | ------ | ------ | ------ | ------ |
-| https://fca.integ02.agentconnect.rie.gouv.fr | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/oidc-callback/ | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/client/logout-callback | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/client/.well-known/keys |
+| https://fca.integ02.agentconnect.rie.gouv.fr | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/oidc-callback | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/client/logout-callback | https://fca.integ02.agentconnect.rie.gouv.fr/api/v2/client/.well-known/keys |
 
 **Démonstrateurs RIE**
 
