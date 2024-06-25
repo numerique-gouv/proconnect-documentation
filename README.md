@@ -1,6 +1,6 @@
 # 🔑 AgentConnect - Documentation
 
-![](https://storage.gra.cloud.ovh.net/v1/AUTH_0f20d409cb2a4c9786c769e2edec0e06/padnumerique/uploads/95821394-4807-4f90-acc0-2a036a303850.png)
+![](https://github.com/france-connect/Documentation-AgentConnect/blob/main/assets/hero_home.png?raw=true)
 
 
 > AgentConnect simplifie le quotidien des agents
