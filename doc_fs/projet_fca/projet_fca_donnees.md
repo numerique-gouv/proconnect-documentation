@@ -14,6 +14,7 @@ En plus de l'openid, qui est obligatoire, des données obligatoires sont fournie
 |usual_name| Oui |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
 |email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
 |uid|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
+| siret | Oui |Identifiant d'établissement| string, 14 chiffres sans espace|
 
 En complément, il est possible d'obtenir des données complémentaires. Cependant ces données ne sont pas obligatoirement connues par tous les Fournisseurs d'Identité.
 
@@ -23,7 +24,6 @@ En complément, il est possible d'obtenir des données complémentaires. Cependa
 Champs | Obligatoire | Description| Format |
 |---- | ------ | ------ | ------ |
 | siren | non  | Identifiant d'entreprise  | String, 9 chiffres sans espace |
-| siret | non |Identifiant d'établissement| string, 14 chiffres sans espace|
 | organizational_unit  | non  | Ministère/Direction/Service d'affectation   | UTF8 |
 | belonging_population  | non  | Population d'appartenance  | string, Exemple: agent, prestataire, partenaire, stagiaire |
 | phone  | non  | Téléphones de contact  | Format non normé |
