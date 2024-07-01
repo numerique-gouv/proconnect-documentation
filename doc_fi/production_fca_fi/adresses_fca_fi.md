@@ -78,7 +78,7 @@ Les adresses de notre environnement de production RIE sont les suivantes :
 | ------ | ------ | ------ | ------ |
 | https://auth.agentconnect.rie.gouv.fr | https://auth.agentconnect.rie.gouv.fr/api/v2/oidc-callback | https://auth.agentconnect.rie.gouv.fr/api/v2/client/logout-callback | https://auth.agentconnect.rie.gouv.fr/api/v2/client/.well-known/keys |
 
-**Démonstrateurs RE**
+**Démonstrateurs RIE**
 
 *Fournisseur de Services RIE* :
 
