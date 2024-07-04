@@ -9,7 +9,7 @@ Vous pouvez suivre les instructions du Système de Design de l’État sur le bo
 Veuillez apporter les modifications suivantes :
 
 1. Remplacer « FranceConnect » par « AgentConnect » (sans espaces)
-2. Remplacer le label du lien par « Qu’est-ce que AgentConnect ? »
+2. Remplacer le label du lien par « Qu'est-ce que AgentConnect ? »
 3. Faire pointer le lien vers [https://agentconnect.gouv.fr/](https://agentconnect.gouv.fr/)
 
 ### Vous n’utilisez pas le Système de Design de l'État
