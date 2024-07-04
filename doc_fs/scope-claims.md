@@ -21,39 +21,7 @@ Le protocole OpenId Connect defini un certain nombre de [claims standards](https
 
 *En Bref :* Les claims sont les informations sur l'utilisateur ou la phase d'authentification disponible dans l'ID Token ou dans la réponse de UserInfo. 
 
-## Les scopes et les claims dans AgentConnect
-
-### Liste des claims 
-
-### Les données d'identité obligatoires
-
-|Champs | Obligatoire | Description| Format |
-|---- | ------ | ------ | ------ |
-|given_name | Oui |Prénoms séparés par des espaces (standard OpenIDConnect)| UTF-8 (standard OpenIDConnect)|
-|usual_name| Oui |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
-|email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
-|uid|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
-| siret | oui |Identifiant d'établissement| string, 14 chiffres sans espace|
-
-En complément, il est possible d'obtenir des données complémentaires. Cependant ces données ne sont pas obligatoirement connues par tous les Fournisseurs d'Identité.
-
-
-### Les données complémentaires
-
-Champs | Obligatoire | Description| Format |
-|---- | ------ | ------ | ------ |
-| siren | non  | Identifiant d'entreprise  | String, 9 chiffres sans espace |
-| organizational_unit  | non  | Ministère/Direction/Service d'affectation   | UTF8 |
-| belonging_population  | non  | Population d'appartenance  | string, Exemple: agent, prestataire, partenaire, stagiaire |
-| phone  | non  | Téléphones de contact  | Format non normé |
-| chorusdt   | Non | Entité ministérielle/Matricule Agent  | string |
-
-La liste des données complémentaires est non exhaustive et pourra être amendée si besoin.
-
-
-AgentConnect transmet systématiquement au Fournisseur de Services un identifiant unique pour chaque agent : 
-
-* Cet identifiant est spécifique à chaque Fournisseur de Services. Un même utilisateur aura donc un identifiant unique différent pour chacun des Fournisseurs de Services auxquels il accède. 
+La liste des données renvoyées par les Fournisseurs d'Identité est disponible [ici](./donnees_fournies.md)
 
 ### Les données sur l'authentification
 

@@ -28,7 +28,7 @@ Identifiant du Fournisseur de Services, communiqué lors de son inscription aupr
 
 Le secret du Fournisseur de Services, communiqué lors de son inscription auprès de AgentConnect.
 
-## 7. `AUTHZ_CODE`
+## 7. `AUTHORIZATION_CODE`
 
 Code retourné (dans l'URL) par AgentConnect au Fournisseur de Services lorsque ce dernier fait un appel sur le endpoint AC_URL/api/v2/authorize. Il est ensuite passé (dans le corps de la requête HTTP POST) lors de l'appel sur le endpoint AC_URL/api/v2/token.
 
@@ -49,7 +49,15 @@ Cette liste de scopes est définie par la norme OpenIDConnect.
 
 ## 10. `ID_TOKEN`
 
-Objet JWT retourné par l'appel au endpoint AC_URL/api/v2/token. L'objet JWT est un objet JSON formaté et signé. Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub et nonce.
+L'ID token est un jeton au format JWT qui est fourni en même temps que l'*access token* par l'appel au endpoint AC_URL/api/v2/token, il contient
+- des information sur l'authentification 
+   - dates d'expiration, d'authentification, de création
+   - des moyens de contrôle permettant de valider l'ID Token et l'Access Token
+- des attributs ( claims ) sur l'utilisateurs, qui peuvent être : 
+   - standard : profile, email, address, phone, ...
+   - personnalisés par le serveur OpenId Connect. 
+
+Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub et nonce.
 
 Exemple :
 
