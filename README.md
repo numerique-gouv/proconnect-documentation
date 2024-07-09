@@ -1,6 +1,6 @@
 # 🔑 AgentConnect - Documentation
 
-![](https://github.com/france-connect/Documentation-AgentConnect/blob/main/assets/hero_home.png?raw=true)
+![](https://github.com/numerique-gouv/agentconnect-documentation/blob/main/assets/hero_home.png?raw=true)
 
 
 > AgentConnect simplifie le quotidien des agents
