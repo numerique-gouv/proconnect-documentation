@@ -62,5 +62,5 @@ ___
 
 
 - [Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et l'"Hybridge" ?](doc_fi/pilotage_fca/plateformes_fi.md)
-- [Glossaire](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fs/technique_fca/glossaire.md)
+- [Glossaire](oc_fs/technique_fca/glossaire.md)
 
