@@ -23,5 +23,5 @@ Voici les différents champs :
 - `Destinataires des données` : ce sont les Fournisseurs de Service d'AgentConnect, via le bouton AgentConnect
 - `Durée de conservation des données en mois` : non applicable
 
-Pour les différentes personnes représentées, nous avons rédigé une note à ce sujet : [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](../../doc_fs/pilotage_fca/pilotage_fca_demarches_acteurs.md)
+Pour les différentes personnes représentées, nous avons rédigé une note à ce sujet : [Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?](../../doc_fs/datapass-fs.md)
 
