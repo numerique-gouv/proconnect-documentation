@@ -21,7 +21,7 @@ ___
 
 Voici un résumé des étapes pour être fournisseur d'identité AgentConnect :
 
-- [ ] Je me familiarise avec la cinématique OpenIDConnect : voir [concepts de base](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fi.md#21-je-souhaite-conna%C3%AEtre-le-concept-de-base-dagentconnect)
+- [ ] Je me familiarise avec la cinématique OpenIDConnect : voir [concepts de base](./doc_fi.md#21-je-souhaite-conna%C3%AEtre-le-concept-de-base-dagentconnect)
 - [ ] [_Optionnel_] Je contacte l'équipe AgentConnect pour qu'elle puisse répondre à mes questions si j'en ai : support.partenaires@agentconnect.gouv.fr ou [sur notre chaîne Tchap](https://www.tchap.gouv.fr/#/room/!kBghcRpyMNThkFQjdW:agent.dinum.tchap.gouv.fr)
 - [ ]  Je contractualise officiellement ma collaboration avec la Dinum en remplissant le [DataPass dédié](https://datapass.api.gouv.fr/agent-connect-fi). Cette étape peut être effectuée plus tard dans le processus
 - [ ] Je renseigne à l'équipe AgentConnect les informations nécassaires pour recevoir des accès en intégration en remplissant [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fi-fca)
