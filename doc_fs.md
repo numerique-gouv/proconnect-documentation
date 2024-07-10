@@ -28,6 +28,7 @@ Pour toute question technique, vous pouvez contacter l'équipe AgentConnect par 
 ___
 
 ## 3. 💻 FAQ
+
 - [En tant que Fournisseur de Service, quelles sont les données que je peux récupérer par AgentConnect sur les agents ?](doc_fs/donnees_fournies.md)
 - [En tant que Fournisseur de Service, comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ? ](doc_fs/scope-claims.md)
 - [Erreurs récurrentes](doc_fi/troubleshooting.md)
