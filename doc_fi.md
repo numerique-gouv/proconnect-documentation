@@ -62,5 +62,5 @@ ___
 
 
 - [Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et l'"Hybridge" ?](doc_fi/pilotage_fca/plateformes_fi.md)
-- [Glossaire](oc_fs/technique_fca/glossaire.md)
+- [Glossaire](doc_fs/technique_fca/glossaire.md)
 
