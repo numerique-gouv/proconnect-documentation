@@ -1,4 +1,4 @@
-[Accueil](https://github.com/france-connect/Documentation-AgentConnect/blob/main/README.md) > [AgentConnect - Fournisseur de Service](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fs.md) > Glossaire
+[Accueil](../README.md) > [AgentConnect - Fournisseur de Service](https://github.com/france-connect/Documentation-AgentConnect/blob/main/doc_fs.md) > Glossaire
 
 ___
 
@@ -50,12 +50,12 @@ Cette liste de scopes est définie par la norme OpenIDConnect.
 ## 10. `ID_TOKEN`
 
 L'ID token est un jeton au format JWT qui est fourni en même temps que l'*access token* par l'appel au endpoint AC_URL/api/v2/token, il contient
-- des information sur l'authentification 
+- des information sur l'authentification
    - dates d'expiration, d'authentification, de création
    - des moyens de contrôle permettant de valider l'ID Token et l'Access Token
-- des attributs ( claims ) sur l'utilisateurs, qui peuvent être : 
+- des attributs ( claims ) sur l'utilisateurs, qui peuvent être :
    - standard : profile, email, address, phone, ...
-   - personnalisés par le serveur OpenId Connect. 
+   - personnalisés par le serveur OpenId Connect.
 
 Le JSON doit contenir ces six clés : aud,exp,iat,iss,sub et nonce.
 

@@ -1,4 +1,4 @@
-[Accueil](https://github.com/france-connect/Documentation-AgentConnect/blob/main/README.md) > AgentConnect - Fournisseur de Service
+[Accueil](README.md) > AgentConnect - Fournisseur de Service
 
 ___
 
