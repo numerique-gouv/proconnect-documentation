@@ -17,6 +17,8 @@ En plus de l'openid, qui est obligatoire, des données sont **systématiquement*
 
 Il vous est possible d'obtenir des données complémentaires à celles-ci. Cependant ces données ne sont pas obligatoirement fournies par tous les Fournisseurs d'Identité, et leur format est plus sujet à fluctuation selon la qualité de l'annuaire du Fournisseur d'Identité.
 
+AgentConnect renvoie également le champ `idp_id`, qui permet de connaître le Fournisseur d'Identité utilisé par l'utilisateur pour s'authentifier (plus de détails [ici](./connaitre-le-fi-utilise.md))
+
 
 ## Les données complémentaires
 
