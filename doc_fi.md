@@ -17,8 +17,6 @@ Vous souhaitez devenir Fournisseur d'Identité pour AgentConnect, voici les él�
 
 ___
 
-**🤓 TL;DR**
-
 Voici un résumé des étapes pour être fournisseur d'identité AgentConnect :
 
 - [ ] Je me familiarise avec la cinématique OpenIDConnect : voir [concepts de base](./doc_fi.md#21-je-souhaite-conna%C3%AEtre-le-concept-de-base-dagentconnect)
