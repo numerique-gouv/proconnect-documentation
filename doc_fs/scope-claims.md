@@ -37,7 +37,7 @@ Les claims relatifs à l'authentification disponibles par AgentConnect sont des 
 
 ### Correspondance entre scope et claims sur AgentConnect
 
-Le tableau suivant décris la liste des *claims* accessible en fonction des *scopes* associés à l'access token.
+Le tableau suivant décrit la liste des *claims* accessible en fonction des *scopes* associés à l'access token.
 
 | Scope       | Claims   |
 | --- | --- |
