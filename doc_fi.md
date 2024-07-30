@@ -11,12 +11,6 @@ Vous souhaitez rejoindre la fédération d'identité et être Fournisseur d'Iden
 
 ## 1. ⚙️ Les étapes pour devenir Fournisseur d'Identité AgentConnect
 
-Vous souhaitez devenir Fournisseur d'Identité pour AgentConnect, voici les éléments à prendre en compte :
-
-- [Quelles sont les étapes pour devenir Fournisseur d'Identité ?](https://agentconnect.gouv.fr/fi#documentation-fi)
-
-___
-
 Voici un résumé des étapes pour être fournisseur d'identité AgentConnect :
 
 - [ ] Je me familiarise avec la cinématique OpenIDConnect : voir [concepts de base](./doc_fi.md#21-je-souhaite-conna%C3%AEtre-le-concept-de-base-dagentconnect)
