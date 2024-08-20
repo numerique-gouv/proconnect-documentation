@@ -2,7 +2,8 @@
 
 Lorsque vous implémentez la connexion OIDC via AgentConnect sur votre Fournisseur de Service, vous voudrez sans doute tester la connexion à votre Fournisseur de Service.
 
-**En intégration** sur **Internet** et le **RIE**, AgentConnect possède pour cela un Fournisseur d'Identité de test.
+## Fournisseur d'Identité de test
+**En intégration** sur **Internet** et le **RIE**, AgentConnect possède un Fournisseur d'Identité de test.
 
 Pour tester la connexion sur votre Fournisseur de service :
 - cliquez sur le bouton "S'identifier avec AgentConnect" depuis votre Fournisseur de Service **en intégration**
@@ -14,3 +15,12 @@ Identifiant |  Mot de passe | Niveau de sécurité
 test | 123 | eidas1
 
 - cliquez sur Valider. Vous devriez être redirigé vers votre Fournisseur de Service.
+
+## MonComptePro
+**En intégration** sur **Internet** seulement, il vous est possible d'utiliser MonComptePro.
+
+Pour tester la connexion sur votre Fournisseur de service :
+- cliquez sur le bouton "S'identifier avec AgentConnect" depuis votre Fournisseur de Service **en intégration**
+- à l'arrivée sur la mire Agent Connect, entrez `user@yopmail.com`. Vous serez redirigés vers la sandbox de MonComptePro (dont le design est identique à celui d'AgentConnect).
+- indiquez `user@yopmail.com` également en mot de passe.
+- sélectionnez l'organisation de rattachement "Direction Interministérielle du Numérique (DINUM)" Vous devriez être redirigé vers votre Fournisseur de Service.
