@@ -32,7 +32,7 @@ Les données obligatoires sont des informations qui doivent être renvoyées sys
 |usual_name| Oui |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
 |email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
 |uid*|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
-| siret | Oui |Identifiant d'établissement| string, 14 chiffres sans espace|
+| siret | Non |Identifiant d'établissement| string, 14 chiffres sans espace|
 
 **:warning: ATTENTION** :
 
