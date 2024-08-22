@@ -8,7 +8,7 @@ Pour une référence d'implémentation OpenID Connect voici le lien : https://op
 
 ## Les flux standards
 
-En amont, le client s'inscrit (en général manuellement) auprès du provider. Il lui fournit une URL de callback (l'URL du client vers lequel l'internaute est redirigé une fois authentifié), aussi appelée `redirect_uri`, ainsi qu'une URL de redirection après déconnexion, aussi appelée `post_logout_redirect_uri`. En retour le provider donne au client un `client_id` et un `client_secret`.
+En amont, le *client* s'inscrit (en général manuellement) auprès du *provider*. Il lui fournit une URL de callback (l'URL du client vers lequel l'internaute est redirigé une fois authentifié), aussi appelée `redirect_uri`, ainsi qu'une URL de redirection après déconnexion, aussi appelée `post_logout_redirect_uri`. En retour le provider donne au client un `client_id` et un `client_secret`.
 
 Lorsque l'internaute clique sur le bouton d'authentification du client, le flux est le suivant :
 

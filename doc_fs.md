@@ -14,7 +14,7 @@ Cette documentation est à destination des Fournisseurs de Services souhaitant i
 
 ## 2. ⚙️ Les étapes pour intégrer AgentConnect
 
-- [ ] Je me familiarise avec le flux OIDC - authorization code flow : voir [concepts de base](doc_fs/flux_oidc.md)
+- [ ] Je me familiarise avec le flux OIDC - authorization code flow : voir [concepts de base](resources/flux_oidc.md). NB: si vous êtes Fournisseur de Service, AgentConnect est votre *provider* et vous êtes *client*.
 - [ ] Je souhaite lancer les développements en test : je renseigne [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca). L'équipe me fournit alors mon `client_id` et mon `client_secret`.
 - [ ] J’ai implémenté la cinématique OIDC (Authorization Code Flow): voir l'[implémentation technique](doc_fs/implementation_technique.md)
 - [ ]  Je contractualise officiellement ma collaboration avec la DINUM en remplissant le [DataPass dédié](./doc_fs/datapass-fs.md)
@@ -32,5 +32,5 @@ ___
 - [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ?](doc_fs/scope-claims.md)
 - [Comment savoir avec quel Fournisseur d'Identité s'est authentifié mon utilisateur ?](doc_fs/connaitre-le-fi-utilise.md)
 - [Erreurs récurrentes](doc_fi/troubleshooting.md)
-- [Glossaire](doc_fs/glossaire.md)
+- [Glossaire](resources/glossaire.md)
 

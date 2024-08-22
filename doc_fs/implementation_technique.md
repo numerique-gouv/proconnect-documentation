@@ -6,11 +6,7 @@ Pour tester la configuration de votre Fournisseur de Service tout au long de l'i
 Vous trouverez [ici](./identifiants-fi-test.md) les identifiants pour vous connecter au Fournisseur d'Identité de test. 
 
 ### Valeur de AC_DOMAIN
-Selon votre environnement et le réseau sur lequel votre Fournisseur de Service est, le domaine AgentConnect (`AC_DOMAIN`) sera :
-|               | Internet                          | RIE                                       |
-|-|-|-|
-| Intégration   | fca.integ01.dev-agentconnect.fr   | fca.integ02.agentconnect.rie.gouv.fr      |
-| Production    | auth.agentconnect.gouv.fr         | auth.agentconnect.rie.gouv.fr             |
+Vous pouvez retrouver la valeur de AC_DOMAIN qui vous correspond à [ce lien](../resources/valeur_ac_domain.md)
 
 ### Exemple d'intégration réussie
 [Dépôt Github d'un client AgentConnect](https://github.com/betagouv/moncomptepro-test-client)
