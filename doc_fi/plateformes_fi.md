@@ -36,20 +36,20 @@ L'Hybridge permet de relier un Fournisseur d’Identité RIE à un Fournisseur d
 Une agente peut se connecter depuis un contexte internet ou RIE à une instance AgentConnect. Voici le récapitulatif des connexions possibles.
 
 ### Contexte Internet
-
 ```mermaid
 flowchart LR
     FS2[FS internet] <--> AC2[AgentConnect Internet]
     AC2 <--> FI2[FI Internet]
-    AC2 --> |Error via conf FI hybridge| FI1[FI RIE]
+    AC2 --> |Erreur FI inacessible| FI1[FI RIE]
 ```
-### Connexion contexte RIE
+## Connexion contexte RIE
 ```mermaid
 flowchart LR    
     FS2[FS internet] <--> AC2[AgentConnect Internet]
-    AC2 <--> FI1[FI RIE]
+    AC2 <-->  |via hybridge| FI1[FI RIE]
     AC2 <--> FI2[FI Internet]
     
     FS1[FS RIE] <--> C1AC1[AgentConnect RIE]
     C1AC1 <--> FSIFI1[FI RIE]
+    
 ```
