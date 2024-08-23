@@ -13,7 +13,8 @@ Vous souhaitez rejoindre la fédération d'identité et être Fournisseur d'Iden
 
 Voici un résumé des étapes pour être fournisseur d'identité AgentConnect :
 
-- [ ] Je me familiarise avec la cinématique OpenIDConnect : voir [concepts de base](./doc_fi.md#21-je-souhaite-conna%C3%AEtre-le-concept-de-base-dagentconnect)
+- [ ] Je me familiarise avec le flux OIDC - authorization code flow : voir [concepts de base](resources/flux_oidc.md). NB: si vous êtes Fournisseur d'Identité, vous êtes *provider* et AgentConnect est *client*.
+- [ ] Je configure mon Fournisseur d'Identité pour qu'il puisse s'intégrer à la fédération AgentConnect avec le [mode d'emploi technique](doc_fi/configuration.md)
 - [ ] [_Optionnel_] Je contacte l'équipe AgentConnect pour qu'elle puisse répondre à mes questions si j'en ai : support.partenaires@agentconnect.gouv.fr ou [sur notre chaîne Tchap](https://www.tchap.gouv.fr/#/room/!kBghcRpyMNThkFQjdW:agent.dinum.tchap.gouv.fr)
 - [ ] Je renseigne à l'équipe AgentConnect les informations nécessaires pour recevoir des accès en intégration en remplissant [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fi-fca)
 - [ ] J’ai récupéré mes accès en intégration test auprès de l’équipe AgentConnect
@@ -25,34 +26,8 @@ Voici un résumé des étapes pour être fournisseur d'identité AgentConnect :
 ___
 
 
-
-## 2. 💻 J'intègre mon Fournisseur d'Identité sur AgentConnect
-
-### 2.1. Je souhaite connaître le concept de base d'AgentConnect
-
-- [Qu'est-ce que le protocole OpenID Connect ?](doc_fi/technique_fca_fi/technique_oidc_fi.md)
-- [Comment AgentConnect utilise OpenID Connect ?](doc_fi/technique_fca_fi/technique_fca_oidc_fi.md)
-- [Quelles sont les données utilisateur que je dois fournir ?](doc_fi/technique_fca_fi/donnees_utilisateurs_fi.md)
-
-### 2.2. Je souhaite avoir plus de détails dans la contractualisation
-
-- [Comment remplir le formulaire DataPass ?](doc_fi/technique_fca_fi/formulaire_datapass.md)
-
-### 2.3. Je veux savoir comment fonctionne AgentConnect et comment implémenter mon Fournisseur d'Identité
-
-- [Quel est le détail du fonctionnement ?](doc_fi/fonctionnement_fca_fi/details_fonctionnement_fi.md)
-- [Quels sont les certificats d'authentification ?](doc_fi/fonctionnement_fca_fi/certificats_fi.md)
-- [Qu'est-ce qu'eIDAS et comment utiliser les niveaux eIDAS en tant que Fournisseurs d'Identité ?](doc_fi/fonctionnement_fca_fi/fca_niveau_eidas_fi.md)
-- [Quelles sont les adresses de l'environnement d'intégration et de production AgentConnect (endpoints) ?](doc_fi/production_fca_fi/adresses_fca_fi.md)
-
-### 2.4. Je veux connaître les différents environnements disponibles
-
-- [Comment accéder aux différents environnements d'AgentConnect ?](doc_fi/test_fca_fi/fca_env_fi.md)
-- [Quels démonstrateurs sont disponibles sur la plateforme intégration (test) d'AgentConnect ?](doc_fi/test_fca_fi/test_fca_demonstrateur_fi.md)
-
-## 3. 📚 Ressources supplémentaires
-
-
-- [Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et l'"Hybridge" ?](doc_fi/pilotage_fca/plateformes_fi.md)
-- [Glossaire](doc_fs/glossaire.md)
+## 2. 📚 Ressources supplémentaires
+- [Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et l'"Hybridge" ?](doc_fi/plateformes_fi.md)
+- [Quels sont les certificats d'authentification ?](./doc_fi/certificats_fi.md)
+- [Glossaire](resources/glossaire.md)
 
