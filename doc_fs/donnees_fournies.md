@@ -13,7 +13,6 @@ En plus de l'openid, qui est obligatoire, des données sont **systématiquement*
 |usual_name| Oui |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
 |email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
 |uid|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
-| siret | Oui |Identifiant d'établissement| string, 14 chiffres sans espace|
 
 Il vous est possible d'obtenir des données complémentaires à celles-ci. Cependant ces données ne sont pas obligatoirement fournies par tous les Fournisseurs d'Identité, et leur format est plus sujet à fluctuation selon la qualité de l'annuaire du Fournisseur d'Identité.
 
@@ -24,6 +23,7 @@ AgentConnect renvoie également le champ `idp_id`, qui permet de connaître le F
 
 Champs | Obligatoire | Description| Format |
 |---- | ------ | ------ | ------ |
+| siret | non |Identifiant d'établissement| string, 14 chiffres sans espace|
 | siren | non  | Identifiant d'entreprise  | String, 9 chiffres sans espace |
 | organizational_unit  | non  | Ministère/Direction/Service d'affectation   | UTF8 |
 | belonging_population  | non  | Population d'appartenance  | string, Exemple: agent, prestataire, partenaire, stagiaire |

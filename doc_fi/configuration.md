@@ -65,7 +65,6 @@ Parmi ces champs, seuls sont obligatoires :
 |usual_name |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
 |email  |Adresse courriel |UTF-8 (standard OpenIDConnect)|
 |uid |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
-| siret |Identifiant d'établissement| string, 14 chiffres sans espace|
 
 Les autres champs, si vous ne possédez pas l'information correspondante dans votre annuaire, doivent être **ignorés**. (cf. [RFC OIDC](https://openid.net/specs/openid-connect-core-1_0.html#IDToken) : *Any Claims used that are not understood MUST be ignored.*)
 Selon votre Fournisseur d'Identité, il est possible qu'il vous faille spécifier, pour chacun des scopes demandés, une valeur de retour nulle, indéfinie, ou simplement ignorée.
