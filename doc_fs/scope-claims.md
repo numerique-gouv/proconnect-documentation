@@ -37,7 +37,8 @@ Les claims relatifs à l'authentification disponibles par AgentConnect sont des 
 
 ### Correspondance entre scope et claims sur AgentConnect
 
-Le tableau suivant décrit la liste des *claims* accessible en fonction des *scopes* associés à l'access token.
+Le tableau suivant décrit la liste des *claims* accessible en fonction des *scopes* associés à l'access token. 
+Tous les Fournisseurs de Service intégrés depuis août 2024 ont accès par défaut à tous les scopes suivants:
 
 | Scope       | Claims   |
 | --- | --- |
@@ -46,11 +47,6 @@ Le tableau suivant décrit la liste des *claims* accessible en fonction des *sco
 | usual_name| usual_name |
 | email | email |
 | uid | uid|
-| siren | siren |
 | siret | siret |
-| organizational_unit | organizational_unit |
-| belonging_population | belonging_population |
-| phone | phone_number |
-| chorusdt | chorusdt:matricule, chorusdt:societe |
 | idp_id | idp_id|
-| idp_acr | idp_acr|
+
