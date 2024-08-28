@@ -50,3 +50,8 @@ Tous les Fournisseurs de Service intégrés depuis août 2024 ont accès par dé
 | siret | siret |
 | idp_id | idp_id|
 
+Le claim "phone_number" existe également pour le scope phone.
+
+| Scope       | Claims   |
+| --- | --- |
+| phone | phone_number |
