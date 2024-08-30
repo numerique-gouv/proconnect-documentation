@@ -69,3 +69,5 @@ Parmi ces champs, seuls sont obligatoires :
 Les autres champs, si vous ne possédez pas l'information correspondante dans votre annuaire, doivent être **ignorés**. (cf. [RFC OIDC](https://openid.net/specs/openid-connect-core-1_0.html#IDToken) : *Any Claims used that are not understood MUST be ignored.*)
 Selon votre Fournisseur d'Identité, il est possible qu'il vous faille spécifier, pour chacun des scopes demandés, une valeur de retour nulle, indéfinie, ou simplement ignorée.
 
+## Configurer le champ `acr`
+Le champ `acr` renvoyé par le Fournisseur d'Identité doit valoir `eidas1`.
