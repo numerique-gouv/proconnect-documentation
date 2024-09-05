@@ -14,7 +14,7 @@ Vous pouvez retrouver la valeur de AC_DOMAIN qui vous correspond à [ce lien](..
 ## Mode d'emploi technique
 ### 1. Intégrer le bouton AC sur votre page de connexion
 
-[Quel bouton AgentConnect intégrer et comment l'intégrer ?](./bouton_proconnect.md)
+[Quel bouton AgentConnect intégrer et comment l'intégrer ?](./bouton_agentconnect.md)
 
 ### 2. Faire pointer le bouton AC vers le `authorization_endpoint`
 Si vous utilisez une bibliothèque agréée, nous vous recommandons de récupérer les URLs via notre Discovery URL : `https://AC_DOMAIN/api/v2/.well-known/openid-configuration`.
