@@ -14,7 +14,7 @@ Veuillez apporter les modifications suivantes :
 
 1. Remplacer « FranceConnect » par « ProConnect » (sans espaces)
 2. Remplacer le label du lien par « Qu'est-ce que ProConnect ? »
-3. Faire pointer le lien vers [https://agentconnect.gouv.fr/](https://agentconnect.gouv.fr/)
+3. Faire pointer le lien vers https://www.proconnect.gouv.fr/
 4. ajouter la règle CSS suivante :
 
 ```css
