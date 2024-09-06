@@ -81,3 +81,13 @@ Vous pouvez utiliser l’intégration suivante :
     </p>
 </div>
 ```
+
+### Vous utilisez [React](https://react.dev/) et le [Système de Design de l’État (DSFR)](https://www.systeme-de-design.gouv.fr/)
+
+Avec la librairie [react-dsfr](https://github.com/codegouvfr/react-dsfr/blob/main/README.fr.md), vous pouvez implémenter le bouton plus simplement :
+
+```jsx
+<ProConnectButton url="#" />
+```
+
+La documentation détaillée ce trouve ici : [ProConnectButton](https://components.react-dsfr.codegouv.studio/?path=/docs/components-proconnectbutton--default).
