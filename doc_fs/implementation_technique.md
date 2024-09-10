@@ -52,7 +52,9 @@ https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
 > | `prompt` | optionnel | string | `login` si le FS veut forcer la reauthentification au FI. Par défaut, le FI réutilisera une session existante sans demander une reconnexion. (Single Sign-On côté FI) |
 </details>
 
-Le champ `scope` et sa différence avec la notion de `claims` sont expliqués [ici](./scope-claims.md). La liste des scopes que pouvez demander est spécifiée [ici](./donnees_fournies.md) 
+Le champ `scope` et sa différence avec la notion de `claims` sont expliqués [ici](./scope-claims.md). La liste des scopes que pouvez demander est spécifiée [ici](./donnees_fournies.md).
+
+NB: tout paramètre supplémentaire dans l'URL génèrera une erreur `Y000400 : Bad Request Exception`
 
 ### 3. Implémentation de la route **redirect_uri**
 Il s'agit de la route vers laquelle sera redirigée votre utilisateur dans le navigateur après authentification par le Fournisseur d'Identité.
