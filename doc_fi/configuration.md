@@ -22,6 +22,9 @@ https://AC_DOMAIN/api/v2/oidc-callback
 
 Vous pouvez retrouver la valeur de AC_DOMAIN qui vous correspond [ici](../resources/valeur_ac_domain.md)
 
+Il peut également vous être demandé de renseigner la "post_logout_redirect_uri" (ou "adresse de redirection post-déconnexion"). Dans ce cas, renseignez la suivante :
+https://AC_DOMAIN/api/v2/client/logout-callback
+
 ## Configurer la signature des échanges entre AC et le FI
 Les appels aux endpoints de création de jeton (`/token`) et de récupération des informations utilisateur (`/user-info`) par AgentConnect doivent être signés.
 AgentConnect gère trois algorithmes de signatures :
