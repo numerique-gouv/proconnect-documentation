@@ -50,6 +50,7 @@ https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
 > | `state` | requis | string (minimum 32 caractères) | `<STATE>` Champ obligatoire, généré aléatoirement par le FS, que AC renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par le FS. Il est utilisé afin d’empêcher l’exploitation de failles CSRF |
 > | `nonce` | requis | string (minimum 32 caractères) | `<NONCE>` Champ obligatoire, généré aléatoirement par le FS que AC renvoie tel quel dans la réponse à l'appel au `Token Endpoint`, pour être ensuite vérifié par le FS. Il est utilisé pour empêcher les attaques par rejeu |
 > | `prompt` | optionnel | string | `login` si le FS veut forcer la reauthentification au FI. Par défaut, le FI réutilisera une session existante sans demander une reconnexion. (Single Sign-On côté FI) |
+> | `idp_hint` | optionnel | string | `idp_id` désignant le FI vers lequel rediriger l'usager sans passer par la mire AgentConnect (cf. [doc](./idp_hint_usage.md)) |
 </details>
 
 Le champ `scope` et sa différence avec la notion de `claims` sont expliqués [ici](./scope-claims.md). La liste des scopes que pouvez demander est spécifiée [ici](./donnees_fournies.md).

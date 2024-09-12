@@ -31,6 +31,7 @@ ___
 - [Quelles sont les données que je peux récupérer par AgentConnect sur les agents ?](doc_fs/donnees_fournies.md)
 - [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ?](doc_fs/scope-claims.md)
 - [Comment savoir avec quel Fournisseur d'Identité s'est authentifié mon utilisateur ?](doc_fs/connaitre-le-fi-utilise.md)
+- [Comment spécifier à AgentConnect que les usagers de mon FS doivent être redirigés directement vers un Fournisseur d'Identité (FI) spécifique ?](doc_fs/idp_hint_usage.md)
 - [Erreurs récurrentes](doc_fi/troubleshooting.md)
 - [Glossaire](resources/glossaire.md)
 
