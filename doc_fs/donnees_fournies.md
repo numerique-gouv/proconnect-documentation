@@ -32,9 +32,9 @@ Champs | Obligatoire | Description| Format |
 
 ## Le champ sub
 
-AgentConnect transmet systématiquement au Fournisseur de Services un identifiant unique pour chaque agent (le `sub`) : cet identifiant est spécifique **à chaque couple** Fournisseur de Services / Fournisseur d'Identité. Il ne peut donc pas être utilisé pour faire de la réconciliation d'identité : nous vous recommandons l'utilisation de l'email professionnel pour cet usage.
+AgentConnect transmet systématiquement au Fournisseur de Services un identifiant unique pour chaque agent (le `sub`) : cet identifiant est spécifique **à chaque Fournisseur d'Identité**. Il est recommandé de l'utiliser pour effectuer la réconciliation d'identité.
 
-:warning: **Attention**
+![schéma de reconciliation d'identité par le sub](reconciliation-sub.png)
 
 ## La liste des scopes disponibles lors de l'étape d'authentification AgentConnect
 
