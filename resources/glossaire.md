@@ -1,4 +1,4 @@
-[Accueil](../README.md) > [AgentConnect - Fournisseur de Service](../doc_fs.md) > Glossaire
+[Accueil](../README.md) > [ProConnect - Fournisseur de Service](../doc_fs.md) > Glossaire
 
 ___
 
@@ -6,7 +6,7 @@ ___
 
 ## 1. `AC_URL`
 
-URL d’AgentConnect.
+URL d’ProConnect.
 
 ## 2. `FS_URL`
 
@@ -14,23 +14,23 @@ Votre URL, en tant que Fournisseur de Services.
 
 ## 3. `REDIRECT_URI`
 
-Le callback du Fournisseur de Services, communiqué lors de son inscription auprès d’AgentConnect.
+Le callback du Fournisseur de Services, communiqué lors de son inscription auprès d’ProConnect.
 
 ## 4. `POST_LOGOUT_REDIRECT_URI`
 
-L'URL de redirection après la demande de déconnexion AgentConnect.
+L'URL de redirection après la demande de déconnexion ProConnect.
 
 ## 5. `CLIENT_ID`
 
-Identifiant du Fournisseur de Services, communiqué lors de son inscription auprès de AgentConnect.
+Identifiant du Fournisseur de Services, communiqué lors de son inscription auprès de ProConnect.
 
 ## 6. `CLIENT_SECRET`
 
-Le secret du Fournisseur de Services, communiqué lors de son inscription auprès de AgentConnect.
+Le secret du Fournisseur de Services, communiqué lors de son inscription auprès de ProConnect.
 
 ## 7. `AUTHORIZATION_CODE`
 
-Code retourné (dans l'URL) par AgentConnect au Fournisseur de Services lorsque ce dernier fait un appel sur le endpoint AC_URL/api/v2/authorize. Il est ensuite passé (dans le corps de la requête HTTP POST) lors de l'appel sur le endpoint AC_URL/api/v2/token.
+Code retourné (dans l'URL) par ProConnect au Fournisseur de Services lorsque ce dernier fait un appel sur le endpoint AC_URL/api/v2/authorize. Il est ensuite passé (dans le corps de la requête HTTP POST) lors de l'appel sur le endpoint AC_URL/api/v2/token.
 
 ## 8. `ACCESS_TOKEN`
 
@@ -40,7 +40,7 @@ Token retourné (dans le corps HTTP) par l'appel au endpoint AC_URL/api/v2/token
 
 Liste des scopes demandés séparés par des espaces (donc par "%20"  ou "+" au format unicode dans l'URL).
 
-Voici la liste supportée par AgentConnect :
+Voici la liste supportée par ProConnect :
 
     * openid : obligatoire, permet de demander l'identifiant technique de l'utilisateur au format OpenIDConnect
     * email : obligatoire, permet de récupérer l'adresse électronique de l’agent
@@ -114,12 +114,12 @@ Si vous utilisez une librairie pour transformer le json en JWT, il génèrera un
 
 ## 13. `STATE`
 
-Champ obligatoire, généré aléatoirement par le Fournisseur de Services, que AgentConnect renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par le Fournisseur de Services. Il est utilisé afin d’empêcher l’exploitation de failles CSRF.
+Champ obligatoire, généré aléatoirement par le Fournisseur de Services, que ProConnect renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par le Fournisseur de Services. Il est utilisé afin d’empêcher l’exploitation de failles CSRF.
 
 ## 14. `NONCE`
 
-Champ obligatoire, généré aléatoirement par le Fournisseur de Services que AgentConnect renvoie tel quel dans la réponse à l'appel à /token, pour être ensuite vérifié par le Fournisseur de Services. Il est utilisé pour empêcher les attaques par rejeu.
+Champ obligatoire, généré aléatoirement par le Fournisseur de Services que ProConnect renvoie tel quel dans la réponse à l'appel à /token, pour être ensuite vérifié par le Fournisseur de Services. Il est utilisé pour empêcher les attaques par rejeu.
 
 ## 15. `SUB`
 
-Identifiant technique (unique et stable dans le temps pour un individu donné) fourni par AgentConnect au Fournisseur de Services. Le SUB est présent dans l'IdToken retourné au Fournisseur de Services ainsi que dans les informations d'identité (/userinfo).
+Identifiant technique (unique et stable dans le temps pour un individu donné) fourni par ProConnect au Fournisseur de Services. Le SUB est présent dans l'IdToken retourné au Fournisseur de Services ainsi que dans les informations d'identité (/userinfo).

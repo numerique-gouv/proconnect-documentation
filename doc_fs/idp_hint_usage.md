@@ -1,6 +1,6 @@
-# Comment spécifier à AgentConnect que les usagers de mon FS doivent être redirigés directement vers un Fournisseur d'Identité (FI) spécifique ?
+# Comment spécifier à ProConnect que les usagers de mon FS doivent être redirigés directement vers un Fournisseur d'Identité (FI) spécifique ?
 
-Il peut arriver que, en tant que Fournisseur de Service (FS), vous souhaitiez qu'au clic sur le bouton "S'identifier avec AgentConnect", vos usagers soient redirigés automatiquement vers un FI que vous auriez précisé en amont.
+Il peut arriver que, en tant que Fournisseur de Service (FS), vous souhaitiez qu'au clic sur le bouton "S'identifier avec ProConnect", vos usagers soient redirigés automatiquement vers un FI que vous auriez précisé en amont.
 
 Pour ce faire :
 

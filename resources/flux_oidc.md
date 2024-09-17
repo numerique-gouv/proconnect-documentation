@@ -1,6 +1,6 @@
 # Qu'est ce que le protocole OpenID Connect ?
 
-Le protocole OpenID Connect est au cœur du fonctionnement d'AgentConnect. C'est une couche d'identification basée sur protocole OAuth 2.0. Il permet à des *Clients* d'accéder à l'identité des *Utilisateurs*  par l'intermédiaire d'un *Serveur d'Autorisation* .
+Le protocole OpenID Connect est au cœur du fonctionnement de ProConnect. C'est une couche d'identification basée sur protocole OAuth 2.0. Il permet à des *Clients* d'accéder à l'identité des *Utilisateurs*  par l'intermédiaire d'un *Serveur d'Autorisation* .
 
 La spécification du protocole se trouve sur http://openid.net/connect/.
 

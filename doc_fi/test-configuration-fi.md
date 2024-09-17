@@ -9,7 +9,7 @@ Selon votre environnement et le réseau sur lequel votre Fournisseur d'Identité
 
 ## Protocole de test
 
-- cliquez sur "S'identifier avec AgentConnect"
+- cliquez sur "S'identifier avec ProConnect"
 - indiquez une adresse e-mail dont le domaine correspond à votre FI
 - cliquez sur "Se connecter" : vous devriez être redirigé vers votre portail d'authentification
 - connectez-vous avec des identifiants de recette sur votre FI

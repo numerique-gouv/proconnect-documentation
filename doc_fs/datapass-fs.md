@@ -6,11 +6,11 @@ Pour soumettre une demande d'habilitation via [datapass.api.gouv.fr](https://dat
 
 Votre demande est validée par la DINUM dans un délai moyen de 5 jours ouvrés.
 
-## Quels sont les acteurs à impliquer dans l'intégration d'AgentConnect ?
+## Quels sont les acteurs à impliquer dans l'intégration de ProConnect ?
 
-Pour devenir Fournisseur de Services d'AgentConnect, il est nécessaire de designer des personnes remplissants les rôles suivants : Responsable de traitement, Délégué à la protection des données, Responsable technique, Responsable de la Sécurité du Système d'Information. 
+Pour devenir Fournisseur de Services de ProConnect, il est nécessaire de designer des personnes remplissants les rôles suivants : Responsable de traitement, Délégué à la protection des données, Responsable technique, Responsable de la Sécurité du Système d'Information. 
 
-Il vous sera demandé lors de la demande d'habilitation à AgentConnect d'identifier les personnes ayant ces responsabilités. 
+Il vous sera demandé lors de la demande d'habilitation à ProConnect d'identifier les personnes ayant ces responsabilités. 
 
 Les acteurs à impliquer sont les suivants : 
 
@@ -30,7 +30,7 @@ C'est la personne qui s’assure que l’organisation protège convenablement le
 
 ##  Responsable technique
 
-C'est la personne qui est reponsable de la mise en oeuvre du fournisseur de service d'AgentConnect. Cette personne recevra les accès techniques par mail. Le numéro de téléphone doit être un numéro de téléphone mobile. Il sera utilisé pour envoyer un code d’accès. Le responsable technique peut être le contact technique de votre prestataire. 
+C'est la personne qui est reponsable de la mise en oeuvre du fournisseur de service de ProConnect. Cette personne recevra les accès techniques par mail. Le numéro de téléphone doit être un numéro de téléphone mobile. Il sera utilisé pour envoyer un code d’accès. Le responsable technique peut être le contact technique de votre prestataire. 
 
 ## Responsable de la Sécurité du Système d'Information 
 
