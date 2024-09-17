@@ -28,6 +28,7 @@ Pour toute question technique, vous pouvez contacter l'équipe ProConnect par le
 ___
 
 ## 3. 💻 FAQ
+- [Quels changements dois-je effectuer pour passer d'AgentConnect à ProConnect ?](./doc_fs/changement-agentconnect-proconnect.md)
 - [Quelles sont les données que je peux récupérer par ProConnect sur les agents ?](doc_fs/donnees_fournies.md)
 - [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ?](doc_fs/scope-claims.md)
 - [Comment savoir avec quel Fournisseur d'Identité s'est authentifié mon utilisateur ?](doc_fs/connaitre-le-fi-utilise.md)
