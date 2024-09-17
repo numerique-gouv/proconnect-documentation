@@ -3,7 +3,7 @@
 ## Test de la connexion à votre FI
 Vous pouvez à tout moment tester l'intégration de votre FI à la fédération AgentConnect. Vous trouverez les informations de test [ici](./test-configuration-fi.md).
 En cas d'erreur, deux documents vous permettront d'analyser vos erreurs :
-- [le troubleshooting](./troubleshooting.md)
+- [le troubleshooting](./troubleshooting-fi.md)
 - [la liste des codes d'erreurs possibles renvoyés par AgentConnect](https://github.com/france-connect/sources/blob/main/back/_doc/erreurs.md)
 
 ## Trouver la Discovery URL
