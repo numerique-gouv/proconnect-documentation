@@ -6,7 +6,7 @@ est possible de communiquer entre les deux plateformes grâce à "l'Hybridge Int
 Le choix du positionnement sur le RIE ou sur Internet est « à la main » des Fournisseurs d'Identité et des Fournisseurs
 de Services.
 
-## Les plateformes d’ProConnect
+## Les plateformes de ProConnect
 
 ProConnect met à disposition 3 plateformes pour répondre aux exigences de l’ANSSI.
 

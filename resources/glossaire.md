@@ -6,7 +6,7 @@ ___
 
 ## 1. `AC_URL`
 
-URL d’ProConnect.
+URL de ProConnect.
 
 ## 2. `FS_URL`
 
@@ -14,7 +14,7 @@ Votre URL, en tant que Fournisseur de Services.
 
 ## 3. `REDIRECT_URI`
 
-Le callback du Fournisseur de Services, communiqué lors de son inscription auprès d’ProConnect.
+Le callback du Fournisseur de Services, communiqué lors de son inscription auprès de ProConnect.
 
 ## 4. `POST_LOGOUT_REDIRECT_URI`
 
