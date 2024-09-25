@@ -71,7 +71,7 @@ Vous pouvez utiliser l’intégration suivante :
     </form>
     <p>
         <a
-            href="https://agentconnect.gouv.fr/"
+            href="https://www.proconnect.gouv.fr/"
             target="_blank"
             rel="noopener noreferrer"
             title="Qu’est-ce que ProConnect ? - nouvelle fenêtre"

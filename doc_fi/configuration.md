@@ -14,7 +14,7 @@ La Discovery URL est une URL **publique** fournie par le FI qui expose un ensemb
 Cette URL doit être conservée pour être envoyée à ProConnect par le FI une fois la configuration faite.
 
 ## Créer un client
-Commencez par créer un client OIDC pour ProConnect. Vous pouvez choisir comme `client_id` "agentconnect" par exemple. Pour le `client_secret`, vous pouvez le générer de votre côté ou à l'aide d'outils en ligne comme [randomgenerate.io](https://randomgenerate.io/random-string-generator).
+Commencez par créer un client OIDC pour ProConnect. Vous pouvez choisir comme `client_id` "proconnect" par exemple. Pour le `client_secret`, vous pouvez le générer de votre côté ou à l'aide d'outils en ligne comme [randomgenerate.io](https://randomgenerate.io/random-string-generator).
 Ces deux valeurs doivent être conservées de votre côté pour être envoyées à ProConnect une fois la configuration faite.
 
 La `redirect_uri` (ou "adresse de redirection de connexion") à indiquer est la suivante :

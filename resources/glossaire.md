@@ -66,7 +66,7 @@ Exemple :
     "aud":"895fae591ccae777094931e269e46447",
     "exp":1412953984,
     "iat":1412950384,
-    "iss":"http://Agentconnect.gouv.fr",
+    "iss":"http://agentconnect.gouv.fr",
     "sub":"YWxhY3JpdMOp",
     "idp":"AC",
     "nonce":"12344354597459"
