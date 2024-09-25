@@ -1,6 +1,6 @@
 # 🔑 ProConnect - Documentation
 
-![](https://github.com/numerique-gouv/agentconnect-documentation/blob/main/assets/hero_home.png?raw=true)
+![](https://github.com/numerique-gouv/agentconnect-documentation/blob/main/assets/home.png?raw=true)
 
 
 > ProConnect simplifie le quotidien des agents
