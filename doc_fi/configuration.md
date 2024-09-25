@@ -1,21 +1,21 @@
-# Configurer OpenID Connect (OIDC) pour AgentConnect en tant que Fournisseur d'Identité (FI)
+# Configurer OpenID Connect (OIDC) pour ProConnect en tant que Fournisseur d'Identité (FI)
 
 ## Test de la connexion à votre FI
-Vous pouvez à tout moment tester l'intégration de votre FI à la fédération AgentConnect. Vous trouverez les informations de test [ici](./test-configuration-fi.md).
+Vous pouvez à tout moment tester l'intégration de votre FI à la fédération ProConnect. Vous trouverez les informations de test [ici](./test-configuration-fi.md).
 En cas d'erreur, deux documents vous permettront d'analyser vos erreurs :
 - [le troubleshooting](./troubleshooting-fi.md)
-- [la liste des codes d'erreurs possibles renvoyés par AgentConnect](https://github.com/france-connect/sources/blob/main/back/_doc/erreurs.md)
+- [la liste des codes d'erreurs possibles renvoyés par ProConnect](https://github.com/france-connect/sources/blob/main/back/_doc/erreurs.md)
 
 ## Trouver la Discovery URL
 La Discovery URL est une URL **publique** fournie par le FI qui expose un ensemble d'informations nécessaires à la bonne interaction avec les clients OIDC. Elle se termine nécessairement par `/.well-known/openid-configuration`.
 
 À titre d'exemple, la Discovery URL de l'INSEE est la suivante : https://auth.insee.net/auth/realms/insee/.well-known/openid-configuration
 
-Cette URL doit être conservée pour être envoyée à AgentConnect par le FI une fois la configuration faite.
+Cette URL doit être conservée pour être envoyée à ProConnect par le FI une fois la configuration faite.
 
 ## Créer un client
-Commencez par créer un client OIDC pour AgentConnect. Vous pouvez choisir comme `client_id` "agentconnect" par exemple. Pour le `client_secret`, vous pouvez le générer de votre côté ou à l'aide d'outils en ligne comme [randomgenerate.io](https://randomgenerate.io/random-string-generator).
-Ces deux valeurs doivent être conservées de votre côté pour être envoyées à AgentConnect une fois la configuration faite.
+Commencez par créer un client OIDC pour ProConnect. Vous pouvez choisir comme `client_id` "agentconnect" par exemple. Pour le `client_secret`, vous pouvez le générer de votre côté ou à l'aide d'outils en ligne comme [randomgenerate.io](https://randomgenerate.io/random-string-generator).
+Ces deux valeurs doivent être conservées de votre côté pour être envoyées à ProConnect une fois la configuration faite.
 
 La `redirect_uri` (ou "adresse de redirection de connexion") à indiquer est la suivante :
 https://AC_DOMAIN/api/v2/oidc-callback 
@@ -26,8 +26,8 @@ Il peut également vous être demandé de renseigner la "post_logout_redirect_ur
 https://AC_DOMAIN/api/v2/client/logout-callback
 
 ## Configurer la signature des échanges entre AC et le FI
-Les appels aux endpoints de création de jeton (`/token`) et de récupération des informations utilisateur (`/user-info`) par AgentConnect doivent être signés.
-AgentConnect gère trois algorithmes de signatures :
+Les appels aux endpoints de création de jeton (`/token`) et de récupération des informations utilisateur (`/user-info`) par ProConnect doivent être signés.
+ProConnect gère trois algorithmes de signatures :
 - Asymétrique : 
 
        - ES256 (EC + SHA256)
@@ -46,7 +46,7 @@ Les spécifications des algorithmes de signatures utilisés sont les suivants :
 * [JWE - https://tools.ietf.org/html/rfc7516#appendix-A.1](https://tools.ietf.org/html/rfc7516#appendix-A.1)
 
 ## Configurer les scopes
-La liste des scopes demandés par AgentConnect est la suivante :
+La liste des scopes demandés par ProConnect est la suivante :
 | Scopes       |
 | --- | 
 | openid | 
@@ -76,5 +76,5 @@ Selon votre Fournisseur d'Identité, il est possible qu'il vous faille spécifie
 Le champ `acr` renvoyé par le Fournisseur d'Identité doit valoir `eidas1`.
 
 ## Configurations spécifiques
-Certains logiciels nécessitent des configurations particulières pour fonctionner avec AgentConnect. Vous pouvez consulter ces spécificités si votre logiciel se trouve dans la liste ci-dessous :
+Certains logiciels nécessitent des configurations particulières pour fonctionner avec ProConnect. Vous pouvez consulter ces spécificités si votre logiciel se trouve dans la liste ci-dessous :
 - [LemonLDAP](./idp-configs/lemon-ldap.md)

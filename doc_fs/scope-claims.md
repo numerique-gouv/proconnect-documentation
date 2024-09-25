@@ -25,7 +25,7 @@ La liste des données renvoyées par les Fournisseurs d'Identité est disponible
 
 ### Les données sur l'authentification
 
-Les claims relatifs à l'authentification disponibles par AgentConnect sont des claims standards et sont disponibles uniquement dans l'ID Token. Ces claims sont les suivants : 
+Les claims relatifs à l'authentification disponibles par ProConnect sont des claims standards et sont disponibles uniquement dans l'ID Token. Ces claims sont les suivants : 
 
 - amr
 - acr
@@ -35,7 +35,7 @@ Les claims relatifs à l'authentification disponibles par AgentConnect sont des 
 
 [Plus d'informations sur ces claims](https://openid.net/specs/openid-connect-basic-1_0.html#IDToken)
 
-### Correspondance entre scope et claims sur AgentConnect
+### Correspondance entre scope et claims sur ProConnect
 
 Le tableau suivant décrit la liste des *claims* accessible en fonction des *scopes* associés à l'access token. 
 Tous les Fournisseurs de Service intégrés depuis août 2024 ont accès par défaut à tous les scopes suivants:
