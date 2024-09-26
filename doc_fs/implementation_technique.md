@@ -55,7 +55,7 @@ https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
 
 Le champ `scope` et sa différence avec la notion de `claims` sont expliqués [ici](./scope-claims.md). La liste des scopes que pouvez demander est spécifiée [ici](./donnees_fournies.md).
 
-NB: tout paramètre supplémentaire dans l'URL génèrera une erreur `Y000400 : Bad Request Exception`
+NB: tout paramètre supplémentaire dans l'URL génèrera une erreur `Y000400 : Bad Request Exception`. Il n'est pas possible d'ajouter d'autres paramètres.
 
 ### 3. Implémentation de la route **redirect_uri**
 Il s'agit de la route vers laquelle sera redirigée votre utilisateur dans le navigateur après authentification par le Fournisseur d'Identité.
