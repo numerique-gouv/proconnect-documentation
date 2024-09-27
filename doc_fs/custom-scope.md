@@ -1,14 +1,16 @@
 # Le scope custom
 
-Ce scope optionnel permet de récupérer toutes les propriétés retournées par l'userinfo d'un Fournisseur d'Identité qui ne sont pas reconnues comme canoniques par ProConnect.
+Ce scope optionnel permet de récupérer toutes les propriétés retournées à l'appel au `userinfo_endpoint` d'un Fournisseur d'Identité qui ne sont pas reconnues comme *canoniques* par ProConnect.
 
-Ces propriétés "canoniques" correspondent aux claims que ProConnect récupère auprès des Fournisseurs d'identité, voici [la liste](../doc_fi/configuration.md#configurer-les-scopes) des scopes associés à ces claims.
+> Les propriétés *canoniques* sont les claims que ProConnect récupère auprès des Fournisseurs d'identité. Vous trouverez [ici](../doc_fi/configuration.md#configurer-les-scopes) la liste des scopes associés à ces claims.
 
-Ces informations sont ensuites déplacées dans un objet "custom".
+Ces propriétés *non canoniques* sont ensuites déplacées dans un objet `custom`.
 
-Quand un Fournisseur de Service demande un scope "custom" l'userinfo de ProConnect retournera cette propriété.
+Quand un Fournisseur de Service demande un scope `custom`, l'appel au `userinfo_endpoint` de ProConnect retournera ces propriétés dans un objet `custom`.
 
-Si le Fournisseur d'Identité n'a retourné aucune propriété non canonique dans son userinfo, ProConnect renverra un champ "custom" retournant un objet vide:
+### Cas n°1 : le Fournisseur d'Identité n'a retourné aucune propriété *non canonique* lors de l'appel à son `userinfo_endpoint`
+
+ProConnect renverra un objet `custom` vide :
 
 ```json
 {
@@ -19,7 +21,9 @@ Si le Fournisseur d'Identité n'a retourné aucune propriété non canonique dan
 
 ```
 
-Si le Fournisseur d'Identité retourne des propriétés non canonique, comme par exemple:
+### Cas n°2 : le Fournisseur d'Identité a retourné des propriétés *non canoniques* lors de l'appel à son `userinfo_endpoint`
+
+Par exemple:
 
 ```json
 {
@@ -30,7 +34,7 @@ Si le Fournisseur d'Identité retourne des propriétés non canonique, comme par
 }
 ```
 
-ProConnect placera ces valeurs dans l'objet custom:
+Dans ce cas, ProConnect placera ces valeurs dans l'objet `custom`:
 
 ```json
 {
@@ -44,7 +48,7 @@ ProConnect placera ces valeurs dans l'objet custom:
 
 ```
 
-Si le Fournisseur de Service ne demande pas de scope custom, l'objet "custom" ne sera, logiquement, pas retourné par ProConnect, même si le Fournisseur d'Identité renvoie des propriétés non canonique :
+NB: Si le Fournisseur de Service ne demande pas de scope `custom`, alors l'objet `custom` ne sera, logiquement, pas retourné par ProConnect, même si le Fournisseur d'Identité renvoie des propriétés *non canoniques*. L'appel au `userinfo_endpoint` de ProConnect renverra donc :
 
 ```json
 {
