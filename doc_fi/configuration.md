@@ -29,6 +29,11 @@ https://PROCONNECT_DOMAIN/api/v2/client/logout-callback
 À l'appel au `authorization_endpoint`, ProConnect envoie en query param `login_hint`, qui contient l'email renseigné par l'utilisateur sur la mire ProConnect.
 Pour simplifier le parcours de l'utilisateur, il est demandé au FI d'utiliser la valeur fournie pour pré-remplir le champ email de sa mire d'authentification lorsque cela est pertinent.
 
+## Renseigner le claim `amr` 
+Si votre FI gère l'authentification multi-facteur, alors il vous faut renseigner dans le claim `amr` la valeur correspondant à ce mode d'authentification. Cela permettra aux Fournisseurs de Service d'épargner à l'usager le recours à une nouvelle authentification multi-facteur une fois retourné sur le FS.
+
+Vous trouverez les valeurs possibles pour ce claim [ici](../resources/claim_amr.md).
+
 ## Configurer la signature des échanges entre ProConnect et le FI
 Les appels aux endpoints de création de jeton (`/token`) et de récupération des informations utilisateur (`/user-info`) par ProConnect doivent être signés.
 ProConnect gère trois algorithmes de signatures :
