@@ -6,7 +6,7 @@ Pour tester la configuration de votre Fournisseur de Service tout au long de l'i
 Vous trouverez [ici](./identifiants-fi-test.md) les identifiants pour vous connecter au Fournisseur d'Identité de test. 
 
 ### Valeur de PROCONNECT_DOMAIN
-Vous pouvez retrouver la valeur de PROCONNECT_DOMAIN qui vous correspond à [ce lien](../resources/valeur_ac_domain.md)
+Pour savoir quelles URL appeler au cours de l'authentification, vous aurez besoin de connaître la valeur de PROCONNECT_DOMAIN qui correspond à votre environnement et votre réseau. Vous la trouverez à [ce lien](../resources/valeur_ac_domain.md).
 
 ### Exemple d'intégration réussie
 [Dépôt Github d'un client ProConnect](https://github.com/betagouv/moncomptepro-test-client)
