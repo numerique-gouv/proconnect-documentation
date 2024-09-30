@@ -5,8 +5,8 @@
 Pour tester la configuration de votre Fournisseur de Service tout au long de l'intégration, vous aurez besoin de vous connecter via un Fournisseur d'Identité.
 Vous trouverez [ici](./identifiants-fi-test.md) les identifiants pour vous connecter au Fournisseur d'Identité de test. 
 
-### Valeur de AC_DOMAIN
-Vous pouvez retrouver la valeur de AC_DOMAIN qui vous correspond à [ce lien](../resources/valeur_ac_domain.md)
+### Valeur de PROCONNECT_DOMAIN
+Vous pouvez retrouver la valeur de PROCONNECT_DOMAIN qui vous correspond à [ce lien](../resources/valeur_ac_domain.md)
 
 ### Exemple d'intégration réussie
 [Dépôt Github d'un client ProConnect](https://github.com/betagouv/moncomptepro-test-client)
@@ -17,7 +17,7 @@ Vous pouvez retrouver la valeur de AC_DOMAIN qui vous correspond à [ce lien](..
 [Quel bouton ProConnect intégrer et comment l'intégrer ?](./bouton_proconnect.md)
 
 ### 2. Faire pointer le bouton AC vers le `authorization_endpoint`
-Si vous utilisez une bibliothèque agréée, nous vous recommandons de récupérer les URLs via notre Discovery URL : `https://AC_DOMAIN/api/v2/.well-known/openid-configuration`.
+Si vous utilisez une bibliothèque agréée, nous vous recommandons de récupérer les URLs via notre Discovery URL : `https://PROCONNECT_DOMAIN/api/v2/.well-known/openid-configuration`.
 Cette Discovery URL vous donnera notamment quatre endpoints qui vous serviront par la suite :
 - `authorization_endpoint` 
 - `token_endpoint`
@@ -29,7 +29,7 @@ Au clic sur le bouton ProConnect :
 - rediriger l'utilisateur vers le `authorization_endpoint`. Les query parameters à ajouter sont décrits ci-dessous.
 
 <details>
- <summary><code>GET</code> <code><b>https://AC_DOMAIN/api/v2/authorize</b></code> </summary>
+ <summary><code>GET</code> <code><b>https://PROCONNECT_DOMAIN/api/v2/authorize</b></code> </summary>
 
 ##### Description
 
@@ -85,7 +85,7 @@ Vérifier que le champ `state` récupéré en query parameter correspond bien au
 Appeler le endpoint `token_endpoint` avec les paramètres décrits ci-dessous :
 
 <details>
- <summary><code>POST</code> <code><b>https://AC_DOMAIN/api/v2/token</b></code> </summary>
+ <summary><code>POST</code> <code><b>https://PROCONNECT_DOMAIN/api/v2/token</b></code> </summary>
 
 ##### Description
 
@@ -149,7 +149,7 @@ Stocker le `id_token` dans la session du navigateur. Cette valeur sera utilisée
 Appeler le endpoint `userinfo_endpoint`, en ajoutant l'`access_token` token dans l'en-tête Authorization, comme décrit ci-dessous :
 
 <details>
- <summary><code>GET</code> <code><b>https://AC_DOMAIN/api/v2/userinfo</b></code> </summary>
+ <summary><code>GET</code> <code><b>https://PROCONNECT_DOMAIN/api/v2/userinfo</b></code> </summary>
 
 ##### Description
 
