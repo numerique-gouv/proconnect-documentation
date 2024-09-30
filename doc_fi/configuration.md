@@ -25,6 +25,10 @@ Vous pouvez retrouver la valeur de AC_DOMAIN qui vous correspond [ici](../resour
 Il peut également vous être demandé de renseigner la "post_logout_redirect_uri" (ou "adresse de redirection post-déconnexion"). Dans ce cas, renseignez la suivante :
 https://AC_DOMAIN/api/v2/client/logout-callback
 
+## Utiliser le paramètre `login_hint`
+À l'appel au `authorization_endpoint`, ProConnect envoie en query param `login_hint`, qui contient l'email renseigné par l'utilisateur sur la mire ProConnect.
+Pour simplifier le parcours de l'utilisateur, il est demandé au FI d'utiliser la valeur fournie pour pré-remplir le champ email de sa mire d'authentification lorsque cela est pertinent.
+
 ## Configurer la signature des échanges entre AC et le FI
 Les appels aux endpoints de création de jeton (`/token`) et de récupération des informations utilisateur (`/user-info`) par ProConnect doivent être signés.
 ProConnect gère trois algorithmes de signatures :
