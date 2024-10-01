@@ -60,7 +60,6 @@ La liste des scopes demandés par ProConnect est la suivante :
 | belonging_population | 
 | phone |
 | chorusdt |
-| custom |
 
 Parmi ces champs, seuls sont obligatoires :
 |Champs  | Description| Format |
