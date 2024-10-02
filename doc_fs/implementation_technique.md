@@ -5,19 +5,19 @@
 Pour tester la configuration de votre Fournisseur de Service tout au long de l'intégration, vous aurez besoin de vous connecter via un Fournisseur d'Identité.
 Vous trouverez [ici](./identifiants-fi-test.md) les identifiants pour vous connecter au Fournisseur d'Identité de test. 
 
-### Valeur de AC_DOMAIN
-Vous pouvez retrouver la valeur de AC_DOMAIN qui vous correspond à [ce lien](../resources/valeur_ac_domain.md)
+### Valeur de PROCONNECT_DOMAIN
+Pour savoir quelles URL appeler au cours de l'authentification, vous aurez besoin de connaître la valeur de PROCONNECT_DOMAIN qui correspond à votre environnement et votre réseau. Vous la trouverez à [ce lien](../resources/valeur_ac_domain.md).
 
 ### Exemple d'intégration réussie
 [Dépôt Github d'un client ProConnect](https://github.com/betagouv/moncomptepro-test-client)
 
 ## Mode d'emploi technique
-### 1. Intégrer le bouton AC sur votre page de connexion
+### 1. Intégrer le bouton ProConnect sur votre page de connexion
 
 [Quel bouton ProConnect intégrer et comment l'intégrer ?](./bouton_proconnect.md)
 
-### 2. Faire pointer le bouton AC vers le `authorization_endpoint`
-Si vous utilisez une bibliothèque agréée, nous vous recommandons de récupérer les URLs via notre Discovery URL : `https://AC_DOMAIN/api/v2/.well-known/openid-configuration`.
+### 2. Faire pointer le bouton ProConnect vers le `authorization_endpoint`
+Si vous utilisez une bibliothèque agréée, nous vous recommandons de récupérer les URLs via notre Discovery URL : `https://PROCONNECT_DOMAIN/api/v2/.well-known/openid-configuration`.
 Cette Discovery URL vous donnera notamment quatre endpoints qui vous serviront par la suite :
 - `authorization_endpoint` 
 - `token_endpoint`
@@ -29,7 +29,7 @@ Au clic sur le bouton ProConnect :
 - rediriger l'utilisateur vers le `authorization_endpoint`. Les query parameters à ajouter sont décrits ci-dessous.
 
 <details>
- <summary><code>GET</code> <code><b>https://AC_DOMAIN/api/v2/authorize</b></code> </summary>
+ <summary><code>GET</code> <code><b>https://PROCONNECT_DOMAIN/api/v2/authorize</b></code> </summary>
 
 ##### Description
 
@@ -42,13 +42,13 @@ https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
 > | nom | requis/optionnel | type de données | description |
 > |--------|-----------|----------------|------------------------------------------------------|
 > | `response_type` | requis | string | `code` |
-> | `client_id` | requis | string | `<CLIENT_ID>` Identifiant du FS, communiqué lors de son inscription auprès de AC |
+> | `client_id` | requis | string | `<CLIENT_ID>` Identifiant du FS, communiqué lors de son inscription auprès de ProConnect |
 > | `redirect_uri` | requis | string |`<FS_URL>/<URL_CALLBACK>` URL de retour vers le FS, communiquée dans le formulaire Démarches Simplifiées. Attention, cette URL doit être encodée pour être passée en query parameter, doit correspondre exactement à celle communiquée à ProConnect, et est sensible à la présence ou non du `/` final |
 > | `acr_values` | requis | string | `eidas1` ProConnect ne garantie que le niveau faible d'eIDAS |
 > | `scope` | requis | string | `<SCOPES>` Liste des scopes demandés séparés par des espaces (%20 au format unicode dans l'URL) ou des '+' |
-> | `claims` | optionnel | string | `<CLAIMS>` Objet JSON encodé décrivant les claims demandés ([Voir spécification Openid Connect](https://openid.net/specs/openid-connect-core-1_0.html#ClaimsParameter)) |
-> | `state` | requis | string (minimum 32 caractères) | `<STATE>` Champ obligatoire, généré aléatoirement par le FS, que AC renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par le FS. Il est utilisé afin d’empêcher l’exploitation de failles CSRF |
-> | `nonce` | requis | string (minimum 32 caractères) | `<NONCE>` Champ obligatoire, généré aléatoirement par le FS que AC renvoie tel quel dans la réponse à l'appel au `Token Endpoint`, pour être ensuite vérifié par le FS. Il est utilisé pour empêcher les attaques par rejeu |
+> | `claims` | optionnel | string | `<CLAIMS>` Objet JSON encodé décrivant les claims demandés. Pour récupérer le claim `amr` qui indique le mode d'authentification double facteur utilisé, spécifiez la valeur `{"id_token":{"amr":{"essential":true}}}`. Cf. [quelles sont les valeurs possibles pour le champ amr ?](../resources/claim_amr.md) |
+> | `state` | requis | string (minimum 32 caractères) | `<STATE>` Champ obligatoire, généré aléatoirement par le FS, que ProConnect renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par le FS. Il est utilisé afin d’empêcher l’exploitation de failles CSRF |
+> | `nonce` | requis | string (minimum 32 caractères) | `<NONCE>` Champ obligatoire, généré aléatoirement par le FS que ProConnect renvoie tel quel dans la réponse à l'appel au `Token Endpoint`, pour être ensuite vérifié par le FS. Il est utilisé pour empêcher les attaques par rejeu |
 > | `prompt` | optionnel | string | `login` si le FS veut forcer la reauthentification au FI. Par défaut, le FI réutilisera une session existante sans demander une reconnexion. (Single Sign-On côté FI) |
 > | `idp_hint` | optionnel | string | `idp_id` désignant le FI vers lequel rediriger l'usager sans passer par la mire ProConnect (cf. [doc](./idp_hint_usage.md)) |
 </details>
@@ -85,7 +85,7 @@ Vérifier que le champ `state` récupéré en query parameter correspond bien au
 Appeler le endpoint `token_endpoint` avec les paramètres décrits ci-dessous :
 
 <details>
- <summary><code>POST</code> <code><b>https://AC_DOMAIN/api/v2/token</b></code> </summary>
+ <summary><code>POST</code> <code><b>https://PROCONNECT_DOMAIN/api/v2/token</b></code> </summary>
 
 ##### Description
 
@@ -104,8 +104,8 @@ https://openid.net/specs/openid-connect-core-1_0.html#TokenEndpoint
 > | nom | requis/optionnel | type de données | description |
 > |--------|-----------|----------------|------------------------------------------------------|
 > | `grant_type` | requis | string | `authorization_code` |
-> | `client_id` | requis | string | `<CLIENT_ID>` Identifiant du FS, communiqué lors de son inscription auprès de AC |
-> | `client_secret` | requis | string | `<CLIENT_SECRET>` Le secret du FS, communiqué lors de son inscription auprès de AC |
+> | `client_id` | requis | string | `<CLIENT_ID>` Identifiant du FS, communiqué lors de son inscription auprès de ProConnect |
+> | `client_secret` | requis | string | `<CLIENT_SECRET>` Le secret du FS, communiqué lors de son inscription auprès de ProConnect |
 > | `redirect_uri` | requis | string |` <FS_URL>%2F<URL_CALLBACK>` Url de retour vers le FS (encodée), communiqué lors de l'appel au `Authorization Endpoint` |
 > | `code` | requis | string | `<AUTHZ_CODE>` code d'autorisation fourni par ProConnect après connexion |
 
@@ -149,7 +149,7 @@ Stocker le `id_token` dans la session du navigateur. Cette valeur sera utilisée
 Appeler le endpoint `userinfo_endpoint`, en ajoutant l'`access_token` token dans l'en-tête Authorization, comme décrit ci-dessous :
 
 <details>
- <summary><code>GET</code> <code><b>https://AC_DOMAIN/api/v2/userinfo</b></code> </summary>
+ <summary><code>GET</code> <code><b>https://PROCONNECT_DOMAIN/api/v2/userinfo</b></code> </summary>
 
 ##### Description
 
@@ -208,7 +208,7 @@ http://openid.net/specs/openid-connect-session-1_0.html#RPLogout
 > | nom | requis/optionnel | type de données | description |
 > |--------|-----------|----------------|------------------------------------------------------|
 > | `id_token_hint` | requis | string | `<id_token>` contenu dans la réponse du `Token Endpoint` |
-> | `state` | requis | string | `<state>` Champ obligatoire, généré aléatoirement par le FS, que AC renvoie tel quel dans la redirection qui suit la déconnexion, pour être ensuite vérifié par le FS. Il est utilisé afin d’empêcher l’exploitation de failles CSRF |
+> | `state` | requis | string | `<state>` Champ obligatoire, généré aléatoirement par le FS, que ProConnect renvoie tel quel dans la redirection qui suit la déconnexion, pour être ensuite vérifié par le FS. Il est utilisé afin d’empêcher l’exploitation de failles CSRF |
 > | `post_logout_redirect_uri` | requis | string | `<post_logout_redirect_uri>` URL de retour vers le FS, communiquée dans le formulaire Démarches Simplifiées. Attention, cette URL doit être encodée pour être passée en query parameter, doit correspondre exactement à celle communiquée à ProConnect, et est sensible à la présence ou non du `/` final |
 
 ##### Réponses

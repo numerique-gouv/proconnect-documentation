@@ -18,14 +18,23 @@ Commencez par créer un client OIDC pour ProConnect. Vous pouvez choisir comme `
 Ces deux valeurs doivent être conservées de votre côté pour être envoyées à ProConnect une fois la configuration faite.
 
 La `redirect_uri` (ou "adresse de redirection de connexion") à indiquer est la suivante :
-https://AC_DOMAIN/api/v2/oidc-callback 
+https://PROCONNECT_DOMAIN/api/v2/oidc-callback 
 
-Vous pouvez retrouver la valeur de AC_DOMAIN qui vous correspond [ici](../resources/valeur_ac_domain.md)
+Vous pouvez retrouver la valeur de PROCONNECT_DOMAIN qui vous correspond [ici](../resources/valeur_ac_domain.md)
 
 Il peut également vous être demandé de renseigner la "post_logout_redirect_uri" (ou "adresse de redirection post-déconnexion"). Dans ce cas, renseignez la suivante :
-https://AC_DOMAIN/api/v2/client/logout-callback
+https://PROCONNECT_DOMAIN/api/v2/client/logout-callback
 
-## Configurer la signature des échanges entre AC et le FI
+## Utiliser le paramètre `login_hint`
+À l'appel au `authorization_endpoint`, ProConnect envoie en query param `login_hint`, qui contient l'email renseigné par l'utilisateur sur la mire ProConnect.
+Pour simplifier le parcours de l'utilisateur, il est demandé au FI d'utiliser la valeur fournie pour pré-remplir le champ email de sa mire d'authentification lorsque cela est pertinent.
+
+## Renseigner le claim `amr` 
+Il est nécessaire de renseigner dans le claim `amr` la valeur correspondant au mode d'authentification utilisé. Cela permet, par exemple, aux Fournisseurs de Service d'épargner à l'usager le recours à une nouvelle authentification multi-facteur une fois retourné sur le FS.
+
+Vous trouverez les valeurs possibles pour ce claim [ici](../resources/claim_amr.md).
+
+## Configurer la signature des échanges entre ProConnect et le FI
 Les appels aux endpoints de création de jeton (`/token`) et de récupération des informations utilisateur (`/user-info`) par ProConnect doivent être signés.
 ProConnect gère trois algorithmes de signatures :
 - Asymétrique : 
