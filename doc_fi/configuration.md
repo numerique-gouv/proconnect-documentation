@@ -30,7 +30,7 @@ https://PROCONNECT_DOMAIN/api/v2/client/logout-callback
 Pour simplifier le parcours de l'utilisateur, il est demandé au FI d'utiliser la valeur fournie pour pré-remplir le champ email de sa mire d'authentification lorsque cela est pertinent.
 
 ## Renseigner le claim `amr` 
-Si votre FI gère l'authentification multi-facteur, alors il vous faut renseigner dans le claim `amr` la valeur correspondant à ce mode d'authentification. Cela permettra aux Fournisseurs de Service d'épargner à l'usager le recours à une nouvelle authentification multi-facteur une fois retourné sur le FS.
+Il est nécessaire de renseigner dans le claim `amr` la valeur correspondant au mode d'authentification utilisé. Cela permet, par exemple, aux Fournisseurs de Service d'épargner à l'usager le recours à une nouvelle authentification multi-facteur une fois retourné sur le FS.
 
 Vous trouverez les valeurs possibles pour ce claim [ici](../resources/claim_amr.md).
 
