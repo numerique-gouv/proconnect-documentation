@@ -1,11 +1,11 @@
 # Test de la configuration de votre Fournisseur d'Identité (FI)
 
 ## URL du Fournisseur de Service
-Selon votre environnement et le réseau sur lequel votre Fournisseur d'Identité est, le Fournisseur de Service de test sera :
+Selon votre environnement et le réseau sur lequel votre Fournisseur d'Identité est, le Fournisseur de Service (FS) de test sera :
 |               | Internet                          | RIE                                       |
 |-|-|-|
-| Intégration   | https://test.agentconnect.gouv.fr  | https://fsa1v2.integ02.agentconnect.rie.gouv.fr      |
-| Production    | https://fsa1v2.dev-agentconnect.fr         | https://fsa1v2.agentconnect.rie.gouv.fr             |
+| Intégration   | https://test.agentconnect.gouv.fr | https://fsa1v2.integ02.agentconnect.rie.gouv.fr      |
+| Production    | n'importe quel [FS de production](https://www.proconnect.gouv.fr/services)        | [Chorus DT](https://chorus-dt.finances.ader.gouv.fr/)            |
 
 ## Protocole de test
 
