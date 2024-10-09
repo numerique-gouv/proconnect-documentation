@@ -10,7 +10,7 @@
 
 🧭 [https://www.proconnect.gouv.fr/](https://www.proconnect.gouv.fr/)
 
-🧑‍🏫 [Présentation de la solution](https://pad.numerique.gouv.fr/p/4finbsfnw#/)
+🧑‍🏫 [Présentation de la solution](https://pad.numerique.gouv.fr/p/Mw1fEjmM-#/)
 
 📊 [Statistiques d'utilisation](https://www.proconnect.gouv.fr/stats)
 
