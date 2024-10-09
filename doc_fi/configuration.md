@@ -20,7 +20,7 @@ Ces deux valeurs doivent être conservées de votre côté pour être envoyées 
 La `redirect_uri` (ou "adresse de redirection de connexion") à indiquer est la suivante :
 https://PROCONNECT_DOMAIN/api/v2/oidc-callback 
 
-Vous pouvez retrouver la valeur de PROCONNECT_DOMAIN qui vous correspond [ici](../resources/valeur_ac_domain.md)
+Vous pouvez retrouver la valeur de PROCONNECT_DOMAIN qui vous correspond [ici](../resources/valeur_ac_domain.md). Si votre FI est présent sur le RIE et bénéficie de l'hybridge, il vous faut alors indiquer les `redirect_uri` correspondant aux domaines des réseaux RIE et Internet.
 
 Il peut également vous être demandé de renseigner la "post_logout_redirect_uri" (ou "adresse de redirection post-déconnexion"). Dans ce cas, renseignez la suivante :
 https://PROCONNECT_DOMAIN/api/v2/client/logout-callback
