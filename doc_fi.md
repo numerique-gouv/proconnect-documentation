@@ -7,12 +7,11 @@ ___
 
 Vous souhaitez rejoindre la fédération d'identité et être Fournisseur d'Identité ProConnect ? Vous êtes au bon endroit ! Cette documentation présente l'ensemble des informations à connaître.
 
-
-
 ## 1. ⚙️ Les étapes pour devenir Fournisseur d'Identité ProConnect
 
-Voici un résumé des étapes pour être fournisseur d'identité ProConnect :
+Voici un résumé des étapes pour être Fournisseur d'Identité ProConnect :
 
+- [ ] Je vérifie que je respecte bien les [pré-requis pour devenir FI pour ProConnect](./doc_fi/prerequis-fi.md)
 - [ ] Je me familiarise avec le flux OIDC - authorization code flow : voir [concepts de base](resources/flux_oidc.md). NB: si vous êtes Fournisseur d'Identité, vous êtes *provider* et ProConnect est *client*.
 - [ ] Je configure mon Fournisseur d'Identité pour qu'il puisse s'intégrer à la fédération ProConnect avec le [mode d'emploi technique](doc_fi/configuration.md)
 - [ ] Je renseigne à l'équipe ProConnect les informations nécessaires pour que ProConnect créé la configuration de mon FI en remplissant [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fi-fca)
