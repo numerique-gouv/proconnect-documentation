@@ -24,6 +24,7 @@ ___
 
 
 ## 2. 📚 Ressources supplémentaires
+
 - [Quels changements dois-je effectuer pour passer d'AgentConnect à ProConnect ?](./doc_fi/changement-agentconnect-proconnect-fi.md)
 - [Qu'est-ce que la plateforme "Internet", la plateforme "RIE" et l'"Hybridge" ?](doc_fi/plateformes_fi.md)
 - [Quels sont les certificats d'authentification ?](./doc_fi/certificats_fi.md)
