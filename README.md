@@ -3,7 +3,7 @@
 ![](https://github.com/numerique-gouv/agentconnect-documentation/blob/main/assets/home.png?raw=true)
 
 
-> ProConnect simplifie le quotidien des agents
+> La solution officielle qui vous identifie en tant que professionnel
 
 ## 🗺️ Liens relatifs
 
