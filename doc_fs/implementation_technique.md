@@ -270,3 +270,9 @@ Vérifier que le champ `state` récupéré en query parameter correspond bien au
 
 #### 4.4 Suppression des informations de connexion
 Supprimer les informations de connexion stockée dans la session du navigateur
+
+#### 5. Retrouver le bouton ProConnect
+[Sous forme de PNG.](../assets/pc.svg)
+
+[Sous forme d'implémentation DSFR/CSS/React-DSFR.](./bouton_proconnect.md)
+
