@@ -24,3 +24,12 @@ Pour tester la connexion sur votre Fournisseur de service :
 - à l'arrivée sur la mire Agent Connect, entrez `user@yopmail.com`. Vous serez redirigés vers la sandbox de MonComptePro (dont le design est identique à celui de ProConnect).
 - indiquez `user@yopmail.com` également en mot de passe.
 - sélectionnez l'organisation de rattachement "Direction Interministérielle du Numérique (DINUM)" Vous devriez être redirigé vers votre Fournisseur de Service.
+
+Cette plateforme utilise de vraies données ouvertes de l'INSEE pour les données des organisations. Elle n’est cependant connectée à aucun environnement de production. Ainsi, vous pouvez vous créer n’importe quel compte utilisateur en entrant n’importe quel numéro SIRET et en utilisant des emails jetables yopmail.com. À noter que les emails reçus sur les adresses en yopmail.com sont accessibles sur : http://yopmail.com/.
+
+Voici 2 scénarios que vous pouvez tester sur cet environnement :
+
+- entreprise unipersonnelle : créer un compte avec une adresse email jetable, puis utiliser le SIRET d'une organisation unipersonnelle ;
+- commune de Clarmart : vous pouvez directement rejoindre cette commune avec un compte utilisant un email sur le domaine yopmail.com.
+
+Il existe également [une liste de comptes « persistants »](https://github.com/numerique-gouv/moncomptepro/blob/master/scripts/fixtures.sql#L10) qui sont re-configurés à l'original plusieurs fois par semaines quel que soit l'usage qui en a été fait.
