@@ -9,7 +9,8 @@ Vous trouverez [ici](./identifiants-fi-test.md) les identifiants pour vous conne
 Pour savoir quelles URL appeler au cours de l'authentification, vous aurez besoin de connaître la valeur de PROCONNECT_DOMAIN qui correspond à votre environnement et votre réseau. Vous la trouverez à [ce lien](../resources/valeur_ac_domain.md).
 
 ### Exemple d'intégration réussie
-[Dépôt Github d'un client ProConnect](https://github.com/betagouv/moncomptepro-test-client)
+
+[Dépôt Github d'un client ProConnect](https://github.com/numerique-gouv/proconnect-test-client)
 
 ## Mode d'emploi technique
 ### 1. Intégrer le bouton ProConnect sur votre page de connexion

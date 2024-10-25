@@ -16,16 +16,19 @@ test | 123 | eidas1
 
 - cliquez sur Valider. Vous devriez être redirigé vers votre Fournisseur de Service.
 
-## MonComptePro
-**En intégration** sur **Internet** seulement, il vous est possible d'utiliser MonComptePro.
+## ProConnect Identité
+**En intégration** sur **Internet** seulement, il vous est possible d'utiliser ProConnect Identité.
 
 Pour tester la connexion sur votre Fournisseur de service :
 - cliquez sur le bouton "S'identifier avec ProConnect" depuis votre Fournisseur de Service **en intégration**
-- à l'arrivée sur la mire Agent Connect, entrez `user@yopmail.com`. Vous serez redirigés vers la sandbox de MonComptePro (dont le design est identique à celui de ProConnect).
+- à l'arrivée sur la mire ProConnect, entrez `user@yopmail.com`. Vous serez redirigés vers la sandbox de ProConnect Identité (dont le design est identique à celui de ProConnect Fédération).
 - indiquez `user@yopmail.com` également en mot de passe.
 - sélectionnez l'organisation de rattachement "Direction Interministérielle du Numérique (DINUM)" Vous devriez être redirigé vers votre Fournisseur de Service.
 
-Cette plateforme utilise de vraies données ouvertes de l'INSEE pour les données des organisations. Elle n’est cependant connectée à aucun environnement de production. Ainsi, vous pouvez vous créer n’importe quel compte utilisateur en entrant n’importe quel numéro SIRET et en utilisant des emails jetables yopmail.com. À noter que les emails reçus sur les adresses en yopmail.com sont accessibles sur : http://yopmail.com/.
+Cette plateforme utilise de vraies données ouvertes de l'INSEE pour les données des organisations.
+Elle n’est cependant connectée à aucun environnement de production.
+Ainsi, vous pouvez vous créer n’importe quel compte utilisateur en entrant n’importe quel numéro SIRET et en utilisant des emails jetables yopmail.com.
+À noter que les emails reçus sur les adresses en yopmail.com sont accessibles sur : http://yopmail.com/.
 
 Voici 2 scénarios que vous pouvez tester sur cet environnement :
 
