@@ -29,8 +29,8 @@ Par exemple:
 {
   "sub": "sub-idp",
   ...,
-  "structure_travail": "59194",
-  "site_travail": "DRHAUTS-DE-FRANCE/PFPPLATEFORMESERVICESADISTANCE(HDF0262005733)"
+  "structureTravail": "59194",
+  "siteTravail": "DRHAUTS-DE-FRANCE/PFPPLATEFORMESERVICESADISTANCE(HDF0262005733)"
 }
 ```
 
@@ -41,8 +41,8 @@ Dans ce cas, ProConnect placera ces valeurs dans l'objet `custom`:
   "sub": "7396c91e-b9f2-4f9d-8547-5e9b3332725b",
   ...
   "custom": {
-    "structure_travail": "59194",
-    "site_travail": "DRHAUTS-DE-FRANCE/PFPPLATEFORMESERVICESADISTANCE(HDF0262005733)"
+    "structureTravail": "59194",
+    "siteTravail": "DRHAUTS-DE-FRANCE/PFPPLATEFORMESERVICESADISTANCE(HDF0262005733)"
   }
 }
 
