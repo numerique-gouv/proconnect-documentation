@@ -19,8 +19,8 @@
 
 Vous implémentez le bouton ProConnect pour permettre à vos utilisateurs de s’identifier sur un de vos services en ligne ?
 
-➡️ Consultez la [documentation Fournisseur de Service (FS)](doc_fs.md).
+➡️ Consultez la [documentation Fournisseur de Service (FS)](./doc_fs/README.md).
 
 Vous intégrez ProConnect en tant que Fournisseur d’Identité et permettez à vos agents de se connecter via ProConnect sur plusieurs services en ligne ?
 
-➡️ Consultez la [documentation Fournisseur d'Identité (FI)](doc_fi.md).
+➡️ Consultez la [documentation Fournisseur d'Identité (FI)](./doc_fi/README.md).
