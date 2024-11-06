@@ -21,7 +21,7 @@ Cette documentation est à destination des Fournisseurs de Services souhaitant i
 
 Pour toute question technique, vous pouvez contacter l'équipe ProConnect par les deux canaux suivants :
 
-- par mail à support.partenaires@agentconnect.gouv.fr
+- par mail à support+partenaire@agentconnect-ntitfa.on.crisp.email
 - [sur notre chaîne Tchap](https://www.tchap.gouv.fr/#/room/!kBghcRpyMNThkFQjdW:agent.dinum.tchap.gouv.fr)
 
 ---
