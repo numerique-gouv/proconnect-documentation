@@ -12,4 +12,4 @@ Les prérequis sont les suivants :
 - fournir les noms de domaine des adresses emails concernées par le FI (par exemple : @justice.fr et @justice.gouv.fr pour le Ministère de la Justice)
 
 > [!IMPORTANT]  
-> Vous devez être en mesure d'authentifier chaque utilisateur disposant d'une adresse e-mail valide associée aux noms de domaines présents dans la liste que vous nous fournirez.
+> Vous devez garantir l'authentification de tous les utilisateurs disposant d'une adresse e-mail valide associée à l'un des noms de domaines que vous nous fournirez. Aucune exception ne doit être faite : chaque utilisateur dont l'adresse respecte les domaines spécifiés doit pouvoir être authentifié.
