@@ -28,11 +28,11 @@ Pour toute question technique, vous pouvez contacter l'équipe ProConnect par le
 
 ## 3. 💻 FAQ
 
-- [Quels changements dois-je effectuer pour passer d'AgentConnect à ProConnect ?](./doc_fs/changement-agentconnect-proconnect-fs.md)
-- [Quelles sont les données que je peux récupérer par ProConnect sur les agents ?](doc_fs/donnees_fournies.md)
-- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ?](doc_fs/scope-claims.md)
-- [Comment savoir avec quel Fournisseur d'Identité s'est authentifié mon utilisateur ?](doc_fs/connaitre-le-fi-utilise.md)
-- [Comment spécifier à ProConnect que les usagers de mon FS doivent être redirigés directement vers un Fournisseur d'Identité spécifique ?](doc_fs/idp_hint_usage.md)
-- [Comment récupérer des propriétés "custom" d'un Fournisseur d'Identité?](doc_fs/custom-scope.md)
-- [Erreurs récurrentes](doc_fs/troubleshooting-fs.md)
-- [Glossaire](resources/glossaire.md)
+- [Quels changements dois-je effectuer pour passer d'AgentConnect à ProConnect ?](./changement-agentconnect-proconnect-fs.md)
+- [Quelles sont les données que je peux récupérer par ProConnect sur les agents ?](./donnees_fournies.md)
+- [Comment utiliser les scopes OpenID Connect pour accéder aux données des utilisateurs ?](./scope-claims.md)
+- [Comment savoir avec quel Fournisseur d'Identité s'est authentifié mon utilisateur ?](./connaitre-le-fi-utilise.md)
+- [Comment spécifier à ProConnect que les usagers de mon FS doivent être redirigés directement vers un Fournisseur d'Identité spécifique ?](./idp_hint_usage.md)
+- [Comment récupérer des propriétés "custom" d'un Fournisseur d'Identité?](./custom-scope.md)
+- [Erreurs récurrentes](./troubleshooting-fs.md)
+- [Glossaire](../resources/glossaire.md)
