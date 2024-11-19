@@ -3,7 +3,7 @@
 #### Généralités
 
 ProConnect est un outil d’authentification.
-**Il agit d'un pont entre un bouton de connexion et la partie authentifiée de votre service**.
+**Il s'agit d'un pont entre un bouton de connexion et la partie authentifiée de votre service**.
 
 **C’est vous qui avez le contrôle sur ce qui se passe avant et après ce pont.**
 Voici quelques recommandations pour un parcours simple et sans blocage pour les visiteurs de vos services.

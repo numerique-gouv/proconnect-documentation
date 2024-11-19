@@ -13,6 +13,7 @@ Cette documentation est à destination des Fournisseurs de Services souhaitant i
 ## 2. ⚙️ Les étapes pour intégrer ProConnect
 
 - [ ] Je me familiarise avec le flux OIDC - authorization code flow : voir [concepts de base](resources/flux_oidc.md). NB: si vous êtes Fournisseur de Service, ProConnect est votre _provider_ et vous êtes _client_.
+- [ ] Je définis mon parcours utilisateur pour la connexion : voir [nos recommandations](./recommandation_parcours.md)
 - [ ] Je souhaite lancer les développements en test : je renseigne [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca). L'équipe me fournit alors mon `client_id` et mon `client_secret`, à l'adresse e-mail associée à la demande Démarches Simplifiées. Si vous êtes identifié via FranceConnect, il s'agit alors probablement de votre adresse e-mail personnelle.
 - [ ] J’ai implémenté la cinématique OIDC (Authorization Code Flow): voir l'[implémentation technique](/doc_fs/implementation_technique.md)
 - [ ] Je contractualise officiellement ma collaboration avec la DINUM en remplissant le [DataPass dédié](/doc_fs/datapass-fs.md)
