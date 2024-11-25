@@ -1,4 +1,4 @@
-# Recommandations de parcours utilisateur (test)
+# Recommandations de parcours utilisateur
 
 #### Généralités
 
