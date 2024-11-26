@@ -63,4 +63,4 @@ Le claim "phone_number" existe également pour le scope phone.
 | ------ | ------ |
 | custom | custom |
 
-Les Fournisseurs de Service qui le souhaitent peuvent appeler le scope optionnel "custom". Pour plus d'informations, lire l'[article dédié](custom-scope.md).
+Les Fournisseurs de Service qui le souhaitent peuvent appeler le scope optionnel "custom". Pour plus d'informations, lire l'[article dédié](./custom-scope.md).
