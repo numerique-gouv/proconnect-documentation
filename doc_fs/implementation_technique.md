@@ -183,7 +183,7 @@ Vérifier que le JWT est bien signé avec cet algorithme.
 
 Une fois en possession des informations de votre utilisateur, vous pouvez gérer comme vous le souhaitez sa session.
 
-NB: la session Agent Connect a une durée de 12 heures et se termine dans tous les cas à la fin de la journée (minuit). Nous vous recommandons de générer des sessions utilisateurs correspondant à cette durée-là.
+NB: la session Agent Connect a une durée de 12 heures.
 
 ### 4. Déconnexion de l'utilisateur
 Au clic sur votre bouton de déconnexion, effectuer les actions suivantes :
