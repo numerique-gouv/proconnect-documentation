@@ -184,6 +184,8 @@ Vérifier que le JWT est bien signé avec cet algorithme.
 Une fois en possession des informations de votre utilisateur, vous pouvez gérer comme vous le souhaitez sa session.
 
 NB: la session Agent Connect a une durée de 12 heures.
+- si vous souhaitez que vos sessions utilisateurs dure **plus** de 12 heures, tout se passera bien : lorsque votre session utilisateur sera expirée de votre côté, alors le clic sur le bouton "S'identifier avec ProConnect" renverra bien vers la mire d'authentification car la session ProConnect se sera terminée avant.
+- si vous souhaitez que vos sessions utilisateurs dure **moins** de 12 heures, alors il vous faut savoir que si votre utilisateur clique sur "S'identifier avec ProConnect" entre la fin de votre session et la fin de celle de ProConnect, il sera automatiquement reconnecté à votre service. Une option `max-age` est décrite dans [la spec OIDC](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest) et permet de gérer ce cas, mais celle-ci n'est pas encore implémentée sur ProConnect.
 
 ### 4. Déconnexion de l'utilisateur
 Au clic sur votre bouton de déconnexion, effectuer les actions suivantes :
