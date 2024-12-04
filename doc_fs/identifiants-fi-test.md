@@ -1,8 +1,13 @@
+[Accueil](../README.md) > [ProConnect - Fournisseur de Service](README.md) > [Implémentation Technique](implementation_technique.md) > Test de la connexion d'un Fournisseur de Service
+
+---
+
+
 # Test de la connexion d'un Fournisseur de Service
 
 Lorsque vous implémentez la connexion OIDC via ProConnect sur votre Fournisseur de Service, vous voudrez sans doute tester la connexion à votre Fournisseur de Service.
 
-## Fournisseur d'Identité de test
+## 🔐 Fournisseur d'Identité de test
 **En intégration** sur **Internet** et le **RIE**, ProConnect possède un Fournisseur d'Identité de test.
 
 Pour tester la connexion sur votre Fournisseur de service :
@@ -11,12 +16,12 @@ Pour tester la connexion sur votre Fournisseur de service :
 - entrez les informations suivantes de connexion :
 
 Identifiant |  Mot de passe | Niveau de sécurité
---- | --- | --- 
+--- | --- | ---
 test | 123 | eidas1
 
 - cliquez sur Valider. Vous devriez être redirigé vers votre Fournisseur de Service.
 
-## ProConnect Identité
+## 🔧 ProConnect Identité
 **En intégration** sur **Internet** seulement, il vous est possible d'utiliser ProConnect Identité.
 
 Pour tester la connexion sur votre Fournisseur de service :
@@ -25,14 +30,8 @@ Pour tester la connexion sur votre Fournisseur de service :
 - indiquez `user@yopmail.com` également en mot de passe.
 - sélectionnez l'organisation de rattachement "Direction Interministérielle du Numérique (DINUM)" Vous devriez être redirigé vers votre Fournisseur de Service.
 
-Cette plateforme utilise de vraies données ouvertes de l'INSEE pour les données des organisations.
-Elle n’est cependant connectée à aucun environnement de production.
-Ainsi, vous pouvez vous créer n’importe quel compte utilisateur en entrant n’importe quel numéro SIRET et en utilisant des emails jetables yopmail.com.
-À noter que les emails reçus sur les adresses en yopmail.com sont accessibles sur : http://yopmail.com/.
+Cette plateforme utilise de vraies données ouvertes de l'INSEE pour les données des organisations. Elle n’est cependant connectée à aucun environnement de production.
 
-Voici 2 scénarios que vous pouvez tester sur cet environnement :
+Avec toute adresse email, vous pouvez créer n’importe quel compte utilisateur en entrant n’importe quel numéro SIRET. Aussi, avec une adresse en `yopmail.com` et en `proton.me`, vous avez accès à une présélection d'organisations que vous pouvez rejoindre.
 
-- entreprise unipersonnelle : créer un compte avec une adresse email jetable, puis utiliser le SIRET d'une organisation unipersonnelle ;
-- commune de Clarmart : vous pouvez directement rejoindre cette commune avec un compte utilisant un email sur le domaine yopmail.com.
-
-Il existe également [une liste de comptes « persistants »](https://github.com/numerique-gouv/moncomptepro/blob/master/scripts/fixtures.sql#L10) qui sont re-configurés à l'original plusieurs fois par semaines quel que soit l'usage qui en a été fait.
+À noter que nous procédons de manière périodique à des resets de la base de données d'intégration, les comptes peuvent créés être supprimés. Il existe également [une liste de comptes « persistants »](https://github.com/numerique-gouv/moncomptepro/blob/master/scripts/fixtures.sql#L10) qui sont re-configurés à l'original plusieurs fois par semaines quel que soit l'usage qui en a été fait.
