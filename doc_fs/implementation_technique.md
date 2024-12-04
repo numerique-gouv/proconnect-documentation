@@ -1,26 +1,30 @@
-# Implémentation du protocole OIDC (authorization code flow) pour un Fournisseur de Service
+[Accueil](../README.md) > [ProConnect - Fournisseur de Service](README.md) > Implémentation Technique
 
-## Préambule
-### Identifiants de tests
+---
+
+# 🔧 Implémentation du protocole OIDC (authorization code flow) pour un Fournisseur de Service
+
+## 📢 1. Préambule
+### 1.1. Identifiants de tests
 Pour tester la configuration de votre Fournisseur de Service tout au long de l'intégration, vous aurez besoin de vous connecter via un Fournisseur d'Identité.
-Vous trouverez [ici](./identifiants-fi-test.md) les identifiants pour vous connecter au Fournisseur d'Identité de test. 
+Vous trouverez [ici](./identifiants-fi-test.md) les identifiants pour vous connecter au Fournisseur d'Identité de test.
 
-### Valeur de PROCONNECT_DOMAIN
+### 1.2. Valeur de PROCONNECT_DOMAIN
 Pour savoir quelles URL appeler au cours de l'authentification, vous aurez besoin de connaître la valeur de PROCONNECT_DOMAIN qui correspond à votre environnement et votre réseau. Vous la trouverez à [ce lien](../resources/valeur_ac_domain.md).
 
-### Exemple d'intégration réussie
+### 1.3. Exemple d'intégration réussie
 
 [Dépôt Github d'un client ProConnect](https://github.com/numerique-gouv/proconnect-test-client)
 
-## Mode d'emploi technique
-### 1. Intégrer le bouton ProConnect sur votre page de connexion
+## 📘 2. Mode d'emploi technique
+### 2.1. Intégrer le bouton ProConnect sur votre page de connexion
 
 [Quel bouton ProConnect intégrer et comment l'intégrer ?](./bouton_proconnect.md)
 
-### 2. Faire pointer le bouton ProConnect vers le `authorization_endpoint`
+### 2.2. Faire pointer le bouton ProConnect vers le `authorization_endpoint`
 Si vous utilisez une bibliothèque agréée, nous vous recommandons de récupérer les URLs via notre Discovery URL : `https://PROCONNECT_DOMAIN/api/v2/.well-known/openid-configuration`.
 Cette Discovery URL vous donnera notamment quatre endpoints qui vous serviront par la suite :
-- `authorization_endpoint` 
+- `authorization_endpoint`
 - `token_endpoint`
 - `userinfo_endpoint`
 - `end_session_endpoint`
@@ -32,13 +36,13 @@ Au clic sur le bouton ProConnect :
 <details>
  <summary><code>GET</code> <code><b>https://PROCONNECT_DOMAIN/api/v2/authorize</b></code> </summary>
 
-##### Description
+##### 2.2.1.1. Description
 
 Implémente le `Authorization Endpoint` de Openid Connect:
 
 https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
 
-##### Paramètres
+##### 2.2.1.2. Paramètres
 
 > | nom | requis/optionnel | type de données | description |
 > |--------|-----------|----------------|------------------------------------------------------|
@@ -57,7 +61,7 @@ Le champ `scope` et sa différence avec la notion de `claims` sont expliqués [i
 
 NB: tout paramètre supplémentaire dans l'URL génèrera une erreur `Y000400 : Bad Request Exception`. Il n'est pas possible d'ajouter d'autres paramètres.
 
-### 3. Implémentation de la route **redirect_uri**
+### 2.3. Implémentation de la route **redirect_uri**
 Il s'agit de la route vers laquelle sera redirigée votre utilisateur dans le navigateur après authentification par le Fournisseur d'Identité.
 
 Les query parameters renvoyés dans l'URL sont décrits ci-dessous.
@@ -65,7 +69,7 @@ Les query parameters renvoyés dans l'URL sont décrits ci-dessous.
 <details>
  <summary><code>GET</code> <code><b>redirect_uri?code=x&state=y</b></code> </summary>
 
-##### Paramètres
+##### 2.3.1.1. Paramètres
 
 > | nom | requis/optionnel | type de données | description |
 > |--------|-----------|----------------|------------------------------------------------------|
@@ -78,28 +82,28 @@ NB : le `code` a une durée d'expiration de 30 secondes.
 
 Votre serveur doit alors effectuer plusieurs actions en "back-channel".
 
-#### 3.1. Vérification du state
+#### 2.3.2. Vérification du state
 Vérifier que le champ `state` récupéré en query parameter correspond bien au `state` généré précédemment et stocké dans la session du navigateur.
 
-#### 3.2 Génération du token
+#### 2.3.3. Génération du token
 Appeler le endpoint `token_endpoint` avec les paramètres décrits ci-dessous :
 
 <details>
  <summary><code>POST</code> <code><b>https://PROCONNECT_DOMAIN/api/v2/token</b></code> </summary>
 
-##### Description
+##### 2.3.3.1. Description
 
 Implémente le `Token Endpoint` de Openid Connect:
 
 https://openid.net/specs/openid-connect-core-1_0.html#TokenEndpoint
 
-##### Entête
+##### 2.3.3.2. Entête
 
 > | nom | requis/optionnel | valeur |
 > |----------------|--------|-------------------------------------|
 > | `Content-Type` | requis | `application/x-www-form-urlencoded` |
 
-##### Body
+##### 2.3.3.3. Body
 
 > | nom | requis/optionnel | type de données | description |
 > |--------|-----------|----------------|------------------------------------------------------|
@@ -109,14 +113,14 @@ https://openid.net/specs/openid-connect-core-1_0.html#TokenEndpoint
 > | `redirect_uri` | requis | string |` <FS_URL>%2F<URL_CALLBACK>` Url de retour vers le FS (encodée), communiqué lors de l'appel au `Authorization Endpoint` |
 > | `code` | requis | string | `<AUTHZ_CODE>` code d'autorisation fourni par ProConnect après connexion |
 
-##### Réponses
+##### 2.3.3.4. Réponses
 
 > | code http     | content-type                      |réponse                                                            |
 > |---------------|-----------------------------------|---------------------------------------------------------------------|
 > | `200`       | `application/json;charset=utf-8`        | La réponse contenant l'access token |
 > | `400`       | `application/json;charset=utf-8`        | JSON document décrivant l'origine de l'erreur de format |
 
-##### Format de la réponse en succès
+##### 2.3.3.5. Format de la réponse en succès
 
 ```
 {
@@ -134,40 +138,40 @@ Vous récupérez alors un JSON, qui contient notamment :
 
 L'`access_token` est un Bearer token. Sa durée de validité est de 60 secondes.
 
-#### 3.3 Vérification de l'id_token et du nonce
+#### 2.3.4. Vérification de l'id_token et du nonce
 L'`id_token` est un JWT, signé avec l'algorithme spécifié à ProConnect lors de l'enregistrement du FS (RS256, ES256 ou HS256).
 
 Vérifier que le JWT est bien signé avec cet algorithme.
 
 Une fois décodé, extraire le `nonce` et vérifier qu'il correspond bien au `nonce` stocké dans la session du navigateur.
 
-#### 3.4 Stockage du id_token
+#### 2.3.5. Stockage du id_token
 
 Stocker le `id_token` dans la session du navigateur. Cette valeur sera utilisée plus tard, lors de la déconnexion auprès du serveur ProConnect.
 
-#### 3.4 Récupération des user info
+#### 2.3.6. Récupération des user info
 Appeler le endpoint `userinfo_endpoint`, en ajoutant l'`access_token` token dans l'en-tête Authorization, comme décrit ci-dessous :
 
 <details>
  <summary><code>GET</code> <code><b>https://PROCONNECT_DOMAIN/api/v2/userinfo</b></code> </summary>
 
-##### Description
+##### 2.3.6.1. Description
 
 Implémente le `UserInfo Endpoint` de Openid Connect:
 
 https://openid.net/specs/openid-connect-core-1_0.html#UserInfo
 
-##### Entête
+##### 2.3.6.2. Entête
 
 > | nom | requis/optionnel | valeur |
 > |----------------|--------|-------------------------------------|
 > | `Authorization` | requis | `Bearer <access_token>` où `<access_token>` a été communiqué par le `Token Endpoint` |
 
-##### Paramètres
+##### 2.3.6.3. Paramètres
 
 > Aucun
 
-##### Réponses
+##### 2.3.6.4. Réponses
 
 > | code http     | content-type                      |réponse                                                            |
 > |---------------|-----------------------------------|---------------------------------------------------------------------|
@@ -176,7 +180,7 @@ https://openid.net/specs/openid-connect-core-1_0.html#UserInfo
 
 </details>
 
-#### 3.5 Authentification de l'utilisateur
+#### 2.3.7. Authentification de l'utilisateur
 Le endpoint `user_info_endpoint` renvoie un JWT, signé avec l'algorithme spécifié à ProConnect lors de l'enregistrement du FS (RS256, ES256 ou HS256).
 
 Vérifier que le JWT est bien signé avec cet algorithme.
@@ -187,17 +191,17 @@ NB: la session Agent Connect a une durée de 12 heures.
 - si vous souhaitez que vos sessions utilisateurs durent **plus** de 12 heures, c'est possible : lorsque votre session utilisateur sera expirée de votre côté, alors le clic sur le bouton "S'identifier avec ProConnect" renverra bien vers la mire d'authentification car la session ProConnect se sera terminée avant.
 - si vous souhaitez que vos sessions utilisateurs durent **moins** de 12 heures, si votre utilisateur clique sur "S'identifier avec ProConnect" entre la fin de votre session et la fin de celle de ProConnect, il sera automatiquement reconnecté à votre service. Une option `max-age` est décrite dans [la spec OIDC](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest) et permet de gérer ce cas, mais celle-ci n'est pas encore implémentée sur ProConnect.
 
-### 4. Déconnexion de l'utilisateur
+### 2.4. Déconnexion de l'utilisateur
 Au clic sur votre bouton de déconnexion, effectuer les actions suivantes :
 
-#### 4.1 Déconnexion auprès de ProConnect
+#### 2.4.1. Déconnexion auprès de ProConnect
 Récupérer l'`id_token` stocké dans la session du navigateur.
 Appeler le endpoint `end_session_endpoint` avec les paramètres décrits ci-dessous.
 
 <details>
  <summary><code>GET</code> <code><b>/api/v2/session/end</b></code> </summary>
 
-##### Description
+##### 2.4.1.1. Description
 
 Implémente le `Logout Endpoint` de Openid Connect:
 
@@ -205,7 +209,7 @@ http://openid.net/specs/openid-connect-session-1_0.html#RPLogout
 
 :warning: Cet appel doit être réalisé via une redirection dans le navigateur de l'agent, afin d'expirer les cookies de session ProConnect et FI.
 
-##### Paramètres
+##### 2.4.1.2. Paramètres
 
 > | nom | requis/optionnel | type de données | description |
 > |--------|-----------|----------------|------------------------------------------------------|
@@ -213,13 +217,13 @@ http://openid.net/specs/openid-connect-session-1_0.html#RPLogout
 > | `state` | requis | string | `<state>` Champ obligatoire, généré aléatoirement par le FS, que ProConnect renvoie tel quel dans la redirection qui suit la déconnexion, pour être ensuite vérifié par le FS. Il est utilisé afin d’empêcher l’exploitation de failles CSRF |
 > | `post_logout_redirect_uri` | requis | string | `<post_logout_redirect_uri>` URL de retour vers le FS, communiquée dans le formulaire Démarches Simplifiées. Attention, cette URL doit être encodée pour être passée en query parameter, doit correspondre exactement à celle communiquée à ProConnect, et est sensible à la présence ou non du `/` final |
 
-##### Réponses
+##### 2.4.1.3. Réponses
 
 > | code http     | content-type                      |réponse                                                            |
 > |---------------|-----------------------------------|-------------------------------------------------------------------|
 > | `303`         | `text/html;charset=UTF-8`         | Redirection vers le FI pour déconnexion, puis redirection vers le FS après déconnexion |
 
-##### Exemple d'appel
+##### 2.4.1.4. Exemple d'appel
 
 > ```
 > GET /api/v2/session/end?id_token_hint=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3MDRlMDI0Mj
@@ -236,7 +240,7 @@ http://openid.net/specs/openid-connect-session-1_0.html#RPLogout
 
 </details>
 
-#### 4.2 Implémentation de la route `post_logout_redirect_uri`
+#### 2.4.2. Implémentation de la route `post_logout_redirect_uri`
 Il s'agit de la route vers laquelle sera redirigée votre utilisateur dans le navigateur après authentification par le Fournisseur d'Identité.
 
 Le query parameter renvoyé dans l'URL est décrit ci-dessous.
@@ -244,19 +248,19 @@ Le query parameter renvoyé dans l'URL est décrit ci-dessous.
 <details>
  <summary><code>GET</code> <code><b>FS_URL/POST_LOGOUT_REDIRECT_URI?state=x</b></code> </summary>
 
-##### Description
+##### 2.4.2.1. Description
 
 Redirection vers le FS après déconnexion.
 
 ProConnect renvoie le state communiqué par le FS lors de la demande de déconnexion.
 
-##### Paramètres
+##### 2.4.2.2. Paramètres
 
 > | nom | requis/optionnel | type de données | description |
 > |--------|-----------|----------------|------------------------------------------------------|
 > | `state` | requis | string (minimum 32 caractères) | `<state>` communiqué par par le FS dans l'appel au `Logout Endpoint`. Cette information est à vérifier par le FS, afin d’empêcher l’exploitation de failles CSRF | |
 
-##### Exemple d'appel
+##### 2.4.2.3. Exemple d'appel
 
 Exemple de retour vers le FS de mock à déconnexion
 
@@ -267,8 +271,8 @@ Exemple de retour vers le FS de mock à déconnexion
 
 </details>
 
-#### 4.3 Vérification du state
+#### 2.4.3. Vérification du state
 Vérifier que le champ `state` récupéré en query parameter correspond bien au `state` généré lors de la connexion et stocké dans la session du navigateur.
 
-#### 4.4 Suppression des informations de connexion
+#### 2.4.4. Suppression des informations de connexion
 Supprimer les informations de connexion stockée dans la session du navigateur
