@@ -12,8 +12,10 @@ Vous trouverez [ici](./identifiants-fi-test.md) les identifiants pour vous conne
 ### 1.2. Valeur de PROCONNECT_DOMAIN
 Pour savoir quelles URL appeler au cours de l'authentification, vous aurez besoin de connaître la valeur de PROCONNECT_DOMAIN qui correspond à votre environnement et votre réseau. Vous la trouverez à [ce lien](../resources/valeur_ac_domain.md).
 
-### 1.3. Exemple d'intégration réussie
+### 1.3. Modification des redirect_uri
+Si au cours de l'intégration, vous souhaitez changer les redirect_uri de connexion ou de déconnexion configurées par ProConnect, vous pouvez faire la demande en 2 minutes ici : https://www.demarches-simplifiees.fr/commencer/demande-de-modification-d-un-fournisseur-de-service
 
+### 1.4. Exemple d'intégration réussie
 [Dépôt Github d'un client ProConnect](https://github.com/numerique-gouv/proconnect-test-client)
 
 ## 📘 2. Mode d'emploi technique
