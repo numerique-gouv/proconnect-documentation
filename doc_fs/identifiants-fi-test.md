@@ -34,4 +34,4 @@ Cette plateforme utilise de vraies données ouvertes de l'INSEE pour les donnée
 
 Avec toute adresse email, vous pouvez créer n’importe quel compte utilisateur en entrant n’importe quel numéro SIRET. Aussi, avec une adresse en `yopmail.com` et en `proton.me`, vous avez accès à une présélection d'organisations que vous pouvez rejoindre.
 
-À noter que nous procédons de manière périodique à des resets de la base de données d'intégration, les comptes peuvent créés être supprimés. Il existe également [une liste de comptes « persistants »](https://github.com/numerique-gouv/moncomptepro/blob/master/scripts/fixtures.sql#L10) qui sont re-configurés à l'original plusieurs fois par semaines quel que soit l'usage qui en a été fait.
+À noter que nous procédons de manière périodique à des resets de la base de données d'intégration, les comptes peuvent être supprimés. Il existe également [une liste de comptes « persistants »](https://github.com/numerique-gouv/moncomptepro/blob/master/scripts/fixtures.sql#L10) qui sont re-configurés à l'original plusieurs fois par semaines quel que soit l'usage qui en a été fait.
