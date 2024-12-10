@@ -5,7 +5,7 @@ Selon votre environnement et le réseau sur lequel votre Fournisseur d'Identité
 |               | Internet                          | RIE                                       |
 |-|-|-|
 | Intégration   | https://test.agentconnect.gouv.fr | https://fsa1v2.integ02.agentconnect.rie.gouv.fr      |
-| Production    | n'importe quel [FS de production](https://www.proconnect.gouv.fr/services)        | [Chorus DT](https://chorus-dt.finances.ader.gouv.fr/)            |
+| Production    | n'importe quel [FS de production](https://www.proconnect.gouv.fr/services)        | [CisirRH](https://portail.cisirh.rie.gouv.fr)            |
 
 ## Protocole de test
 
