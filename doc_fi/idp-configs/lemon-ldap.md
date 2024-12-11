@@ -6,3 +6,5 @@ Service OpenID Connect
 
   > Contexte d'authentification
     > Mettre eidas1 pour la valeur renvoyée par le FI
+
+Le client doit être `public`.
