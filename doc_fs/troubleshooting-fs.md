@@ -7,3 +7,4 @@ Code erreur | Marche à suivre
 `Y000404` | cette erreur est tout simplement une erreur 404 (route non trouvée). Vérifiez que l'URL que vous tentez d'appeler correspond bien à celle renseignées dans l'[implémentation technique](./implementation_technique.md)
 `Y000400` | cette erreur est tout simplement une erreur 400 (mauvaise requête). Vérifiez que les paramètres envoyés à l'URL correspondent bien à ceux renseignés dans l'[implémentation technique](./implementation_technique.md)
 `Y030110` | Le cookie de session n'a pas été trouvé dans la requête
+`Y500015` | Le Fournisseur de Service n'est pas configuré dans ProConnect pour accepter les agents du secteur privé. Si vous êtes en intégration, ou en production et que votre demande d'autorisation du secteur privé dans le Démarches Simplifiées n'a pas été prise en compte, remontez-nous le problème et nous corrigerons rapidement la configuration.
