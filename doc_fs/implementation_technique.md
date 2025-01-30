@@ -15,7 +15,7 @@ Pour savoir quelles URL appeler au cours de l'authentification, vous aurez besoi
 ### 1.3. Modification des redirect_uri
 Si au cours de l'intégration, vous souhaitez changer les redirect_uri de connexion ou de déconnexion configurées par ProConnect, vous pouvez faire la demande en 2 minutes ici : https://www.demarches-simplifiees.fr/commencer/demande-de-modification-d-un-fournisseur-de-service
 
-### 1.4. Exemple d'intégration réussie
+### 1.4. Exemple d'intégration de test
 [Dépôt Github d'un client ProConnect](https://github.com/numerique-gouv/proconnect-test-client)
 
 ## 📘 2. Mode d'emploi technique
