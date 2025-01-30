@@ -9,7 +9,7 @@ Les prérequis sont les suivants :
   - adresse e-mail professionnel de l'agent
   - identifiant technique (du FI)
   - l'identifiant SIRET (14 chiffres sans espace)
-- fournir les noms de domaine des adresses emails concernées par le FI (par exemple : @justice.fr et @justice.gouv.fr pour le Ministère de la Justice)
+- fournir les noms de domaine des adresses emails concernées par le FI (par exemple : `@justice.fr` et `@justice.gouv.fr` pour le Ministère de la Justice)
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Vous devez garantir l'authentification de tous les utilisateurs disposant d'une adresse e-mail valide associée à l'un des noms de domaines que vous nous fournirez. Aucune exception ne doit être faite : chaque utilisateur dont l'adresse respecte les domaines spécifiés doit pouvoir être authentifié.
