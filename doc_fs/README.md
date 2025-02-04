@@ -14,10 +14,10 @@ Cette documentation est à destination des Fournisseurs de Services souhaitant i
 
 - [ ] Je me familiarise avec le flux OIDC - authorization code flow : voir [concepts de base](../resources/flux_oidc.md). NB: si vous êtes Fournisseur de Service, ProConnect est votre _provider_ et vous êtes _client_.
 - [ ] Je définis mon parcours utilisateur pour la connexion : voir [nos recommandations](./recommandation_parcours.md)
-- [ ] Je souhaite lancer les développements en test : je renseigne [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca). L'équipe me fournit alors mon `client_id` et mon `client_secret`, à l'adresse e-mail associée à la demande Démarches Simplifiées. Si vous êtes identifié via FranceConnect, il s'agit alors probablement de votre adresse e-mail personnelle.
+- [ ] Je souhaite lancer les développements en test : je renseigne [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca). L'équipe me fournit alors mon `client_id` et mon `client_secret` dans les **2 jours ouvrés**, à l'adresse e-mail associée à la demande Démarches Simplifiées. Si vous êtes identifié via FranceConnect, il s'agit alors probablement de votre adresse e-mail personnelle.
 - [ ] J’ai implémenté la cinématique OIDC (Authorization Code Flow): voir l'[implémentation technique](./implementation_technique.md)
-- [ ] Je contractualise officiellement ma collaboration avec la DINUM en remplissant le [DataPass dédié](./datapass-fs.md). Je peux passer à l'étape suivante même si le Datapass n'est pas encore complété ou approuvé pour gagner du temps.
-- [ ] Je remplis [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca) avec les informations de production pour recevoir mon `client_id` et mon `client_secret` de production.
+- [ ] Je contractualise officiellement ma collaboration avec la DINUM en remplissant le [DataPass dédié](./datapass-fs.md). Je peux passer à l'étape suivante même si le Datapass n'est pas encore complété ou approuvé pour gagner du temps. Après complétude, le Datapass me revient signé dans les **2 jours ouvrés**.
+- [ ] Je remplis [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca) avec les informations de production. Après complétude, je reçois mon `client_id` et mon `client_secret` de production dans les **2 jours ouvrés**.
 - [ ] Ouverture du service en production 🚀
 
 Pour toute question technique, vous pouvez contacter l'équipe ProConnect par les deux canaux suivants :
