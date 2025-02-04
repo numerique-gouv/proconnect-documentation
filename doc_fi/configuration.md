@@ -77,7 +77,7 @@ Parmi ces champs, seuls sont obligatoires :
 |usual_name |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
 |email  |Adresse courriel |UTF-8 (standard OpenIDConnect)|
 |SIRET  |SIRET de l'organisation de rattachement |UTF-8 (standard OpenIDConnect)|
-|uid |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
+|uid |Identifiant unique de l'agent auprès du FI| UTF-8 (standard OpenIDConnect)|
 
 > [!IMPORTANT]
 > Le champ SIRET est obligatoire, s'il ne vous est pas possible de le renseigner, nous attribuerons un champ SIRET par défaut pour le Fournisseur d'Identité (généralement celui de l'entité qui gère le Fournisseur d'Identité).
