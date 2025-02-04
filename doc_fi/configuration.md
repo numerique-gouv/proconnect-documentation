@@ -71,7 +71,7 @@ La liste des scopes demandés par ProConnect est la suivante :
 | chorusdt |
 
 Parmi ces champs, seuls sont obligatoires :
-|Champs  | Description| Format |
+|Champ  | Description| Format |
 |----  | ------ | ------ |
 |given_name  |Prénoms séparés par des espaces (standard OpenIDConnect)| UTF-8 (standard OpenIDConnect)|
 |usual_name |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
@@ -80,7 +80,7 @@ Parmi ces champs, seuls sont obligatoires :
 |uid |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
 
 > [!IMPORTANT]
-> Le champs SIRET est obligatoire, s'il ne vous est pas possible de le renseigner, nous attribuerons un champ SIRET par défaut (généralement celui de l'entité qui gère le Fournisseur d'Identité).
+> Le champ SIRET est obligatoire, s'il ne vous est pas possible de le renseigner, nous attribuerons un champ SIRET par défaut (généralement celui de l'entité qui gère le Fournisseur d'Identité).
 
 
 Les autres champs, si vous ne possédez pas l'information correspondante dans votre annuaire, doivent être **ignorés**. (cf. [RFC OIDC](https://openid.net/specs/openid-connect-core-1_0.html#IDToken) : *Any Claims used that are not understood MUST be ignored.*)
