@@ -2,7 +2,7 @@
 
 Ce document décrit la manière d'utiliser ProConnect en tant que **fournisseur OpenID** afin de récupérer une identité de niveau « certifié dirigeant ». Nous nous appuyons sur les spécifications [OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html).
 
-> [!Attention]
+> [!CAUTION]
 > Cette documentation permet de lancer les développements pour une application. Le paremètre ne fait actuellement aucune vérification et renverra toujours `true`. Celui-ci sera fonctionnel au T2 2025. Vérifiez avec nous avant de lancer votre application en production.
 
 
