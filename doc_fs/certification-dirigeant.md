@@ -6,7 +6,7 @@ Ce document décrit la manière d'utiliser ProConnect en tant que **fournisseur 
 > Cette documentation permet de lancer les développements pour une application. Le paramètre ne fait actuellement aucune vérification et renverra toujours `true`. Celui-ci sera fonctionnel au T2 2025. Vérifiez avec nous avant de lancer votre application en production.
 
 
-## 1. 🤔 1. Qu'est-ce que la certification dirigeant ?
+## 🤔 1. Qu'est-ce que la certification dirigeant ?
 
 Parmi les niveaux d'authentification disponibles, ProConnect propose notamment le niveau de certification suivant :
 
@@ -14,7 +14,7 @@ Parmi les niveaux d'authentification disponibles, ProConnect propose notamment l
 
 Cette certification s'obtient en demandant explicitement un niveau de garantie (acr) spécifique dans le cadre d'un flux OpenID Connect.
 
-## 2. ⚙️ 2. Configuration du paramètre `claims`
+## 2. ⚙️ Configuration du paramètre `claims`
 
 Pour demander à l'OP ProConnect de retourner un **ID token** contenant l'**acr** du niveau « certification-dirigeant », vous devez inclure le paramètre `claims` dans la requête à l'endpoint d'**autorisation** (souvent nommé `/authorize`).
 
@@ -46,7 +46,7 @@ L'attribut `essential: true` indique que la valeur spécifiée pour `acr` est **
 "https://proconnect.gouv.fr/assurance/certification-dirigeant"
 ```
 
-## 3. ✉️ 3. Envoi de la requête d'autorisation
+## ✉️ 3. Envoi de la requête d'autorisation
 
 Selon votre bibliothèque OpenID Connect (client OpenID) ou votre framework, vous devrez :
 
@@ -67,7 +67,7 @@ GET /authorize?
 
 *(Ici,* `claims=%7B%22id_token%22%3A...` correspond à la version encodée URL du JSON décrit plus haut.)
 
-## 4. 🔏 4. Traitement par ProConnect
+## 🔏 4. Traitement par ProConnect
 
 Lorsque ProConnect reçoit cette requête :
 
