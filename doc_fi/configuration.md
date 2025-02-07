@@ -6,6 +6,11 @@ En cas d'erreur, deux documents vous permettront d'analyser vos erreurs :
 - [le troubleshooting](./troubleshooting-fi.md)
 - [la liste des codes d'erreurs possibles renvoyés par ProConnect](https://github.com/france-connect/sources/blob/main/back/_doc/erreurs.md)
 
+## Configurations spécifiques
+Certains logiciels nécessitent des configurations particulières pour fonctionner avec ProConnect. Vous pouvez consulter ces spécificités si votre logiciel se trouve dans la liste ci-dessous :
+- [LemonLDAP](./idp-configs/lemon-ldap.md)
+- [Keycloak](./idp-configs/keycloak/configuration.md)
+
 ## Trouver la Discovery URL
 La Discovery URL est une URL **publique** fournie par le FI qui expose un ensemble d'informations nécessaires à la bonne interaction avec les clients OIDC. Elle se termine nécessairement par `/.well-known/openid-configuration`.
 
@@ -88,7 +93,3 @@ Selon votre Fournisseur d'Identité, il est possible qu'il vous faille spécifie
 
 ## Configurer le champ `acr`
 Le champ `acr` renvoyé par le Fournisseur d'Identité doit valoir `eidas1`.
-
-## Configurations spécifiques
-Certains logiciels nécessitent des configurations particulières pour fonctionner avec ProConnect. Vous pouvez consulter ces spécificités si votre logiciel se trouve dans la liste ci-dessous :
-- [LemonLDAP](./idp-configs/lemon-ldap.md)
