@@ -19,11 +19,11 @@ Cette documentation est à destination des Fournisseurs de Services souhaitant i
 - [ ] Je contractualise officiellement ma collaboration avec la DINUM en remplissant le [DataPass dédié](./datapass-fs.md). Je peux passer à l'étape suivante même si le Datapass n'est pas encore complété ou approuvé pour gagner du temps. Après complétude, le Datapass me revient signé dans les **2 jours ouvrés**.
 - [ ] Je remplis [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fs-fca) avec les informations de production. Après complétude, je reçois mon `client_id` et mon `client_secret` de production dans les **2 jours ouvrés**.
 - [ ] Ouverture du service en production 🚀
-- [ ] Je signale à l'équipe ProConnect que je souhaite apparaître sur [sa liste de services connectés](https://www.proconnect.gouv.fr/services). Si la description du service rendue a bien été remplie dans le Démarches Simplifiées (avec verbe à l'infinitif au début de la description), l'équipe mettra à jour le site. 
+- [ ] Je signale à l'équipe ProConnect que je souhaite apparaître sur [sa liste de services connectés](https://www.proconnect.gouv.fr/services). Si la description du service rendue a bien été remplie dans le Démarches Simplifiées (avec verbe à l'infinitif au début de la description), l'équipe mettra à jour le site.
 
 Pour toute question technique, vous pouvez contacter l'équipe ProConnect par les deux canaux suivants :
 
-- par mail à support+partenaire@agentconnect-ntitfa.on.crisp.email
+- par mail à support+partenaires@proconnect.gouv.fr
 - [sur notre chaîne Tchap](https://www.tchap.gouv.fr/#/room/!kBghcRpyMNThkFQjdW:agent.dinum.tchap.gouv.fr)
 
 ---
