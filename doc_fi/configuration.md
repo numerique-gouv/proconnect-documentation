@@ -34,6 +34,9 @@ https://PROCONNECT_DOMAIN/api/v2/client/logout-callback
 À l'appel au `authorization_endpoint`, ProConnect envoie en query param `login_hint`, qui contient l'email renseigné par l'utilisateur sur la mire ProConnect.
 Pour simplifier le parcours de l'utilisateur, il est demandé au FI d'utiliser la valeur fournie pour pré-remplir le champ email de sa mire d'authentification lorsque cela est pertinent.
 
+## Spécifier la client authentication method
+ProConnect se connecte au Fournisseur d'Identité avec la client_authentication_method `client_secret_post`. Celle-ci doit être autorisée par le Fournisseur d'Identité.  
+
 ## Renseigner le claim `amr`
 Il est nécessaire de renseigner dans le claim `amr` la valeur correspondant au mode d'authentification utilisé. Cela permet, par exemple, aux Fournisseurs de Service d'épargner à l'usager le recours à une nouvelle authentification multi-facteur une fois retourné sur le FS.
 
