@@ -97,7 +97,7 @@ Parmi ces champs, seuls sont obligatoires :
 |usual_name |Nom de famille d'usage (par défaut = family_name)| 1 caractère minimum, 256 maximum | string |
 |email |Adresse courriel | email |string (standard OpenIDConnect)|
 |siret |SIRET de l'organisation de rattachement| 14 caractères [Lunh](https://fr.wikipedia.org/wiki/Formule_de_Luhn) | string|
-|uid | Clé unique du FI| 1 caractère minimum | string |
+|uid | Identifiant unique de l'agent auprès du FI | 1 caractère minimum | string |
 
 Est également exigé un champ sub:
 
