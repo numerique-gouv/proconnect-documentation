@@ -1,6 +1,6 @@
-# En tant que Fournisseur de Service, quelles sont les données que je peux récupérer par ProConnect sur les agents ?
+# En tant que Fournisseur de Service, quelles sont les données que je peux récupérer par ProConnect sur les pros ?
 
-Les données Agent sont fournies par les Fournisseurs d'Identité aux Fournisseurs de Services, via ProConnect, conformément à l'habilitation obtenue via [datapass.api.gouv.fr](https://datapass.api.gouv.fr), et le choix des données réalisé par le Fournisseur de Services dans cette demande.
+Les données sont fournies par les Fournisseurs d'Identité aux Fournisseurs de Services, via ProConnect, conformément à l'habilitation obtenue via [datapass.api.gouv.fr](https://datapass.api.gouv.fr), et le choix des données réalisé par le Fournisseur de Services dans cette demande.
 
 
 ## Les données obligatoires
@@ -13,6 +13,7 @@ En plus de l'openid, qui est obligatoire, des données sont **systématiquement*
 |usual_name| Oui |Nom de famille d'usage (par défaut = family_name)| UTF-8 |
 |email | Oui |Adresse courriel |UTF-8 (standard OpenIDConnect)|
 |uid|Oui |Identifiant unique de l'agent auprès du FI| String (standard OpenIDConnect)|
+| siret | Oui |Identifiant d'établissement| string, 14 chiffres sans espace|
 
 Il vous est possible d'obtenir des données complémentaires à celles-ci. Cependant ces données ne sont pas obligatoirement fournies par tous les Fournisseurs d'Identité, et leur format est plus sujet à fluctuation selon la qualité de l'annuaire du Fournisseur d'Identité.
 
@@ -23,7 +24,6 @@ ProConnect renvoie également le champ `idp_id`, qui permet de connaître le Fou
 
 Champs | Obligatoire | Description| Format |
 |---- | ------ | ------ | ------ |
-| siret | non |Identifiant d'établissement| string, 14 chiffres sans espace|
 | siren | non  | Identifiant d'entreprise  | String, 9 chiffres sans espace |
 | organizational_unit  | non  | Ministère/Direction/Service d'affectation   | UTF8 |
 | belonging_population  | non  | Population d'appartenance  | string, Exemple: agent, prestataire, partenaire, stagiaire |
@@ -44,3 +44,7 @@ ProConnect a étendu le mécanisme de scopes pour qu'il soit plus modulaire.
 * Il est possible de combiner plusieurs scopes de son choix pour récupérer seulement les informations dont a besoin le FS.
 
 Cette liste de scopes est définie par la norme OpenIDConnect : http://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims
+
+## Le cas du SIRET
+
+Le SIRET renvoyé permet d'identifier la structure de travail de la personne qui se connecte. Si cette structure est privée, la [certification dirigeant](certification-dirigeant.md) permet de garantir de parler à une personne capable de représenter l'organisation privée.
