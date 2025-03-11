@@ -10,5 +10,5 @@ Code erreur | Marche à suivre
 `Y020026` | l'appel au /token échoue. Il est possible que le FI renvoie un objet non signé ou un JWT signé avec un algorithme différent de celui configuré dans ProConnect. Il est aussi possible que l'authentification de notre serveur auprès du FI ait échoué (mauvais credentials, mauvaise client authentication method,...)
 `Y020030` | le FI indique une valeur du niveau de sécurité dans le champ `acr` qui n'est pas valide. Il vous faut renvoyer `eidas1` dans votre champ `acr`
 `Y020027` | à l'appel au /user-info, le FI renvoie un objet non signé ou un JWT signé avec un algorithme différent de celui configuré dans ProConnect.
-`Y500006` | à l'appel au /user-info, le FI renvoie un objet dont l'un ou plusieurs des champs ne matche pas avec ce qui est attendu
+`Y500006` | à l'appel au /user-info, le FI renvoie un objet dont l'un ou plusieurs des champs ne matche pas avec ce qui est attendu (cf. [contraintes sur les scopes renvoyés](./configuration.md#configurer-les-scopes))
 `Y020029` | à l'appel au /user-info, le FI ne renvoie pas le claim `sub` contenant l'identifiant unique de l'utilisateur
