@@ -3,7 +3,7 @@ Le document ci-dessous récapitule les différents codes d'erreur que vous pourr
 
 Code erreur | Marche à suivre
 -- | --
-`Y00000 (write EPROTO C037E49CD87F0000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:../deps/openssl/openssl/ssl/record/ssl3_record.c:355)` | demandez à Agent Connect d'ouvrir le flux entre le Fournisseur d'Identité et Agent Connect. Si le blocage a lieu de votre côté, demandez à l'équipe support l'adresse IP du serveur Agent Connect, et demandez à votre DSI de l'autoriser
+`Y000000` | ProConnect ne parvient pas à effectuer l'appel vers le endpoint concerné. Cette erreur survient généralement lorsque le serveur ou le endpoint du FI est down, ou bien que le flux n'est pas ouvert entre les deux serveurs (pare-feu, WAF, etc.)
 `Y020018` | le FI indique un niveau de sécurité différent de `eidas1`. Il vous faut renvoyer `eidas1` dans votre champ `acr`
 `Y030025` | l'access_token a une durée de vie de 60 secondes, cette erreur peut survenir si vous testez le parcours manuellement au lieu de le faire via un script
 `Y020025` | vous avez vraisemblablement été redirigé vers la redirect_uri du FS avec dans les query params : "error_description=Invalid+scopes". Si c'est le cas, configurez les scopes géré par votre FI comme précisé [ici](./configuration.md).
