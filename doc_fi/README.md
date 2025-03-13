@@ -17,7 +17,7 @@ Voici un résumé des étapes pour être Fournisseur d'Identité ProConnect :
 - [ ] [_Optionnel_] Je contacte l'équipe ProConnect pour qu'elle puisse répondre à mes questions si j'en ai : support+partenaires@proconnect.gouv.fr ou [sur notre chaîne Tchap](https://www.tchap.gouv.fr/#/room/!kBghcRpyMNThkFQjdW:agent.dinum.tchap.gouv.fr)
 - [ ] Je contractualise officiellement ma collaboration avec la Dinum en remplissant le [DataPass dédié](https://datapass.api.gouv.fr/agent-connect-fi). Je peux passer à l'étape suivante même si le Datapass n'est pas encore complété ou approuvé pour gagner du temps.  Après complétude, le Datapass me revient signé dans les **2 jours ouvrés**.
 - [ ] Je renseigne à l'équipe ProConnect les informations concernant mon Fournisseur d'Identité de **production** via [le formulaire dédié](https://www.demarches-simplifiees.fr/commencer/demande-creation-fi-fca)
-- L'équipe ProConnect crée ma configuration et me contacte pour procéder à un recettage pour tester que tout marche bien. Si tout se passe bien, je décide avec l'équipe de ProConnect de la date de mise en production
+- [ ] L'équipe ProConnect crée ma configuration et me contacte pour procéder à un recettage pour tester que tout marche bien. Si tout se passe bien, je décide avec l'équipe de ProConnect de la date de mise en production
 - [ ] Mise en production le jour convenu 🚀
 
 ---
