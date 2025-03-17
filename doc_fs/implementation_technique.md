@@ -53,10 +53,12 @@ https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
 > | `redirect_uri` | requis | string |`<FS_URL>/<URL_CALLBACK>` URL de retour vers le FS, communiquée dans le formulaire Démarches Simplifiées. Attention, cette URL doit être encodée pour être passée en query parameter, doit correspondre exactement à celle communiquée à ProConnect, et est sensible à la présence ou non du `/` final |
 > | `scope` | requis | string | `<SCOPES>` Liste des scopes demandés séparés par des espaces (%20 au format unicode dans l'URL) ou des '+' |
 > | `claims` | optionnel | string | `<CLAIMS>` Objet JSON encodé décrivant les claims demandés. Pour récupérer le claim `amr` qui indique le mode d'authentification double facteur utilisé, spécifiez la valeur `{"id_token":{"amr":{"essential":true}}}`. Cf. [quelles sont les valeurs possibles pour le champ amr ?](../resources/claim_amr.md) |
-> | `state` | requis | string (minimum 32 caractères) | `<STATE>` Champ obligatoire, généré aléatoirement par le FS, que ProConnect renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par le FS. Il est utilisé afin d’empêcher l’exploitation de failles CSRF |
+> | `state` | requis | string (minimum 32 caractères) | `<STATE>` Champ obligatoire, généré aléatoirement par le FS, que ProConnect renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par le FS. Il est utilisé afin d'empêcher l'exploitation de failles CSRF |
 > | `nonce` | requis | string (minimum 32 caractères) | `<NONCE>` Champ obligatoire, généré aléatoirement par le FS que ProConnect renvoie tel quel dans la réponse à l'appel au `Token Endpoint`, pour être ensuite vérifié par le FS. Il est utilisé pour empêcher les attaques par rejeu |
 > | `prompt` | optionnel | string | `login` si le FS veut forcer la reauthentification au FI. Par défaut, le FI réutilisera une session existante sans demander une reconnexion. (Single Sign-On côté FI) |
-> | `idp_hint` | optionnel | string | `idp_id` désignant le FI vers lequel rediriger l'usager sans passer par la mire ProConnect (cf. [doc](./idp_hint_usage.md)) |
+> | `idp_hint` | optionnel | string | `idp_id` désignant le FI vers lequel rediriger l'usager sans passer par la mire ProConnect (cf. [doc](./idp_hint_usage.md)) |
+> | `login_hint` | optionnel | string | Adresse email à préremplir dans la mire de connexion ProConnect pour faciliter l'authentification de l'usager (cf. [doc](./login_hint_usage.md)) |
+
 </details>
 
 Le champ `scope` et sa différence avec la notion de `claims` sont expliqués [ici](./scope-claims.md). La liste des scopes que pouvez demander est spécifiée [ici](./donnees_fournies.md).
@@ -76,7 +78,7 @@ Les query parameters renvoyés dans l'URL sont décrits ci-dessous.
 > | nom | requis/optionnel | type de données | description |
 > |--------|-----------|----------------|------------------------------------------------------|
 > | `code` | requis | string | code d'autorisation à transmettre au `token_endpoint`. |
-> | `state` | requis | string (minimum 32 caractères) | `<state>` communiqué par par le FS dans l'appel au `authorization_endpoint`. Cette information est à vérifier par le FS, afin d’empêcher l’exploitation de failles CSRF |
+> | `state` | requis | string (minimum 32 caractères) | `<state>` communiqué par par le FS dans l'appel au `authorization_endpoint`. Cette information est à vérifier par le FS, afin d'empêcher l'exploitation de failles CSRF |
 
 </details>
 
@@ -216,7 +218,7 @@ http://openid.net/specs/openid-connect-session-1_0.html#RPLogout
 > | nom | requis/optionnel | type de données | description |
 > |--------|-----------|----------------|------------------------------------------------------|
 > | `id_token_hint` | requis | string | `<id_token>` contenu dans la réponse du `Token Endpoint` |
-> | `state` | requis | string | `<state>` Champ obligatoire, généré aléatoirement par le FS, que ProConnect renvoie tel quel dans la redirection qui suit la déconnexion, pour être ensuite vérifié par le FS. Il est utilisé afin d’empêcher l’exploitation de failles CSRF |
+> | `state` | requis | string | `<state>` Champ obligatoire, généré aléatoirement par le FS, que ProConnect renvoie tel quel dans la redirection qui suit la déconnexion, pour être ensuite vérifié par le FS. Il est utilisé afin d'empêcher l'exploitation de failles CSRF |
 > | `post_logout_redirect_uri` | requis | string | `<post_logout_redirect_uri>` URL de retour vers le FS, communiquée dans le formulaire Démarches Simplifiées. Attention, cette URL doit être encodée pour être passée en query parameter, doit correspondre exactement à celle communiquée à ProConnect, et est sensible à la présence ou non du `/` final |
 
 ##### 2.4.1.3. Réponses
@@ -260,7 +262,7 @@ ProConnect renvoie le state communiqué par le FS lors de la demande de déconne
 
 > | nom | requis/optionnel | type de données | description |
 > |--------|-----------|----------------|------------------------------------------------------|
-> | `state` | requis | string (minimum 32 caractères) | `<state>` communiqué par par le FS dans l'appel au `Logout Endpoint`. Cette information est à vérifier par le FS, afin d’empêcher l’exploitation de failles CSRF | |
+> | `state` | requis | string (minimum 32 caractères) | `<state>` communiqué par par le FS dans l'appel au `Logout Endpoint`. Cette information est à vérifier par le FS, afin d'empêcher l'exploitation de failles CSRF | |
 
 ##### 2.4.2.3. Exemple d'appel
 
