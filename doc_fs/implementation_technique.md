@@ -195,6 +195,10 @@ NB: la session ProConnect a une durée de 12 heures.
 - si vous souhaitez que vos sessions utilisateurs durent **plus** de 12 heures, c'est possible : lorsque votre session utilisateur sera expirée de votre côté, alors le clic sur le bouton "S'identifier avec ProConnect" renverra bien vers la mire d'authentification car la session ProConnect se sera terminée avant.
 - si vous souhaitez que vos sessions utilisateurs durent **moins** de 12 heures, si votre utilisateur clique sur "S'identifier avec ProConnect" entre la fin de votre session et la fin de celle de ProConnect, il sera automatiquement reconnecté à votre service. Une option `max-age` est décrite dans [la spec OIDC](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest) et permet de gérer ce cas, mais celle-ci n'est pas encore implémentée sur ProConnect.
 
+### 2.3.8. Le cas du Silent Login
+
+Il est possible (et plus agréable pour l'expérience utilisateur) de faire en sorte que les personnes allant sur votre application soient automatiquement connectées si jamais elles sont ProConnectées via une autre application en utilisant ce que l'on appelle le Silent Login. Nous avons [rédigé un tutoriel à ce sujet là ici](./sso.md).
+
 ### 2.4. Déconnexion de l'utilisateur
 Au clic sur votre bouton de déconnexion, effectuer les actions suivantes :
 
