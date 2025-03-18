@@ -1,8 +1,3 @@
-
-[Accueil](../README.md) > [ProConnect - Fournisseur de Service](README.md) > [Implémentation Technique](implementation_technique.md) > Test de la connexion d'un Fournisseur de Service
-
----
-
 # SSO
 
 ## 1. Vue d'ensemble
@@ -13,19 +8,17 @@ Le Single Sign-On (SSO) est un service d'authentification unique qui permet à u
 
 Lorsqu'un utilisateur tente d'accéder à une application sans être authentifié, il est redirigé vers ProConnect. Ce service procède à l'authentification de l'utilisateur et le renvoie ensuite vers l'application.
 
-Sa session active auprès de ProConnect, permet à l’utilisateur d'accéder à toutes les applications et sites web protégés connectés à ProConnect sans avoir à ressaisir leurs informations d'identification.
-
-
+Sa session active auprès de ProConnect permet à l’utilisateur d'accéder à toutes les applications et sites web protégés connectés à ProConnect sans que l'utilisateur ait à ressaisir ses informations d'identification.
 
 ### 1.2. Comment cela fonctionne ?
 
 La connexion au SSO est la suivante :
 
 1. Lorsqu'un utilisateur se connecte à une application, celle-ci envoie une demande d'authentification au service ProConnect. 
-2. ProConnect vérifie si l'utilisateur a déjà été authentifié dans le système. Si tel est le cas, il envoie une réponse de confirmation d'authentification à l'application pour accorder l'accès à l'utilisateur. 
-3. Si l'utilisateur n'a pas d'informations d'identification validées, ProConnect redirige l'utilisateur vers son système de connexion et l'invite à soumettre son email professionnel et son mot de passe.
-4. Lors de la soumission, ProConnect valide les informations d'identification de l'utilisateur et envoie une réponse positive à l'application. 
-5. Dans le cas contraire, l'utilisateur reçoit un message d'erreur et doit saisir à nouveau ses informations d'identification.
+2. ProConnect vérifie si l'utilisateur a déjà été authentifié dans le système.
+3. Deux cas de figures possibles :
+- si l'utilisateur a déjà une session en cours, ProConnect envoie une réponse de confirmation d'authentification à l'application pour accorder l'accès à l'utilisateur. 
+- si l'utilisateur n'a pas de session en cours, ProConnect redirige l'utilisateur vers son système de connexion en lui demandant ses informations de connexion (email et mot de passe).
 
 
 Le Single Sign-On (SSO) simplifie l'expérience de connexion et la gestion des identifiants et mots de passe pour les utilisateurs finaux. Grâce au SSO, les utilisateurs ont moins de mots de passe à gérer et peuvent accéder à l'ensemble des services "ProConnectés" avec une seule authentification.
@@ -39,59 +32,33 @@ Cela offre une expérience de connexion optimale, sans action manuelle de l'util
 
 
 ----
-## 2. Implémentation
+## 2. Implémentation du Silent Login
 
-Dans cette section, nous explorerons deux méthodes d'implémentation du SSO. Chacune de ces méthodes offre une expérience utilisateur différente.
+:warning: Le SSO fonctionne automatiquement et par défaut pour tous les Fournisseurs de Service (FS).
 
-### 2.1. Sans landing page
+Il est possible de réaliser une authentification "silencieuse" dans ProConnect, c'est-à-dire ne pas avoir besoin d'afficher le bouton ProConnect sur votre FS.
+Nous suivrons l'exemple ici d'un FS qui expose les trois URLs suivantes :
+- `https://fs.gouv.fr/` : la page d'accueil de l'outil
+- `https://fs.gouv.fr/login-callback/` : la `redirect_uri` renseignée par le FS dans la config ProConnect, i.e. celle vers laquelle sera redirigé l'utilisateur après connexion
+- `https://fs.gouv.fr/login/` : la page où est affiché le bouton "S'identifier avec ProConnect"
 
-Lorsqu’un utilisateur accède au service, le système commence par déterminer s’il est authentifié. Cette vérification est essentielle pour offrir une expérience utilisateur fluide et sécurisée.
+Le parcours est le suivant, lorsque l'utilisateur se rend sur `https://fs.gouv.fr/` :
 
-Si l’utilisateur n’est pas authentifié, le service envoie automatiquement une demande d’authentification au service ProConnect. Ce processus se déroule sans intervention de l’utilisateur, éliminant ainsi la nécessité de cliquer sur un bouton pour démarrer l’authentification.
+### Scénario 1 : le navigateur de l'utilisateur contient des informations de session du FS, i.e. l'utilisateur est déjà connecté au FS
 
-ProConnect vérifie alors si l’utilisateur est déjà authentifié. Si tel est le cas, aucun écran n’est affiché à l’utilisateur. Il est redirigé directement vers le service, où il est authentifié sans interruption, lui permettant de continuer son parcours sans friction.
+-> Rien à implémenter, l'utilisateur peut utiliser l'outil
 
-En revanche, si l’utilisateur n’est pas encore authentifié, une mire de connexion lui est présentée. Une fois qu’il a validé ses informations de connexion, il est redirigé vers le service, prêt à utiliser les fonctionnalités disponibles.
+### Scénario 2 : le navigateur de l'utilisateur ne contient pas d'informations de session du FS
+Le navigateur redirige l'utilisateur vers la route `/authorize` (cf. [implémentation technique](./implementation_technique.md#22-faire-pointer-le-bouton-proconnect-vers-le-authorization_endpoint)), en ajoutant le query parameter `prompt=none`.
+Ce query parameter permet de faire échouer l'appel à ProConnect si l'utilisateur n'a pas de session active dans ProConnect.
+Ce comportement peut être souhaitable dans le cas où vous préférez que l'utilisateur ne soit pas redirigé sur une fenêtre de connexion sans explications. 
 
-#### 2.1.1. Éléments techniques
+À l'appel à la route `/authorize`, deux scénarios sont possibles :
 
-Exemple de requêtes envoyées à ProConnect :
+### Scénario 2.1 : l'utilisateur a une session ProConnect en cours
+ProConnect redirige l'utilisateur vers la route `https://fs.gouv.fr/login-callback/` avec les paramètres d'identification tels que décrits dans l'[implémentation technique](./implementation_technique.md).
 
-```
-https://auth.agentconnect.gouv.fr/api/v2/authorize?response_type=code&scope=openid+email&client_id=...&redirect_uri=...&state=...&acr_values=eidas1&nonce=...
-```
-
-#### 2.1.2. Exemples
-
-Les services ci-dessous utilisent cette approche :
-
-- regie.numerique.gouv.fr
-- docs.numerique.gouv.fr
-
-
-### 2.2. Avec landing page
-
-Dans le premier cas, si l’utilisateur n’est pas authentifié auprès de ProConnect, il sera redirigé vers une mire de connexion ProConnect avant de pouvoir accéder au service. Cela peut être acceptable pour certains services, mais pas pour tous.
-
-Certains services préfèrent afficher une page d'accueil contenant des informations destinées aux utilisateurs non authentifiés ou nouveaux. Dans ce cas, il n’est pas acceptable de bloquer les utilisateurs sur la mire de connexion ProConnect.
-
-Pour répondre à ce besoin, le service doit authentifier l’utilisateur de manière silencieuse. Il suffit d’ajouter un paramètre supplémentaire, `prompt=none`, à la requête. Si ProConnect ne parvient pas à authentifier l’utilisateur sans action de sa part, il redirigera l’agent utilisateur vers l’URL de rappel (callback) avec une erreur ```login_required```.
-
-Le service sera alors informé que l’utilisateur n’a pas de session d’authentification active et pourra lui afficher la page d'accueil, tout en proposant un bouton de connexion via ProConnect.
-
-#### 2.2.1. Éléments techniques
-
-Cette approche repose sur le paramètre `prompt`, tel que décrit dans la spécification OIDC à la section [3.1.2.1 Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).
-
-Exemple de requête envoyée à ProConnect (incluant `prompt=none`) :
-```
-https://auth.agentconnect.gouv.fr/api/v2/authorize?client_id=...&scope=...&response_type=code&redirect_uri=...&acr_values=eidas1&nonce=...&state=...&prompt=none
-```
-
-#### 2.2.2. Exemples 
-
-Les services ci-dessous utilisent cette approche : 
-
-- meet.numerique.gouv.fr
-- pad.numerique.gouv.fr
+### Scénario 2.2 : l'utilisateur n'a pas de session ProConnect en cours
+ProConnect redirige l'utilisateur vers la route `https://fs.gouv.fr/login-callback/` avec plusieurs paramètres, dont `error=login_required`.
+Le FS doit donc implémenter le fait que, lorsque ce paramètre est présent avec cette valeur, l'utilisateur doit être redirigé vers `https://fs.gouv.fr/login/`.
 

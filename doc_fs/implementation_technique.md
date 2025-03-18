@@ -55,7 +55,7 @@ https://openid.net/specs/openid-connect-core-1_0.html#AuthorizationEndpoint
 > | `claims` | optionnel | string | `<CLAIMS>` Objet JSON encodé décrivant les claims demandés. Pour récupérer le claim `amr` qui indique le mode d'authentification double facteur utilisé, spécifiez la valeur `{"id_token":{"amr":{"essential":true}}}`. Cf. [quelles sont les valeurs possibles pour le champ amr ?](../resources/claim_amr.md) |
 > | `state` | requis | string (minimum 32 caractères) | `<STATE>` Champ obligatoire, généré aléatoirement par le FS, que ProConnect renvoie tel quel dans la redirection qui suit l'authentification, pour être ensuite vérifié par le FS. Il est utilisé afin d'empêcher l'exploitation de failles CSRF |
 > | `nonce` | requis | string (minimum 32 caractères) | `<NONCE>` Champ obligatoire, généré aléatoirement par le FS que ProConnect renvoie tel quel dans la réponse à l'appel au `Token Endpoint`, pour être ensuite vérifié par le FS. Il est utilisé pour empêcher les attaques par rejeu |
-> | `prompt` | optionnel | string | `login` si le FS veut forcer la reauthentification au FI. Par défaut, le FI réutilisera une session existante sans demander une reconnexion. (Single Sign-On côté FI) |
+> | `prompt` | optionnel | string | `none` si le FS souhaite qu'une erreur soit générée lorsque l'utilisateur ne dispose pas de session ProConnect en cours (utile pour l'implémentation du [Silent Login](./sso.md#2-implémentation-du-silent-login)). Par défaut, ProConnect réutilisera une session existante si elle existe sans redemander de connexion, ou bien redirigera l'utilisateur vers la mire de connexion. |
 > | `idp_hint` | optionnel | string | `idp_id` désignant le FI vers lequel rediriger l'usager sans passer par la mire ProConnect (cf. [doc](./idp_hint_usage.md)) |
 > | `login_hint` | optionnel | string | Adresse email à préremplir dans la mire de connexion ProConnect pour faciliter l'authentification de l'usager (cf. [doc](./login_hint_usage.md)) |
 
@@ -197,7 +197,7 @@ NB: la session ProConnect a une durée de 12 heures.
 
 ### 2.3.8. Le cas du Silent Login
 
-Il est possible (et plus agréable pour l'expérience utilisateur) de faire en sorte que les personnes allant sur votre application soient automatiquement connectées si jamais elles sont ProConnectées via une autre application en utilisant ce que l'on appelle le Silent Login. Nous avons [rédigé un tutoriel à ce sujet là ici](./sso.md).
+Il est possible, et plus agréable pour l'utilisateur, de faire en sorte que lorsque l'utilisateur arrive sur votre FS, il se connecte immédiatement et automatiquement à votre FS dans le cas où il dispose d'une session ProConnect en cours (par exemple s'il s'est déjà connecté dans la journée via ProConnect à une autre application). Ce parcours et son implémentation sont décrits [à cette page](./sso.md).
 
 ### 2.4. Déconnexion de l'utilisateur
 Au clic sur votre bouton de déconnexion, effectuer les actions suivantes :
