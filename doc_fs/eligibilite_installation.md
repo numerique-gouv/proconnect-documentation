@@ -1,4 +1,4 @@
-[Accueil](../README.md) > [ProConnect - Fournisseur de Service](README.md) > Implémentation Technique
+[Accueil](../README.md) > [ProConnect - Fournisseur de Service](README.md) > Éligibilité installation ProConnect
 
 ---
 
@@ -15,7 +15,7 @@ Si vous êtes éditeur de logiciels et agissez pour le compte d’une administra
 
 ## 🏣 Organisation Privée
 
-Les organisations privées peuvent intégrer le bouton ProConnect à une condition : afin de ne connecter que les professionnels du la fonction publique. ProConnect bloquera les comptes aux profesionnels de la fonction publique uniquement.
+Les organisations privées peuvent intégrer le bouton ProConnect à une condition : afin de ne connecter que les professionnels de la fonction publique. ProConnect bloquera les comptes aux professionnels de la fonction publique uniquement et les professionnels du privé ne pourront pas utiliser ProConnect pour une application portée par une organisation privée.
 
 > [!NOTE]  
 > Exemple cas d'usage : un éditeur de logiciel propose une solution d'interface de gestion de rendez-vous pour les collectivités. Cet éditeur peur installer le bouton ProConnect et les agents des collectivités pourront utiliser leur compte professionnel pour gérer les rendez-vous de sa commune.
