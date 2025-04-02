@@ -38,5 +38,6 @@ Pour toute question technique, vous pouvez contacter l'équipe ProConnect par le
 - [Comment savoir avec quel Fournisseur d'Identité s'est authentifié mon utilisateur ?](./connaitre-le-fi-utilise.md)
 - [Comment spécifier à ProConnect que les usagers de mon FS doivent être redirigés directement vers un Fournisseur d'Identité spécifique ?](./idp_hint_usage.md)
 - [Comment récupérer des propriétés "custom" d'un Fournisseur d'Identité?](./custom-scope.md)
+- [Comment changer des URIs de connexion / déconnexion pour une configuration déjà existante ?](./implementation_technique.md)
 - [Erreurs récurrentes](./troubleshooting-fs.md)
 - [Glossaire](../resources/glossaire.md)
