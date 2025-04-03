@@ -10,3 +10,6 @@ Code erreur | Marche à suivre
 `Y500015` | Le Fournisseur de Service n'est pas configuré dans ProConnect pour accepter les agents du secteur privé. Si vous êtes en intégration, ou en production et que votre demande d'autorisation du secteur privé dans le Démarches Simplifiées n'a pas été prise en compte, remontez-nous le problème et nous corrigerons rapidement la configuration.
 `Y030031` | La redirect_uri présente en paramètre du `/authorization_endpoint` ne figure pas parmi celles renseignées dans votre demande de création de FS. Si vous souhaitez ajouter ou modifier une redirect_uri, vous pouvez soumettre votre demande de modification [sur ce Démarches Simplifiées](https://www.demarches-simplifiees.fr/commencer/demande-de-modification-d-un-fournisseur-de-service)
 `Y04A586` | La configuration du Fournisseur de Service est invalide (redirect_uri de login ou logout incorrecte, protocole HTTP ou URI en localhost sur l'environnement de production, etc.). L'équipe ProConnect doit vérifier votre configuration.
+
+
+Vous ne trouvez pas l'erreur que vous avez dans ce tableau et avez besoin d'aide ? [Notre section de support](./aide_support.md) va vous donner la marche à suivre.
