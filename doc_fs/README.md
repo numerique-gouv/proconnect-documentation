@@ -25,12 +25,12 @@ Avant toute chose, vérifiez votre [éligibilité à intégrer le bouton ProConn
 
 ## 3. 🆘 Questions, aide support
 
-Pour toute question technique, vous pouvez contacter l'équipe ProConnect par les deux canaux suivants :
+Pour toute question technique de faisabilité ou sur le produit, n'hésitez pas à contacter l'équipe ProConnect par les deux canaux suivants :
 
 - par mail à support+partenaires@proconnect.gouv.fr
 - [sur notre chaîne Tchap](https://www.tchap.gouv.fr/#/room/!kBghcRpyMNThkFQjdW:agent.dinum.tchap.gouv.fr)
 
-Pour les blocages nécessitant notre aide, nous vous invitons à lire [la procédure d'aide et support](./aide_support.md) pour que l'on puisse vous aider au maximum.
+Pour les blocages nécessitant notre aide, nous avons [une procédure d'aide et support](./aide_support.md) pour vous aider à vous débloquer.
 
 ---
 
