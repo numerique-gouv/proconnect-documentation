@@ -23,14 +23,18 @@ Avant toute chose, vérifiez votre [éligibilité à intégrer le bouton ProConn
 - [ ] Ouverture du service en production 🚀
 - [ ] Je signale à l'équipe ProConnect que je souhaite apparaître sur [sa liste de services connectés](https://www.proconnect.gouv.fr/services). Si la description du service rendue a bien été remplie dans le Démarches Simplifiées (avec verbe à l'infinitif au début de la description), l'équipe mettra à jour le site.
 
+## 3. 🆘 Questions, aide support
+
 Pour toute question technique, vous pouvez contacter l'équipe ProConnect par les deux canaux suivants :
 
 - par mail à support+partenaires@proconnect.gouv.fr
 - [sur notre chaîne Tchap](https://www.tchap.gouv.fr/#/room/!kBghcRpyMNThkFQjdW:agent.dinum.tchap.gouv.fr)
 
+Pour les blocages nécessitant notre aide, nous vous invitons à lire [la procédure d'aide et support](./aide_support.md) pour que l'on puisse vous aider au maximum.
+
 ---
 
-## 3. 💻 FAQ
+## 4. 💻 FAQ
 
 - [Quels changements dois-je effectuer pour passer d'AgentConnect à ProConnect ?](./changement-agentconnect-proconnect-fs.md)
 - [Quelles sont les données que je peux récupérer par ProConnect sur les agents ?](./donnees_fournies.md)
