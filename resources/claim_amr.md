@@ -6,7 +6,7 @@ Par défaut ce claim `amr` n'est pas retourné dans l'idToken, il doit être dem
 
 | clé          | valeur  |
 |--------------|---------|
-| `id_token`   | `{"id_token":{"auth_time":{"essential":true}}}` |
+| `id_token`   | `{"id_token":{"amr":{"essential":true}}}` |
 
 Les valeurs possibles pour `amr` sont les suivantes :
 
