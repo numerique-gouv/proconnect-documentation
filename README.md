@@ -17,6 +17,11 @@
 
 ## 📚 Documentation technique
 
+> [!CAUTION]
+> ⚠️⚠️ La documentation GitHub est dépréciée au profit de celle sur l'espace partenaires : [https://partenaires.proconnect.gouv.fr/](https://partenaires.proconnect.gouv.fr/). 
+
+
+
 Vous implémentez le bouton ProConnect pour permettre à vos utilisateurs de s’identifier sur un de vos services en ligne ?
 
 ➡️ Consultez la [documentation Fournisseur de Service (FS)](./doc_fs/README.md).

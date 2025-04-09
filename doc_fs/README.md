@@ -6,6 +6,11 @@
 
 Vous souhaitez implémenter ProConnect sur votre site ? Vous êtes au bon endroit ! Cette documentation présente l'ensemble des informations à connaître.
 
+
+> [!CAUTION]
+> ⚠️⚠️ La documentation GitHub est dépréciée au profit de celle sur l'espace partenaires : [https://partenaires.proconnect.gouv.fr/](https://partenaires.proconnect.gouv.fr/). 
+
+
 ## 1. 👩‍🏫 Préambule
 
 Cette documentation est à destination des Fournisseurs de Services souhaitant intégrer ProConnect. ProConnect est implémenté sur deux plateformes, une dite "RIE" (l’agent se connecte depuis le RIE, à un FS RIE via un FI RIE) et une autre dite "Internet" (l'agent se connecte depuis Internet, à un FS Internet via un FI Internet). Toutefois il est possible d'utiliser "l'hybridge Internet/RIE", qui permet aux agents, depuis un Fournisseur de Service **sur Internet**, de s'identifier via un Fournisseur d'Identité **sur le RIE**.

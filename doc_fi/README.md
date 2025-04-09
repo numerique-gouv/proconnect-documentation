@@ -6,6 +6,10 @@
 
 Vous souhaitez rejoindre la fédération d'identité et être Fournisseur d'Identité ProConnect ? Vous êtes au bon endroit ! Cette documentation présente l'ensemble des informations à connaître.
 
+> [!CAUTION]
+> ⚠️⚠️ La documentation GitHub est dépréciée au profit de celle sur l'espace partenaires : [https://partenaires.proconnect.gouv.fr/](https://partenaires.proconnect.gouv.fr/). 
+
+
 ## 1. ⚙️ Les étapes pour devenir Fournisseur d'Identité ProConnect
 
 Voici un résumé des étapes pour être Fournisseur d'Identité ProConnect :
