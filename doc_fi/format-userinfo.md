@@ -1,4 +1,4 @@
-Contrôle des identités retournés par les userinfos des FI
+# Contrôle des identités retournés par les userinfos des FI
 
 Pour que ProConnect reconnaisse comme valide une identité, le FI doit retourner les champs obligatoires définis [ici](https://github.com/numerique-gouv/proconnect-documentation/blob/main/doc_fi/configuration.md#configurer-les-scopes) en respectant les contraintes.
 
